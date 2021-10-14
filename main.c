@@ -141,14 +141,44 @@ int main(int argc, char** argv){
 //*/
 	};
 
-	InitHostMem(Layer1_Weights_CPU,Layer2_Weights_CPU,Layer3_Weights_CPU,Layer4_Weights_CPU);
+	double t1, t2, tstart;
 
-    calculateLayer1(Input, Layer1_Neurons_CPU);
-    calculateLayer2(Layer1_Neurons_CPU, Layer1_Weights_CPU, Layer2_Neurons_CPU);
-	calculateLayer3(Layer2_Neurons_CPU, Layer2_Weights_CPU, Layer3_Neurons_CPU);
-	calculateLayer4(Layer3_Neurons_CPU, Layer3_Weights_CPU, Layer4_Neurons_CPU);
-	calculateLayer5(Layer4_Neurons_CPU, Layer4_Weights_CPU, Layer5_Neurons_CPU);
 
+	for(int i = 0; i < 10000; i++){
+		//t1 = dtime();
+		//tstart = t1;
+		InitHostMem(Layer1_Weights_CPU,Layer2_Weights_CPU,Layer3_Weights_CPU,Layer4_Weights_CPU);
+		//t2 = dtime();
+		//fprintf(stderr, "InitHostMem : %.10f\n", t2 - t1);
+
+		//t1= dtime();
+    	calculateLayer1(Input, Layer1_Neurons_CPU);
+		//t2 = dtime();
+		//fprintf(stderr, "Layer1 : %.10f\n", t2 - t1);
+
+		//t1 = dtime();
+    	calculateLayer2(Layer1_Neurons_CPU, Layer1_Weights_CPU, Layer2_Neurons_CPU);
+		//t2 = dtime();
+		//fprintf(stderr, "Layer2 : %.10f\n", t2 - t1);
+
+		//t1 = dtime();
+		calculateLayer3(Layer2_Neurons_CPU, Layer2_Weights_CPU, Layer3_Neurons_CPU);
+		//t2 = dtime();
+		//fprintf(stderr, "Layer3 : %.10f\n", t2 - t1);
+
+		//t1 = dtime();
+		calculateLayer4(Layer3_Neurons_CPU, Layer3_Weights_CPU, Layer4_Neurons_CPU);
+		//t2 = dtime();
+		//fprintf(stderr, "Layer4 : %.10f\n", t2 - t1);
+
+		//t1 = dtime();
+		calculateLayer5(Layer4_Neurons_CPU, Layer4_Weights_CPU, Layer5_Neurons_CPU);
+		//t2 = dtime();
+		//fprintf(stderr, "Layer5 : %.10f\n", t2 - t1);
+
+		//fprintf(stderr, "	Total : %.10f\n", t2 - tstart);
+	}
+	
 	// valeur minimale d'un float
 	scoremax = FLT_MIN;
 	int indexmax=-1;

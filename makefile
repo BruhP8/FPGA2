@@ -8,11 +8,11 @@ neuralNetwork: $(OBJFILES)
 	$(CC) $(CFLAGS) -pg $^ -lm -o $@
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -pg -c $< -o $@
 
 timers_b.c: timers_b.h
 
 clean:
-	rm -f *.o neuralNetwork gmon.out resnet.prof
+	rm -f *.o neuralNetwork gmon.out resnet.prof      
 
 .PHONY: all clean
