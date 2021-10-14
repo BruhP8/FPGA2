@@ -1,0 +1,20 @@
+Main.c
+
+    5 fonctions calculate_layer()
+        chaque fonction calcule les valeurs pour chaque neurone de la couche suivante
+        il y a 5 layers donc 5 fonctions calculate_layer
+
+    main :
+        lance les calculs des poids et potentiels de chaque couche puis identifie le neurone de sortie ayant le 
+        plus fort potentiel afin de déterminer le chiffre reconnu.
+
+Timers_b.c
+    Librairie de fonctions de chrnométrage en temps cpu selon l'architecture de la machine
+
+Fonctions_ES.c
+    InitHostMem :
+        association des poids initiaux aux neurones de chaque couche en fonction des fichiers .wei fournis
+
+hon ah kompilé sa marsh lol
+
+avec gprof
