@@ -53,4 +53,4 @@ dkms.conf
 
 neuralNetwork
 gmon.out 
-resnet.out
+resnet.prof
