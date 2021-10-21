@@ -29,7 +29,7 @@
 /* or compile, for example, with the '-DUNIX' option.          */
 /***************************************************************/
 /* #define TIMER_Amiga       */
-/* #define TIMER_UNIX        */
+#define TIMER_UNIX       
 /* #define TIMER_UNIX_Old    */
 /* #define TIMER_VMS         */
 /* #define TIMER_BORLAND_C   */
@@ -842,14 +842,14 @@ double dcycle(void)
 #undef PPC_TB
 #endif
 
-#if defined(TIMER_WIN64)
+/*#if defined(TIMER_WIN64)
 #include <time.h>
 
 double dtime(void)
-/* ------------ */
 {
 	clock_t t1;
 	t1 = clock();
 	return ( ((double)t1)/CLOCKS_PER_SEC);
 }
-#endif
+#endif*/
+
