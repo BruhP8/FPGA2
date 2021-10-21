@@ -1,0 +1,42 @@
+Main.c
+
+    5 fonctions calculate_layer()
+        chaque fonction calcule les valeurs pour chaque neurone de la couche suivante
+        il y a 5 layers donc 5 fonctions calculate_layer
+
+    main :
+        lance les calculs des poids et potentiels de chaque couche puis identifie le neurone de sortie ayant le 
+        plus fort potentiel afin de déterminer le chiffre reconnu.
+
+Timers_b.c
+    Librairie de fonctions de chrnométrage en temps cpu selon l'architecture de la machine
+
+Fonctions_ES.c
+    InitHostMem :
+        association des poids initiaux aux neurones de chaque couche en fonction des fichiers .wei fournis
+
+hon ah kompilé sa marsh lol
+
+avec gprof, l'intervalle de mesure est plus grand que le temps d'éxécution du programme (gprof mesure toutes les 
+0.01 secondes, or le programme s'exécute en environ 0.005 secondes), le profileur n'est donc pas adapté.
+En faisant tourner dans une boucle de 10000 itérations, on obtient la répartition suivante :
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  us/call  us/call  name    
+ 54.87      5.01     5.01    10000   501.47   501.47  calculateLayer3
+ 37.53      8.44     3.43    10000   343.01   343.01  calculateLayer4
+  7.46      9.13     0.68    10000    68.20    68.20  calculateLayer2
+  0.33      9.16     0.03    10000     3.01     3.01  calculateLayer5
+  0.11      9.17     0.01    10000     1.00     1.00  InitHostMem
+  0.00      9.17     0.00    10000     0.00     0.00  calculateLayer1
+
+Avec Dtime(), on obtient la répartition suivante, toujours pour 1000 exécutions :
+	Total : 9.9830380000
+	 Init : 0.5273700000
+	   L1 : 0.0030780000
+	   L2 : 0.9678740000
+	   L3 : 5.1366710000
+	   L4 : 3.3058910000
+	   L5 : 0.0308240000
+
+Les résultats sont similaires.
