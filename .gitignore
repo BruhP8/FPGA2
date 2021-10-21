@@ -54,3 +54,5 @@ dkms.conf
 neuralNetwork
 gmon.out 
 resnet.prof
+vivado.jou
+vivado.log
