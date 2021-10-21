@@ -5,10 +5,10 @@
 #include <float.h>
 #include <math.h>
 #include "timers_b.h"
+#include"wei.h"
 
 #define IMGWIDTH 29
 #define IMGHEIGHT 29
-#define tour 10000
 
 #define SIGMOID(x) (1.7159*tanh(0.66666667*x))
 #define DSIGMOID(S) (0.66666667/1.7159*(1.7159+(S))*(1.7159-(S)))  
@@ -19,15 +19,8 @@ void calculateLayer3(float* Layer2_Neurons_CPU, float* Layer2_Weights_CPU, float
 void calculateLayer4(float* Layer3_Neurons_CPU, float* Layer3_Weights_CPU, float* Layer4_Neurons_CPU);
 void calculateLayer5(float* Layer4_Neurons_CPU, float* Layer4_Weights_CPU, double* Layer5_Neurons_CPU);
 
-void InitHostMem(float *Layer1_Weights_CPU,float *Layer2_Weights_CPU, float *Layer3_Weights_CPU,float *Layer4_Weights_CPU);
-
 int main(int argc, char** argv){
 
-	float 
-		Layer1_Weights_CPU[(5*5+1)*6],
-		Layer2_Weights_CPU[(5*5+1)*6*50], 
-		Layer3_Weights_CPU[(5*5*50+1)*100], 
-		Layer4_Weights_CPU[(100+1)*10];
 
 	float 
 		Layer1_Neurons_CPU[IMGWIDTH*IMGHEIGHT],
@@ -46,7 +39,7 @@ int main(int argc, char** argv){
 	
 	// caractère "2"
 	
-	/*1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -74,7 +67,7 @@ int main(int argc, char** argv){
 	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1*/
+	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 	
 	// caractère "3"
 	/*1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -109,7 +102,7 @@ int main(int argc, char** argv){
 	
 	// caractère "8"
 
-	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+	/*1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -141,44 +134,47 @@ int main(int argc, char** argv){
 //*/
 	};
 
-	double t1, t2, tstart;
+	double t1, t2, t_layer1 = 0, t_layer2 = 0, t_layer3 = 0, t_layer4 = 0, t_layer5 = 0, t_tot = 0, t_init = 0, t_start = 0;
 
 
 	for(int i = 0; i < 10000; i++){
-		//t1 = dtime();
-		//tstart = t1;
-		InitHostMem(Layer1_Weights_CPU,Layer2_Weights_CPU,Layer3_Weights_CPU,Layer4_Weights_CPU);
-		//t2 = dtime();
-		//fprintf(stderr, "InitHostMem : %.10f\n", t2 - t1);
 
-		//t1= dtime();
+		t1= dtime();
+		t_start = t1;
     	calculateLayer1(Input, Layer1_Neurons_CPU);
-		//t2 = dtime();
-		//fprintf(stderr, "Layer1 : %.10f\n", t2 - t1);
+		t2 = dtime();
+		t_layer1 += t2 - t1;
 
-		//t1 = dtime();
+		t1 = dtime();
     	calculateLayer2(Layer1_Neurons_CPU, Layer1_Weights_CPU, Layer2_Neurons_CPU);
-		//t2 = dtime();
-		//fprintf(stderr, "Layer2 : %.10f\n", t2 - t1);
+		t2 = dtime();
+		t_layer2 += t2 - t1;
 
-		//t1 = dtime();
+		t1 = dtime();
 		calculateLayer3(Layer2_Neurons_CPU, Layer2_Weights_CPU, Layer3_Neurons_CPU);
-		//t2 = dtime();
-		//fprintf(stderr, "Layer3 : %.10f\n", t2 - t1);
+		t2 = dtime();
+		t_layer3 += t2 - t1;
 
-		//t1 = dtime();
+		t1 = dtime();
 		calculateLayer4(Layer3_Neurons_CPU, Layer3_Weights_CPU, Layer4_Neurons_CPU);
-		//t2 = dtime();
-		//fprintf(stderr, "Layer4 : %.10f\n", t2 - t1);
+		t2 = dtime();
+		t_layer4 += t2 - t1;
 
-		//t1 = dtime();
+		t1 = dtime();
 		calculateLayer5(Layer4_Neurons_CPU, Layer4_Weights_CPU, Layer5_Neurons_CPU);
-		//t2 = dtime();
-		//fprintf(stderr, "Layer5 : %.10f\n", t2 - t1);
+		t2 = dtime();
+		t_layer5 += t2 - t1;
 
-		//fprintf(stderr, "	Total : %.10f\n", t2 - tstart);
+		t_tot += t2 - t_start;
 	}
 	
+	fprintf(stderr, "	Total : %.10f\n", t_tot);
+	fprintf(stderr, "	 Init : %.10f\n", t_init);
+	fprintf(stderr, "	   L1 : %.10f\n", t_layer1);
+	fprintf(stderr, "	   L2 : %.10f\n", t_layer2);
+	fprintf(stderr, "	   L3 : %.10f\n", t_layer3);
+	fprintf(stderr, "	   L4 : %.10f\n", t_layer4);
+	fprintf(stderr, "	   L5 : %.10f\n", t_layer5);
 	// valeur minimale d'un float
 	scoremax = FLT_MIN;
 	int indexmax=-1;

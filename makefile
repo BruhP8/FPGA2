@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall
-OBJFILES = main.o fonctions_ES.o timers_b.o
+OBJFILES = main.o fonctions_ES.o timers_b.o wei.o
 
 all: neuralNetwork
 
