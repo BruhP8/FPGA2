@@ -31,12 +31,12 @@ En faisant tourner dans une boucle de 10000 itérations, on obtient la répartit
   0.00      9.17     0.00    10000     0.00     0.00  calculateLayer1
 
 Avec Dtime(), on obtient la répartition suivante, toujours pour 1000 exécutions :
-	Total : 9.9830380000
-	 Init : 0.5273700000
-	   L1 : 0.0030780000
-	   L2 : 0.9678740000
-	   L3 : 5.1366710000
-	   L4 : 3.3058910000
-	   L5 : 0.0308240000
+    Total : 14.1352400000
+     Init : 0.8273960000
+        L1 : 0.0042110000
+        L2 : 1.3279130000
+        L3 : 7.2807160000
+        L4 : 4.6355440000
+        L5 : 0.0431910000
 
 Les résultats sont similaires.
