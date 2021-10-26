@@ -23,20 +23,19 @@ En faisant tourner dans une boucle de 10000 itérations, on obtient la répartit
 
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  us/call  us/call  name    
- 54.87      5.01     5.01    10000   501.47   501.47  calculateLayer3
- 37.53      8.44     3.43    10000   343.01   343.01  calculateLayer4
-  7.46      9.13     0.68    10000    68.20    68.20  calculateLayer2
-  0.33      9.16     0.03    10000     3.01     3.01  calculateLayer5
-  0.11      9.17     0.01    10000     1.00     1.00  InitHostMem
-  0.00      9.17     0.00    10000     0.00     0.00  calculateLayer1
+ 57.09      7.05     7.05    10000   705.00   705.00  calculateLayer3
+ 34.49     11.31     4.26    10000   426.00   426.00  calculateLayer4
+  8.18     12.32     1.01    10000   101.00   101.00  calculateLayer2
+  0.24     12.35     0.03    10000     3.00     3.00  calculateLayer5
+  0.00     12.35     0.00    10000     0.00     0.00  InitHostMem
+  0.00     12.35     0.00    10000     0.00     0.00  calculateLayer1
 
-Avec Dtime(), on obtient la répartition suivante, toujours pour 1000 exécutions :
-    Total : 14.1352400000
-     Init : 0.8273960000
-        L1 : 0.0042110000
-        L2 : 1.3279130000
-        L3 : 7.2807160000
-        L4 : 4.6355440000
-        L5 : 0.0431910000
+Avec Dtime(), on obtient la répartition suivante, toujours pour 10000 exécutions :
+    L3 : 7.2366870000
+    L4 : 4.6107110000
+    L2 : 1.3202630000
+  Init : 0.8084680000
+    L5 : 0.0431170000
+    L1 : 0.0041850000
 
 Les résultats sont similaires.

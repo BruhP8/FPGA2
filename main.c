@@ -18,9 +18,16 @@ void calculateLayer2(float* Layer1_Neurons_CPU, float* Layer1_Weights_CPU, float
 void calculateLayer3(float* Layer2_Neurons_CPU, float* Layer2_Weights_CPU, float* Layer3_Neurons_CPU);
 void calculateLayer4(float* Layer3_Neurons_CPU, float* Layer3_Weights_CPU, float* Layer4_Neurons_CPU);
 void calculateLayer5(float* Layer4_Neurons_CPU, float* Layer4_Weights_CPU, double* Layer5_Neurons_CPU);
+//void InitHostMem(float *Layer1_Weights_CPU,float *Layer2_Weights_CPU, float *Layer3_Weights_CPU,float *Layer4_Weights_CPU);
+
 
 int main(int argc, char** argv){
-
+	
+	float 
+		Layer1_Weights_CPU[(5*5+1)*6],
+		Layer2_Weights_CPU[(5*5+1)*6*50], 
+		Layer3_Weights_CPU[(5*5*50+1)*100], 
+		Layer4_Weights_CPU[(100+1)*10];
 
 	float 
 		Layer1_Neurons_CPU[IMGWIDTH*IMGHEIGHT],
@@ -134,13 +141,17 @@ int main(int argc, char** argv){
 //*/
 	};
 
-	double t1, t2, t_layer1 = 0, t_layer2 = 0, t_layer3 = 0, t_layer4 = 0, t_layer5 = 0, t_tot = 0, t_init = 0, t_start = 0;
+	double t1, t2, t_layer1 = 0, t_layer2 = 0, t_layer3 = 0, t_layer4 = 0, t_layer5 = 0, t_tot = 0, t_init = 0;
 
 
 	for(int i = 0; i < 10000; i++){
 
+		//t1 = dtime();
+		//InitHostMem(Layer1_Weights_CPU,Layer2_Weights_CPU,Layer3_Weights_CPU,Layer4_Weights_CPU);
+		//t2 = dtime();
+		//t_init += t2 - t1;
+
 		t1= dtime();
-		t_start = t1;
     	calculateLayer1(Input, Layer1_Neurons_CPU);
 		t2 = dtime();
 		t_layer1 += t2 - t1;
@@ -165,16 +176,13 @@ int main(int argc, char** argv){
 		t2 = dtime();
 		t_layer5 += t2 - t1;
 
-		t_tot += t2 - t_start;
 	}
-	
-	fprintf(stderr, "	Total : %.10f\n", t_tot);
-	fprintf(stderr, "	 Init : %.10f\n", t_init);
-	fprintf(stderr, "	   L1 : %.10f\n", t_layer1);
-	fprintf(stderr, "	   L2 : %.10f\n", t_layer2);
 	fprintf(stderr, "	   L3 : %.10f\n", t_layer3);
 	fprintf(stderr, "	   L4 : %.10f\n", t_layer4);
+	fprintf(stderr, "	   L2 : %.10f\n", t_layer2);
 	fprintf(stderr, "	   L5 : %.10f\n", t_layer5);
+	//fprintf(stderr, "	 Init : %.10f\n", t_init);
+	fprintf(stderr, "	   L1 : %.10f\n", t_layer1);
 	// valeur minimale d'un float
 	scoremax = FLT_MIN;
 	int indexmax=-1;
