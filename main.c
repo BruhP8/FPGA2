@@ -23,11 +23,11 @@ void calculateLayer5(float* Layer4_Neurons_CPU, float* Layer4_Weights_CPU, doubl
 
 int main(int argc, char** argv){
 	
-	float 
-		Layer1_Weights_CPU[(5*5+1)*6],
-		Layer2_Weights_CPU[(5*5+1)*6*50], 
-		Layer3_Weights_CPU[(5*5*50+1)*100], 
-		Layer4_Weights_CPU[(100+1)*10];
+	//float 
+	//	Layer1_Weights_CPU[(5*5+1)*6],
+	//	Layer2_Weights_CPU[(5*5+1)*6*50], 
+	//	Layer3_Weights_CPU[(5*5*50+1)*100], 
+	//	Layer4_Weights_CPU[(100+1)*10];
 
 	float 
 		Layer1_Neurons_CPU[IMGWIDTH*IMGHEIGHT],
@@ -143,8 +143,12 @@ int main(int argc, char** argv){
 
 	double t1, t2, t_layer1 = 0, t_layer2 = 0, t_layer3 = 0, t_layer4 = 0, t_layer5 = 0, t_tot = 0, t_init = 0;
 
-
-	for(int i = 0; i < 10000; i++){
+	for (size_t i = 0; i < (5*5+1) *6; i++)
+	{
+		printf("%f \n", Layer1_Weights_CPU[i]);
+	}
+	
+	for(int i = 0; i < 10; i++){
 
 		//t1 = dtime();
 		//InitHostMem(Layer1_Weights_CPU,Layer2_Weights_CPU,Layer3_Weights_CPU,Layer4_Weights_CPU);

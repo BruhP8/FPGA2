@@ -1,4 +1,17 @@
 
 
+modifications :
+    weitgh_extract : création d'un header contentant les poids a partir des .wei pour eviter d'avoir besoin d'un
+                     filesystem
 
-tan.h -> musl.h, include tan, plus des fonctions dedans
+    Depuis SDK : C/C++ Build -> settings -> ARMv7 gcc linker -> Librairies -> add "m" pour ajouter la lib math et permettre l'utilisation 
+                 de tanh
+
+    Puis click droit sur le projet, Run As et Launch On Hardware (System Debugger).
+    La sortie de fin d'exec est envoyée via le port UART sur la TTY de l'ordinateur sur lequel le port est branché. Dans notre cas, ttyACM0.
+    Par défaut, la sortie UART est règlée a 115200 bauds.
+
+    Pour la récupérer, on peut utiliser Minicom avec la commande
+        minicom -D /dev/ttyACM0 -b 115200
+
+    TODO : revert profiling changes that fucked up the working stuff

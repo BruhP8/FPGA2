@@ -59,32 +59,32 @@ int writeWeight(){
 
     for(int i = 0; i < (5 * 5 + 1 ) *6 ; i++){
         fprintf(f, "%f", Layer1_Weights_CPU[i]);
-        if(i < (5 * 5 +1) *6)
-            fprintf(f, ", ");
+        if(i < ((5 * 5 +1) *6)-1)
+            fprintf(f, ", \n");
     }
     fprintf(f, "};\nfloat Layer2_Weights_CPU[(5*5+1)*6*50] = {");
 
     // layer 2 loop 
     for(int i = 0; i < (5*5+1)*6*50 ; i++){
         fprintf(f, "%f", Layer2_Weights_CPU[i]);
-        if(i < (5*5+1)*6*50)
-            fprintf(f, ", ");
+        if(i < ((5*5+1)*6*50)-1)
+            fprintf(f, ", \n");
     }
     fprintf(f, "};\nfloat Layer3_Weights_CPU[(5*5*50+1)*100]= {");
 
     // layer 3 loop
     for(int i = 0; i < (5*5*50+1)*100 ; i++){
         fprintf(f, "%f", Layer3_Weights_CPU[i]);
-        if(i < (5*5*50+1)*100)
-            fprintf(f, ", ");
+        if(i < ((5*5*50+1)*100)-1)
+            fprintf(f, ", \n");
     }
     fprintf(f, "};\nfloat Layer4_Weights_CPU[(100+1)*10] = {");
 
     // layer 4 loop 
     for(int i = 0; i < (100+1)*10 ; i++){
         fprintf(f, "%f", Layer4_Weights_CPU[i]);
-        if(i < (100+1)*10)
-            fprintf(f, ", ");
+        if(i < ((100+1)*10) - 1)
+            fprintf(f, ", \n");
     }
     fprintf(f, "};");
 
