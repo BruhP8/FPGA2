@@ -42,16 +42,16 @@ void InitHostMem()
 }
 
 int writeWeight(){
-    // TODO : create .c and .h files containing data
-    // TODO : fill them up with each array
     FILE * f;
     // open or create header file
     f = fopen("../wei.h", "w+");
-
+    // declare each weight arrays in header file
     fprintf(f, "#ifndef WEI_H\n#define WEI_H\nextern float Layer1_Weights_CPU[(5*5+1)*6],\nLayer2_Weights_CPU[(5*5+1)*6*50],\nLayer3_Weights_CPU[(5*5*50+1)*100],\nLayer4_Weights_CPU[(100+1)*10];\n#endif");
     fclose(f);
 
+    // open of create code file
     f = fopen("../wei.c", "w+");
+    // include previously created header
     fprintf(f, "#include\"wei.h\"\n");
 
     // layer 1 loop
@@ -96,7 +96,7 @@ int main(int argc, char const *argv[])
 {
     // load files
     InitHostMem();
-    // write weights to header file 
+    // write weights to header and code files 
     writeWeight();
     return 0;
 }

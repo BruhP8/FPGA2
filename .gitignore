@@ -56,3 +56,7 @@ gmon.out
 resnet.prof
 vivado.jou
 vivado.log
+
+projet/projet.sdk/.metadata
+projet/projet.runs
+projet/projet.cache

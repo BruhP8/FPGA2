@@ -14,27 +14,21 @@ modifications :
     Pour la récupérer, on peut utiliser Minicom avec la commande
         minicom -D /dev/ttyACM0 -b 115200
 
-    TODO : revert profiling changes that fucked up the working stuff
 
 Layer 1 took 3712 clock cycles
-
   Or 5.57 us.
 
 Layer 2 took 1495386 clock cycles
   Or 2245.32 us.
-Layer 3 took 9467816 clock cycles
 
+Layer 3 took 9467816 clock cycles
   Or 14215.94 us.
 
 Layer 4 took 6572460 clock cycles
-
   Or 9868.56 us.
 
 Layer 5 took 34430 clock cycles
   Or 51.70 us.
 
-
-
- Total took 18095410 clock cycles
-
+Total took 18095410 clock cycles
   Or 27170.29 us.

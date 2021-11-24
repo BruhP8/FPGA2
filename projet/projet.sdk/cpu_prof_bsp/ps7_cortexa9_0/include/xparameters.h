@@ -220,29 +220,6 @@
 
 /******************************************************************/
 
-/* Definitions for driver GPIO */
-#define XPAR_XGPIO_NUM_INSTANCES 1
-
-/* Definitions for peripheral AXI_GPIO_0 */
-#define XPAR_AXI_GPIO_0_BASEADDR 0x41200000
-#define XPAR_AXI_GPIO_0_HIGHADDR 0x4120FFFF
-#define XPAR_AXI_GPIO_0_DEVICE_ID 0
-#define XPAR_AXI_GPIO_0_INTERRUPT_PRESENT 0
-#define XPAR_AXI_GPIO_0_IS_DUAL 0
-
-
-/******************************************************************/
-
-/* Canonical definitions for peripheral AXI_GPIO_0 */
-#define XPAR_GPIO_0_BASEADDR 0x41200000
-#define XPAR_GPIO_0_HIGHADDR 0x4120FFFF
-#define XPAR_GPIO_0_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
-#define XPAR_GPIO_0_INTERRUPT_PRESENT 0
-#define XPAR_GPIO_0_IS_DUAL 0
-
-
-/******************************************************************/
-
 /* Definitions for driver GPIOPS */
 #define XPAR_XGPIOPS_NUM_INSTANCES 1
 
@@ -258,6 +235,17 @@
 #define XPAR_XGPIOPS_0_DEVICE_ID XPAR_PS7_GPIO_0_DEVICE_ID
 #define XPAR_XGPIOPS_0_BASEADDR 0xE000A000
 #define XPAR_XGPIOPS_0_HIGHADDR 0xE000AFFF
+
+
+/******************************************************************/
+
+/* Definitions for driver LED_CONTROLLER */
+#define XPAR_LED_CONTROLLER_NUM_INSTANCES 1
+
+/* Definitions for peripheral LED_CONTROLLER_0 */
+#define XPAR_LED_CONTROLLER_0_DEVICE_ID 0
+#define XPAR_LED_CONTROLLER_0_S00_AXI_BASEADDR 0x43C00000
+#define XPAR_LED_CONTROLLER_0_S00_AXI_HIGHADDR 0x43C0FFFF
 
 
 /******************************************************************/

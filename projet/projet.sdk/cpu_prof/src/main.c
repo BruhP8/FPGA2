@@ -7,7 +7,20 @@
 #include "platform.h"
 #include "xtime_l.h"
 #include "timers_b.h"
-#include"wei.h"
+#include "wei.h"
+#include "led_controller.h"
+#include "xparameters.h"
+#include "xil_io.h"
+#include <sleep.h>
+
+// Define maximum LED value (2^8)-1 = 255
+#define LED_LIMIT 255
+// Define delay length
+#define DELAY 10000000
+
+/* 	Define the base memory address of the led_controller IP core */
+#define LED_BASE XPAR_LED_CONTROLLER_0_S00_AXI_BASEADDR
+
 
 #define IMGWIDTH 29
 #define IMGHEIGHT 29
@@ -20,11 +33,15 @@ void calculateLayer2(float* Layer1_Neurons_CPU, float* Layer1_Weights_CPU, float
 void calculateLayer3(float* Layer2_Neurons_CPU, float* Layer2_Weights_CPU, float* Layer3_Neurons_CPU);
 void calculateLayer4(float* Layer3_Neurons_CPU, float* Layer3_Weights_CPU, float* Layer4_Neurons_CPU);
 void calculateLayer5(float* Layer4_Neurons_CPU, float* Layer4_Weights_CPU, double* Layer5_Neurons_CPU);
+int  led(void);
 //void InitHostMem(float *Layer1_Weights_CPU,float *Layer2_Weights_CPU, float *Layer3_Weights_CPU,float *Layer4_Weights_CPU);
 
 
 int main(int argc, char** argv){
 	//init_platform();
+	LED_CONTROLLER_mWriteReg(LED_BASE, 0, 0);
+	for(int i=0;i<DELAY;i++);
+
 	float
 		Layer1_Neurons_CPU[IMGWIDTH*IMGHEIGHT],
 		Layer2_Neurons_CPU[6*13*13],
@@ -101,11 +118,11 @@ int main(int argc, char** argv){
 	1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1*/
+	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 	
 	// caractère "8"
 
-	/*1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -133,8 +150,8 @@ int main(int argc, char** argv){
 	1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 	1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-//*/
+	1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1*/
+//
 	};
 	//for(int i = 0; i < 10000; i++){
 		XTime tstart, tend, tglob;
@@ -171,8 +188,6 @@ int main(int argc, char** argv){
 		printf("  Or %.2f us.\n", 1.0 * (tend - tstart) / (COUNTS_PER_SECOND/1000000));
 		printf("\n Total took %llu clock cycles\n", 2*(tend- tglob));
 		printf("  Or %.2f us.\n", 1.0 * (tend - tglob) / (COUNTS_PER_SECOND/1000000));
-
-
 	//}
 
 
@@ -194,7 +209,15 @@ int main(int argc, char** argv){
 	}
 	printf("Le resultat est : %d \n\r",indexmax);
 
+	if(indexmax == -1){
+		LED_CONTROLLER_mWriteReg(LED_BASE, 0, LED_LIMIT);
+		for(i=0;i<DELAY;i++);
 
+	} else {
+		LED_CONTROLLER_mWriteReg(LED_BASE, 0, indexmax);
+		for(i=0;i<DELAY;i++);
+
+	}
 	//cleanup_platform();
 
 	return 0;
@@ -268,4 +291,31 @@ void calculateLayer5(float* Layer4_Neurons_CPU, float* Layer4_Weights_CPU, doubl
 }
 
 
+
+/* main function */
+int led(void){
+	/* unsigned 32-bit variables for storing current LED value */
+	u32 led_val = 0;
+	int i=0;
+
+	printf("led_controller IP test begin.\r\n");
+	printf("--------------------------------------------\r\n\n");
+
+	/* Loop forever */
+	while(1){
+			while(led_val<=LED_LIMIT){
+				/* Print value to terminal */
+				printf("LED value: %ld\r\n", led_val);
+				/* Write value to led_controller IP core using generated driver function */
+				LED_CONTROLLER_mWriteReg(LED_BASE, 0, led_val);
+				/* increment LED value */
+				led_val++;
+				/* run a simple delay to allow changes on LEDs to be visible */
+				for(i=0;i<DELAY;i++);
+			}
+			/* Reset LED value to zero */
+			led_val = 0;
+		}
+	return 1;
+}
  

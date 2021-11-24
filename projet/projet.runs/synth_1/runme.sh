@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log first_zynq_system_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source first_zynq_system_wrapper.tcl
+EAStep vivado -log led_test_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_test_wrapper.tcl

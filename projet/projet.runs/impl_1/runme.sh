@@ -38,6 +38,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log first_zynq_system_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source first_zynq_system_wrapper.tcl -notrace
+EAStep vivado -log led_test_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source led_test_wrapper.tcl -notrace
 
 

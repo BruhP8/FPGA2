@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="false" key="first_zynq_system_wrapper_hw_platform_0-partial_bit"/>
-	<item value="first_zynq_system_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="false" key="led_test_wrapper_hw_platform_0-partial_bit"/>
+	<item value="led_test_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="" key="led_test_wrapper_hw_platform_0-bmmFile"/>
+	<item value="Auto Detect" key="led_test_wrapper_hw_platform_0-device"/>
 	<item value="first_zynq_system_wrapper.bit" key="first_zynq_system_wrapper_hw_platform_0-bitFile"/>
 	<item value="Local" key="first_zynq_system_wrapper_hw_platform_0-target"/>
 	<item value="Auto Detect" key="first_zynq_system_wrapper_hw_platform_0-device"/>
+	<item value="led_test_wrapper.bit" key="led_test_wrapper_hw_platform_0-bitFile"/>
 	<item value="" key="first_zynq_system_wrapper_hw_platform_0-bmmFile"/>
+	<item value="Local" key="led_test_wrapper_hw_platform_0-target"/>
 </section>
