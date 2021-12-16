@@ -33,7 +33,6 @@ void calculateLayer2(float* Layer1_Neurons_CPU, float* Layer1_Weights_CPU, float
 void calculateLayer3(float* Layer2_Neurons_CPU, float* Layer2_Weights_CPU, float* Layer3_Neurons_CPU);
 void calculateLayer4(float* Layer3_Neurons_CPU, float* Layer3_Weights_CPU, float* Layer4_Neurons_CPU);
 void calculateLayer5(float* Layer4_Neurons_CPU, float* Layer4_Weights_CPU, double* Layer5_Neurons_CPU);
-int  led(void);
 //void InitHostMem(float *Layer1_Weights_CPU,float *Layer2_Weights_CPU, float *Layer3_Weights_CPU,float *Layer4_Weights_CPU);
 
 
@@ -55,6 +54,7 @@ int main(int argc, char** argv){
 	
 	double scoremax;
 	
+
 	float Input[29*29] = {
 	
 	// caractère "2"
@@ -290,32 +290,4 @@ void calculateLayer5(float* Layer4_Neurons_CPU, float* Layer4_Weights_CPU, doubl
 	}
 }
 
-
-
-/* main function */
-int led(void){
-	/* unsigned 32-bit variables for storing current LED value */
-	u32 led_val = 0;
-	int i=0;
-
-	printf("led_controller IP test begin.\r\n");
-	printf("--------------------------------------------\r\n\n");
-
-	/* Loop forever */
-	while(1){
-			while(led_val<=LED_LIMIT){
-				/* Print value to terminal */
-				printf("LED value: %ld\r\n", led_val);
-				/* Write value to led_controller IP core using generated driver function */
-				LED_CONTROLLER_mWriteReg(LED_BASE, 0, led_val);
-				/* increment LED value */
-				led_val++;
-				/* run a simple delay to allow changes on LEDs to be visible */
-				for(i=0;i<DELAY;i++);
-			}
-			/* Reset LED value to zero */
-			led_val = 0;
-		}
-	return 1;
-}
  

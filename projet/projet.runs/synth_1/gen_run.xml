@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1637772543">
-  <File Type="VDS-TIMING-PB" Name="led_test_wrapper_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="led_test_wrapper_timing_summary_synth.rpt"/>
+  <File Type="PA-TCL" Name="led_test_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="led_test_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="led_test_wrapper.vds"/>
   <File Type="RDS-DCP" Name="led_test_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="led_test_wrapper_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="led_test_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="led_test_wrapper_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="led_test_wrapper.vds"/>
-  <File Type="REPORTS-TCL" Name="led_test_wrapper_reports.tcl"/>
-  <File Type="PA-TCL" Name="led_test_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/led_test/led_test.bd">

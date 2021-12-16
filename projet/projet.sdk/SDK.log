@@ -7447,3 +7447,866 @@ con
 ----------------End of Script----------------
 
 13:57:10 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:03:23 INFO  : Disconnected from the channel tcfchan#1.
+14:03:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:03:24 INFO  : 'fpga -state' command is executed.
+14:03:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:03:25 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:03:25 INFO  : 'jtag frequency' command is executed.
+14:03:25 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:03:25 INFO  : Context for 'APU' is selected.
+14:03:27 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:03:27 INFO  : 'configparams force-mem-access 1' command is executed.
+14:03:27 INFO  : Context for 'APU' is selected.
+14:03:27 INFO  : 'stop' command is executed.
+14:03:27 INFO  : 'ps7_init' command is executed.
+14:03:27 INFO  : 'ps7_post_config' command is executed.
+14:03:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:03:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:03:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:03:28 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:03:28 INFO  : 'configparams force-mem-access 0' command is executed.
+14:03:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:03:28 INFO  : Memory regions updated for context APU
+14:03:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:03:28 INFO  : 'con' command is executed.
+14:03:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:03:28 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:03:39 INFO  : Disconnected from the channel tcfchan#2.
+14:03:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:03:40 INFO  : 'fpga -state' command is executed.
+14:03:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:03:40 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:03:40 INFO  : 'jtag frequency' command is executed.
+14:03:40 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:03:40 INFO  : Context for 'APU' is selected.
+14:03:40 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:03:40 INFO  : 'configparams force-mem-access 1' command is executed.
+14:03:40 INFO  : Context for 'APU' is selected.
+14:03:40 INFO  : 'stop' command is executed.
+14:03:41 INFO  : 'ps7_init' command is executed.
+14:03:41 INFO  : 'ps7_post_config' command is executed.
+14:03:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:03:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:03:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:03:42 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:03:42 INFO  : 'configparams force-mem-access 0' command is executed.
+14:03:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:03:42 INFO  : Memory regions updated for context APU
+14:03:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:03:43 INFO  : 'con' command is executed.
+14:03:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:03:43 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:04:11 INFO  : Disconnected from the channel tcfchan#3.
+14:04:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:04:12 INFO  : 'fpga -state' command is executed.
+14:04:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:04:12 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:04:12 INFO  : 'jtag frequency' command is executed.
+14:04:12 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:04:12 INFO  : Context for 'APU' is selected.
+14:04:12 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:04:12 INFO  : 'configparams force-mem-access 1' command is executed.
+14:04:12 INFO  : Context for 'APU' is selected.
+14:04:12 INFO  : 'stop' command is executed.
+14:04:13 INFO  : 'ps7_init' command is executed.
+14:04:13 INFO  : 'ps7_post_config' command is executed.
+14:04:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:04:13 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:04:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:04:14 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:04:14 INFO  : 'configparams force-mem-access 0' command is executed.
+14:04:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:04:14 INFO  : Memory regions updated for context APU
+14:04:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:04:14 INFO  : 'con' command is executed.
+14:04:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:04:14 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:05:34 INFO  : Disconnected from the channel tcfchan#4.
+14:05:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:05:36 INFO  : 'fpga -state' command is executed.
+14:05:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:05:36 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:05:36 INFO  : 'jtag frequency' command is executed.
+14:05:36 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:05:36 INFO  : Context for 'APU' is selected.
+14:05:36 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:05:36 INFO  : 'configparams force-mem-access 1' command is executed.
+14:05:36 INFO  : Context for 'APU' is selected.
+14:05:36 INFO  : 'stop' command is executed.
+14:05:36 INFO  : 'ps7_init' command is executed.
+14:05:36 INFO  : 'ps7_post_config' command is executed.
+14:05:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:05:37 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:05:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:05:38 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:05:38 INFO  : 'configparams force-mem-access 0' command is executed.
+14:05:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:05:38 INFO  : Memory regions updated for context APU
+14:05:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:05:38 INFO  : 'con' command is executed.
+14:05:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:05:38 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:06:06 INFO  : Disconnected from the channel tcfchan#5.
+14:06:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:06:07 INFO  : 'fpga -state' command is executed.
+14:06:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:06:07 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:06:07 INFO  : 'jtag frequency' command is executed.
+14:06:07 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:06:07 INFO  : Context for 'APU' is selected.
+14:06:07 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:06:07 INFO  : 'configparams force-mem-access 1' command is executed.
+14:06:07 INFO  : Context for 'APU' is selected.
+14:06:08 INFO  : 'stop' command is executed.
+14:06:08 ERROR : Memory read error at 0xF8007080. AHB AP transaction error, DAP status f0000021
+14:06:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+14:06:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:06:22 INFO  : 'fpga -state' command is executed.
+14:06:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:06:22 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:06:22 INFO  : 'jtag frequency' command is executed.
+14:06:22 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:06:22 INFO  : Context for 'APU' is selected.
+14:06:22 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:06:22 INFO  : 'configparams force-mem-access 1' command is executed.
+14:06:22 INFO  : Context for 'APU' is selected.
+14:06:22 INFO  : 'stop' command is executed.
+14:06:22 ERROR : AP transaction error, DAP status f0000021
+14:06:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+14:06:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:06:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:06:41 ERROR : fpga configuration failed. DONE PIN is not HIGH
+14:07:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:07:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:07:21 INFO  : FPGA configured successfully with bitstream "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/led_test_wrapper.bit"
+14:07:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:07:31 INFO  : 'fpga -state' command is executed.
+14:07:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:07:31 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:07:31 INFO  : 'jtag frequency' command is executed.
+14:07:31 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:07:31 INFO  : Context for 'APU' is selected.
+14:07:31 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:07:31 INFO  : 'configparams force-mem-access 1' command is executed.
+14:07:31 INFO  : Context for 'APU' is selected.
+14:07:31 INFO  : 'stop' command is executed.
+14:07:32 INFO  : 'ps7_init' command is executed.
+14:07:32 INFO  : 'ps7_post_config' command is executed.
+14:07:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:07:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:07:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:07:33 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:07:33 INFO  : 'configparams force-mem-access 0' command is executed.
+14:07:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:07:33 INFO  : Memory regions updated for context APU
+14:07:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:07:33 INFO  : 'con' command is executed.
+14:07:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:07:33 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:07:48 INFO  : Disconnected from the channel tcfchan#6.
+14:07:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:07:49 INFO  : 'fpga -state' command is executed.
+14:07:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:07:49 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:07:49 INFO  : 'jtag frequency' command is executed.
+14:07:49 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:07:49 INFO  : Context for 'APU' is selected.
+14:07:49 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:07:49 INFO  : 'configparams force-mem-access 1' command is executed.
+14:07:49 INFO  : Context for 'APU' is selected.
+14:07:49 INFO  : 'stop' command is executed.
+14:07:50 INFO  : 'ps7_init' command is executed.
+14:07:50 INFO  : 'ps7_post_config' command is executed.
+14:07:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:07:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:07:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:07:51 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:07:51 INFO  : 'configparams force-mem-access 0' command is executed.
+14:07:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:07:51 INFO  : Memory regions updated for context APU
+14:07:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:07:51 INFO  : 'con' command is executed.
+14:07:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:07:51 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:08:00 INFO  : Disconnected from the channel tcfchan#7.
+14:08:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:08:01 INFO  : 'fpga -state' command is executed.
+14:08:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:08:01 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:08:01 INFO  : 'jtag frequency' command is executed.
+14:08:01 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:08:01 INFO  : Context for 'APU' is selected.
+14:08:01 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:08:01 INFO  : 'configparams force-mem-access 1' command is executed.
+14:08:01 INFO  : Context for 'APU' is selected.
+14:08:01 INFO  : 'stop' command is executed.
+14:08:02 INFO  : 'ps7_init' command is executed.
+14:08:02 INFO  : 'ps7_post_config' command is executed.
+14:08:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:08:02 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:08:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:08:03 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:08:03 INFO  : 'configparams force-mem-access 0' command is executed.
+14:08:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:08:03 INFO  : Memory regions updated for context APU
+14:08:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:08:03 INFO  : 'con' command is executed.
+14:08:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:08:03 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:08:25 INFO  : Disconnected from the channel tcfchan#8.
+14:08:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:08:26 INFO  : 'fpga -state' command is executed.
+14:08:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:08:26 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:08:26 INFO  : 'jtag frequency' command is executed.
+14:08:26 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:08:26 INFO  : Context for 'APU' is selected.
+14:08:26 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:08:26 INFO  : 'configparams force-mem-access 1' command is executed.
+14:08:26 INFO  : Context for 'APU' is selected.
+14:08:26 INFO  : 'stop' command is executed.
+14:08:27 INFO  : 'ps7_init' command is executed.
+14:08:27 INFO  : 'ps7_post_config' command is executed.
+14:08:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:08:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:08:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:08:28 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:08:28 INFO  : 'configparams force-mem-access 0' command is executed.
+14:08:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:08:28 INFO  : Memory regions updated for context APU
+14:08:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:08:28 INFO  : 'con' command is executed.
+14:08:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:08:28 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:09:09 INFO  : Disconnected from the channel tcfchan#9.
+14:09:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:09:10 INFO  : 'fpga -state' command is executed.
+14:09:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:09:10 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:09:10 INFO  : 'jtag frequency' command is executed.
+14:09:10 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:09:10 INFO  : Context for 'APU' is selected.
+14:09:10 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:09:10 INFO  : 'configparams force-mem-access 1' command is executed.
+14:09:10 INFO  : Context for 'APU' is selected.
+14:09:10 INFO  : 'stop' command is executed.
+14:09:11 INFO  : 'ps7_init' command is executed.
+14:09:11 INFO  : 'ps7_post_config' command is executed.
+14:09:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:09:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:12 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:09:12 INFO  : 'configparams force-mem-access 0' command is executed.
+14:09:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:09:12 INFO  : Memory regions updated for context APU
+14:09:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:12 INFO  : 'con' command is executed.
+14:09:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:09:12 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:09:25 INFO  : Disconnected from the channel tcfchan#10.
+14:09:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:09:26 INFO  : 'fpga -state' command is executed.
+14:09:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:09:27 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:09:27 INFO  : 'jtag frequency' command is executed.
+14:09:27 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:09:27 INFO  : Context for 'APU' is selected.
+14:09:27 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:09:27 INFO  : 'configparams force-mem-access 1' command is executed.
+14:09:27 INFO  : Context for 'APU' is selected.
+14:09:27 INFO  : 'stop' command is executed.
+14:09:27 INFO  : 'ps7_init' command is executed.
+14:09:27 INFO  : 'ps7_post_config' command is executed.
+14:09:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:09:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:29 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:09:29 INFO  : 'configparams force-mem-access 0' command is executed.
+14:09:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:09:29 INFO  : Memory regions updated for context APU
+14:09:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:29 INFO  : 'con' command is executed.
+14:09:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:09:29 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:09:37 INFO  : Disconnected from the channel tcfchan#11.
+14:09:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:09:38 INFO  : 'fpga -state' command is executed.
+14:09:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:09:38 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:09:38 INFO  : 'jtag frequency' command is executed.
+14:09:38 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:09:38 INFO  : Context for 'APU' is selected.
+14:09:38 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:09:38 INFO  : 'configparams force-mem-access 1' command is executed.
+14:09:38 INFO  : Context for 'APU' is selected.
+14:09:38 INFO  : 'stop' command is executed.
+14:09:39 INFO  : 'ps7_init' command is executed.
+14:09:39 INFO  : 'ps7_post_config' command is executed.
+14:09:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:09:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:40 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:09:40 INFO  : 'configparams force-mem-access 0' command is executed.
+14:09:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:09:40 INFO  : Memory regions updated for context APU
+14:09:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:40 INFO  : 'con' command is executed.
+14:09:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:09:40 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:10:00 INFO  : Disconnected from the channel tcfchan#12.
+14:10:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:10:01 INFO  : 'fpga -state' command is executed.
+14:10:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:10:01 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:10:01 INFO  : 'jtag frequency' command is executed.
+14:10:01 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:10:01 INFO  : Context for 'APU' is selected.
+14:10:01 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:10:01 INFO  : 'configparams force-mem-access 1' command is executed.
+14:10:01 INFO  : Context for 'APU' is selected.
+14:10:01 INFO  : 'stop' command is executed.
+14:10:02 INFO  : 'ps7_init' command is executed.
+14:10:02 INFO  : 'ps7_post_config' command is executed.
+14:10:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:10:02 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:10:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:10:03 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:10:03 INFO  : 'configparams force-mem-access 0' command is executed.
+14:10:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:10:03 INFO  : Memory regions updated for context APU
+14:10:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:10:04 INFO  : 'con' command is executed.
+14:10:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:10:04 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:10:12 INFO  : Disconnected from the channel tcfchan#13.
+14:10:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:10:13 INFO  : 'fpga -state' command is executed.
+14:10:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:10:14 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:10:14 INFO  : 'jtag frequency' command is executed.
+14:10:14 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:10:14 INFO  : Context for 'APU' is selected.
+14:10:14 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:10:14 INFO  : 'configparams force-mem-access 1' command is executed.
+14:10:14 INFO  : Context for 'APU' is selected.
+14:10:14 INFO  : 'stop' command is executed.
+14:10:14 INFO  : 'ps7_init' command is executed.
+14:10:14 INFO  : 'ps7_post_config' command is executed.
+14:10:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:10:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:10:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:10:16 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:10:16 INFO  : 'configparams force-mem-access 0' command is executed.
+14:10:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:10:16 INFO  : Memory regions updated for context APU
+14:10:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:10:16 INFO  : 'con' command is executed.
+14:10:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:10:16 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:10:27 INFO  : Disconnected from the channel tcfchan#14.
+14:10:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:10:28 INFO  : 'fpga -state' command is executed.
+14:10:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:10:29 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:10:29 INFO  : 'jtag frequency' command is executed.
+14:10:29 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:10:29 INFO  : Context for 'APU' is selected.
+14:10:29 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:10:29 INFO  : 'configparams force-mem-access 1' command is executed.
+14:10:29 INFO  : Context for 'APU' is selected.
+14:10:29 INFO  : 'stop' command is executed.
+14:10:29 INFO  : 'ps7_init' command is executed.
+14:10:29 INFO  : 'ps7_post_config' command is executed.
+14:10:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:10:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:10:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:10:31 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:10:31 INFO  : 'configparams force-mem-access 0' command is executed.
+14:10:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:10:31 INFO  : Memory regions updated for context APU
+14:10:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:10:31 INFO  : 'con' command is executed.
+14:10:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:10:31 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:11:18 INFO  : Disconnected from the channel tcfchan#15.
+14:11:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:11:19 INFO  : 'fpga -state' command is executed.
+14:11:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:11:19 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:11:19 INFO  : 'jtag frequency' command is executed.
+14:11:19 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:11:19 INFO  : Context for 'APU' is selected.
+14:11:19 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:11:19 INFO  : 'configparams force-mem-access 1' command is executed.
+14:11:20 INFO  : Context for 'APU' is selected.
+14:11:20 INFO  : 'stop' command is executed.
+14:11:20 INFO  : 'ps7_init' command is executed.
+14:11:20 INFO  : 'ps7_post_config' command is executed.
+14:11:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:11:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:11:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:11:21 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:11:21 INFO  : 'configparams force-mem-access 0' command is executed.
+14:11:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:11:21 INFO  : Memory regions updated for context APU
+14:11:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:11:22 INFO  : 'con' command is executed.
+14:11:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:11:22 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:11:39 INFO  : Disconnected from the channel tcfchan#16.
+14:11:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:11:40 INFO  : 'fpga -state' command is executed.
+14:11:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:11:40 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:11:40 INFO  : 'jtag frequency' command is executed.
+14:11:40 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:11:40 INFO  : Context for 'APU' is selected.
+14:11:40 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:11:40 INFO  : 'configparams force-mem-access 1' command is executed.
+14:11:40 INFO  : Context for 'APU' is selected.
+14:11:40 INFO  : 'stop' command is executed.
+14:11:40 INFO  : 'ps7_init' command is executed.
+14:11:41 INFO  : 'ps7_post_config' command is executed.
+14:11:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:11:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:11:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:11:42 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:11:42 INFO  : 'configparams force-mem-access 0' command is executed.
+14:11:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:11:42 INFO  : Memory regions updated for context APU
+14:11:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:11:42 INFO  : 'con' command is executed.
+14:11:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:11:42 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:11:59 INFO  : Disconnected from the channel tcfchan#17.
+14:12:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:12:00 INFO  : 'fpga -state' command is executed.
+14:12:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:12:01 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:12:01 INFO  : 'jtag frequency' command is executed.
+14:12:01 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:12:01 INFO  : Context for 'APU' is selected.
+14:12:01 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:12:01 INFO  : 'configparams force-mem-access 1' command is executed.
+14:12:01 INFO  : Context for 'APU' is selected.
+14:12:01 INFO  : 'stop' command is executed.
+14:12:01 INFO  : 'ps7_init' command is executed.
+14:12:01 INFO  : 'ps7_post_config' command is executed.
+14:12:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:12:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:12:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:12:03 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:12:03 INFO  : 'configparams force-mem-access 0' command is executed.
+14:12:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:12:03 INFO  : Memory regions updated for context APU
+14:12:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:12:03 INFO  : 'con' command is executed.
+14:12:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:12:03 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+14:12:11 INFO  : Disconnected from the channel tcfchan#18.
+14:12:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585732" && level==0} -index 1' command is executed.
+14:12:12 INFO  : 'fpga -state' command is executed.
+14:12:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:12:12 INFO  : Jtag cable 'Digilent Zed 210248585732' is selected.
+14:12:12 INFO  : 'jtag frequency' command is executed.
+14:12:12 INFO  : Sourcing of '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:12:12 INFO  : Context for 'APU' is selected.
+14:12:12 INFO  : Hardware design information is loaded from '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf'.
+14:12:12 INFO  : 'configparams force-mem-access 1' command is executed.
+14:12:12 INFO  : Context for 'APU' is selected.
+14:12:12 INFO  : 'stop' command is executed.
+14:12:13 INFO  : 'ps7_init' command is executed.
+14:12:13 INFO  : 'ps7_post_config' command is executed.
+14:12:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:12:13 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:12:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:12:14 INFO  : The application '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:12:14 INFO  : 'configparams force-mem-access 0' command is executed.
+14:12:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+loadhw -hw /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/led_test_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+dow /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof/Debug/cpu_prof.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:12:14 INFO  : Memory regions updated for context APU
+14:12:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:12:14 INFO  : 'con' command is executed.
+14:12:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248585732"} -index 0
+con
+----------------End of Script----------------
+
+14:12:14 INFO  : Launch script is exported to file '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_cpu_prof.elf_on_local_(1).tcl'
+15:03:13 INFO  : Disconnected from the channel tcfchan#19.

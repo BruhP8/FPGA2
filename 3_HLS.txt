@@ -1,0 +1,40 @@
+Synthèse pour les layer 3 4 et 5
+
+modifications :
+    -> un header 345.h qui englobe :
+        -> SIGMOID et DSIGMOID
+        -> IMGWIDTH et IMGHEIGHT
+        -> Les déclarations des Layers 2 et 5
+        -> Les poids des layers 1, 2, 3 et 4
+
+    -> un 345.c où on retrouve :
+        -> les fonctions de calcul des layers 3 4 et 5
+        -> une fonction top dans laquelle on déclare les layers 3 et 4, et appelle les fonctions 3 4 et 5
+
+    -> le testBench
+        -> inclus 345.h pour les poids, SIGMOIDs, WIDTH/HEIGHT
+        -> déclarations de Layer 1
+        -> définition de l'input choisi, traitement des résultats
+        -> appels des fonctions de layers 1 et 2, puis de la top fonction
+
+    En raison d'un comportement spécifique à HLS, il a été nécessaire de modifier le squelette de la fonction top 
+    afin d'éviter une erreur "unsupported memory access on variable 'Layer2_Neurons_CPU' which is (or contains) an array with unknown size at compile time."
+    Ainsi, pour la fonction top :
+        void nerons (float* Layer2_Neurons_CPU, double* Layer5_Neurons_CPU){
+    doit devenir :
+        void nerons (float Layer2_Neurons_CPU[6*13*13], double Layer5_Neurons_CPU[10]){
+
+    
+Résultats de synthèse brute (sans pragmas et sans optimisation) :
+    -> Timing trop juste pour 10ns : latence estimée à 9.514ns +/- 1.25ns -> dépassement possible
+
+    ---------> amélrioration : piepeline et task-level piepeline, déroulage de boucles (?)
+
+    -> Utilisation de ressources (trop) élevées :
+        -> 115% de la bram disponible alouée (324)
+        -> 71% des LUTs (38.177)
+        -> 49% des blocs DSP (108)
+        -> 26% des FF (28.399)
+
+    ---------> amélioration : types de données plus économes, approximate computing, array optimisation
+        #pragma HLS ARRAY_MAP horizontal -> effet inverse : passage a 206% de bram en combinant les poids 3 et 4

@@ -1,0 +1,56 @@
+INFO: [HLS 200-10] Running '/opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'iamgron' on host 'X421IAY-M413IA' (Linux_x86_64 version 5.13.7-051307-generic) on Thu Dec 16 14:36:46 CET 2021
+INFO: [HLS 200-10] On os Ubuntu 21.10
+INFO: [HLS 200-10] In directory '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/csim/build'
+../../.tcls/345.c:8:59: warning: incompatible pointer types passing 'float *[1250]' to parameter of type 'float *' [-Wincompatible-pointer-types]
+  calculateLayer3(Layer2_Neurons_CPU, Layer2_Weights_CPU, Layer3_Neurons_CPU);
+                                                          ^~~~~~~~~~~~~~~~~~
+../../.tcls/345.h:1:83: note: passing argument to parameter 'Layer3_Neurons_CPU' here
+void calculateLayer3(float* Layer2_Neurons_CPU, float* Layer2_Weights_CPU, float* Layer3_Neurons_CPU);
+                                                                                  ^
+../../.tcls/345.c:9:19: warning: incompatible pointer types passing 'float *[1250]' to parameter of type 'float *' [-Wincompatible-pointer-types]
+  calculateLayer4(Layer3_Neurons_CPU, Layer3_Weights_CPU, Layer4_Neurons_CPU);
+                  ^~~~~~~~~~~~~~~~~~
+../../.tcls/345.h:2:29: note: passing argument to parameter 'Layer3_Neurons_CPU' here
+void calculateLayer4(float* Layer3_Neurons_CPU, float* Layer3_Weights_CPU, float* Layer4_Neurons_CPU);
+                            ^
+../../.tcls/345.c:9:59: warning: incompatible pointer types passing 'float *[100]' to parameter of type 'float *' [-Wincompatible-pointer-types]
+  calculateLayer4(Layer3_Neurons_CPU, Layer3_Weights_CPU, Layer4_Neurons_CPU);
+                                                          ^~~~~~~~~~~~~~~~~~
+../../.tcls/345.h:2:83: note: passing argument to parameter 'Layer4_Neurons_CPU' here
+void calculateLayer4(float* Layer3_Neurons_CPU, float* Layer3_Weights_CPU, float* Layer4_Neurons_CPU);
+                                                                                  ^
+../../.tcls/345.c:10:19: warning: incompatible pointer types passing 'float *[100]' to parameter of type 'float *' [-Wincompatible-pointer-types]
+  calculateLayer5(Layer4_Neurons_CPU, Layer4_Weights_CPU, Layer5_Neurons_CPU);
+                  ^~~~~~~~~~~~~~~~~~
+../../.tcls/345.h:3:29: note: passing argument to parameter 'Layer4_Neurons_CPU' here
+void calculateLayer5(float* Layer4_Neurons_CPU, float* Layer4_Weights_CPU, double* Layer5_Neurons_CPU);
+                            ^
+4 warnings generated.
+../../.tcls/345.c:8:59: warning: incompatible pointer types passing 'float *[1250]' to parameter of type 'float *' [-Wincompatible-pointer-types]
+  calculateLayer3(Layer2_Neurons_CPU, Layer2_Weights_CPU, Layer3_Neurons_CPU);
+                                                          ^~~~~~~~~~~~~~~~~~
+../../.tcls/345.h:1:83: note: passing argument to parameter 'Layer3_Neurons_CPU' here
+void calculateLayer3(float* Layer2_Neurons_CPU, float* Layer2_Weights_CPU, float* Layer3_Neurons_CPU);
+                                                                                  ^
+../../.tcls/345.c:9:19: warning: incompatible pointer types passing 'float *[1250]' to parameter of type 'float *' [-Wincompatible-pointer-types]
+  calculateLayer4(Layer3_Neurons_CPU, Layer3_Weights_CPU, Layer4_Neurons_CPU);
+                  ^~~~~~~~~~~~~~~~~~
+../../.tcls/345.h:2:29: note: passing argument to parameter 'Layer3_Neurons_CPU' here
+void calculateLayer4(float* Layer3_Neurons_CPU, float* Layer3_Weights_CPU, float* Layer4_Neurons_CPU);
+                            ^
+../../.tcls/345.c:9:59: warning: incompatible pointer types passing 'float *[100]' to parameter of type 'float *' [-Wincompatible-pointer-types]
+  calculateLayer4(Layer3_Neurons_CPU, Layer3_Weights_CPU, Layer4_Neurons_CPU);
+                                                          ^~~~~~~~~~~~~~~~~~
+../../.tcls/345.h:2:83: note: passing argument to parameter 'Layer4_Neurons_CPU' here
+void calculateLayer4(float* Layer3_Neurons_CPU, float* Layer3_Weights_CPU, float* Layer4_Neurons_CPU);
+                                                                                  ^
+../../.tcls/345.c:10:19: warning: incompatible pointer types passing 'float *[100]' to parameter of type 'float *' [-Wincompatible-pointer-types]
+  calculateLayer5(Layer4_Neurons_CPU, Layer4_Weights_CPU, Layer5_Neurons_CPU);
+                  ^~~~~~~~~~~~~~~~~~
+../../.tcls/345.h:3:29: note: passing argument to parameter 'Layer4_Neurons_CPU' here
+void calculateLayer5(float* Layer4_Neurons_CPU, float* Layer4_Weights_CPU, double* Layer5_Neurons_CPU);
+                            ^
+4 warnings generated.
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_iamgron/224941639661806986942
+INFO: [APCC 202-1] APCC is done.

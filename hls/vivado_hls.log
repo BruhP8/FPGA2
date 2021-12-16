@@ -1,0 +1,209 @@
+INFO: [HLS 200-10] Running '/opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'iamgron' on host 'X421IAY-M413IA' (Linux_x86_64 version 5.13.7-051307-generic) on Thu Dec 16 18:06:54 CET 2021
+INFO: [HLS 200-10] On os Ubuntu 21.10
+INFO: [HLS 200-10] In directory '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls'
+Sourcing Tcl script '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/csynth.tcl'
+INFO: [HLS 200-10] Opening project '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons'.
+INFO: [HLS 200-10] Adding design file 'hlsed_neurons/solution1/.tcls/345.h' to the project
+INFO: [HLS 200-10] Adding design file 'hlsed_neurons/solution1/.tcls/345.c' to the project
+INFO: [HLS 200-10] Adding test bench file 'hlsed_neurons/solution1/testbench.c' to the project
+INFO: [HLS 200-10] Opening solution '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'hlsed_neurons/solution1/.tcls/345.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 817.113 ; gain = 128.000 ; free physical = 307 ; free virtual = 9276
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 817.113 ; gain = 128.000 ; free physical = 306 ; free virtual = 9276
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 887.512 ; gain = 198.398 ; free physical = 276 ; free virtual = 9157
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_copysign<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'generic_fabs<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fabs.h:13) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_nan<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_nan.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isnan<double>' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:209) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isinf<double>' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:210) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:219) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:237) automatically.
+INFO: [XFORM 203-602] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1P_m_1' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:322) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_fabs<double>' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:62) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_nan<double>' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:68) automatically.
+INFO: [XFORM 203-602] Inlining function 'exp_reduce_::expm1' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer3' (hlsed_neurons/solution1/.tcls/345.c:35) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer4' (hlsed_neurons/solution1/.tcls/345.c:50) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer5' (hlsed_neurons/solution1/.tcls/345.c:62) automatically.
+INFO: [XFORM 203-602] Inlining function 'calculateLayer5' into 'nerons' (hlsed_neurons/solution1/.tcls/345.c:12) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1009.113 ; gain = 320.000 ; free physical = 147 ; free virtual = 9066
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_copysign<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'generic_fabs<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fabs.h:13) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_nan<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_nan.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isnan<double>' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:209) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isinf<double>' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:210) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:219) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:237) automatically.
+INFO: [XFORM 203-602] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1P_m_1' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:322) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_fabs<double>' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:62) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_nan<double>' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:68) automatically.
+INFO: [XFORM 203-602] Inlining function 'exp_reduce_::expm1' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer3' (hlsed_neurons/solution1/.tcls/345.c:35) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer4' (hlsed_neurons/solution1/.tcls/345.c:50) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer5' (hlsed_neurons/solution1/.tcls/345.c:62) automatically.
+INFO: [XFORM 203-602] Inlining function 'calculateLayer5' into 'nerons' (hlsed_neurons/solution1/.tcls/345.c:12) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:108:8) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:114:3) in function 'explog_based::generic_tanh<double>'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:83:10) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_double.cpp:9:11) in function 'explog_based::generic_tanh<double>'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:185:19) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:368:3) in function 'exp_reduce_::exp_generic<double>'... converting 12 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'calculateLayer4' (hlsed_neurons/solution1/.tcls/345.c:39)...4 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'calculateLayer3' (hlsed_neurons/solution1/.tcls/345.c:17)...18 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1077.102 ; gain = 387.988 ; free physical = 154 ; free virtual = 8983
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1.1' (hlsed_neurons/solution1/.tcls/345.c:45:9) in function 'calculateLayer4'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (hlsed_neurons/solution1/.tcls/345.c:44:8) in function 'calculateLayer4'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (hlsed_neurons/solution1/.tcls/345.c:42:7) in function 'calculateLayer4' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [XFORM 203-631] Renaming function 'explog_based::generic_tanh<double>' to 'generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:57)
+WARNING: [XFORM 203-631] Renaming function 'exp_reduce_::exp_generic<double>' to 'exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:185)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1089.117 ; gain = 400.004 ; free physical = 157 ; free virtual = 8941
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nerons' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp_generic<double>' to 'exp_generic_double_s'.
+WARNING: [SYN 201-103] Legalizing function name 'generic_tanh<double>' to 'generic_tanh_double_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'exp_generic<double>'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 20.
+WARNING: [SCHED 204-21] Estimated clock period (9.514ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'exp_generic_double_s' consists of the following:
+	'mul' operation of DSP[50] ('r.V', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [47]  (3.36 ns)
+	'add' operation of DSP[50] ('ret.V', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [50]  (3.02 ns)
+	'icmp' operation ('icmp_ln805', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [54]  (2.43 ns)
+	'select' operation ('select_ln805', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [56]  (0 ns)
+	'select' operation ('r_exp.V', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [57]  (0.7 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 27.18 seconds; current allocated memory: 387.323 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 388.078 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 388.654 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 389.251 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 389.928 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 5 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 390.848 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calculateLayer4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 391.304 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 391.710 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nerons' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 392.025 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.45 seconds; current allocated memory: 392.594 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'nerons_mac_muladd_16ns_16s_19s_31_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_mul_36ns_43ns_79_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_mul_44ns_49ns_93_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_mul_50ns_50ns_100_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_mul_72ns_13s_84_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_generic_double_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 394.576 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'generic_tanh_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'nerons_dadddsub_64ns_64ns_64_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_dcmp_64ns_64ns_1_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_ddiv_64ns_64ns_64_31_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_dmul_64ns_64ns_64_6_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_tanh_double_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 398.905 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'nerons_dmul_64ns_64ns_64_6_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_fpext_32ns_64_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_fptrunc_64ns_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer3'.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 401.949 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'nerons_dmul_64ns_64ns_64_6_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_fpext_32ns_64_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_fptrunc_64ns_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer4'.
+INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 407.692 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nerons' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nerons/Layer2_Neurons_CPU' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nerons/Layer5_Neurons_CPU' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nerons' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'nerons_dmul_64ns_64ns_64_6_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_fpext_32ns_64_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nerons'.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 410.066 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'nerons_mul_72ns_13s_84_5_1_MulnS_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'nerons_mul_36ns_43ns_79_2_1_MulnS_1'
+INFO: [RTMG 210-282] Generating pipelined core: 'nerons_mul_44ns_49ns_93_2_1_MulnS_2'
+INFO: [RTMG 210-282] Generating pipelined core: 'nerons_mul_50ns_50ns_100_2_1_MulnS_3'
+INFO: [RTMG 210-279] Implementing memory 'exp_generic_double_s_table_exp_Z1_array_s_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'exp_generic_double_s_table_f_Z3_array_V_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'exp_generic_double_s_table_f_Z2_array_V_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_Layer2_Weights_CPU_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer4_Layer3_Weights_CPU_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nerons_Layer4_Weights_CPU_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'nerons_Layer3_Neurons_CPU_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'nerons_Layer4_Neurons_CPU_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1217.117 ; gain = 528.004 ; free physical = 181 ; free virtual = 8881
+INFO: [VHDL 208-304] Generating VHDL RTL for nerons.
+INFO: [VLOG 209-307] Generating Verilog RTL for nerons.
+INFO: [HLS 200-112] Total elapsed time: 40.62 seconds; peak allocated memory: 410.066 MB.
