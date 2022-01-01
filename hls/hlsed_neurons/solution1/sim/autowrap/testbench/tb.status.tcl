@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/./sim/autowrap/testbench/345.cpp_pre.cpp.tb.cpp

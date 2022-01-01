@@ -76,7 +76,7 @@
               <type>0</type>
               <id>7</id>
               <name>_ln42</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -90,7 +90,7 @@
                     <item_version>0</item_version>
                     <item class_id="12" tracking_level="0" version="0">
                       <first class_id="13" tracking_level="0" version="0">
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>42</second>
@@ -161,7 +161,7 @@
               <type>0</type>
               <id>10</id>
               <name>phi_mul1</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -175,7 +175,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>42</second>
@@ -212,7 +212,7 @@
               <type>0</type>
               <id>11</id>
               <name>add_ln42</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -226,7 +226,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>42</second>
@@ -261,7 +261,7 @@
               <type>0</type>
               <id>12</id>
               <name>icmp_ln42</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -275,7 +275,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>42</second>
@@ -310,7 +310,7 @@
               <type>0</type>
               <id>14</id>
               <name>i</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -324,7 +324,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>42</second>
@@ -359,7 +359,7 @@
               <type>0</type>
               <id>15</id>
               <name>_ln42</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -373,7 +373,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>42</second>
@@ -409,7 +409,7 @@
               <type>0</type>
               <id>17</id>
               <name>zext_ln43</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>43</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -423,7 +423,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>43</second>
@@ -457,7 +457,7 @@
               <type>0</type>
               <id>18</id>
               <name>Layer3_Weights_CPU_a</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>43</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -471,7 +471,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>43</second>
@@ -507,7 +507,7 @@
               <type>0</type>
               <id>19</id>
               <name>somme</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>43</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -521,7 +521,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>43</second>
@@ -555,7 +555,7 @@
               <type>0</type>
               <id>20</id>
               <name>_ln44</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>44</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -569,7 +569,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>44</second>
@@ -677,7 +677,7 @@
               <type>0</type>
               <id>24</id>
               <name>phi_mul</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>44</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -691,7 +691,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>44</second>
@@ -728,7 +728,7 @@
               <type>0</type>
               <id>25</id>
               <name>add_ln44</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>44</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -742,7 +742,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>44</second>
@@ -777,7 +777,7 @@
               <type>0</type>
               <id>26</id>
               <name>icmp_ln44</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>44</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -791,7 +791,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>44</second>
@@ -826,7 +826,7 @@
               <type>0</type>
               <id>28</id>
               <name>j</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>44</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -840,7 +840,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>44</second>
@@ -875,7 +875,7 @@
               <type>0</type>
               <id>29</id>
               <name>_ln44</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>44</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -889,7 +889,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>44</second>
@@ -925,7 +925,7 @@
               <type>0</type>
               <id>31</id>
               <name>zext_ln47_2</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -939,7 +939,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -973,7 +973,7 @@
               <type>0</type>
               <id>32</id>
               <name>add_ln47_1</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -987,7 +987,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -1022,7 +1022,7 @@
               <type>0</type>
               <id>33</id>
               <name>_ln45</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>45</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1036,7 +1036,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>45</second>
@@ -1070,7 +1070,7 @@
               <type>0</type>
               <id>35</id>
               <name>somme_1</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>43</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1084,7 +1084,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>43</second>
@@ -1158,7 +1158,7 @@
               <type>0</type>
               <id>37</id>
               <name>zext_ln45</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>45</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1172,7 +1172,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>45</second>
@@ -1206,7 +1206,7 @@
               <type>0</type>
               <id>38</id>
               <name>icmp_ln45</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>45</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1220,7 +1220,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>45</second>
@@ -1255,7 +1255,7 @@
               <type>0</type>
               <id>40</id>
               <name>k</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>45</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1269,7 +1269,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>45</second>
@@ -1304,7 +1304,7 @@
               <type>0</type>
               <id>41</id>
               <name>_ln45</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>45</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1318,7 +1318,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>45</second>
@@ -1354,7 +1354,7 @@
               <type>0</type>
               <id>43</id>
               <name>shl_ln</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1368,7 +1368,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -1404,7 +1404,7 @@
               <type>0</type>
               <id>44</id>
               <name>add_ln47</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1418,7 +1418,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -1453,7 +1453,7 @@
               <type>0</type>
               <id>45</id>
               <name>_ln46</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>46</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1467,7 +1467,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>46</second>
@@ -1575,7 +1575,7 @@
               <type>0</type>
               <id>49</id>
               <name>zext_ln46</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>46</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1589,7 +1589,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>46</second>
@@ -1623,7 +1623,7 @@
               <type>0</type>
               <id>50</id>
               <name>icmp_ln46</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>46</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1637,7 +1637,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>46</second>
@@ -1672,7 +1672,7 @@
               <type>0</type>
               <id>52</id>
               <name>m</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1686,7 +1686,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -1721,7 +1721,7 @@
               <type>0</type>
               <id>53</id>
               <name>_ln46</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>46</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1735,7 +1735,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>46</second>
@@ -1771,7 +1771,7 @@
               <type>0</type>
               <id>55</id>
               <name>zext_ln47_3</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1785,7 +1785,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -1819,7 +1819,7 @@
               <type>0</type>
               <id>56</id>
               <name>add_ln47_4</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1833,7 +1833,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -1868,7 +1868,7 @@
               <type>0</type>
               <id>57</id>
               <name>zext_ln47_4</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1882,7 +1882,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -1916,7 +1916,7 @@
               <type>0</type>
               <id>58</id>
               <name>add_ln47_3</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1930,7 +1930,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -1965,7 +1965,7 @@
               <type>0</type>
               <id>59</id>
               <name>zext_ln47</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -1979,7 +1979,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -2013,7 +2013,7 @@
               <type>0</type>
               <id>60</id>
               <name>Layer3_Weights_CPU_a_1</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2027,7 +2027,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -2063,7 +2063,7 @@
               <type>0</type>
               <id>61</id>
               <name>Layer3_Weights_CPU_l</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2077,7 +2077,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -2111,7 +2111,7 @@
               <type>0</type>
               <id>62</id>
               <name>add_ln47_6</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2125,7 +2125,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -2160,7 +2160,7 @@
               <type>0</type>
               <id>63</id>
               <name>zext_ln47_5</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2174,7 +2174,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -2208,7 +2208,7 @@
               <type>0</type>
               <id>64</id>
               <name>add_ln47_5</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2222,7 +2222,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -2257,7 +2257,7 @@
               <type>0</type>
               <id>65</id>
               <name>zext_ln47_1</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2271,7 +2271,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -2305,7 +2305,7 @@
               <type>0</type>
               <id>66</id>
               <name>Layer3_Neurons_CPU_a</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2319,7 +2319,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -2355,7 +2355,7 @@
               <type>0</type>
               <id>67</id>
               <name>Layer3_Neurons_CPU_l</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2369,7 +2369,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -2403,7 +2403,7 @@
               <type>0</type>
               <id>68</id>
               <name>tmp_7</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2417,7 +2417,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -2452,7 +2452,7 @@
               <type>0</type>
               <id>69</id>
               <name>somme_3</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2466,7 +2466,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>47</second>
@@ -2501,7 +2501,7 @@
               <type>0</type>
               <id>70</id>
               <name>_ln46</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>46</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2515,7 +2515,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>46</second>
@@ -2617,7 +2617,7 @@
               <type>0</type>
               <id>76</id>
               <name>tmp</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>49</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2631,7 +2631,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>49</second>
@@ -2665,7 +2665,7 @@
               <type>0</type>
               <id>77</id>
               <name>x_assign</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>49</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2679,7 +2679,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>49</second>
@@ -2728,7 +2728,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>49</second>
@@ -2780,7 +2780,7 @@
               <type>0</type>
               <id>79</id>
               <name>tmp_5</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>49</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2794,7 +2794,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>49</second>
@@ -2829,7 +2829,7 @@
               <type>0</type>
               <id>80</id>
               <name>tmp_6</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>49</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2843,7 +2843,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>49</second>
@@ -2877,7 +2877,7 @@
               <type>0</type>
               <id>81</id>
               <name>zext_ln49</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>49</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2891,7 +2891,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>49</second>
@@ -2925,7 +2925,7 @@
               <type>0</type>
               <id>82</id>
               <name>Layer4_Neurons_CPU_a</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>49</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2939,7 +2939,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>49</second>
@@ -2975,7 +2975,7 @@
               <type>0</type>
               <id>83</id>
               <name>Layer4_Neurons_CPU_a_write_ln49</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>49</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -2989,7 +2989,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>49</second>
@@ -3024,7 +3024,7 @@
               <type>0</type>
               <id>84</id>
               <name>_ln42</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -3038,7 +3038,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>42</second>
@@ -3072,7 +3072,7 @@
               <type>0</type>
               <id>86</id>
               <name>_ln52</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileName>hlsed_neurons/solution1/.tcls/345.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>52</lineNumber>
               <contextFuncName>calculateLayer4</contextFuncName>
@@ -3086,7 +3086,7 @@
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <first>hlsed_neurons/solution1/.tcls/345.cpp</first>
                         <second>calculateLayer4</second>
                       </first>
                       <second>52</second>

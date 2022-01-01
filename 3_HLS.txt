@@ -60,3 +60,11 @@ moitié moins d'espace comme on peut le constater en regardant les résultats po
         -> 66% des luts          (35.468) -> gain de 5%
         -> 48 % des blocs DPS    (106)    -> gain de 1%
         -> 26% des FF            (27.687) -> léger gain
+
+Attention, pour combattre un bug lors de la cosimulation, il faut exécuter la commande 
+    export LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+dans le terminal avant de démarrer HLS, sinon des erreurs apparaiteront : cannot find crt1.o/ctri.o/lpthread/lm : No such file or directory
+Voir : https://support.xilinx.com/s/article/69355?language=en_US
+
+Constat post cosimulation : UN 2 est pris pour un 4 -> perte de perf si tout est passé en half. Solution : ne mettre que les poids en half ?
+TODO

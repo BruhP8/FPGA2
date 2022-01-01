@@ -40,10 +40,10 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7z020:-clg484:-1
-set SourceFiles {sc {} c .tcls/345.c}
+set SourceFiles {sc {} c .tcls/345.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/solution1.directive
-set TBFiles {verilog testbench.c bc testbench.c vhdl testbench.c sc testbench.c cas testbench.c c {}}
+set TBFiles {verilog testbench.cpp bc testbench.cpp vhdl testbench.cpp sc testbench.cpp cas testbench.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

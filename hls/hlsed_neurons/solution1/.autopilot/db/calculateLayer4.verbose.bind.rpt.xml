@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'calculateLayer4'" level="0">
-<item name = "Date">Sat Jan  1 17:20:19 2022
+<item name = "Date">Sat Jan  1 19:10:49 2022
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">hlsed_neurons</item>

@@ -1,0 +1,193 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "/opt/xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling 345.cpp_pre.cpp.tb.cpp
+   Compiling apatb_nerons.cpp
+   Compiling testbench.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+0 : 0.059881
+
+1 : 0.710384
+
+2 : 1.242324
+
+3 : 0.388605
+
+4 : 1.348907
+
+5 : 0.790309
+
+6 : 1.314267
+
+7 : 0.994820
+
+8 : 0.655392
+
+9 : 0.329057
+
+Le resultat est : 4 
+
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/opt/xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_nerons_top glbl -prj nerons.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /opt/xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s nerons 
+Multi-threading is on. Using 6 slave threads.
+Determining compilation order of HDL files.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_ddiv_64ns_64ns_64_31_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_ddiv_64ns_64ns_64_31_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_hadd_16ns_16ns_16_5_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_hadd_16ns_16ns_16_5_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/exp_generic_double_s_table_f_Z3_array_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_generic_double_s_table_f_Z3_array_V_rom
+INFO: [VRFC 10-311] analyzing module exp_generic_double_s_table_f_Z3_array_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_Layer3_Neurons_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_Layer3_Neurons_CPU_ram
+INFO: [VRFC 10-311] analyzing module nerons_Layer3_Neurons_CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_mac_muladd_16ns_16s_19s_31_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_mac_muladd_16ns_16s_19s_31_1_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module nerons_mac_muladd_16ns_16s_19s_31_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/AESL_automem_Layer2_Neurons_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_Layer2_Neurons_CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_mul_50ns_50ns_100_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_mul_50ns_50ns_100_2_1_MulnS_3
+INFO: [VRFC 10-311] analyzing module nerons_mul_50ns_50ns_100_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_Layer4_Neurons_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_Layer4_Neurons_CPU_ram
+INFO: [VRFC 10-311] analyzing module nerons_Layer4_Neurons_CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_hptodp_16ns_64_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_hptodp_16ns_64_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_nerons_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/calculateLayer3_Layer2_Weights_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculateLayer3_Layer2_Weights_CPU_rom
+INFO: [VRFC 10-311] analyzing module calculateLayer3_Layer2_Weights_CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/exp_generic_double_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_generic_double_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_Layer4_Weights_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_Layer4_Weights_CPU_rom
+INFO: [VRFC 10-311] analyzing module nerons_Layer4_Weights_CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/generic_tanh_double_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module generic_tanh_double_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/exp_generic_double_s_table_f_Z2_array_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_generic_double_s_table_f_Z2_array_V_rom
+INFO: [VRFC 10-311] analyzing module exp_generic_double_s_table_f_Z2_array_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_mul_72ns_13s_84_5_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_mul_72ns_13s_84_5_1_MulnS_0
+INFO: [VRFC 10-311] analyzing module nerons_mul_72ns_13s_84_5_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_dptohp_64ns_16_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_dptohp_64ns_16_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_hmul_16ns_16ns_16_4_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_hmul_16ns_16ns_16_4_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/calculateLayer4_Layer3_Weights_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculateLayer4_Layer3_Weights_CPU_rom
+INFO: [VRFC 10-311] analyzing module calculateLayer4_Layer3_Weights_CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_mul_44ns_49ns_93_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_mul_44ns_49ns_93_2_1_MulnS_2
+INFO: [VRFC 10-311] analyzing module nerons_mul_44ns_49ns_93_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_dmul_64ns_64ns_64_6_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_dmul_64ns_64ns_64_6_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/calculateLayer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculateLayer3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_dadddsub_64ns_64ns_64_5_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_dadddsub_64ns_64ns_64_5_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_mul_36ns_43ns_79_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_mul_36ns_43ns_79_2_1_MulnS_1
+INFO: [VRFC 10-311] analyzing module nerons_mul_36ns_43ns_79_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_dcmp_64ns_64ns_1_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_dcmp_64ns_64ns_1_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/AESL_automem_Layer5_Neurons_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_Layer5_Neurons_CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/calculateLayer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculateLayer4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/exp_generic_double_s_table_exp_Z1_array_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_generic_double_s_table_exp_Z1_array_s_rom
+INFO: [VRFC 10-311] analyzing module exp_generic_double_s_table_exp_Z1_array_s
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_hptodp_0_no_dsp_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_hptodp_0_no_dsp_16'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dadddsub_3_full_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_dadddsub_3_full_dsp_64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dcmp_0_no_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_dcmp_0_no_dsp_64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dmul_4_max_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_dmul_4_max_dsp_64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_hmul_2_max_dsp_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_hmul_2_max_dsp_16'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_hadd_3_full_dsp_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_hadd_3_full_dsp_16'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_ddiv_29_no_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_ddiv_29_no_dsp_64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dptohp_0_no_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_dptohp_0_no_dsp_64'
+Starting static elaboration
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dadddsub_3_full_dsp_64.vhd:206]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dmul_4_max_dsp_64.vhd:201]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_ddiv_29_no_dsp_64.vhd:201]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dcmp_0_no_dsp_64.vhd:200]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_hadd_3_full_dsp_16.vhd:201]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_hmul_2_max_dsp_16.vhd:201]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/nerons_ap_hptodp_0_no_dsp_16.vhd:190]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dptohp_0_no_dsp_64.vhd:190]
+Completed static elaboration
+ERROR: [XSIM 43-3316] Signal SIGSEGV received.
+Printing stacktrace...
+
+[0] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/Ubuntu/libstdc++.so.6(std::_Rb_tree_increment(std::_Rb_tree_node_base const*)+0x22) [0x7f9e338c7b82]
+[1] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x74dfe8]
+[2] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x70fc32]
+[3] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x71027e]
+[4] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x710641]
+[5] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x710430]
+[6] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x710430]
+[7] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x710430]
+[8] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x710430]
+[9] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x70f9a9]
+[10] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x71027e]
+[11] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61d512]
+[12] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7f9e3455ba36]
+[13] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7f9e34562418]
+[14] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61eb6f]
+[15] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x5edefb]
+[16] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61d10e]
+[17] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7f9e3455ba36]
+[18] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7f9e34562418]
+[19] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61eb6f]
+[20] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x5edefb]
+[21] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61d10e]
+[22] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7f9e3455ba36]
+[23] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7f9e34562418]
+[24] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61eb6f]
+[25] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x5edefb]
+[26] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61d10e]
+[27] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7f9e3455ba36]
+[28] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7f9e34562418]
+[29] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61eb6f]
+[30] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x5edefb]
+[31] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61d10e]
+[32] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7f9e3455ba36]
+[33] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7f9e34562418]
+[34] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61eb6f]
+[35] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x5edefb]
+[36] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x48e3c4]
+[37] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x473ab2]
+[38] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x47d4ee]
+[39] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x44ffcd]
+[40] /lib/x86_64-linux-gnu/libc.so.6(+0x2dfd0) [0x7f9e3332bfd0]
+[41] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x7d) [0x7f9e3332c07d]
+[42] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x467e00]
+
+Done
+ERROR: Please check the snapshot name which is created during 'xelab',the current snapshot name "xsim.dir/nerons/xsimk" does not exist 
+ERROR: [COSIM-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

@@ -37,19 +37,14 @@
 			<location>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/hls_half.h</name>
-			<type>1</type>
-			<location>/opt/xilinx/Vivado/2019.1/include/hls_half.h</location>
-		</link>
-		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.tcls</location>
 		</link>
 		<link>
-			<name>source/345.c</name>
+			<name>source/345.cpp</name>
 			<type>1</type>
-			<location>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.tcls/345.c</location>
+			<location>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.tcls/345.cpp</location>
 		</link>
 		<link>
 			<name>source/345.h</name>
@@ -57,9 +52,9 @@
 			<location>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.tcls/345.h</location>
 		</link>
 		<link>
-			<name>testbench/testbench.c</name>
+			<name>testbench/testbench.cpp</name>
 			<type>1</type>
-			<location>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/testbench.c</location>
+			<location>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/testbench.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>

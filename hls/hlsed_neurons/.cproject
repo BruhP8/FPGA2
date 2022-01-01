@@ -61,8 +61,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof"/>
@@ -71,7 +69,11 @@
                                     									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/projet.sdk/cpu_prof/src/"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.tcls"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/projet.sdk/cpu_prof/src/"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
                                     								
                                 </option>
                                 								
@@ -107,8 +109,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof"/>
@@ -117,7 +117,11 @@
                                     									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/projet.sdk/cpu_prof/src/"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.tcls"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/projet.sdk/cpu_prof/src/"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
                                     								
                                 </option>
                                 								
@@ -181,15 +185,13 @@
                         					
                     </folderInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1678011349.475544322" name="testbench.c" rcbsApplicability="disable" resourcePath="testbench/testbench.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1586662773.212617133">
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1678011349.118435591" name="testbench.cpp" rcbsApplicability="disable" resourcePath="testbench/testbench.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.784418623.1749191107">
                         						
-                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1586662773.212617133" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1586662773">
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.784418623.1749191107" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.784418623">
                             							
-                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.450960735" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1307290660" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
-                            <option id="gnu.c.compiler.option.include.paths.584062534" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-                                								
-                                <listOptionValue builtIn="false" value="../../../../../../../projet/projet.sdk/cpu_prof/src"/>
+                            <option id="gnu.cpp.compiler.option.include.paths.1142676738" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
                                 <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/etc"/>
                                 								
@@ -201,15 +203,13 @@
                                 								
                                 <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/ap_sysc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
-                                								
                                 <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls"/>
                                 							
                             </option>
                             							
-                            <option id="gnu.c.compiler.option.misc.other.1944525811" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            <option id="gnu.cpp.compiler.option.other.other.1833092729" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-B/usr/lib/x86_64-linux-gnu -Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
-                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.703049082" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.2099402309" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
                         </tool>
                         					
@@ -287,8 +287,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof"/>
@@ -297,7 +295,11 @@
                                     									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/projet.sdk/cpu_prof/src/"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.tcls"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/projet.sdk/cpu_prof/src/"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
                                     								
                                 </option>
                                 								
@@ -323,8 +325,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof"/>
@@ -333,7 +333,11 @@
                                     									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/projet.sdk/cpu_prof/src/"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.tcls"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/projet.sdk/cpu_prof/src/"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
                                     								
                                 </option>
                                 								
@@ -387,15 +391,13 @@
                         					
                     </folderInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1036879670.286220834" name="testbench.c" rcbsApplicability="disable" resourcePath="testbench/testbench.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.1906519627.1427825347">
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1036879670.1437659850" name="testbench.cpp" rcbsApplicability="disable" resourcePath="testbench/testbench.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.770441726.1044093853">
                         						
-                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.1906519627.1427825347" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.1906519627">
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.770441726.1044093853" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.770441726">
                             							
-                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.1424237418" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1232501290" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
-                            <option id="gnu.c.compiler.option.include.paths.401112399" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-                                								
-                                <listOptionValue builtIn="false" value="../../../../../../../projet/projet.sdk/cpu_prof/src"/>
+                            <option id="gnu.cpp.compiler.option.include.paths.1108333584" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
                                 <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/etc"/>
                                 								
@@ -407,15 +409,13 @@
                                 								
                                 <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/ap_sysc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
-                                								
                                 <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls"/>
                                 							
                             </option>
                             							
-                            <option id="gnu.c.compiler.option.misc.other.547093466" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            <option id="gnu.cpp.compiler.option.other.other.264684176" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-B/usr/lib/x86_64-linux-gnu -Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
-                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.586733960" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.560065353" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
                         </tool>
                         					
@@ -474,5 +474,21 @@
     </storageModule>
     	
     <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    	
+    <storageModule moduleId="refreshScope" versionNumber="2">
+        		
+        <configuration configurationName="Debug">
+            			
+            <resource resourceType="PROJECT" workspacePath="/hlsed_neurons"/>
+            		
+        </configuration>
+        		
+        <configuration configurationName="Release">
+            			
+            <resource resourceType="PROJECT" workspacePath="/hlsed_neurons"/>
+            		
+        </configuration>
+        	
+    </storageModule>
     
 </cproject>

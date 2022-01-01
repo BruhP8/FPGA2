@@ -1,225 +1,202 @@
 INFO: [HLS 200-10] Running '/opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'iamgron' on host 'X421IAY-M413IA' (Linux_x86_64 version 5.13.7-051307-generic) on Sat Jan 01 17:19:43 CET 2022
+INFO: [HLS 200-10] For user 'iamgron' on host 'X421IAY-M413IA' (Linux_x86_64 version 5.13.7-051307-generic) on Sat Jan 01 19:25:49 CET 2022
 INFO: [HLS 200-10] On os Ubuntu 21.10
 INFO: [HLS 200-10] In directory '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls'
-Sourcing Tcl script '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/csynth.tcl'
+Sourcing Tcl script '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/cosim.tcl'
 INFO: [HLS 200-10] Opening project '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons'.
-INFO: [HLS 200-10] Adding design file 'hlsed_neurons/solution1/.tcls/345.c' to the project
-INFO: [HLS 200-10] Adding design file 'hlsed_neurons/solution1/.tcls/345.h' to the project
-INFO: [HLS 200-10] Adding test bench file 'hlsed_neurons/solution1/testbench.c' to the project
 INFO: [HLS 200-10] Opening solution '/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
-INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-INFO: [HLS 200-10] Analyzing design file 'hlsed_neurons/solution1/.tcls/345.c' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 817.113 ; gain = 128.000 ; free physical = 840 ; free virtual = 10568
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 817.113 ; gain = 128.000 ; free physical = 840 ; free virtual = 10568
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 887.215 ; gain = 198.102 ; free physical = 697 ; free virtual = 10450
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_copysign<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14) automatically.
-INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'generic_fabs<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fabs.h:13) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_nan<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_nan.h:15) automatically.
-INFO: [XFORM 203-602] Inlining function 'generic_isnan<double>' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:209) automatically.
-INFO: [XFORM 203-602] Inlining function 'generic_isinf<double>' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:210) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:219) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:237) automatically.
-INFO: [XFORM 203-602] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1P_m_1' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:322) automatically.
-INFO: [XFORM 203-602] Inlining function 'generic_fabs<double>' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:62) automatically.
-INFO: [XFORM 203-602] Inlining function 'generic_nan<double>' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:68) automatically.
-INFO: [XFORM 203-602] Inlining function 'exp_reduce_::expm1' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer3' (hlsed_neurons/solution1/.tcls/345.c:35) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer4' (hlsed_neurons/solution1/.tcls/345.c:49) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer5' (hlsed_neurons/solution1/.tcls/345.c:61) automatically.
-INFO: [XFORM 203-602] Inlining function 'calculateLayer5' into 'nerons' (hlsed_neurons/solution1/.tcls/345.c:12) automatically.
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1016.164 ; gain = 327.051 ; free physical = 606 ; free virtual = 10368
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_copysign<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14) automatically.
-INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'generic_fabs<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fabs.h:13) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_nan<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_nan.h:15) automatically.
-INFO: [XFORM 203-602] Inlining function 'generic_isnan<double>' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:209) automatically.
-INFO: [XFORM 203-602] Inlining function 'generic_isinf<double>' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:210) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:219) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:237) automatically.
-INFO: [XFORM 203-602] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1P_m_1' into 'exp_reduce_::exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:322) automatically.
-INFO: [XFORM 203-602] Inlining function 'generic_fabs<double>' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:62) automatically.
-INFO: [XFORM 203-602] Inlining function 'generic_nan<double>' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:68) automatically.
-INFO: [XFORM 203-602] Inlining function 'exp_reduce_::expm1' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer3' (hlsed_neurons/solution1/.tcls/345.c:35) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer4' (hlsed_neurons/solution1/.tcls/345.c:49) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer5' (hlsed_neurons/solution1/.tcls/345.c:61) automatically.
-INFO: [XFORM 203-602] Inlining function 'calculateLayer5' into 'nerons' (hlsed_neurons/solution1/.tcls/345.c:12) automatically.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:108:8) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:114:3) in function 'explog_based::generic_tanh<double>'... converting 3 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:83:10) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_double.cpp:9:11) in function 'explog_based::generic_tanh<double>'... converting 4 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:185:19) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:368:3) in function 'exp_reduce_::exp_generic<double>'... converting 12 basic blocks.
-INFO: [XFORM 203-11] Balancing expressions in function 'calculateLayer4' (hlsed_neurons/solution1/.tcls/345.c:39)...4 expression(s) balanced.
-INFO: [XFORM 203-11] Balancing expressions in function 'calculateLayer3' (hlsed_neurons/solution1/.tcls/345.c:17)...18 expression(s) balanced.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1031.914 ; gain = 342.801 ; free physical = 526 ; free virtual = 10301
-WARNING: [XFORM 203-631] Renaming function 'explog_based::generic_tanh<double>' to 'generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:57)
-WARNING: [XFORM 203-631] Renaming function 'exp_reduce_::exp_generic<double>' to 'exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:185)
-INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
-INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
-INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
-INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
-INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
-INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
-INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
-INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
-INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
-INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
-INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
-INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
-INTERNAL-INFO: never seen llvm instruction 'hptodp'(540)
-INTERNAL-INFO: never seen llvm instruction 'dptohp'(541)
-INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
-INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
-INTERNAL-INFO: never seen llvm instruction 'hptodp'(540)
-INTERNAL-INFO: never seen llvm instruction 'dptohp'(541)
-INTERNAL-INFO: never seen llvm instruction 'hmul'(536)
-INTERNAL-INFO: never seen llvm instruction 'hadd'(534)
-INTERNAL-INFO: never seen llvm instruction 'hptodp'(540)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1155.980 ; gain = 466.867 ; free physical = 479 ; free virtual = 10259
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'nerons' ...
-WARNING: [SYN 201-103] Legalizing function name 'exp_generic<double>' to 'exp_generic_double_s'.
-WARNING: [SYN 201-103] Legalizing function name 'generic_tanh<double>' to 'generic_tanh_double_s'.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'exp_generic_double_s' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining function 'exp_generic<double>'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 20.
-WARNING: [SCHED 204-21] Estimated clock period (9.514ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
-WARNING: [SCHED 204-21] The critical path in module 'exp_generic_double_s' consists of the following:
-	'mul' operation of DSP[50] ('r.V', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [47]  (3.36 ns)
-	'add' operation of DSP[50] ('ret.V', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [50]  (3.02 ns)
-	'icmp' operation ('icmp_ln805', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [54]  (2.43 ns)
-	'select' operation ('select_ln805', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [56]  (0 ns)
-	'select' operation ('r_exp.V', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [57]  (0.7 ns)
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 29.2 seconds; current allocated memory: 381.947 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.91 seconds; current allocated memory: 382.649 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'generic_tanh_double_s' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.93 seconds; current allocated memory: 383.259 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.99 seconds; current allocated memory: 383.809 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'calculateLayer3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.15 seconds; current allocated memory: 384.512 MB.
-INFO: [HLS 200-434] Only 0 loops out of a total 5 loops have been pipelined in this design.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.3 seconds; current allocated memory: 385.484 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'calculateLayer4' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.45 seconds; current allocated memory: 385.914 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.53 seconds; current allocated memory: 386.248 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'nerons' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.66 seconds; current allocated memory: 386.563 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.8 seconds; current allocated memory: 387.100 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'exp_generic_double_s' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'nerons_mac_muladd_16ns_16s_19s_31_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_mul_36ns_43ns_79_2_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_mul_44ns_49ns_93_2_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_mul_50ns_50ns_100_2_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_mul_72ns_13s_84_5_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_generic_double_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.88 seconds; current allocated memory: 389.078 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'generic_tanh_double_s' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'nerons_dadddsub_64ns_64ns_64_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_dcmp_64ns_64ns_1_2_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_ddiv_64ns_64ns_64_31_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_dmul_64ns_64ns_64_6_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_tanh_double_s'.
-INFO: [HLS 200-111]  Elapsed time: 1.24 seconds; current allocated memory: 393.408 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'nerons_dmul_64ns_64ns_64_6_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_dptohp_64ns_16_2_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_hmul_16ns_16ns_16_4_max_dsp_1': 3 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_hptodp_16ns_64_2_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer3'.
-INFO: [HLS 200-111]  Elapsed time: 1.26 seconds; current allocated memory: 396.503 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer4' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'nerons_dmul_64ns_64ns_64_6_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_dptohp_64ns_16_2_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_hptodp_16ns_64_2_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer4'.
-INFO: [HLS 200-111]  Elapsed time: 1.77 seconds; current allocated memory: 400.244 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'nerons' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'nerons/Layer2_Neurons_CPU' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'nerons/Layer5_Neurons_CPU' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'nerons' to 'ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Generating core module 'nerons_dmul_64ns_64ns_64_6_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_hptodp_16ns_64_2_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'nerons'.
-INFO: [HLS 200-111]  Elapsed time: 0.81 seconds; current allocated memory: 402.496 MB.
-INFO: [RTMG 210-282] Generating pipelined core: 'nerons_mul_72ns_13s_84_5_1_MulnS_0'
-INFO: [RTMG 210-282] Generating pipelined core: 'nerons_mul_36ns_43ns_79_2_1_MulnS_1'
-INFO: [RTMG 210-282] Generating pipelined core: 'nerons_mul_44ns_49ns_93_2_1_MulnS_2'
-INFO: [RTMG 210-282] Generating pipelined core: 'nerons_mul_50ns_50ns_100_2_1_MulnS_3'
-INFO: [RTMG 210-279] Implementing memory 'exp_generic_double_s_table_exp_Z1_array_s_rom' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'exp_generic_double_s_table_f_Z3_array_V_rom' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'exp_generic_double_s_table_f_Z2_array_V_rom' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_Layer2_Weights_CPU_rom' using block ROMs.
-INFO: [RTMG 210-279] Implementing memory 'calculateLayer4_Layer3_Weights_CPU_rom' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'nerons_Layer4_Weights_CPU_rom' using auto ROMs.
-INFO: [RTMG 210-278] Implementing memory 'nerons_Layer3_Neurons_CPU_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-278] Implementing memory 'nerons_Layer4_Neurons_CPU_ram (RAM)' using block RAMs.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1155.980 ; gain = 466.867 ; free physical = 308 ; free virtual = 10124
-INFO: [VHDL 208-304] Generating VHDL RTL for nerons.
-INFO: [VLOG 209-307] Generating Verilog RTL for nerons.
-INFO: [HLS 200-112] Total elapsed time: 52.31 seconds; peak allocated memory: 402.496 MB.
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/opt/xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling 345.cpp_pre.cpp.tb.cpp
+   Compiling apatb_nerons.cpp
+   Compiling testbench.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+0 : 0.059881
+1 : 0.710384
+2 : 1.242324
+3 : 0.388605
+4 : 1.348907
+5 : 0.790309
+6 : 1.314267
+7 : 0.994820
+8 : 0.655392
+9 : 0.329057
+Le resultat est : 4 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/opt/xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_nerons_top glbl -prj nerons.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /opt/xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s nerons 
+Multi-threading is on. Using 6 slave threads.
+Determining compilation order of HDL files.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_ddiv_64ns_64ns_64_31_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_ddiv_64ns_64ns_64_31_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_hadd_16ns_16ns_16_5_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_hadd_16ns_16ns_16_5_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/exp_generic_double_s_table_f_Z3_array_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_generic_double_s_table_f_Z3_array_V_rom
+INFO: [VRFC 10-311] analyzing module exp_generic_double_s_table_f_Z3_array_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_Layer3_Neurons_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_Layer3_Neurons_CPU_ram
+INFO: [VRFC 10-311] analyzing module nerons_Layer3_Neurons_CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_mac_muladd_16ns_16s_19s_31_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_mac_muladd_16ns_16s_19s_31_1_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module nerons_mac_muladd_16ns_16s_19s_31_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/AESL_automem_Layer2_Neurons_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_Layer2_Neurons_CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_mul_50ns_50ns_100_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_mul_50ns_50ns_100_2_1_MulnS_3
+INFO: [VRFC 10-311] analyzing module nerons_mul_50ns_50ns_100_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_Layer4_Neurons_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_Layer4_Neurons_CPU_ram
+INFO: [VRFC 10-311] analyzing module nerons_Layer4_Neurons_CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_hptodp_16ns_64_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_hptodp_16ns_64_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_nerons_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/calculateLayer3_Layer2_Weights_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculateLayer3_Layer2_Weights_CPU_rom
+INFO: [VRFC 10-311] analyzing module calculateLayer3_Layer2_Weights_CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/exp_generic_double_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_generic_double_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_Layer4_Weights_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_Layer4_Weights_CPU_rom
+INFO: [VRFC 10-311] analyzing module nerons_Layer4_Weights_CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/generic_tanh_double_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module generic_tanh_double_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/exp_generic_double_s_table_f_Z2_array_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_generic_double_s_table_f_Z2_array_V_rom
+INFO: [VRFC 10-311] analyzing module exp_generic_double_s_table_f_Z2_array_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_mul_72ns_13s_84_5_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_mul_72ns_13s_84_5_1_MulnS_0
+INFO: [VRFC 10-311] analyzing module nerons_mul_72ns_13s_84_5_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_dptohp_64ns_16_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_dptohp_64ns_16_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_hmul_16ns_16ns_16_4_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_hmul_16ns_16ns_16_4_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/calculateLayer4_Layer3_Weights_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculateLayer4_Layer3_Weights_CPU_rom
+INFO: [VRFC 10-311] analyzing module calculateLayer4_Layer3_Weights_CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_mul_44ns_49ns_93_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_mul_44ns_49ns_93_2_1_MulnS_2
+INFO: [VRFC 10-311] analyzing module nerons_mul_44ns_49ns_93_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_dmul_64ns_64ns_64_6_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_dmul_64ns_64ns_64_6_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/calculateLayer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculateLayer3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_dadddsub_64ns_64ns_64_5_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_dadddsub_64ns_64ns_64_5_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_mul_36ns_43ns_79_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_mul_36ns_43ns_79_2_1_MulnS_1
+INFO: [VRFC 10-311] analyzing module nerons_mul_36ns_43ns_79_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/nerons_dcmp_64ns_64ns_1_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nerons_dcmp_64ns_64ns_1_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/AESL_automem_Layer5_Neurons_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_Layer5_Neurons_CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/calculateLayer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculateLayer4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/exp_generic_double_s_table_exp_Z1_array_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_generic_double_s_table_exp_Z1_array_s_rom
+INFO: [VRFC 10-311] analyzing module exp_generic_double_s_table_exp_Z1_array_s
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_hptodp_0_no_dsp_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_hptodp_0_no_dsp_16'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dadddsub_3_full_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_dadddsub_3_full_dsp_64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dcmp_0_no_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_dcmp_0_no_dsp_64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dmul_4_max_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_dmul_4_max_dsp_64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_hmul_2_max_dsp_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_hmul_2_max_dsp_16'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_hadd_3_full_dsp_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_hadd_3_full_dsp_16'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_ddiv_29_no_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_ddiv_29_no_dsp_64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dptohp_0_no_dsp_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nerons_ap_dptohp_0_no_dsp_64'
+Starting static elaboration
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dadddsub_3_full_dsp_64.vhd:206]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dmul_4_max_dsp_64.vhd:201]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_ddiv_29_no_dsp_64.vhd:201]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dcmp_0_no_dsp_64.vhd:200]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_hadd_3_full_dsp_16.vhd:201]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_hmul_2_max_dsp_16.vhd:201]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/nerons_ap_hptodp_0_no_dsp_16.vhd:190]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_8' of instantiated unit conflicts with visible identifier [/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/sim/verilog/ip/xil_defaultlib/nerons_ap_dptohp_0_no_dsp_64.vhd:190]
+Completed static elaboration
+ERROR: [XSIM 43-3316] Signal SIGSEGV received.
+Printing stacktrace...
+
+[0] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/Ubuntu/libstdc++.so.6(std::_Rb_tree_increment(std::_Rb_tree_node_base const*)+0x22) [0x7f9e338c7b82]
+[1] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x74dfe8]
+[2] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x70fc32]
+[3] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x71027e]
+[4] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x710641]
+[5] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x710430]
+[6] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x710430]
+[7] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x710430]
+[8] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x710430]
+[9] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x70f9a9]
+[10] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x71027e]
+[11] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61d512]
+[12] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7f9e3455ba36]
+[13] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7f9e34562418]
+[14] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61eb6f]
+[15] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x5edefb]
+[16] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61d10e]
+[17] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7f9e3455ba36]
+[18] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7f9e34562418]
+[19] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61eb6f]
+[20] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x5edefb]
+[21] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61d10e]
+[22] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7f9e3455ba36]
+[23] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7f9e34562418]
+[24] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61eb6f]
+[25] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x5edefb]
+[26] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61d10e]
+[27] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7f9e3455ba36]
+[28] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7f9e34562418]
+[29] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61eb6f]
+[30] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x5edefb]
+[31] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61d10e]
+[32] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7f9e3455ba36]
+[33] /opt/xilinx/Vivado/2019.1/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7f9e34562418]
+[34] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x61eb6f]
+[35] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x5edefb]
+[36] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x48e3c4]
+[37] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x473ab2]
+[38] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x47d4ee]
+[39] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x44ffcd]
+[40] /lib/x86_64-linux-gnu/libc.so.6(+0x2dfd0) [0x7f9e3332bfd0]
+[41] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x7d) [0x7f9e3332c07d]
+[42] /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab() [0x467e00]
+
+Done
+ERROR: Please check the snapshot name which is created during 'xelab',the current snapshot name "xsim.dir/nerons/xsimk" does not exist 
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+command 'ap_source' returned error code
+    while executing
+"source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/cosim.tcl"
+    invoked from within
+"hls::main /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/cosim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"

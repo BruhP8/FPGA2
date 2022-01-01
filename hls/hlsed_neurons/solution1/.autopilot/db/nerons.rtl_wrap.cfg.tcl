@@ -1,4 +1,4 @@
-set lang "C"
+set lang "C++"
 set moduleName "nerons"
 set moduleIsExternC "0"
 set rawDecl ""
