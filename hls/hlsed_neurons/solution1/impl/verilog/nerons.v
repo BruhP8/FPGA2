@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="nerons,hls_ip_2019_1,{HLS_INPUT_TYPE=c,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=9.514000,HLS_SYN_LAT=2865346,HLS_SYN_TPT=none,HLS_SYN_MEM=324,HLS_SYN_DSP=108,HLS_SYN_FF=28332,HLS_SYN_LUT=38307,HLS_VERSION=2019_1}" *)
+(* CORE_GENERATION_INFO="nerons,hls_ip_2019_1,{HLS_INPUT_TYPE=c,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=9.514000,HLS_SYN_LAT=2801696,HLS_SYN_TPT=none,HLS_SYN_MEM=193,HLS_SYN_DSP=106,HLS_SYN_FF=27687,HLS_SYN_LUT=35468,HLS_VERSION=2019_1}" *)
 
 module nerons (
         ap_clk,
@@ -70,10 +70,10 @@ output   ap_idle;
 output   ap_ready;
 output  [9:0] Layer2_Neurons_CPU_address0;
 output   Layer2_Neurons_CPU_ce0;
-input  [31:0] Layer2_Neurons_CPU_q0;
+input  [15:0] Layer2_Neurons_CPU_q0;
 output  [9:0] Layer2_Neurons_CPU_address1;
 output   Layer2_Neurons_CPU_ce1;
-input  [31:0] Layer2_Neurons_CPU_q1;
+input  [15:0] Layer2_Neurons_CPU_q1;
 output  [3:0] Layer5_Neurons_CPU_address0;
 output   Layer5_Neurons_CPU_ce0;
 output   Layer5_Neurons_CPU_we0;
@@ -89,32 +89,32 @@ reg Layer5_Neurons_CPU_we0;
 wire    ap_CS_fsm_state1;
 reg   [9:0] Layer4_Weights_CPU_address0;
 reg    Layer4_Weights_CPU_ce0;
-wire   [31:0] Layer4_Weights_CPU_q0;
-wire   [63:0] grp_fu_211_p2;
+wire   [15:0] Layer4_Weights_CPU_q0;
+wire   [63:0] grp_fu_198_p2;
 reg   [63:0] reg_217;
 wire    ap_CS_fsm_state24;
 wire    ap_CS_fsm_state32;
-wire   [9:0] add_ln58_fu_223_p2;
-reg   [9:0] add_ln58_reg_283;
+wire   [9:0] add_ln57_fu_223_p2;
+reg   [9:0] add_ln57_reg_283;
 wire    ap_CS_fsm_state5;
 wire   [3:0] i_fu_235_p2;
 reg   [3:0] i_reg_291;
-wire   [0:0] icmp_ln58_fu_229_p2;
+wire   [0:0] icmp_ln57_fu_229_p2;
 wire    ap_CS_fsm_state6;
 wire   [6:0] j_fu_252_p2;
 reg   [6:0] j_reg_309;
 wire    ap_CS_fsm_state7;
-wire   [0:0] icmp_ln60_fu_246_p2;
-reg   [31:0] Layer4_Weights_CPU_l_reg_324;
+wire   [0:0] icmp_ln59_fu_246_p2;
+reg   [15:0] Layer4_Weights_CPU_l_reg_324;
 wire    ap_CS_fsm_state8;
-wire   [31:0] Layer4_Neurons_CPU_q0;
-reg   [31:0] Layer4_Neurons_CPU_l_reg_329;
-wire   [31:0] grp_fu_203_p2;
-reg   [31:0] tmp_3_i_reg_334;
+wire   [15:0] Layer4_Neurons_CPU_q0;
+reg   [15:0] Layer4_Neurons_CPU_l_reg_329;
+wire   [15:0] grp_fu_209_p2;
+reg   [15:0] tmp_3_i_reg_334;
 wire    ap_CS_fsm_state12;
-wire   [31:0] grp_fu_198_p2;
+wire   [15:0] grp_fu_204_p2;
 wire    ap_CS_fsm_state17;
-wire   [63:0] grp_fu_207_p1;
+wire   [63:0] grp_fu_213_p1;
 reg   [63:0] tmp_i_reg_344;
 wire    ap_CS_fsm_state18;
 wire   [63:0] grp_generic_tanh_double_s_fu_187_ap_return;
@@ -125,7 +125,7 @@ wire    grp_generic_tanh_double_s_fu_187_ap_done;
 reg   [10:0] Layer3_Neurons_CPU_address0;
 reg    Layer3_Neurons_CPU_ce0;
 reg    Layer3_Neurons_CPU_we0;
-wire   [31:0] Layer3_Neurons_CPU_q0;
+wire   [15:0] Layer3_Neurons_CPU_q0;
 reg   [6:0] Layer4_Neurons_CPU_address0;
 reg    Layer4_Neurons_CPU_ce0;
 reg    Layer4_Neurons_CPU_we0;
@@ -140,7 +140,7 @@ wire    grp_calculateLayer3_fu_157_Layer2_Neurons_CPU_ce1;
 wire   [10:0] grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_address0;
 wire    grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_ce0;
 wire    grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_we0;
-wire   [31:0] grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_d0;
+wire   [15:0] grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_d0;
 wire    grp_calculateLayer4_fu_173_ap_start;
 wire    grp_calculateLayer4_fu_173_ap_done;
 wire    grp_calculateLayer4_fu_173_ap_idle;
@@ -150,14 +150,14 @@ wire    grp_calculateLayer4_fu_173_Layer3_Neurons_CPU_ce0;
 wire   [6:0] grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_address0;
 wire    grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_ce0;
 wire    grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_we0;
-wire   [31:0] grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_d0;
+wire   [15:0] grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_d0;
 wire    grp_generic_tanh_double_s_fu_187_ap_start;
 wire    grp_generic_tanh_double_s_fu_187_ap_idle;
 reg   [3:0] i_0_i_reg_112;
 wire    ap_CS_fsm_state4;
 wire    ap_CS_fsm_state33;
 reg   [9:0] phi_mul_reg_124;
-reg   [31:0] somme_0_i_reg_136;
+reg   [15:0] somme_0_i_reg_136;
 reg   [6:0] j_0_i_reg_146;
 reg    grp_calculateLayer3_fu_157_ap_start_reg;
 wire    ap_CS_fsm_state2;
@@ -165,18 +165,18 @@ reg    grp_calculateLayer4_fu_173_ap_start_reg;
 wire    ap_CS_fsm_state3;
 reg    grp_generic_tanh_double_s_fu_187_ap_start_reg;
 wire    ap_CS_fsm_state25;
-wire   [63:0] zext_ln59_fu_241_p1;
-wire   [63:0] zext_ln61_fu_268_p1;
-wire   [63:0] zext_ln61_1_fu_273_p1;
-wire   [63:0] zext_ln62_fu_278_p1;
-wire    ap_CS_fsm_state13;
-wire    ap_CS_fsm_state9;
-reg   [63:0] grp_fu_211_p0;
-reg   [63:0] grp_fu_211_p1;
+wire   [63:0] zext_ln58_fu_241_p1;
+wire   [63:0] zext_ln60_fu_268_p1;
+wire   [63:0] zext_ln60_1_fu_273_p1;
+wire   [63:0] zext_ln61_fu_278_p1;
+reg   [63:0] grp_fu_198_p0;
+reg   [63:0] grp_fu_198_p1;
 wire    ap_CS_fsm_state19;
 wire    ap_CS_fsm_state27;
-wire   [9:0] zext_ln61_2_fu_258_p1;
-wire   [9:0] add_ln61_1_fu_262_p2;
+wire    ap_CS_fsm_state13;
+wire    ap_CS_fsm_state9;
+wire   [9:0] zext_ln60_2_fu_258_p1;
+wire   [9:0] add_ln60_1_fu_262_p2;
 reg   [32:0] ap_NS_fsm;
 
 // power-on initialization
@@ -188,7 +188,7 @@ initial begin
 end
 
 nerons_Layer4_Weights_CPU #(
-    .DataWidth( 32 ),
+    .DataWidth( 16 ),
     .AddressRange( 1010 ),
     .AddressWidth( 10 ))
 Layer4_Weights_CPU_U(
@@ -200,7 +200,7 @@ Layer4_Weights_CPU_U(
 );
 
 nerons_Layer3_Neurons_CPU #(
-    .DataWidth( 32 ),
+    .DataWidth( 16 ),
     .AddressRange( 1250 ),
     .AddressWidth( 11 ))
 Layer3_Neurons_CPU_U(
@@ -214,7 +214,7 @@ Layer3_Neurons_CPU_U(
 );
 
 nerons_Layer4_Neurons_CPU #(
-    .DataWidth( 32 ),
+    .DataWidth( 16 ),
     .AddressRange( 100 ),
     .AddressWidth( 7 ))
 Layer4_Neurons_CPU_U(
@@ -273,62 +273,62 @@ generic_tanh_double_s grp_generic_tanh_double_s_fu_187(
     .ap_return(grp_generic_tanh_double_s_fu_187_ap_return)
 );
 
-nerons_fadd_32ns_32ns_32_5_full_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 5 ),
-    .din0_WIDTH( 32 ),
-    .din1_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-nerons_fadd_32ns_32ns_32_5_full_dsp_1_U45(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(somme_0_i_reg_136),
-    .din1(tmp_3_i_reg_334),
-    .ce(1'b1),
-    .dout(grp_fu_198_p2)
-);
-
-nerons_fmul_32ns_32ns_32_4_max_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 4 ),
-    .din0_WIDTH( 32 ),
-    .din1_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-nerons_fmul_32ns_32ns_32_4_max_dsp_1_U46(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(Layer4_Weights_CPU_l_reg_324),
-    .din1(Layer4_Neurons_CPU_l_reg_329),
-    .ce(1'b1),
-    .dout(grp_fu_203_p2)
-);
-
-nerons_fpext_32ns_64_2_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 2 ),
-    .din0_WIDTH( 32 ),
-    .dout_WIDTH( 64 ))
-nerons_fpext_32ns_64_2_1_U47(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(somme_0_i_reg_136),
-    .ce(1'b1),
-    .dout(grp_fu_207_p1)
-);
-
 nerons_dmul_64ns_64ns_64_6_max_dsp_1 #(
     .ID( 1 ),
     .NUM_STAGE( 6 ),
     .din0_WIDTH( 64 ),
     .din1_WIDTH( 64 ),
     .dout_WIDTH( 64 ))
-nerons_dmul_64ns_64ns_64_6_max_dsp_1_U48(
+nerons_dmul_64ns_64ns_64_6_max_dsp_1_U46(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_fu_211_p0),
-    .din1(grp_fu_211_p1),
+    .din0(grp_fu_198_p0),
+    .din1(grp_fu_198_p1),
     .ce(1'b1),
-    .dout(grp_fu_211_p2)
+    .dout(grp_fu_198_p2)
+);
+
+nerons_hadd_16ns_16ns_16_5_full_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 5 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+nerons_hadd_16ns_16ns_16_5_full_dsp_1_U47(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(somme_0_i_reg_136),
+    .din1(tmp_3_i_reg_334),
+    .ce(1'b1),
+    .dout(grp_fu_204_p2)
+);
+
+nerons_hmul_16ns_16ns_16_4_max_dsp_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 4 ),
+    .din0_WIDTH( 16 ),
+    .din1_WIDTH( 16 ),
+    .dout_WIDTH( 16 ))
+nerons_hmul_16ns_16ns_16_4_max_dsp_1_U48(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(Layer4_Weights_CPU_l_reg_324),
+    .din1(Layer4_Neurons_CPU_l_reg_329),
+    .ce(1'b1),
+    .dout(grp_fu_209_p2)
+);
+
+nerons_hptodp_16ns_64_2_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 2 ),
+    .din0_WIDTH( 16 ),
+    .dout_WIDTH( 64 ))
+nerons_hptodp_16ns_64_2_1_U49(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .din0(somme_0_i_reg_136),
+    .ce(1'b1),
+    .dout(grp_fu_213_p1)
 );
 
 always @ (posedge ap_clk) begin
@@ -393,7 +393,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state33)) begin
-        phi_mul_reg_124 <= add_ln58_reg_283;
+        phi_mul_reg_124 <= add_ln57_reg_283;
     end else if (((grp_calculateLayer4_fu_173_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
         phi_mul_reg_124 <= 10'd0;
     end
@@ -401,7 +401,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state17)) begin
-        somme_0_i_reg_136 <= grp_fu_198_p2;
+        somme_0_i_reg_136 <= grp_fu_204_p2;
     end else if ((1'b1 == ap_CS_fsm_state6)) begin
         somme_0_i_reg_136 <= Layer4_Weights_CPU_q0;
     end
@@ -416,7 +416,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        add_ln58_reg_283 <= add_ln58_fu_223_p2;
+        add_ln57_reg_283 <= add_ln57_fu_223_p2;
         i_reg_291 <= i_fu_235_p2;
     end
 end
@@ -429,13 +429,13 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state24))) begin
-        reg_217 <= grp_fu_211_p2;
+        reg_217 <= grp_fu_198_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state12)) begin
-        tmp_3_i_reg_334 <= grp_fu_203_p2;
+        tmp_3_i_reg_334 <= grp_fu_209_p2;
     end
 end
 
@@ -447,7 +447,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state18)) begin
-        tmp_i_reg_344 <= grp_fu_207_p1;
+        tmp_i_reg_344 <= grp_fu_213_p1;
     end
 end
 
@@ -481,7 +481,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state7)) begin
-        Layer4_Neurons_CPU_address0 = zext_ln61_1_fu_273_p1;
+        Layer4_Neurons_CPU_address0 = zext_ln60_1_fu_273_p1;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
         Layer4_Neurons_CPU_address0 = grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_address0;
     end else begin
@@ -509,9 +509,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state7)) begin
-        Layer4_Weights_CPU_address0 = zext_ln61_fu_268_p1;
+        Layer4_Weights_CPU_address0 = zext_ln60_fu_268_p1;
     end else if ((1'b1 == ap_CS_fsm_state5)) begin
-        Layer4_Weights_CPU_address0 = zext_ln59_fu_241_p1;
+        Layer4_Weights_CPU_address0 = zext_ln58_fu_241_p1;
     end else begin
         Layer4_Weights_CPU_address0 = 'bx;
     end
@@ -542,7 +542,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state5) & (icmp_ln58_fu_229_p2 == 1'd1))) begin
+    if (((1'b1 == ap_CS_fsm_state5) & (icmp_ln57_fu_229_p2 == 1'd1))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -558,7 +558,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state5) & (icmp_ln58_fu_229_p2 == 1'd1))) begin
+    if (((1'b1 == ap_CS_fsm_state5) & (icmp_ln57_fu_229_p2 == 1'd1))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -567,21 +567,21 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state27)) begin
-        grp_fu_211_p0 = tmp_i_i_reg_349;
+        grp_fu_198_p0 = tmp_i_i_reg_349;
     end else if ((1'b1 == ap_CS_fsm_state19)) begin
-        grp_fu_211_p0 = tmp_i_reg_344;
+        grp_fu_198_p0 = tmp_i_reg_344;
     end else begin
-        grp_fu_211_p0 = 'bx;
+        grp_fu_198_p0 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state27)) begin
-        grp_fu_211_p1 = 64'd4610406545773251946;
+        grp_fu_198_p1 = 64'd4610406545773251946;
     end else if ((1'b1 == ap_CS_fsm_state19)) begin
-        grp_fu_211_p1 = 64'd4604180019078461075;
+        grp_fu_198_p1 = 64'd4604180019078461075;
     end else begin
-        grp_fu_211_p1 = 'bx;
+        grp_fu_198_p1 = 'bx;
     end
 end
 
@@ -612,7 +612,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state5 : begin
-            if (((1'b1 == ap_CS_fsm_state5) & (icmp_ln58_fu_229_p2 == 1'd1))) begin
+            if (((1'b1 == ap_CS_fsm_state5) & (icmp_ln57_fu_229_p2 == 1'd1))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state6;
@@ -622,7 +622,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state7;
         end
         ap_ST_fsm_state7 : begin
-            if (((1'b1 == ap_CS_fsm_state7) & (icmp_ln60_fu_246_p2 == 1'd1))) begin
+            if (((1'b1 == ap_CS_fsm_state7) & (icmp_ln59_fu_246_p2 == 1'd1))) begin
                 ap_NS_fsm = ap_ST_fsm_state18;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state8;
@@ -724,13 +724,13 @@ assign Layer2_Neurons_CPU_ce0 = grp_calculateLayer3_fu_157_Layer2_Neurons_CPU_ce
 
 assign Layer2_Neurons_CPU_ce1 = grp_calculateLayer3_fu_157_Layer2_Neurons_CPU_ce1;
 
-assign Layer5_Neurons_CPU_address0 = zext_ln62_fu_278_p1;
+assign Layer5_Neurons_CPU_address0 = zext_ln61_fu_278_p1;
 
 assign Layer5_Neurons_CPU_d0 = reg_217;
 
-assign add_ln58_fu_223_p2 = (phi_mul_reg_124 + 10'd101);
+assign add_ln57_fu_223_p2 = (phi_mul_reg_124 + 10'd101);
 
-assign add_ln61_1_fu_262_p2 = (zext_ln61_2_fu_258_p1 + phi_mul_reg_124);
+assign add_ln60_1_fu_262_p2 = (zext_ln60_2_fu_258_p1 + phi_mul_reg_124);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -780,20 +780,20 @@ assign grp_generic_tanh_double_s_fu_187_ap_start = grp_generic_tanh_double_s_fu_
 
 assign i_fu_235_p2 = (i_0_i_reg_112 + 4'd1);
 
-assign icmp_ln58_fu_229_p2 = ((i_0_i_reg_112 == 4'd10) ? 1'b1 : 1'b0);
+assign icmp_ln57_fu_229_p2 = ((i_0_i_reg_112 == 4'd10) ? 1'b1 : 1'b0);
 
-assign icmp_ln60_fu_246_p2 = ((j_0_i_reg_146 == 7'd100) ? 1'b1 : 1'b0);
+assign icmp_ln59_fu_246_p2 = ((j_0_i_reg_146 == 7'd100) ? 1'b1 : 1'b0);
 
 assign j_fu_252_p2 = (j_0_i_reg_146 + 7'd1);
 
-assign zext_ln59_fu_241_p1 = phi_mul_reg_124;
+assign zext_ln58_fu_241_p1 = phi_mul_reg_124;
 
-assign zext_ln61_1_fu_273_p1 = j_0_i_reg_146;
+assign zext_ln60_1_fu_273_p1 = j_0_i_reg_146;
 
-assign zext_ln61_2_fu_258_p1 = j_fu_252_p2;
+assign zext_ln60_2_fu_258_p1 = j_fu_252_p2;
 
-assign zext_ln61_fu_268_p1 = add_ln61_1_fu_262_p2;
+assign zext_ln60_fu_268_p1 = add_ln60_1_fu_262_p2;
 
-assign zext_ln62_fu_278_p1 = i_0_i_reg_112;
+assign zext_ln61_fu_278_p1 = i_0_i_reg_112;
 
 endmodule //nerons

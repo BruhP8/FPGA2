@@ -13,7 +13,7 @@ set Pointer0 "0"
 set Reference0 "0"
 set Dims0 [list 1014]
 set Interface0 "wire"
-set DataType0 "float"
+set DataType0 "half"
 set Port0 [list $PortName0 $Interface0 $DataType0 $Pointer0 $Dims0 $Const0 $Volatile0 $ArrayOpt0]
 lappend PortList $Port0
 set PortName1 "Layer5_Neurons_CPU"
@@ -37,6 +37,6 @@ set hasSCFix 0
 set hasCBool 0 
 set hasCPPComplex 0 
 set isTemplateTop 0
-set hasHalf 0 
+set hasHalf 1 
 set dataPackList ""
 set module [list $moduleName $PortList $rawDecl $argAPInt $returnAPInt $dataPackList]

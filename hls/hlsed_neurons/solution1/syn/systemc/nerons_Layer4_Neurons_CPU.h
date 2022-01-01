@@ -18,7 +18,7 @@ using namespace sc_dt;
 
 struct nerons_Layer4_Neurons_CPU_ram : public sc_core::sc_module {
 
-  static const unsigned DataWidth = 32;
+  static const unsigned DataWidth = 16;
   static const unsigned AddressRange = 100;
   static const unsigned AddressWidth = 7;
 
@@ -75,7 +75,7 @@ void prc_write_0()
 SC_MODULE(nerons_Layer4_Neurons_CPU) {
 
 
-static const unsigned DataWidth = 32;
+static const unsigned DataWidth = 16;
 static const unsigned AddressRange = 100;
 static const unsigned AddressWidth = 7;
 

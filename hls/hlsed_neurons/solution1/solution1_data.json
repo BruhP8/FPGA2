@@ -20,8 +20,8 @@
       "index": "0",
       "type": {
         "kinds": ["array"],
-        "dataType": "float",
-        "dataWidth": "32",
+        "dataType": "half",
+        "dataWidth": "16",
         "arraySizes": ["1014"],
         "multiInterfaceRef": [
           "Layer2_Neurons_CPU_address0",
@@ -53,7 +53,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "2832706",
+    "Latency": "2769056",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -84,10 +84,10 @@
       "impl\/vhdl\/nerons_dcmp_64ns_64ns_1_2_1.vhd",
       "impl\/vhdl\/nerons_ddiv_64ns_64ns_64_31_1.vhd",
       "impl\/vhdl\/nerons_dmul_64ns_64ns_64_6_max_dsp_1.vhd",
-      "impl\/vhdl\/nerons_fadd_32ns_32ns_32_5_full_dsp_1.vhd",
-      "impl\/vhdl\/nerons_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
-      "impl\/vhdl\/nerons_fpext_32ns_64_2_1.vhd",
-      "impl\/vhdl\/nerons_fptrunc_64ns_32_2_1.vhd",
+      "impl\/vhdl\/nerons_dptohp_64ns_16_2_1.vhd",
+      "impl\/vhdl\/nerons_hadd_16ns_16ns_16_5_full_dsp_1.vhd",
+      "impl\/vhdl\/nerons_hmul_16ns_16ns_16_4_max_dsp_1.vhd",
+      "impl\/vhdl\/nerons_hptodp_16ns_64_2_1.vhd",
       "impl\/vhdl\/nerons_Layer3_Neurons_CPU.vhd",
       "impl\/vhdl\/nerons_Layer4_Neurons_CPU.vhd",
       "impl\/vhdl\/nerons_Layer4_Weights_CPU.vhd",
@@ -117,10 +117,10 @@
       "impl\/verilog\/nerons_dcmp_64ns_64ns_1_2_1.v",
       "impl\/verilog\/nerons_ddiv_64ns_64ns_64_31_1.v",
       "impl\/verilog\/nerons_dmul_64ns_64ns_64_6_max_dsp_1.v",
-      "impl\/verilog\/nerons_fadd_32ns_32ns_32_5_full_dsp_1.v",
-      "impl\/verilog\/nerons_fmul_32ns_32ns_32_4_max_dsp_1.v",
-      "impl\/verilog\/nerons_fpext_32ns_64_2_1.v",
-      "impl\/verilog\/nerons_fptrunc_64ns_32_2_1.v",
+      "impl\/verilog\/nerons_dptohp_64ns_16_2_1.v",
+      "impl\/verilog\/nerons_hadd_16ns_16ns_16_5_full_dsp_1.v",
+      "impl\/verilog\/nerons_hmul_16ns_16ns_16_4_max_dsp_1.v",
+      "impl\/verilog\/nerons_hptodp_16ns_64_2_1.v",
       "impl\/verilog\/nerons_Layer3_Neurons_CPU.v",
       "impl\/verilog\/nerons_Layer4_Neurons_CPU.v",
       "impl\/verilog\/nerons_Layer4_Weights_CPU.v",
@@ -138,10 +138,10 @@
       "impl\/misc\/nerons_ap_dcmp_0_no_dsp_64_ip.tcl",
       "impl\/misc\/nerons_ap_ddiv_29_no_dsp_64_ip.tcl",
       "impl\/misc\/nerons_ap_dmul_4_max_dsp_64_ip.tcl",
-      "impl\/misc\/nerons_ap_fadd_3_full_dsp_32_ip.tcl",
-      "impl\/misc\/nerons_ap_fmul_2_max_dsp_32_ip.tcl",
-      "impl\/misc\/nerons_ap_fpext_0_no_dsp_32_ip.tcl",
-      "impl\/misc\/nerons_ap_fptrunc_0_no_dsp_64_ip.tcl"
+      "impl\/misc\/nerons_ap_dptohp_0_no_dsp_64_ip.tcl",
+      "impl\/misc\/nerons_ap_hadd_3_full_dsp_16_ip.tcl",
+      "impl\/misc\/nerons_ap_hmul_2_max_dsp_16_ip.tcl",
+      "impl\/misc\/nerons_ap_hptodp_0_no_dsp_16_ip.tcl"
     ],
     "DesignXml": "\/home\/iamgron\/Documents\/Fac\/M2\/FPGA2\/projet\/FPGA2\/hls\/hlsed_neurons\/solution1\/.autopilot\/db\/nerons.design.xml",
     "DebugDir": "\/home\/iamgron\/Documents\/Fac\/M2\/FPGA2\/projet\/FPGA2\/hls\/hlsed_neurons\/solution1\/.debug",
@@ -172,24 +172,24 @@
         "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 4 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name nerons_ap_dmul_4_max_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
       },
       {
-        "name": "nerons_ap_fadd_3_full_dsp_32",
+        "name": "nerons_ap_dptohp_0_no_dsp_64",
         "vlnv": "xilinx.com:ip:floating_point:7.1",
-        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Add CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name nerons_ap_fadd_3_full_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 5 CONFIG.c_result_fraction_width 11 CONFIG.component_name nerons_ap_dptohp_0_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Half CONFIG.result_tlast_behv Null"
       },
       {
-        "name": "nerons_ap_fmul_2_max_dsp_32",
+        "name": "nerons_ap_hadd_3_full_dsp_16",
         "vlnv": "xilinx.com:ip:floating_point:7.1",
-        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 2 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name nerons_ap_fmul_2_max_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+        "params": "CONFIG.a_precision_type Half CONFIG.a_tuser_width 1 CONFIG.add_sub_value Add CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 5 CONFIG.c_a_fraction_width 11 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 5 CONFIG.c_result_fraction_width 11 CONFIG.component_name nerons_ap_hadd_3_full_dsp_16 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Half CONFIG.result_tlast_behv Null"
       },
       {
-        "name": "nerons_ap_fpext_0_no_dsp_32",
+        "name": "nerons_ap_hmul_2_max_dsp_16",
         "vlnv": "xilinx.com:ip:floating_point:7.1",
-        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name nerons_ap_fpext_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+        "params": "CONFIG.a_precision_type Half CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 5 CONFIG.c_a_fraction_width 11 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 2 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 5 CONFIG.c_result_fraction_width 11 CONFIG.component_name nerons_ap_hmul_2_max_dsp_16 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Half CONFIG.result_tlast_behv Null"
       },
       {
-        "name": "nerons_ap_fptrunc_0_no_dsp_64",
+        "name": "nerons_ap_hptodp_0_no_dsp_16",
         "vlnv": "xilinx.com:ip:floating_point:7.1",
-        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name nerons_ap_fptrunc_0_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+        "params": "CONFIG.a_precision_type Half CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 5 CONFIG.c_a_fraction_width 11 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name nerons_ap_hptodp_0_no_dsp_16 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
       }
     ]
   },
@@ -243,10 +243,10 @@
     "Layer2_Neurons_CPU_q0": {
       "type": "data",
       "dir": "in",
-      "width": "32",
+      "width": "16",
       "ctype": {"DATA": {
-          "Type": "real float",
-          "Width": "32"
+          "Type": "null",
+          "Width": "16"
         }},
       "bundle_name": "Layer2_Neurons_CPU",
       "bundle_role": "q0"
@@ -254,10 +254,10 @@
     "Layer2_Neurons_CPU_q1": {
       "type": "data",
       "dir": "in",
-      "width": "32",
+      "width": "16",
       "ctype": {"DATA": {
-          "Type": "real float",
-          "Width": "32"
+          "Type": "null",
+          "Width": "16"
         }},
       "bundle_name": "Layer2_Neurons_CPU",
       "bundle_role": "q1"
@@ -320,7 +320,7 @@
     },
     "Layer2_Neurons_CPU_q0": {
       "dir": "in",
-      "width": "32"
+      "width": "16"
     },
     "Layer2_Neurons_CPU_address1": {
       "dir": "out",
@@ -332,7 +332,7 @@
     },
     "Layer2_Neurons_CPU_q1": {
       "dir": "in",
-      "width": "32"
+      "width": "16"
     },
     "Layer5_Neurons_CPU_address0": {
       "dir": "out",
@@ -360,7 +360,7 @@
           "InstanceName": "grp_calculateLayer3_fu_157",
           "Instances": [{
               "ModuleName": "generic_tanh_double_s",
-              "InstanceName": "grp_generic_tanh_double_s_fu_318",
+              "InstanceName": "grp_generic_tanh_double_s_fu_322",
               "Instances": [{
                   "ModuleName": "exp_generic_double_s",
                   "InstanceName": "grp_exp_generic_double_s_fu_87"
@@ -372,7 +372,7 @@
           "InstanceName": "grp_calculateLayer4_fu_173",
           "Instances": [{
               "ModuleName": "generic_tanh_double_s",
-              "InstanceName": "grp_generic_tanh_double_s_fu_200",
+              "InstanceName": "grp_generic_tanh_double_s_fu_208",
               "Instances": [{
                   "ModuleName": "exp_generic_double_s",
                   "InstanceName": "grp_exp_generic_double_s_fu_87"
@@ -475,12 +475,12 @@
       },
       "calculateLayer3": {
         "Latency": {
-          "LatencyBest": "1194401",
-          "LatencyAvg": "1224401",
-          "LatencyWorst": "1286901",
-          "PipelineIIMin": "1194401",
-          "PipelineIIMax": "1286901",
-          "PipelineII": "1194401 ~ 1286901",
+          "LatencyBest": "1195651",
+          "LatencyAvg": "1225651",
+          "LatencyWorst": "1288151",
+          "PipelineIIMin": "1195651",
+          "PipelineIIMax": "1288151",
+          "PipelineII": "1195651 ~ 1288151",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -492,33 +492,33 @@
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "50",
-            "LatencyMin": "1194400",
-            "LatencyMax": "1286900",
-            "Latency": "1194400 ~ 1286900",
+            "LatencyMin": "1195650",
+            "LatencyMax": "1288150",
+            "Latency": "1195650 ~ 1288150",
             "PipelineII": "",
-            "PipelineDepthMin": "23888",
-            "PipelineDepthMax": "25738",
-            "PipelineDepth": "23888 ~ 25738",
+            "PipelineDepthMin": "23913",
+            "PipelineDepthMax": "25763",
+            "PipelineDepth": "23913 ~ 25763",
             "Loops": [{
                 "Name": "Loop 1.1",
                 "TripCount": "5",
-                "LatencyMin": "23885",
-                "LatencyMax": "25735",
-                "Latency": "23885 ~ 25735",
+                "LatencyMin": "23910",
+                "LatencyMax": "25760",
+                "Latency": "23910 ~ 25760",
                 "PipelineII": "",
-                "PipelineDepthMin": "4777",
-                "PipelineDepthMax": "5147",
-                "PipelineDepth": "4777 ~ 5147",
+                "PipelineDepthMin": "4782",
+                "PipelineDepthMax": "5152",
+                "PipelineDepth": "4782 ~ 5152",
                 "Loops": [{
                     "Name": "Loop 1.1.1",
                     "TripCount": "5",
-                    "LatencyMin": "4775",
-                    "LatencyMax": "5145",
-                    "Latency": "4775 ~ 5145",
+                    "LatencyMin": "4780",
+                    "LatencyMax": "5150",
+                    "Latency": "4780 ~ 5150",
                     "PipelineII": "",
-                    "PipelineDepthMin": "955",
-                    "PipelineDepthMax": "1029",
-                    "PipelineDepth": "955 ~ 1029",
+                    "PipelineDepthMin": "956",
+                    "PipelineDepthMax": "1030",
+                    "PipelineDepth": "956 ~ 1030",
                     "Loops": [{
                         "Name": "Loop 1.1.1.1",
                         "TripCount": "5",
@@ -539,19 +539,19 @@
         "Area": {
           "BRAM_18K": "31",
           "DSP48E": "38",
-          "FF": "9838",
-          "LUT": "13552",
+          "FF": "9687",
+          "LUT": "12402",
           "URAM": "0"
         }
       },
       "calculateLayer4": {
         "Latency": {
-          "LatencyBest": "1627101",
-          "LatencyAvg": "1629501",
-          "LatencyWorst": "1634501",
-          "PipelineIIMin": "1627101",
-          "PipelineIIMax": "1634501",
-          "PipelineII": "1627101 ~ 1634501",
+          "LatencyBest": "1562201",
+          "LatencyAvg": "1564601",
+          "LatencyWorst": "1569601",
+          "PipelineIIMin": "1562201",
+          "PipelineIIMax": "1569601",
+          "PipelineII": "1562201 ~ 1569601",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -563,37 +563,51 @@
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "100",
-            "LatencyMin": "1627100",
-            "LatencyMax": "1634500",
-            "Latency": "1627100 ~ 1634500",
+            "LatencyMin": "1562200",
+            "LatencyMax": "1569600",
+            "Latency": "1562200 ~ 1569600",
             "PipelineII": "",
-            "PipelineDepthMin": "16271",
-            "PipelineDepthMax": "16345",
-            "PipelineDepth": "16271 ~ 16345",
+            "PipelineDepthMin": "15622",
+            "PipelineDepthMax": "15696",
+            "PipelineDepth": "15622 ~ 15696",
             "Loops": [{
                 "Name": "Loop 1.1",
-                "TripCount": "1250",
-                "Latency": "16250",
+                "TripCount": "50",
+                "Latency": "15600",
                 "PipelineII": "",
-                "PipelineDepth": "13"
+                "PipelineDepth": "312",
+                "Loops": [{
+                    "Name": "Loop 1.1.1",
+                    "TripCount": "5",
+                    "Latency": "310",
+                    "PipelineII": "",
+                    "PipelineDepth": "62",
+                    "Loops": [{
+                        "Name": "Loop 1.1.1.1",
+                        "TripCount": "5",
+                        "Latency": "60",
+                        "PipelineII": "",
+                        "PipelineDepth": "12"
+                      }]
+                  }]
               }]
           }],
         "Area": {
-          "BRAM_18K": "271",
-          "DSP48E": "35",
-          "FF": "9360",
-          "LUT": "12617",
+          "BRAM_18K": "143",
+          "DSP48E": "34",
+          "FF": "9123",
+          "LUT": "11616",
           "URAM": "0"
         }
       },
       "nerons": {
         "Latency": {
-          "LatencyBest": "2832706",
-          "LatencyAvg": "2865346",
-          "LatencyWorst": "2933346",
-          "PipelineIIMin": "2832707",
-          "PipelineIIMax": "2933347",
-          "PipelineII": "2832707 ~ 2933347",
+          "LatencyBest": "2769056",
+          "LatencyAvg": "2801696",
+          "LatencyWorst": "2869696",
+          "PipelineIIMin": "2769057",
+          "PipelineIIMax": "2869697",
+          "PipelineII": "2769057 ~ 2869697",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -621,10 +635,10 @@
               }]
           }],
         "Area": {
-          "BRAM_18K": "324",
-          "DSP48E": "108",
-          "FF": "28332",
-          "LUT": "38307",
+          "BRAM_18K": "193",
+          "DSP48E": "106",
+          "FF": "27687",
+          "LUT": "35468",
           "URAM": "0"
         }
       }
@@ -640,7 +654,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-12-16 18:07:35 CET",
+    "Time": "2022-01-01 17:20:35 CET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

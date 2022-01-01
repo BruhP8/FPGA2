@@ -6,7 +6,7 @@
 module nerons_Layer4_Weights_CPU_rom (
 addr0, ce0, q0, clk);
 
-parameter DWIDTH = 32;
+parameter DWIDTH = 16;
 parameter AWIDTH = 10;
 parameter MEM_SIZE = 1010;
 
@@ -43,7 +43,7 @@ module nerons_Layer4_Weights_CPU(
     ce0,
     q0);
 
-parameter DataWidth = 32'd32;
+parameter DataWidth = 32'd16;
 parameter AddressRange = 32'd1010;
 parameter AddressWidth = 32'd10;
 input reset;

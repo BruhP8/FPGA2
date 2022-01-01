@@ -6,7 +6,7 @@
 module calculateLayer4_Layer3_Weights_CPU_rom (
 addr0, ce0, q0, clk);
 
-parameter DWIDTH = 32;
+parameter DWIDTH = 16;
 parameter AWIDTH = 17;
 parameter MEM_SIZE = 125100;
 
@@ -43,7 +43,7 @@ module calculateLayer4_Layer3_Weights_CPU(
     ce0,
     q0);
 
-parameter DataWidth = 32'd32;
+parameter DataWidth = 32'd16;
 parameter AddressRange = 32'd125100;
 parameter AddressWidth = 32'd17;
 input reset;

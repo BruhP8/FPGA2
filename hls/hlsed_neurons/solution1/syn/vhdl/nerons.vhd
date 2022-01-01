@@ -19,10 +19,10 @@ port (
     ap_ready : OUT STD_LOGIC;
     Layer2_Neurons_CPU_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     Layer2_Neurons_CPU_ce0 : OUT STD_LOGIC;
-    Layer2_Neurons_CPU_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+    Layer2_Neurons_CPU_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
     Layer2_Neurons_CPU_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
     Layer2_Neurons_CPU_ce1 : OUT STD_LOGIC;
-    Layer2_Neurons_CPU_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+    Layer2_Neurons_CPU_q1 : IN STD_LOGIC_VECTOR (15 downto 0);
     Layer5_Neurons_CPU_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
     Layer5_Neurons_CPU_ce0 : OUT STD_LOGIC;
     Layer5_Neurons_CPU_we0 : OUT STD_LOGIC;
@@ -33,7 +33,7 @@ end;
 architecture behav of nerons is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "nerons,hls_ip_2019_1,{HLS_INPUT_TYPE=c,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=9.514000,HLS_SYN_LAT=2865346,HLS_SYN_TPT=none,HLS_SYN_MEM=324,HLS_SYN_DSP=108,HLS_SYN_FF=28332,HLS_SYN_LUT=38307,HLS_VERSION=2019_1}";
+    "nerons,hls_ip_2019_1,{HLS_INPUT_TYPE=c,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=9.514000,HLS_SYN_LAT=2801696,HLS_SYN_TPT=none,HLS_SYN_MEM=193,HLS_SYN_DSP=106,HLS_SYN_FF=27687,HLS_SYN_LUT=35468,HLS_VERSION=2019_1}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (32 downto 0) := "000000000000000000000000000000001";
@@ -88,12 +88,12 @@ architecture behav of nerons is
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant ap_const_lv32_18 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011000";
-    constant ap_const_lv32_C : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001100";
-    constant ap_const_lv32_8 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001000";
     constant ap_const_lv64_3FE55555571F7693 : STD_LOGIC_VECTOR (63 downto 0) := "0011111111100101010101010101010101010111000111110111011010010011";
     constant ap_const_lv64_3FFB74538EF34D6A : STD_LOGIC_VECTOR (63 downto 0) := "0011111111111011011101000101001110001110111100110100110101101010";
     constant ap_const_lv32_12 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010010";
     constant ap_const_lv32_1A : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011010";
+    constant ap_const_lv32_C : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001100";
+    constant ap_const_lv32_8 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001000";
     constant ap_const_lv10_65 : STD_LOGIC_VECTOR (9 downto 0) := "0001100101";
     constant ap_const_lv4_A : STD_LOGIC_VECTOR (3 downto 0) := "1010";
     constant ap_const_lv4_1 : STD_LOGIC_VECTOR (3 downto 0) := "0001";
@@ -109,40 +109,40 @@ architecture behav of nerons is
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
     signal Layer4_Weights_CPU_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal Layer4_Weights_CPU_ce0 : STD_LOGIC;
-    signal Layer4_Weights_CPU_q0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_211_p2 : STD_LOGIC_VECTOR (63 downto 0);
+    signal Layer4_Weights_CPU_q0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_fu_198_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal reg_217 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_CS_fsm_state24 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state24 : signal is "none";
     signal ap_CS_fsm_state32 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state32 : signal is "none";
-    signal add_ln58_fu_223_p2 : STD_LOGIC_VECTOR (9 downto 0);
-    signal add_ln58_reg_283 : STD_LOGIC_VECTOR (9 downto 0);
+    signal add_ln57_fu_223_p2 : STD_LOGIC_VECTOR (9 downto 0);
+    signal add_ln57_reg_283 : STD_LOGIC_VECTOR (9 downto 0);
     signal ap_CS_fsm_state5 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
     signal i_fu_235_p2 : STD_LOGIC_VECTOR (3 downto 0);
     signal i_reg_291 : STD_LOGIC_VECTOR (3 downto 0);
-    signal icmp_ln58_fu_229_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal icmp_ln57_fu_229_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state6 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
     signal j_fu_252_p2 : STD_LOGIC_VECTOR (6 downto 0);
     signal j_reg_309 : STD_LOGIC_VECTOR (6 downto 0);
     signal ap_CS_fsm_state7 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state7 : signal is "none";
-    signal icmp_ln60_fu_246_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal Layer4_Weights_CPU_l_reg_324 : STD_LOGIC_VECTOR (31 downto 0);
+    signal icmp_ln59_fu_246_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal Layer4_Weights_CPU_l_reg_324 : STD_LOGIC_VECTOR (15 downto 0);
     signal ap_CS_fsm_state8 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state8 : signal is "none";
-    signal Layer4_Neurons_CPU_q0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal Layer4_Neurons_CPU_l_reg_329 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_203_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_3_i_reg_334 : STD_LOGIC_VECTOR (31 downto 0);
+    signal Layer4_Neurons_CPU_q0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal Layer4_Neurons_CPU_l_reg_329 : STD_LOGIC_VECTOR (15 downto 0);
+    signal grp_fu_209_p2 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_3_i_reg_334 : STD_LOGIC_VECTOR (15 downto 0);
     signal ap_CS_fsm_state12 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state12 : signal is "none";
-    signal grp_fu_198_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_204_p2 : STD_LOGIC_VECTOR (15 downto 0);
     signal ap_CS_fsm_state17 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state17 : signal is "none";
-    signal grp_fu_207_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_fu_213_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_i_reg_344 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_CS_fsm_state18 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state18 : signal is "none";
@@ -155,7 +155,7 @@ architecture behav of nerons is
     signal Layer3_Neurons_CPU_address0 : STD_LOGIC_VECTOR (10 downto 0);
     signal Layer3_Neurons_CPU_ce0 : STD_LOGIC;
     signal Layer3_Neurons_CPU_we0 : STD_LOGIC;
-    signal Layer3_Neurons_CPU_q0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal Layer3_Neurons_CPU_q0 : STD_LOGIC_VECTOR (15 downto 0);
     signal Layer4_Neurons_CPU_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal Layer4_Neurons_CPU_ce0 : STD_LOGIC;
     signal Layer4_Neurons_CPU_we0 : STD_LOGIC;
@@ -170,7 +170,7 @@ architecture behav of nerons is
     signal grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_address0 : STD_LOGIC_VECTOR (10 downto 0);
     signal grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_ce0 : STD_LOGIC;
     signal grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_we0 : STD_LOGIC;
-    signal grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_d0 : STD_LOGIC_VECTOR (15 downto 0);
     signal grp_calculateLayer4_fu_173_ap_start : STD_LOGIC;
     signal grp_calculateLayer4_fu_173_ap_done : STD_LOGIC;
     signal grp_calculateLayer4_fu_173_ap_idle : STD_LOGIC;
@@ -180,7 +180,7 @@ architecture behav of nerons is
     signal grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_address0 : STD_LOGIC_VECTOR (6 downto 0);
     signal grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_ce0 : STD_LOGIC;
     signal grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_we0 : STD_LOGIC;
-    signal grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_d0 : STD_LOGIC_VECTOR (15 downto 0);
     signal grp_generic_tanh_double_s_fu_187_ap_start : STD_LOGIC;
     signal grp_generic_tanh_double_s_fu_187_ap_idle : STD_LOGIC;
     signal i_0_i_reg_112 : STD_LOGIC_VECTOR (3 downto 0);
@@ -189,7 +189,7 @@ architecture behav of nerons is
     signal ap_CS_fsm_state33 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state33 : signal is "none";
     signal phi_mul_reg_124 : STD_LOGIC_VECTOR (9 downto 0);
-    signal somme_0_i_reg_136 : STD_LOGIC_VECTOR (31 downto 0);
+    signal somme_0_i_reg_136 : STD_LOGIC_VECTOR (15 downto 0);
     signal j_0_i_reg_146 : STD_LOGIC_VECTOR (6 downto 0);
     signal grp_calculateLayer3_fu_157_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state2 : STD_LOGIC;
@@ -200,22 +200,22 @@ architecture behav of nerons is
     signal grp_generic_tanh_double_s_fu_187_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state25 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state25 : signal is "none";
-    signal zext_ln59_fu_241_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal zext_ln61_fu_268_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal zext_ln61_1_fu_273_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal zext_ln62_fu_278_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal ap_CS_fsm_state13 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state13 : signal is "none";
-    signal ap_CS_fsm_state9 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state9 : signal is "none";
-    signal grp_fu_211_p0 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_fu_211_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal zext_ln58_fu_241_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal zext_ln60_fu_268_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal zext_ln60_1_fu_273_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal zext_ln61_fu_278_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_fu_198_p0 : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_fu_198_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_CS_fsm_state19 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state19 : signal is "none";
     signal ap_CS_fsm_state27 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state27 : signal is "none";
-    signal zext_ln61_2_fu_258_p1 : STD_LOGIC_VECTOR (9 downto 0);
-    signal add_ln61_1_fu_262_p2 : STD_LOGIC_VECTOR (9 downto 0);
+    signal ap_CS_fsm_state13 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state13 : signal is "none";
+    signal ap_CS_fsm_state9 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state9 : signal is "none";
+    signal zext_ln60_2_fu_258_p1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal add_ln60_1_fu_262_p2 : STD_LOGIC_VECTOR (9 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (32 downto 0);
 
     component calculateLayer3 IS
@@ -228,14 +228,14 @@ architecture behav of nerons is
         ap_ready : OUT STD_LOGIC;
         Layer2_Neurons_CPU_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         Layer2_Neurons_CPU_ce0 : OUT STD_LOGIC;
-        Layer2_Neurons_CPU_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        Layer2_Neurons_CPU_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
         Layer2_Neurons_CPU_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
         Layer2_Neurons_CPU_ce1 : OUT STD_LOGIC;
-        Layer2_Neurons_CPU_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+        Layer2_Neurons_CPU_q1 : IN STD_LOGIC_VECTOR (15 downto 0);
         Layer3_Neurons_CPU_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
         Layer3_Neurons_CPU_ce0 : OUT STD_LOGIC;
         Layer3_Neurons_CPU_we0 : OUT STD_LOGIC;
-        Layer3_Neurons_CPU_d0 : OUT STD_LOGIC_VECTOR (31 downto 0) );
+        Layer3_Neurons_CPU_d0 : OUT STD_LOGIC_VECTOR (15 downto 0) );
     end component;
 
 
@@ -249,11 +249,11 @@ architecture behav of nerons is
         ap_ready : OUT STD_LOGIC;
         Layer3_Neurons_CPU_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
         Layer3_Neurons_CPU_ce0 : OUT STD_LOGIC;
-        Layer3_Neurons_CPU_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        Layer3_Neurons_CPU_q0 : IN STD_LOGIC_VECTOR (15 downto 0);
         Layer4_Neurons_CPU_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
         Layer4_Neurons_CPU_ce0 : OUT STD_LOGIC;
         Layer4_Neurons_CPU_we0 : OUT STD_LOGIC;
-        Layer4_Neurons_CPU_d0 : OUT STD_LOGIC_VECTOR (31 downto 0) );
+        Layer4_Neurons_CPU_d0 : OUT STD_LOGIC_VECTOR (15 downto 0) );
     end component;
 
 
@@ -267,55 +267,6 @@ architecture behav of nerons is
         ap_ready : OUT STD_LOGIC;
         t_in : IN STD_LOGIC_VECTOR (63 downto 0);
         ap_return : OUT STD_LOGIC_VECTOR (63 downto 0) );
-    end component;
-
-
-    component nerons_fadd_32ns_32ns_32_5_full_dsp_1 IS
-    generic (
-        ID : INTEGER;
-        NUM_STAGE : INTEGER;
-        din0_WIDTH : INTEGER;
-        din1_WIDTH : INTEGER;
-        dout_WIDTH : INTEGER );
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        din0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        din1 : IN STD_LOGIC_VECTOR (31 downto 0);
-        ce : IN STD_LOGIC;
-        dout : OUT STD_LOGIC_VECTOR (31 downto 0) );
-    end component;
-
-
-    component nerons_fmul_32ns_32ns_32_4_max_dsp_1 IS
-    generic (
-        ID : INTEGER;
-        NUM_STAGE : INTEGER;
-        din0_WIDTH : INTEGER;
-        din1_WIDTH : INTEGER;
-        dout_WIDTH : INTEGER );
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        din0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        din1 : IN STD_LOGIC_VECTOR (31 downto 0);
-        ce : IN STD_LOGIC;
-        dout : OUT STD_LOGIC_VECTOR (31 downto 0) );
-    end component;
-
-
-    component nerons_fpext_32ns_64_2_1 IS
-    generic (
-        ID : INTEGER;
-        NUM_STAGE : INTEGER;
-        din0_WIDTH : INTEGER;
-        dout_WIDTH : INTEGER );
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        din0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        ce : IN STD_LOGIC;
-        dout : OUT STD_LOGIC_VECTOR (63 downto 0) );
     end component;
 
 
@@ -336,6 +287,55 @@ architecture behav of nerons is
     end component;
 
 
+    component nerons_hadd_16ns_16ns_16_5_full_dsp_1 IS
+    generic (
+        ID : INTEGER;
+        NUM_STAGE : INTEGER;
+        din0_WIDTH : INTEGER;
+        din1_WIDTH : INTEGER;
+        dout_WIDTH : INTEGER );
+    port (
+        clk : IN STD_LOGIC;
+        reset : IN STD_LOGIC;
+        din0 : IN STD_LOGIC_VECTOR (15 downto 0);
+        din1 : IN STD_LOGIC_VECTOR (15 downto 0);
+        ce : IN STD_LOGIC;
+        dout : OUT STD_LOGIC_VECTOR (15 downto 0) );
+    end component;
+
+
+    component nerons_hmul_16ns_16ns_16_4_max_dsp_1 IS
+    generic (
+        ID : INTEGER;
+        NUM_STAGE : INTEGER;
+        din0_WIDTH : INTEGER;
+        din1_WIDTH : INTEGER;
+        dout_WIDTH : INTEGER );
+    port (
+        clk : IN STD_LOGIC;
+        reset : IN STD_LOGIC;
+        din0 : IN STD_LOGIC_VECTOR (15 downto 0);
+        din1 : IN STD_LOGIC_VECTOR (15 downto 0);
+        ce : IN STD_LOGIC;
+        dout : OUT STD_LOGIC_VECTOR (15 downto 0) );
+    end component;
+
+
+    component nerons_hptodp_16ns_64_2_1 IS
+    generic (
+        ID : INTEGER;
+        NUM_STAGE : INTEGER;
+        din0_WIDTH : INTEGER;
+        dout_WIDTH : INTEGER );
+    port (
+        clk : IN STD_LOGIC;
+        reset : IN STD_LOGIC;
+        din0 : IN STD_LOGIC_VECTOR (15 downto 0);
+        ce : IN STD_LOGIC;
+        dout : OUT STD_LOGIC_VECTOR (63 downto 0) );
+    end component;
+
+
     component nerons_Layer4_Weights_CPU IS
     generic (
         DataWidth : INTEGER;
@@ -346,7 +346,7 @@ architecture behav of nerons is
         reset : IN STD_LOGIC;
         address0 : IN STD_LOGIC_VECTOR (9 downto 0);
         ce0 : IN STD_LOGIC;
-        q0 : OUT STD_LOGIC_VECTOR (31 downto 0) );
+        q0 : OUT STD_LOGIC_VECTOR (15 downto 0) );
     end component;
 
 
@@ -361,8 +361,8 @@ architecture behav of nerons is
         address0 : IN STD_LOGIC_VECTOR (10 downto 0);
         ce0 : IN STD_LOGIC;
         we0 : IN STD_LOGIC;
-        d0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        q0 : OUT STD_LOGIC_VECTOR (31 downto 0) );
+        d0 : IN STD_LOGIC_VECTOR (15 downto 0);
+        q0 : OUT STD_LOGIC_VECTOR (15 downto 0) );
     end component;
 
 
@@ -377,8 +377,8 @@ architecture behav of nerons is
         address0 : IN STD_LOGIC_VECTOR (6 downto 0);
         ce0 : IN STD_LOGIC;
         we0 : IN STD_LOGIC;
-        d0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        q0 : OUT STD_LOGIC_VECTOR (31 downto 0) );
+        d0 : IN STD_LOGIC_VECTOR (15 downto 0);
+        q0 : OUT STD_LOGIC_VECTOR (15 downto 0) );
     end component;
 
 
@@ -386,7 +386,7 @@ architecture behav of nerons is
 begin
     Layer4_Weights_CPU_U : component nerons_Layer4_Weights_CPU
     generic map (
-        DataWidth => 32,
+        DataWidth => 16,
         AddressRange => 1010,
         AddressWidth => 10)
     port map (
@@ -398,7 +398,7 @@ begin
 
     Layer3_Neurons_CPU_U : component nerons_Layer3_Neurons_CPU
     generic map (
-        DataWidth => 32,
+        DataWidth => 16,
         AddressRange => 1250,
         AddressWidth => 11)
     port map (
@@ -412,7 +412,7 @@ begin
 
     Layer4_Neurons_CPU_U : component nerons_Layer4_Neurons_CPU
     generic map (
-        DataWidth => 32,
+        DataWidth => 16,
         AddressRange => 100,
         AddressWidth => 7)
     port map (
@@ -470,50 +470,7 @@ begin
         t_in => reg_217,
         ap_return => grp_generic_tanh_double_s_fu_187_ap_return);
 
-    nerons_fadd_32ns_32ns_32_5_full_dsp_1_U45 : component nerons_fadd_32ns_32ns_32_5_full_dsp_1
-    generic map (
-        ID => 1,
-        NUM_STAGE => 5,
-        din0_WIDTH => 32,
-        din1_WIDTH => 32,
-        dout_WIDTH => 32)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        din0 => somme_0_i_reg_136,
-        din1 => tmp_3_i_reg_334,
-        ce => ap_const_logic_1,
-        dout => grp_fu_198_p2);
-
-    nerons_fmul_32ns_32ns_32_4_max_dsp_1_U46 : component nerons_fmul_32ns_32ns_32_4_max_dsp_1
-    generic map (
-        ID => 1,
-        NUM_STAGE => 4,
-        din0_WIDTH => 32,
-        din1_WIDTH => 32,
-        dout_WIDTH => 32)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        din0 => Layer4_Weights_CPU_l_reg_324,
-        din1 => Layer4_Neurons_CPU_l_reg_329,
-        ce => ap_const_logic_1,
-        dout => grp_fu_203_p2);
-
-    nerons_fpext_32ns_64_2_1_U47 : component nerons_fpext_32ns_64_2_1
-    generic map (
-        ID => 1,
-        NUM_STAGE => 2,
-        din0_WIDTH => 32,
-        dout_WIDTH => 64)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        din0 => somme_0_i_reg_136,
-        ce => ap_const_logic_1,
-        dout => grp_fu_207_p1);
-
-    nerons_dmul_64ns_64ns_64_6_max_dsp_1_U48 : component nerons_dmul_64ns_64ns_64_6_max_dsp_1
+    nerons_dmul_64ns_64ns_64_6_max_dsp_1_U46 : component nerons_dmul_64ns_64ns_64_6_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 6,
@@ -523,10 +480,53 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => grp_fu_211_p0,
-        din1 => grp_fu_211_p1,
+        din0 => grp_fu_198_p0,
+        din1 => grp_fu_198_p1,
         ce => ap_const_logic_1,
-        dout => grp_fu_211_p2);
+        dout => grp_fu_198_p2);
+
+    nerons_hadd_16ns_16ns_16_5_full_dsp_1_U47 : component nerons_hadd_16ns_16ns_16_5_full_dsp_1
+    generic map (
+        ID => 1,
+        NUM_STAGE => 5,
+        din0_WIDTH => 16,
+        din1_WIDTH => 16,
+        dout_WIDTH => 16)
+    port map (
+        clk => ap_clk,
+        reset => ap_rst,
+        din0 => somme_0_i_reg_136,
+        din1 => tmp_3_i_reg_334,
+        ce => ap_const_logic_1,
+        dout => grp_fu_204_p2);
+
+    nerons_hmul_16ns_16ns_16_4_max_dsp_1_U48 : component nerons_hmul_16ns_16ns_16_4_max_dsp_1
+    generic map (
+        ID => 1,
+        NUM_STAGE => 4,
+        din0_WIDTH => 16,
+        din1_WIDTH => 16,
+        dout_WIDTH => 16)
+    port map (
+        clk => ap_clk,
+        reset => ap_rst,
+        din0 => Layer4_Weights_CPU_l_reg_324,
+        din1 => Layer4_Neurons_CPU_l_reg_329,
+        ce => ap_const_logic_1,
+        dout => grp_fu_209_p2);
+
+    nerons_hptodp_16ns_64_2_1_U49 : component nerons_hptodp_16ns_64_2_1
+    generic map (
+        ID => 1,
+        NUM_STAGE => 2,
+        din0_WIDTH => 16,
+        dout_WIDTH => 64)
+    port map (
+        clk => ap_clk,
+        reset => ap_rst,
+        din0 => somme_0_i_reg_136,
+        ce => ap_const_logic_1,
+        dout => grp_fu_213_p1);
 
 
 
@@ -618,7 +618,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state33)) then 
-                phi_mul_reg_124 <= add_ln58_reg_283;
+                phi_mul_reg_124 <= add_ln57_reg_283;
             elsif (((grp_calculateLayer4_fu_173_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
                 phi_mul_reg_124 <= ap_const_lv10_0;
             end if; 
@@ -629,7 +629,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state17)) then 
-                somme_0_i_reg_136 <= grp_fu_198_p2;
+                somme_0_i_reg_136 <= grp_fu_204_p2;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state6)) then 
                 somme_0_i_reg_136 <= Layer4_Weights_CPU_q0;
             end if; 
@@ -648,7 +648,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state5)) then
-                add_ln58_reg_283 <= add_ln58_fu_223_p2;
+                add_ln57_reg_283 <= add_ln57_fu_223_p2;
                 i_reg_291 <= i_fu_235_p2;
             end if;
         end if;
@@ -665,7 +665,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state32) or (ap_const_logic_1 = ap_CS_fsm_state24))) then
-                reg_217 <= grp_fu_211_p2;
+                reg_217 <= grp_fu_198_p2;
             end if;
         end if;
     end process;
@@ -673,7 +673,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state12)) then
-                tmp_3_i_reg_334 <= grp_fu_203_p2;
+                tmp_3_i_reg_334 <= grp_fu_209_p2;
             end if;
         end if;
     end process;
@@ -689,12 +689,12 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state18)) then
-                tmp_i_reg_344 <= grp_fu_207_p1;
+                tmp_i_reg_344 <= grp_fu_213_p1;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state5, icmp_ln58_fu_229_p2, ap_CS_fsm_state7, icmp_ln60_fu_246_p2, ap_CS_fsm_state26, grp_generic_tanh_double_s_fu_187_ap_done, grp_calculateLayer3_fu_157_ap_done, grp_calculateLayer4_fu_173_ap_done, ap_CS_fsm_state4, ap_CS_fsm_state2)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state5, icmp_ln57_fu_229_p2, ap_CS_fsm_state7, icmp_ln59_fu_246_p2, ap_CS_fsm_state26, grp_generic_tanh_double_s_fu_187_ap_done, grp_calculateLayer3_fu_157_ap_done, grp_calculateLayer4_fu_173_ap_done, ap_CS_fsm_state4, ap_CS_fsm_state2)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -718,7 +718,7 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state4;
                 end if;
             when ap_ST_fsm_state5 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state5) and (icmp_ln58_fu_229_p2 = ap_const_lv1_1))) then
+                if (((ap_const_logic_1 = ap_CS_fsm_state5) and (icmp_ln57_fu_229_p2 = ap_const_lv1_1))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state6;
@@ -726,7 +726,7 @@ begin
             when ap_ST_fsm_state6 => 
                 ap_NS_fsm <= ap_ST_fsm_state7;
             when ap_ST_fsm_state7 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state7) and (icmp_ln60_fu_246_p2 = ap_const_lv1_1))) then
+                if (((ap_const_logic_1 = ap_CS_fsm_state7) and (icmp_ln59_fu_246_p2 = ap_const_lv1_1))) then
                     ap_NS_fsm <= ap_ST_fsm_state18;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state8;
@@ -830,10 +830,10 @@ begin
     end process;
 
 
-    Layer4_Neurons_CPU_address0_assign_proc : process(ap_CS_fsm_state7, grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_address0, ap_CS_fsm_state4, zext_ln61_1_fu_273_p1)
+    Layer4_Neurons_CPU_address0_assign_proc : process(ap_CS_fsm_state7, grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_address0, ap_CS_fsm_state4, zext_ln60_1_fu_273_p1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            Layer4_Neurons_CPU_address0 <= zext_ln61_1_fu_273_p1(7 - 1 downto 0);
+            Layer4_Neurons_CPU_address0 <= zext_ln60_1_fu_273_p1(7 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
             Layer4_Neurons_CPU_address0 <= grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_address0;
         else 
@@ -864,12 +864,12 @@ begin
     end process;
 
 
-    Layer4_Weights_CPU_address0_assign_proc : process(ap_CS_fsm_state5, ap_CS_fsm_state7, zext_ln59_fu_241_p1, zext_ln61_fu_268_p1)
+    Layer4_Weights_CPU_address0_assign_proc : process(ap_CS_fsm_state5, ap_CS_fsm_state7, zext_ln58_fu_241_p1, zext_ln60_fu_268_p1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state7)) then 
-            Layer4_Weights_CPU_address0 <= zext_ln61_fu_268_p1(10 - 1 downto 0);
+            Layer4_Weights_CPU_address0 <= zext_ln60_fu_268_p1(10 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
-            Layer4_Weights_CPU_address0 <= zext_ln59_fu_241_p1(10 - 1 downto 0);
+            Layer4_Weights_CPU_address0 <= zext_ln58_fu_241_p1(10 - 1 downto 0);
         else 
             Layer4_Weights_CPU_address0 <= "XXXXXXXXXX";
         end if; 
@@ -885,7 +885,7 @@ begin
         end if; 
     end process;
 
-    Layer5_Neurons_CPU_address0 <= zext_ln62_fu_278_p1(4 - 1 downto 0);
+    Layer5_Neurons_CPU_address0 <= zext_ln61_fu_278_p1(4 - 1 downto 0);
 
     Layer5_Neurons_CPU_ce0_assign_proc : process(ap_CS_fsm_state33)
     begin
@@ -907,8 +907,8 @@ begin
         end if; 
     end process;
 
-    add_ln58_fu_223_p2 <= std_logic_vector(unsigned(phi_mul_reg_124) + unsigned(ap_const_lv10_65));
-    add_ln61_1_fu_262_p2 <= std_logic_vector(unsigned(zext_ln61_2_fu_258_p1) + unsigned(phi_mul_reg_124));
+    add_ln57_fu_223_p2 <= std_logic_vector(unsigned(phi_mul_reg_124) + unsigned(ap_const_lv10_65));
+    add_ln60_1_fu_262_p2 <= std_logic_vector(unsigned(zext_ln60_2_fu_258_p1) + unsigned(phi_mul_reg_124));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state12 <= ap_CS_fsm(11);
     ap_CS_fsm_state13 <= ap_CS_fsm(12);
@@ -930,9 +930,9 @@ begin
     ap_CS_fsm_state8 <= ap_CS_fsm(7);
     ap_CS_fsm_state9 <= ap_CS_fsm(8);
 
-    ap_done_assign_proc : process(ap_CS_fsm_state5, icmp_ln58_fu_229_p2)
+    ap_done_assign_proc : process(ap_CS_fsm_state5, icmp_ln57_fu_229_p2)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state5) and (icmp_ln58_fu_229_p2 = ap_const_lv1_1))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) and (icmp_ln57_fu_229_p2 = ap_const_lv1_1))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -950,9 +950,9 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(ap_CS_fsm_state5, icmp_ln58_fu_229_p2)
+    ap_ready_assign_proc : process(ap_CS_fsm_state5, icmp_ln57_fu_229_p2)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state5) and (icmp_ln58_fu_229_p2 = ap_const_lv1_1))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) and (icmp_ln57_fu_229_p2 = ap_const_lv1_1))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
@@ -962,37 +962,37 @@ begin
     grp_calculateLayer3_fu_157_ap_start <= grp_calculateLayer3_fu_157_ap_start_reg;
     grp_calculateLayer4_fu_173_ap_start <= grp_calculateLayer4_fu_173_ap_start_reg;
 
-    grp_fu_211_p0_assign_proc : process(tmp_i_reg_344, tmp_i_i_reg_349, ap_CS_fsm_state19, ap_CS_fsm_state27)
+    grp_fu_198_p0_assign_proc : process(tmp_i_reg_344, tmp_i_i_reg_349, ap_CS_fsm_state19, ap_CS_fsm_state27)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
-            grp_fu_211_p0 <= tmp_i_i_reg_349;
+            grp_fu_198_p0 <= tmp_i_i_reg_349;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state19)) then 
-            grp_fu_211_p0 <= tmp_i_reg_344;
+            grp_fu_198_p0 <= tmp_i_reg_344;
         else 
-            grp_fu_211_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            grp_fu_198_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    grp_fu_211_p1_assign_proc : process(ap_CS_fsm_state19, ap_CS_fsm_state27)
+    grp_fu_198_p1_assign_proc : process(ap_CS_fsm_state19, ap_CS_fsm_state27)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
-            grp_fu_211_p1 <= ap_const_lv64_3FFB74538EF34D6A;
+            grp_fu_198_p1 <= ap_const_lv64_3FFB74538EF34D6A;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state19)) then 
-            grp_fu_211_p1 <= ap_const_lv64_3FE55555571F7693;
+            grp_fu_198_p1 <= ap_const_lv64_3FE55555571F7693;
         else 
-            grp_fu_211_p1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            grp_fu_198_p1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
     grp_generic_tanh_double_s_fu_187_ap_start <= grp_generic_tanh_double_s_fu_187_ap_start_reg;
     i_fu_235_p2 <= std_logic_vector(unsigned(i_0_i_reg_112) + unsigned(ap_const_lv4_1));
-    icmp_ln58_fu_229_p2 <= "1" when (i_0_i_reg_112 = ap_const_lv4_A) else "0";
-    icmp_ln60_fu_246_p2 <= "1" when (j_0_i_reg_146 = ap_const_lv7_64) else "0";
+    icmp_ln57_fu_229_p2 <= "1" when (i_0_i_reg_112 = ap_const_lv4_A) else "0";
+    icmp_ln59_fu_246_p2 <= "1" when (j_0_i_reg_146 = ap_const_lv7_64) else "0";
     j_fu_252_p2 <= std_logic_vector(unsigned(j_0_i_reg_146) + unsigned(ap_const_lv7_1));
-    zext_ln59_fu_241_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(phi_mul_reg_124),64));
-    zext_ln61_1_fu_273_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(j_0_i_reg_146),64));
-    zext_ln61_2_fu_258_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(j_fu_252_p2),10));
-    zext_ln61_fu_268_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln61_1_fu_262_p2),64));
-    zext_ln62_fu_278_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_i_reg_112),64));
+    zext_ln58_fu_241_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(phi_mul_reg_124),64));
+    zext_ln60_1_fu_273_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(j_0_i_reg_146),64));
+    zext_ln60_2_fu_258_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(j_fu_252_p2),10));
+    zext_ln60_fu_268_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln60_1_fu_262_p2),64));
+    zext_ln61_fu_278_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(i_0_i_reg_112),64));
 end behav;

@@ -29,7 +29,7 @@
 
 <trans id="107" from="5" to="6">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln58" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln57" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -42,14 +42,14 @@
 
 <trans id="110" from="7" to="8">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln60" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln59" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="111" from="7" to="18">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln60" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln59" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -224,9 +224,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="12" bw="32" op_0_bw="64">
+<Node id="12" bw="16" op_0_bw="64">
 <![CDATA[
-:3  %Layer3_Neurons_CPU = alloca [1250 x float], align 16
+:3  %Layer3_Neurons_CPU = alloca [1250 x half], align 16
 
 ]]></Node>
 <StgValue><ssdm name="Layer3_Neurons_CPU"/><MemPortTyVec>2 3 </MemPortTyVec>
@@ -240,9 +240,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="13" bw="32" op_0_bw="64">
+<Node id="13" bw="16" op_0_bw="64">
 <![CDATA[
-:4  %Layer4_Neurons_CPU = alloca [100 x float], align 16
+:4  %Layer4_Neurons_CPU = alloca [100 x half], align 16
 
 ]]></Node>
 <StgValue><ssdm name="Layer4_Neurons_CPU"/><MemPortTyVec>2 3 </MemPortTyVec>
@@ -256,9 +256,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="58" op_5_bw="26" op_6_bw="42">
+<Node id="14" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="58" op_5_bw="26" op_6_bw="42">
 <![CDATA[
-:5  call fastcc void @calculateLayer3([1014 x float]* %Layer2_Neurons_CPU, [1250 x float]* %Layer3_Neurons_CPU) nounwind
+:5  call fastcc void @calculateLayer3([1014 x half]* %Layer2_Neurons_CPU, [1250 x half]* %Layer3_Neurons_CPU) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="call_ln10"/></StgValue>
@@ -274,9 +274,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="58" op_5_bw="26" op_6_bw="42">
+<Node id="14" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="58" op_5_bw="26" op_6_bw="42">
 <![CDATA[
-:5  call fastcc void @calculateLayer3([1014 x float]* %Layer2_Neurons_CPU, [1250 x float]* %Layer3_Neurons_CPU) nounwind
+:5  call fastcc void @calculateLayer3([1014 x half]* %Layer2_Neurons_CPU, [1250 x half]* %Layer3_Neurons_CPU) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="call_ln10"/></StgValue>
@@ -292,9 +292,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="58" op_5_bw="26" op_6_bw="42" op_7_bw="0" op_8_bw="0">
+<Node id="15" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="58" op_5_bw="26" op_6_bw="42" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-:6  call fastcc void @calculateLayer4([1250 x float]* %Layer3_Neurons_CPU, [100 x float]* %Layer4_Neurons_CPU) nounwind
+:6  call fastcc void @calculateLayer4([1250 x half]* %Layer3_Neurons_CPU, [100 x half]* %Layer4_Neurons_CPU) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="call_ln11"/></StgValue>
@@ -310,9 +310,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="9" bw="0" op_0_bw="0" op_1_bw="32">
+<Node id="9" bw="0" op_0_bw="0" op_1_bw="16">
 <![CDATA[
-:0  call void (...)* @_ssdm_op_SpecBitsMap([1014 x float]* %Layer2_Neurons_CPU) nounwind, !map !33
+:0  call void (...)* @_ssdm_op_SpecBitsMap([1014 x half]* %Layer2_Neurons_CPU) nounwind, !map !33
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -355,9 +355,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="58" op_5_bw="26" op_6_bw="42" op_7_bw="0" op_8_bw="0">
+<Node id="15" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="58" op_5_bw="26" op_6_bw="42" op_7_bw="0" op_8_bw="0">
 <![CDATA[
-:6  call fastcc void @calculateLayer4([1250 x float]* %Layer3_Neurons_CPU, [100 x float]* %Layer4_Neurons_CPU) nounwind
+:6  call fastcc void @calculateLayer4([1250 x half]* %Layer3_Neurons_CPU, [100 x half]* %Layer4_Neurons_CPU) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="call_ln11"/></StgValue>
@@ -375,7 +375,7 @@
 :7  br label %1
 
 ]]></Node>
-<StgValue><ssdm name="br_ln58"/></StgValue>
+<StgValue><ssdm name="br_ln57"/></StgValue>
 </operation>
 </state>
 
@@ -405,7 +405,7 @@
 
 <Node id="19" bw="10" op_0_bw="10" op_1_bw="0" op_2_bw="10" op_3_bw="0">
 <![CDATA[
-:1  %phi_mul = phi i10 [ 0, %0 ], [ %add_ln58, %5 ]
+:1  %phi_mul = phi i10 [ 0, %0 ], [ %add_ln57, %5 ]
 
 ]]></Node>
 <StgValue><ssdm name="phi_mul"/></StgValue>
@@ -420,10 +420,10 @@
 
 <Node id="20" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-:2  %add_ln58 = add i10 %phi_mul, 101
+:2  %add_ln57 = add i10 %phi_mul, 101
 
 ]]></Node>
-<StgValue><ssdm name="add_ln58"/></StgValue>
+<StgValue><ssdm name="add_ln57"/></StgValue>
 </operation>
 
 <operation id="47" st_id="5" stage="1" lat="1">
@@ -435,10 +435,10 @@
 
 <Node id="21" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-:3  %icmp_ln58 = icmp eq i4 %i_0_i, -6
+:3  %icmp_ln57 = icmp eq i4 %i_0_i, -6
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln58"/></StgValue>
+<StgValue><ssdm name="icmp_ln57"/></StgValue>
 </operation>
 
 <operation id="48" st_id="5" stage="1" lat="1">
@@ -480,39 +480,39 @@
 
 <Node id="24" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-:6  br i1 %icmp_ln58, label %calculateLayer5.exit, label %2
+:6  br i1 %icmp_ln57, label %calculateLayer5.exit, label %2
 
 ]]></Node>
-<StgValue><ssdm name="br_ln58"/></StgValue>
+<StgValue><ssdm name="br_ln57"/></StgValue>
 </operation>
 
 <operation id="51" st_id="5" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln58" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln57" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="26" bw="64" op_0_bw="10">
 <![CDATA[
-:0  %zext_ln59 = zext i10 %phi_mul to i64
+:0  %zext_ln58 = zext i10 %phi_mul to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln59"/></StgValue>
+<StgValue><ssdm name="zext_ln58"/></StgValue>
 </operation>
 
 <operation id="52" st_id="5" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln58" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln57" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="27" bw="10" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<Node id="27" bw="10" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:1  %Layer4_Weights_CPU_a = getelementptr inbounds [1010 x float]* @Layer4_Weights_CPU, i64 0, i64 %zext_ln59
+:1  %Layer4_Weights_CPU_a = getelementptr inbounds [1010 x half]* @Layer4_Weights_CPU, i64 0, i64 %zext_ln58
 
 ]]></Node>
 <StgValue><ssdm name="Layer4_Weights_CPU_a"/></StgValue>
@@ -522,13 +522,13 @@
 <core>ROM_nP</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln58" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln57" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="28" bw="32" op_0_bw="10">
+<Node id="28" bw="16" op_0_bw="10">
 <![CDATA[
-:2  %somme = load float* %Layer4_Weights_CPU_a, align 4
+:2  %somme = load half* %Layer4_Weights_CPU_a, align 2
 
 ]]></Node>
 <StgValue><ssdm name="somme"/></StgValue>
@@ -538,7 +538,7 @@
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln58" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln57" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -560,9 +560,9 @@ calculateLayer5.exit:0  ret void
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="28" bw="32" op_0_bw="10">
+<Node id="28" bw="16" op_0_bw="10">
 <![CDATA[
-:2  %somme = load float* %Layer4_Weights_CPU_a, align 4
+:2  %somme = load half* %Layer4_Weights_CPU_a, align 2
 
 ]]></Node>
 <StgValue><ssdm name="somme"/></StgValue>
@@ -580,7 +580,7 @@ calculateLayer5.exit:0  ret void
 :3  br label %3
 
 ]]></Node>
-<StgValue><ssdm name="br_ln60"/></StgValue>
+<StgValue><ssdm name="br_ln59"/></StgValue>
 </operation>
 </state>
 
@@ -593,9 +593,9 @@ calculateLayer5.exit:0  ret void
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="31" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0">
+<Node id="31" bw="16" op_0_bw="16" op_1_bw="0" op_2_bw="16" op_3_bw="0">
 <![CDATA[
-:0  %somme_0_i = phi float [ %somme, %2 ], [ %somme_1, %4 ]
+:0  %somme_0_i = phi half [ %somme, %2 ], [ %somme_1, %4 ]
 
 ]]></Node>
 <StgValue><ssdm name="somme_0_i"/></StgValue>
@@ -625,10 +625,10 @@ calculateLayer5.exit:0  ret void
 
 <Node id="33" bw="1" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-:2  %icmp_ln60 = icmp eq i7 %j_0_i, -28
+:2  %icmp_ln59 = icmp eq i7 %j_0_i, -28
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln60"/></StgValue>
+<StgValue><ssdm name="icmp_ln59"/></StgValue>
 </operation>
 
 <operation id="60" st_id="7" stage="1" lat="1">
@@ -670,71 +670,71 @@ calculateLayer5.exit:0  ret void
 
 <Node id="36" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-:5  br i1 %icmp_ln60, label %5, label %4
+:5  br i1 %icmp_ln59, label %5, label %4
 
 ]]></Node>
-<StgValue><ssdm name="br_ln60"/></StgValue>
+<StgValue><ssdm name="br_ln59"/></StgValue>
 </operation>
 
 <operation id="63" st_id="7" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln60" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln59" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="38" bw="10" op_0_bw="7">
 <![CDATA[
-:0  %zext_ln61_2 = zext i7 %j to i10
+:0  %zext_ln60_2 = zext i7 %j to i10
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln61_2"/></StgValue>
+<StgValue><ssdm name="zext_ln60_2"/></StgValue>
 </operation>
 
 <operation id="64" st_id="7" stage="1" lat="1">
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln60" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln59" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="39" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-:1  %add_ln61_1 = add i10 %zext_ln61_2, %phi_mul
+:1  %add_ln60_1 = add i10 %zext_ln60_2, %phi_mul
 
 ]]></Node>
-<StgValue><ssdm name="add_ln61_1"/></StgValue>
+<StgValue><ssdm name="add_ln60_1"/></StgValue>
 </operation>
 
 <operation id="65" st_id="7" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln60" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln59" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="40" bw="64" op_0_bw="10">
 <![CDATA[
-:2  %zext_ln61 = zext i10 %add_ln61_1 to i64
+:2  %zext_ln60 = zext i10 %add_ln60_1 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln61"/></StgValue>
+<StgValue><ssdm name="zext_ln60"/></StgValue>
 </operation>
 
 <operation id="66" st_id="7" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln60" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln59" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="10" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<Node id="41" bw="10" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:3  %Layer4_Weights_CPU_a_1 = getelementptr inbounds [1010 x float]* @Layer4_Weights_CPU, i64 0, i64 %zext_ln61
+:3  %Layer4_Weights_CPU_a_1 = getelementptr inbounds [1010 x half]* @Layer4_Weights_CPU, i64 0, i64 %zext_ln60
 
 ]]></Node>
 <StgValue><ssdm name="Layer4_Weights_CPU_a_1"/></StgValue>
@@ -744,13 +744,13 @@ calculateLayer5.exit:0  ret void
 <core>ROM_nP</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln60" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln59" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="32" op_0_bw="10">
+<Node id="42" bw="16" op_0_bw="10">
 <![CDATA[
-:4  %Layer4_Weights_CPU_l = load float* %Layer4_Weights_CPU_a_1, align 4
+:4  %Layer4_Weights_CPU_l = load half* %Layer4_Weights_CPU_a_1, align 2
 
 ]]></Node>
 <StgValue><ssdm name="Layer4_Weights_CPU_l"/></StgValue>
@@ -760,29 +760,29 @@ calculateLayer5.exit:0  ret void
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln60" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln59" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="43" bw="64" op_0_bw="7">
 <![CDATA[
-:5  %zext_ln61_1 = zext i7 %j_0_i to i64
+:5  %zext_ln60_1 = zext i7 %j_0_i to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln61_1"/></StgValue>
+<StgValue><ssdm name="zext_ln60_1"/></StgValue>
 </operation>
 
 <operation id="69" st_id="7" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln60" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln59" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="44" bw="7" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<Node id="44" bw="7" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:6  %Layer4_Neurons_CPU_a = getelementptr [100 x float]* %Layer4_Neurons_CPU, i64 0, i64 %zext_ln61_1
+:6  %Layer4_Neurons_CPU_a = getelementptr [100 x half]* %Layer4_Neurons_CPU, i64 0, i64 %zext_ln60_1
 
 ]]></Node>
 <StgValue><ssdm name="Layer4_Neurons_CPU_a"/></StgValue>
@@ -792,29 +792,29 @@ calculateLayer5.exit:0  ret void
 <core>RAM</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln60" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln59" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="32" op_0_bw="7">
+<Node id="45" bw="16" op_0_bw="7">
 <![CDATA[
-:7  %Layer4_Neurons_CPU_l = load float* %Layer4_Neurons_CPU_a, align 4
+:7  %Layer4_Neurons_CPU_l = load half* %Layer4_Neurons_CPU_a, align 2
 
 ]]></Node>
 <StgValue><ssdm name="Layer4_Neurons_CPU_l"/></StgValue>
 </operation>
 
 <operation id="71" st_id="7" stage="2" lat="2">
-<core>Float2Double</core>
+<core>Half2Double</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln60" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln59" val="1"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="50" bw="64" op_0_bw="32">
+<Node id="50" bw="64" op_0_bw="16">
 <![CDATA[
-:0  %tmp_i = fpext float %somme_0_i to double
+:0  %tmp_i = fpext half %somme_0_i to double
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -830,9 +830,9 @@ calculateLayer5.exit:0  ret void
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="32" op_0_bw="10">
+<Node id="42" bw="16" op_0_bw="10">
 <![CDATA[
-:4  %Layer4_Weights_CPU_l = load float* %Layer4_Weights_CPU_a_1, align 4
+:4  %Layer4_Weights_CPU_l = load half* %Layer4_Weights_CPU_a_1, align 2
 
 ]]></Node>
 <StgValue><ssdm name="Layer4_Weights_CPU_l"/></StgValue>
@@ -845,9 +845,9 @@ calculateLayer5.exit:0  ret void
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="32" op_0_bw="7">
+<Node id="45" bw="16" op_0_bw="7">
 <![CDATA[
-:7  %Layer4_Neurons_CPU_l = load float* %Layer4_Neurons_CPU_a, align 4
+:7  %Layer4_Neurons_CPU_l = load half* %Layer4_Neurons_CPU_a, align 2
 
 ]]></Node>
 <StgValue><ssdm name="Layer4_Neurons_CPU_l"/></StgValue>
@@ -857,15 +857,15 @@ calculateLayer5.exit:0  ret void
 <state id="9" st_id="9">
 
 <operation id="74" st_id="9" stage="4" lat="4">
-<core>FMul</core>
+<core>HMul</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="46" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="46" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-:8  %tmp_3_i = fmul float %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l
+:8  %tmp_3_i = fmul half %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l
 
 ]]></Node>
 <StgValue><ssdm name="tmp_3_i"/></StgValue>
@@ -875,15 +875,15 @@ calculateLayer5.exit:0  ret void
 <state id="10" st_id="10">
 
 <operation id="75" st_id="10" stage="3" lat="4">
-<core>FMul</core>
+<core>HMul</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="46" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="46" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-:8  %tmp_3_i = fmul float %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l
+:8  %tmp_3_i = fmul half %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l
 
 ]]></Node>
 <StgValue><ssdm name="tmp_3_i"/></StgValue>
@@ -893,15 +893,15 @@ calculateLayer5.exit:0  ret void
 <state id="11" st_id="11">
 
 <operation id="76" st_id="11" stage="2" lat="4">
-<core>FMul</core>
+<core>HMul</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="46" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="46" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-:8  %tmp_3_i = fmul float %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l
+:8  %tmp_3_i = fmul half %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l
 
 ]]></Node>
 <StgValue><ssdm name="tmp_3_i"/></StgValue>
@@ -911,15 +911,15 @@ calculateLayer5.exit:0  ret void
 <state id="12" st_id="12">
 
 <operation id="77" st_id="12" stage="1" lat="4">
-<core>FMul</core>
+<core>HMul</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="46" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="46" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-:8  %tmp_3_i = fmul float %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l
+:8  %tmp_3_i = fmul half %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l
 
 ]]></Node>
 <StgValue><ssdm name="tmp_3_i"/></StgValue>
@@ -929,15 +929,15 @@ calculateLayer5.exit:0  ret void
 <state id="13" st_id="13">
 
 <operation id="78" st_id="13" stage="5" lat="5">
-<core>FAddSub</core>
+<core>HAddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="47" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="47" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-:9  %somme_1 = fadd float %somme_0_i, %tmp_3_i
+:9  %somme_1 = fadd half %somme_0_i, %tmp_3_i
 
 ]]></Node>
 <StgValue><ssdm name="somme_1"/></StgValue>
@@ -947,15 +947,15 @@ calculateLayer5.exit:0  ret void
 <state id="14" st_id="14">
 
 <operation id="79" st_id="14" stage="4" lat="5">
-<core>FAddSub</core>
+<core>HAddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="47" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="47" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-:9  %somme_1 = fadd float %somme_0_i, %tmp_3_i
+:9  %somme_1 = fadd half %somme_0_i, %tmp_3_i
 
 ]]></Node>
 <StgValue><ssdm name="somme_1"/></StgValue>
@@ -965,15 +965,15 @@ calculateLayer5.exit:0  ret void
 <state id="15" st_id="15">
 
 <operation id="80" st_id="15" stage="3" lat="5">
-<core>FAddSub</core>
+<core>HAddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="47" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="47" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-:9  %somme_1 = fadd float %somme_0_i, %tmp_3_i
+:9  %somme_1 = fadd half %somme_0_i, %tmp_3_i
 
 ]]></Node>
 <StgValue><ssdm name="somme_1"/></StgValue>
@@ -983,15 +983,15 @@ calculateLayer5.exit:0  ret void
 <state id="16" st_id="16">
 
 <operation id="81" st_id="16" stage="2" lat="5">
-<core>FAddSub</core>
+<core>HAddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="47" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="47" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-:9  %somme_1 = fadd float %somme_0_i, %tmp_3_i
+:9  %somme_1 = fadd half %somme_0_i, %tmp_3_i
 
 ]]></Node>
 <StgValue><ssdm name="somme_1"/></StgValue>
@@ -1001,15 +1001,15 @@ calculateLayer5.exit:0  ret void
 <state id="17" st_id="17">
 
 <operation id="82" st_id="17" stage="1" lat="5">
-<core>FAddSub</core>
+<core>HAddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="47" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="47" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-:9  %somme_1 = fadd float %somme_0_i, %tmp_3_i
+:9  %somme_1 = fadd half %somme_0_i, %tmp_3_i
 
 ]]></Node>
 <StgValue><ssdm name="somme_1"/></StgValue>
@@ -1027,22 +1027,22 @@ calculateLayer5.exit:0  ret void
 :10  br label %3
 
 ]]></Node>
-<StgValue><ssdm name="br_ln60"/></StgValue>
+<StgValue><ssdm name="br_ln59"/></StgValue>
 </operation>
 </state>
 
 <state id="18" st_id="18">
 
 <operation id="84" st_id="18" stage="1" lat="2">
-<core>Float2Double</core>
+<core>Half2Double</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="50" bw="64" op_0_bw="32">
+<Node id="50" bw="64" op_0_bw="16">
 <![CDATA[
-:0  %tmp_i = fpext float %somme_0_i to double
+:0  %tmp_i = fpext half %somme_0_i to double
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1312,10 +1312,10 @@ calculateLayer5.exit:0  ret void
 
 <Node id="54" bw="64" op_0_bw="4">
 <![CDATA[
-:4  %zext_ln62 = zext i4 %i_0_i to i64
+:4  %zext_ln61 = zext i4 %i_0_i to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln62"/></StgValue>
+<StgValue><ssdm name="zext_ln61"/></StgValue>
 </operation>
 
 <operation id="100" st_id="33" stage="1" lat="1">
@@ -1327,7 +1327,7 @@ calculateLayer5.exit:0  ret void
 
 <Node id="55" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:5  %Layer5_Neurons_CPU_a = getelementptr [10 x double]* %Layer5_Neurons_CPU, i64 0, i64 %zext_ln62
+:5  %Layer5_Neurons_CPU_a = getelementptr [10 x double]* %Layer5_Neurons_CPU, i64 0, i64 %zext_ln61
 
 ]]></Node>
 <StgValue><ssdm name="Layer5_Neurons_CPU_a"/></StgValue>
@@ -1345,7 +1345,7 @@ calculateLayer5.exit:0  ret void
 :6  store double %tmp_2_i, double* %Layer5_Neurons_CPU_a, align 8
 
 ]]></Node>
-<StgValue><ssdm name="store_ln62"/></StgValue>
+<StgValue><ssdm name="store_ln61"/></StgValue>
 </operation>
 
 <operation id="102" st_id="33" stage="1" lat="1">
@@ -1360,7 +1360,7 @@ calculateLayer5.exit:0  ret void
 :7  br label %1
 
 ]]></Node>
-<StgValue><ssdm name="br_ln58"/></StgValue>
+<StgValue><ssdm name="br_ln57"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -1376,7 +1376,7 @@ calculateLayer5.exit:0  ret void
 </StgValue>
 </port>
 <port id="142" name="Layer2_Weights_CPU" dir="0" iftype="1">
-<core>ROM_nP</core><StgValue><ssdm name="Layer2_Weights_CPU"/><MemPortTyVec>1 1 </MemPortTyVec>
+<core>ROM_nP</core><StgValue><ssdm name="Layer2_Weights_CPU"/><MemPortTyVec>1 1 1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="143" name="table_exp_Z1_array_s" dir="0" iftype="1">
@@ -1480,7 +1480,7 @@ calculateLayer5.exit:0  ret void
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="192" from="br_ln58" to="i_0_i" fromId="43" toId="44">
+<dataflow id="192" from="br_ln57" to="i_0_i" fromId="43" toId="44">
 </dataflow>
 <dataflow id="193" from="i" to="i_0_i" fromId="49" toId="44">
 <BackEdge/>
@@ -1488,7 +1488,7 @@ calculateLayer5.exit:0  ret void
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="194" from="br_ln58" to="i_0_i" fromId="102" toId="44">
+<dataflow id="194" from="br_ln57" to="i_0_i" fromId="102" toId="44">
 <BackEdge/>
 </dataflow>
 <dataflow id="196" from="StgValue_195" to="phi_mul" fromId="195" toId="45">
@@ -1496,24 +1496,24 @@ calculateLayer5.exit:0  ret void
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="197" from="br_ln58" to="phi_mul" fromId="43" toId="45">
+<dataflow id="197" from="br_ln57" to="phi_mul" fromId="43" toId="45">
 </dataflow>
-<dataflow id="198" from="add_ln58" to="phi_mul" fromId="46" toId="45">
+<dataflow id="198" from="add_ln57" to="phi_mul" fromId="46" toId="45">
 <BackEdge/>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="199" from="br_ln58" to="phi_mul" fromId="102" toId="45">
+<dataflow id="199" from="br_ln57" to="phi_mul" fromId="102" toId="45">
 <BackEdge/>
 </dataflow>
-<dataflow id="200" from="phi_mul" to="add_ln58" fromId="45" toId="46">
+<dataflow id="200" from="phi_mul" to="add_ln57" fromId="45" toId="46">
 </dataflow>
-<dataflow id="202" from="StgValue_201" to="add_ln58" fromId="201" toId="46">
+<dataflow id="202" from="StgValue_201" to="add_ln57" fromId="201" toId="46">
 </dataflow>
-<dataflow id="203" from="i_0_i" to="icmp_ln58" fromId="44" toId="47">
+<dataflow id="203" from="i_0_i" to="icmp_ln57" fromId="44" toId="47">
 </dataflow>
-<dataflow id="205" from="StgValue_204" to="icmp_ln58" fromId="204" toId="47">
+<dataflow id="205" from="StgValue_204" to="icmp_ln57" fromId="204" toId="47">
 </dataflow>
 <dataflow id="207" from="_ssdm_op_SpecLoopTripCount" to="empty" fromId="206" toId="48">
 </dataflow>
@@ -1527,15 +1527,15 @@ calculateLayer5.exit:0  ret void
 </dataflow>
 <dataflow id="214" from="StgValue_213" to="i" fromId="213" toId="49">
 </dataflow>
-<dataflow id="215" from="icmp_ln58" to="br_ln58" fromId="47" toId="50">
+<dataflow id="215" from="icmp_ln57" to="br_ln57" fromId="47" toId="50">
 </dataflow>
-<dataflow id="216" from="phi_mul" to="zext_ln59" fromId="45" toId="51">
+<dataflow id="216" from="phi_mul" to="zext_ln58" fromId="45" toId="51">
 </dataflow>
 <dataflow id="217" from="Layer4_Weights_CPU" to="Layer4_Weights_CPU_a" fromId="147" toId="52">
 </dataflow>
 <dataflow id="219" from="StgValue_218" to="Layer4_Weights_CPU_a" fromId="218" toId="52">
 </dataflow>
-<dataflow id="220" from="zext_ln59" to="Layer4_Weights_CPU_a" fromId="51" toId="52">
+<dataflow id="220" from="zext_ln58" to="Layer4_Weights_CPU_a" fromId="51" toId="52">
 </dataflow>
 <dataflow id="221" from="Layer4_Weights_CPU_a" to="somme" fromId="52" toId="53">
 </dataflow>
@@ -1546,7 +1546,7 @@ calculateLayer5.exit:0  ret void
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="224" from="br_ln60" to="somme_0_i" fromId="56" toId="57">
+<dataflow id="224" from="br_ln59" to="somme_0_i" fromId="56" toId="57">
 </dataflow>
 <dataflow id="225" from="somme_1" to="somme_0_i" fromId="82" toId="57">
 <BackEdge/>
@@ -1554,7 +1554,7 @@ calculateLayer5.exit:0  ret void
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="226" from="br_ln60" to="somme_0_i" fromId="83" toId="57">
+<dataflow id="226" from="br_ln59" to="somme_0_i" fromId="83" toId="57">
 <BackEdge/>
 </dataflow>
 <dataflow id="228" from="StgValue_227" to="j_0_i" fromId="227" toId="58">
@@ -1562,7 +1562,7 @@ calculateLayer5.exit:0  ret void
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="229" from="br_ln60" to="j_0_i" fromId="56" toId="58">
+<dataflow id="229" from="br_ln59" to="j_0_i" fromId="56" toId="58">
 </dataflow>
 <dataflow id="230" from="j" to="j_0_i" fromId="61" toId="58">
 <BackEdge/>
@@ -1570,12 +1570,12 @@ calculateLayer5.exit:0  ret void
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="231" from="br_ln60" to="j_0_i" fromId="83" toId="58">
+<dataflow id="231" from="br_ln59" to="j_0_i" fromId="83" toId="58">
 <BackEdge/>
 </dataflow>
-<dataflow id="232" from="j_0_i" to="icmp_ln60" fromId="58" toId="59">
+<dataflow id="232" from="j_0_i" to="icmp_ln59" fromId="58" toId="59">
 </dataflow>
-<dataflow id="234" from="StgValue_233" to="icmp_ln60" fromId="233" toId="59">
+<dataflow id="234" from="StgValue_233" to="icmp_ln59" fromId="233" toId="59">
 </dataflow>
 <dataflow id="235" from="_ssdm_op_SpecLoopTripCount" to="empty_29" fromId="206" toId="60">
 </dataflow>
@@ -1589,31 +1589,31 @@ calculateLayer5.exit:0  ret void
 </dataflow>
 <dataflow id="242" from="StgValue_241" to="j" fromId="241" toId="61">
 </dataflow>
-<dataflow id="243" from="icmp_ln60" to="br_ln60" fromId="59" toId="62">
+<dataflow id="243" from="icmp_ln59" to="br_ln59" fromId="59" toId="62">
 </dataflow>
-<dataflow id="244" from="j" to="zext_ln61_2" fromId="61" toId="63">
+<dataflow id="244" from="j" to="zext_ln60_2" fromId="61" toId="63">
 </dataflow>
-<dataflow id="245" from="zext_ln61_2" to="add_ln61_1" fromId="63" toId="64">
+<dataflow id="245" from="zext_ln60_2" to="add_ln60_1" fromId="63" toId="64">
 </dataflow>
-<dataflow id="246" from="phi_mul" to="add_ln61_1" fromId="45" toId="64">
+<dataflow id="246" from="phi_mul" to="add_ln60_1" fromId="45" toId="64">
 </dataflow>
-<dataflow id="247" from="add_ln61_1" to="zext_ln61" fromId="64" toId="65">
+<dataflow id="247" from="add_ln60_1" to="zext_ln60" fromId="64" toId="65">
 </dataflow>
 <dataflow id="248" from="Layer4_Weights_CPU" to="Layer4_Weights_CPU_a_1" fromId="147" toId="66">
 </dataflow>
 <dataflow id="249" from="StgValue_218" to="Layer4_Weights_CPU_a_1" fromId="218" toId="66">
 </dataflow>
-<dataflow id="250" from="zext_ln61" to="Layer4_Weights_CPU_a_1" fromId="65" toId="66">
+<dataflow id="250" from="zext_ln60" to="Layer4_Weights_CPU_a_1" fromId="65" toId="66">
 </dataflow>
 <dataflow id="251" from="Layer4_Weights_CPU_a_1" to="Layer4_Weights_CPU_l" fromId="66" toId="67">
 </dataflow>
-<dataflow id="252" from="j_0_i" to="zext_ln61_1" fromId="58" toId="68">
+<dataflow id="252" from="j_0_i" to="zext_ln60_1" fromId="58" toId="68">
 </dataflow>
 <dataflow id="253" from="Layer4_Neurons_CPU" to="Layer4_Neurons_CPU_a" fromId="35" toId="69">
 </dataflow>
 <dataflow id="254" from="StgValue_218" to="Layer4_Neurons_CPU_a" fromId="218" toId="69">
 </dataflow>
-<dataflow id="255" from="zext_ln61_1" to="Layer4_Neurons_CPU_a" fromId="68" toId="69">
+<dataflow id="255" from="zext_ln60_1" to="Layer4_Neurons_CPU_a" fromId="68" toId="69">
 </dataflow>
 <dataflow id="256" from="Layer4_Neurons_CPU_a" to="Layer4_Neurons_CPU_l" fromId="69" toId="70">
 </dataflow>
@@ -1729,21 +1729,21 @@ calculateLayer5.exit:0  ret void
 </dataflow>
 <dataflow id="315" from="StgValue_304" to="tmp_2_i" fromId="304" toId="98">
 </dataflow>
-<dataflow id="316" from="i_0_i" to="zext_ln62" fromId="44" toId="99">
+<dataflow id="316" from="i_0_i" to="zext_ln61" fromId="44" toId="99">
 </dataflow>
 <dataflow id="317" from="Layer5_Neurons_CPU" to="Layer5_Neurons_CPU_a" fromId="141" toId="100">
 </dataflow>
 <dataflow id="318" from="StgValue_218" to="Layer5_Neurons_CPU_a" fromId="218" toId="100">
 </dataflow>
-<dataflow id="319" from="zext_ln62" to="Layer5_Neurons_CPU_a" fromId="99" toId="100">
+<dataflow id="319" from="zext_ln61" to="Layer5_Neurons_CPU_a" fromId="99" toId="100">
 </dataflow>
-<dataflow id="320" from="tmp_2_i" to="store_ln62" fromId="98" toId="101">
+<dataflow id="320" from="tmp_2_i" to="store_ln61" fromId="98" toId="101">
 </dataflow>
-<dataflow id="321" from="Layer5_Neurons_CPU_a" to="store_ln62" fromId="100" toId="101">
+<dataflow id="321" from="Layer5_Neurons_CPU_a" to="store_ln61" fromId="100" toId="101">
 </dataflow>
-<dataflow id="322" from="icmp_ln58" to="StgValue_5" fromId="47" toId="5">
+<dataflow id="322" from="icmp_ln57" to="StgValue_5" fromId="47" toId="5">
 </dataflow>
-<dataflow id="323" from="icmp_ln60" to="StgValue_7" fromId="59" toId="7">
+<dataflow id="323" from="icmp_ln59" to="StgValue_7" fromId="59" toId="7">
 </dataflow>
 </dataflows>
 

@@ -2,10 +2,10 @@
 
 
 
-void nerons (float Layer2_Neurons_CPU[6*13*13], double Layer5_Neurons_CPU[10]){
+void nerons (half Layer2_Neurons_CPU[6*13*13], double Layer5_Neurons_CPU[10]){
   
-  float Layer3_Neurons_CPU[50*5*5];
-  float Layer4_Neurons_CPU[100];
+  half Layer3_Neurons_CPU[50*5*5];
+  half Layer4_Neurons_CPU[100];
 
   calculateLayer3(Layer2_Neurons_CPU, Layer2_Weights_CPU, Layer3_Neurons_CPU);
   calculateLayer4(Layer3_Neurons_CPU, Layer3_Weights_CPU, Layer4_Neurons_CPU);
@@ -14,8 +14,8 @@ void nerons (float Layer2_Neurons_CPU[6*13*13], double Layer5_Neurons_CPU[10]){
 }
 
 
-void calculateLayer3(float* Layer2_Neurons_CPU, float* Layer2_Weights_CPU, float* Layer3_Neurons_CPU){
-	float somme;
+void calculateLayer3(half* Layer2_Neurons_CPU, half* Layer2_Weights_CPU, half* Layer3_Neurons_CPU){
+	half somme;
 	int i,j,k,m,n;
 	for( i=0;i<50;i++)
 		for(j=0;j<5;j++)
@@ -32,12 +32,12 @@ void calculateLayer3(float* Layer2_Neurons_CPU, float* Layer2_Weights_CPU, float
 						somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+4] * Layer2_Neurons_CPU[13*13*4+13*(2*j+m)+(2*k+n)];
 						somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+5] * Layer2_Neurons_CPU[13*13*5+13*(2*j+m)+(2*k+n)];
 					}
-				Layer3_Neurons_CPU[5*5*i+5*j+k] = (float) SIGMOID(somme);
+				Layer3_Neurons_CPU[5*5*i+5*j+k] = (half) SIGMOID(somme);
 			}
 }
 
-void calculateLayer4(float* Layer3_Neurons_CPU, float* Layer3_Weights_CPU, float* Layer4_Neurons_CPU){
-	float somme;
+void calculateLayer4(half* Layer3_Neurons_CPU, half* Layer3_Weights_CPU, half* Layer4_Neurons_CPU){
+	half somme;
 	int i, j, k, m;
 	for( i=0;i<100;i++){
 		somme = Layer3_Weights_CPU[i*(1+50*25)];
@@ -46,13 +46,13 @@ void calculateLayer4(float* Layer3_Neurons_CPU, float* Layer3_Weights_CPU, float
 				for ( m=0;m<5;m++)
 					somme += Layer3_Weights_CPU[i*(1+50*25)+1 + m + k*5 + j*25] * Layer3_Neurons_CPU[m+5*k+25*j];
 
-		Layer4_Neurons_CPU[i] = (float) SIGMOID(somme);
+		Layer4_Neurons_CPU[i] = (half) SIGMOID(somme);
 	}
 
 }
 
-void calculateLayer5(float* Layer4_Neurons_CPU, float* Layer4_Weights_CPU, double* Layer5_Neurons_CPU){
-	float somme;
+void calculateLayer5(half* Layer4_Neurons_CPU, half* Layer4_Weights_CPU, double* Layer5_Neurons_CPU){
+	half somme;
 	int i, j;
 	for( i=0;i<10;i++){
 		somme = Layer4_Weights_CPU[101*i];

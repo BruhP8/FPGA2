@@ -52,22 +52,22 @@
             <obj_property name="Render_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_calculateLayer3_fu_157_activity.dataflowTxWaveData.Cycles</obj_property>
             <obj_property name="Value_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_calculateLayer3_fu_157_activity.dataflowTxWaveData.OutStanding</obj_property>
             <obj_property name="Detail_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_calculateLayer3_fu_157_activity.dataflowTxTooltipData</obj_property>
-            <wvobject type="group" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/grp_generic_tanh_double_s_fu_318_activity">
-               <obj_property name="label">grp_generic_tanh_double_s_fu_318_activity</obj_property>
+            <wvobject type="group" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/grp_generic_tanh_double_s_fu_322_activity">
+               <obj_property name="label">grp_generic_tanh_double_s_fu_322_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_generic_tanh_double_s_fu_318_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_generic_tanh_double_s_fu_318_activity</obj_property>
+               <obj_property name="ElementShortName">grp_generic_tanh_double_s_fu_322_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_generic_tanh_double_s_fu_322_activity</obj_property>
                <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/grp_generic_tanh_double_s_fu_318_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/grp_generic_tanh_double_s_fu_318_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/grp_generic_tanh_double_s_fu_318_activity.dataflowTxTooltipData</obj_property>
-               <wvobject type="group" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity">
+               <obj_property name="Render_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/grp_generic_tanh_double_s_fu_322_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/grp_generic_tanh_double_s_fu_322_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/grp_generic_tanh_double_s_fu_322_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity">
                   <obj_property name="label">grp_exp_generic_double_s_fu_87_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
@@ -79,9 +79,9 @@
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
@@ -100,22 +100,22 @@
             <obj_property name="Render_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_calculateLayer4_fu_173_activity.dataflowTxWaveData.Cycles</obj_property>
             <obj_property name="Value_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_calculateLayer4_fu_173_activity.dataflowTxWaveData.OutStanding</obj_property>
             <obj_property name="Detail_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_calculateLayer4_fu_173_activity.dataflowTxTooltipData</obj_property>
-            <wvobject type="group" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/grp_generic_tanh_double_s_fu_200_activity">
-               <obj_property name="label">grp_generic_tanh_double_s_fu_200_activity</obj_property>
+            <wvobject type="group" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/grp_generic_tanh_double_s_fu_208_activity">
+               <obj_property name="label">grp_generic_tanh_double_s_fu_208_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_generic_tanh_double_s_fu_200_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_generic_tanh_double_s_fu_200_activity</obj_property>
+               <obj_property name="ElementShortName">grp_generic_tanh_double_s_fu_208_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_generic_tanh_double_s_fu_208_activity</obj_property>
                <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/grp_generic_tanh_double_s_fu_200_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/grp_generic_tanh_double_s_fu_200_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/grp_generic_tanh_double_s_fu_200_activity.dataflowTxTooltipData</obj_property>
-               <wvobject type="group" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity">
+               <obj_property name="Render_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/grp_generic_tanh_double_s_fu_208_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/grp_generic_tanh_double_s_fu_208_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/grp_generic_tanh_double_s_fu_208_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity">
                   <obj_property name="label">grp_exp_generic_double_s_fu_87_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
@@ -127,9 +127,9 @@
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
@@ -205,9 +205,9 @@
       <wvobject type="group" fp_name="grp_calculateLayer3_fu_157_group">
          <obj_property name="label">grp_calculateLayer3_fu_157</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="protoinst" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/grp_generic_tanh_double_s_fu_318_activity">
-            <obj_property name="ElementShortName">grp_generic_tanh_double_s_fu_318_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_generic_tanh_double_s_fu_318_activity</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/grp_generic_tanh_double_s_fu_322_activity">
+            <obj_property name="ElementShortName">grp_generic_tanh_double_s_fu_322_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_generic_tanh_double_s_fu_322_activity</obj_property>
          </wvobject>
          <wvobject type="group" fp_name="grp_calculateLayer3_fu_157_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
@@ -225,25 +225,25 @@
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="grp_generic_tanh_double_s_fu_318_group">
-            <obj_property name="label">grp_generic_tanh_double_s_fu_318</obj_property>
+         <wvobject type="group" fp_name="grp_generic_tanh_double_s_fu_322_group">
+            <obj_property name="label">grp_generic_tanh_double_s_fu_322</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="protoinst" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity">
+            <wvobject type="protoinst" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity">
                <obj_property name="ElementShortName">grp_exp_generic_double_s_fu_87_activity</obj_property>
                <obj_property name="ObjectShortName">grp_exp_generic_double_s_fu_87_activity</obj_property>
             </wvobject>
-            <wvobject type="group" fp_name="grp_generic_tanh_double_s_fu_318_Handshake_group">
+            <wvobject type="group" fp_name="grp_generic_tanh_double_s_fu_322_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/ap_start">
+               <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/ap_done">
+               <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
@@ -254,15 +254,15 @@
                <wvobject type="group" fp_name="grp_exp_generic_double_s_fu_87_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/grp_exp_generic_double_s_fu_87/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/grp_exp_generic_double_s_fu_87/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/grp_exp_generic_double_s_fu_87/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/grp_exp_generic_double_s_fu_87/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_318/grp_exp_generic_double_s_fu_87/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer3_fu_157/grp_generic_tanh_double_s_fu_322/grp_exp_generic_double_s_fu_87/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
@@ -273,9 +273,9 @@
       <wvobject type="group" fp_name="grp_calculateLayer4_fu_173_group">
          <obj_property name="label">grp_calculateLayer4_fu_173</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="protoinst" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/grp_generic_tanh_double_s_fu_200_activity">
-            <obj_property name="ElementShortName">grp_generic_tanh_double_s_fu_200_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_generic_tanh_double_s_fu_200_activity</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/grp_generic_tanh_double_s_fu_208_activity">
+            <obj_property name="ElementShortName">grp_generic_tanh_double_s_fu_208_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_generic_tanh_double_s_fu_208_activity</obj_property>
          </wvobject>
          <wvobject type="group" fp_name="grp_calculateLayer4_fu_173_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
@@ -293,25 +293,25 @@
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="grp_generic_tanh_double_s_fu_200_group">
-            <obj_property name="label">grp_generic_tanh_double_s_fu_200</obj_property>
+         <wvobject type="group" fp_name="grp_generic_tanh_double_s_fu_208_group">
+            <obj_property name="label">grp_generic_tanh_double_s_fu_208</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="protoinst" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity">
+            <wvobject type="protoinst" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/grp_exp_generic_double_s_fu_87/grp_exp_generic_double_s_fu_87_activity">
                <obj_property name="ElementShortName">grp_exp_generic_double_s_fu_87_activity</obj_property>
                <obj_property name="ObjectShortName">grp_exp_generic_double_s_fu_87_activity</obj_property>
             </wvobject>
-            <wvobject type="group" fp_name="grp_generic_tanh_double_s_fu_200_Handshake_group">
+            <wvobject type="group" fp_name="grp_generic_tanh_double_s_fu_208_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/ap_start">
+               <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/ap_done">
+               <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
@@ -322,15 +322,15 @@
                <wvobject type="group" fp_name="grp_exp_generic_double_s_fu_87_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/grp_exp_generic_double_s_fu_87/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/grp_exp_generic_double_s_fu_87/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/grp_exp_generic_double_s_fu_87/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/grp_exp_generic_double_s_fu_87/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_200/grp_exp_generic_double_s_fu_87/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_nerons_top/AESL_inst_nerons/grp_calculateLayer4_fu_173/grp_generic_tanh_double_s_fu_208/grp_exp_generic_double_s_fu_87/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>

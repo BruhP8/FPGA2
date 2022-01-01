@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'nerons'
 ================================================================
-* Date:           Thu Dec 16 18:07:26 2021
+* Date:           Sat Jan  1 17:20:26 2022
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        hlsed_neurons
@@ -29,7 +29,7 @@
     |      Latency      |      Interval     | Pipeline|
     |   min   |   max   |   min   |   max   |   Type  |
     +---------+---------+---------+---------+---------+
-    |  2832706|  2933346|  2832706|  2933346|   none  |
+    |  2769056|  2869696|  2769056|  2869696|   none  |
     +---------+---------+---------+---------+---------+
 
     + Detail: 
@@ -38,8 +38,8 @@
         |                                  |                       |      Latency      |      Interval     | Pipeline|
         |             Instance             |         Module        |   min   |   max   |   min   |   max   |   Type  |
         +----------------------------------+-----------------------+---------+---------+---------+---------+---------+
-        |grp_calculateLayer3_fu_157        |calculateLayer3        |  1194401|  1286901|  1194401|  1286901|   none  |
-        |grp_calculateLayer4_fu_173        |calculateLayer4        |  1627101|  1634501|  1627101|  1634501|   none  |
+        |grp_calculateLayer3_fu_157        |calculateLayer3        |  1195651|  1288151|  1195651|  1288151|   none  |
+        |grp_calculateLayer4_fu_173        |calculateLayer4        |  1562201|  1569601|  1562201|  1569601|   none  |
         |grp_generic_tanh_double_s_fu_187  |generic_tanh_double_s  |        1|       75|        1|       75|   none  |
         +----------------------------------+-----------------------+---------+---------+---------+---------+---------+
 
@@ -64,16 +64,16 @@
 |DSP              |        -|      -|       -|      -|    -|
 |Expression       |        -|      -|       0|     76|    -|
 |FIFO             |        -|      -|       -|      -|    -|
-|Instance         |      317|    108|   27934|  37919|    -|
-|Memory           |        7|      -|       0|      0|    0|
+|Instance         |      189|    106|   27353|  35080|    -|
+|Memory           |        4|      -|       0|      0|    0|
 |Multiplexer      |        -|      -|       -|    312|    -|
-|Register         |        -|      -|     398|      -|    -|
+|Register         |        -|      -|     334|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |      324|    108|   28332|  38307|    0|
+|Total            |      193|    106|   27687|  35468|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
-|Utilization (%)  |      115|     49|      26|     72|    0|
+|Utilization (%)  |       68|     48|      26|     66|    0|
 +-----------------+---------+-------+--------+-------+-----+
 
 + Detail: 
@@ -81,15 +81,15 @@
     +-------------------------------------------+---------------------------------------+---------+-------+------+-------+-----+
     |                  Instance                 |                 Module                | BRAM_18K| DSP48E|  FF  |  LUT  | URAM|
     +-------------------------------------------+---------------------------------------+---------+-------+------+-------+-----+
-    |grp_calculateLayer3_fu_157                 |calculateLayer3                        |       31|     38|  9838|  13552|    0|
-    |grp_calculateLayer4_fu_173                 |calculateLayer4                        |      271|     35|  9360|  12617|    0|
+    |grp_calculateLayer3_fu_157                 |calculateLayer3                        |       31|     38|  9687|  12402|    0|
+    |grp_calculateLayer4_fu_173                 |calculateLayer4                        |      143|     34|  9123|  11616|    0|
     |grp_generic_tanh_double_s_fu_187           |generic_tanh_double_s                  |       15|     19|  7971|  10323|    0|
-    |nerons_dmul_64ns_64ns_64_6_max_dsp_1_U48   |nerons_dmul_64ns_64ns_64_6_max_dsp_1   |        0|     11|   317|    578|    0|
-    |nerons_fadd_32ns_32ns_32_5_full_dsp_1_U45  |nerons_fadd_32ns_32ns_32_5_full_dsp_1  |        0|      2|   205|    390|    0|
-    |nerons_fmul_32ns_32ns_32_4_max_dsp_1_U46   |nerons_fmul_32ns_32ns_32_4_max_dsp_1   |        0|      3|   143|    321|    0|
-    |nerons_fpext_32ns_64_2_1_U47               |nerons_fpext_32ns_64_2_1               |        0|      0|   100|    138|    0|
+    |nerons_dmul_64ns_64ns_64_6_max_dsp_1_U46   |nerons_dmul_64ns_64ns_64_6_max_dsp_1   |        0|     11|   317|    578|    0|
+    |nerons_hadd_16ns_16ns_16_5_full_dsp_1_U47  |nerons_hadd_16ns_16ns_16_5_full_dsp_1  |        0|      2|   109|    116|    0|
+    |nerons_hmul_16ns_16ns_16_4_max_dsp_1_U48   |nerons_hmul_16ns_16ns_16_4_max_dsp_1   |        0|      2|    91|     36|    0|
+    |nerons_hptodp_16ns_64_2_1_U49              |nerons_hptodp_16ns_64_2_1              |        0|      0|    55|      9|    0|
     +-------------------------------------------+---------------------------------------+---------+-------+------+-------+-----+
-    |Total                                      |                                       |      317|    108| 27934|  37919|    0|
+    |Total                                      |                                       |      189|    106| 27353|  35080|    0|
     +-------------------------------------------+---------------------------------------+---------+-------+------+-------+-----+
 
     * DSP48E: 
@@ -99,11 +99,11 @@
     +----------------------+---------------------------+---------+---+----+-----+------+-----+------+-------------+
     |        Memory        |           Module          | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
     +----------------------+---------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |Layer3_Neurons_CPU_U  |nerons_Layer3_Neurons_CPU  |        4|  0|   0|    0|  1250|   32|     1|        40000|
-    |Layer4_Neurons_CPU_U  |nerons_Layer4_Neurons_CPU  |        1|  0|   0|    0|   100|   32|     1|         3200|
-    |Layer4_Weights_CPU_U  |nerons_Layer4_Weights_CPU  |        2|  0|   0|    0|  1010|   32|     1|        32320|
+    |Layer3_Neurons_CPU_U  |nerons_Layer3_Neurons_CPU  |        2|  0|   0|    0|  1250|   16|     1|        20000|
+    |Layer4_Neurons_CPU_U  |nerons_Layer4_Neurons_CPU  |        1|  0|   0|    0|   100|   16|     1|         1600|
+    |Layer4_Weights_CPU_U  |nerons_Layer4_Weights_CPU  |        1|  0|   0|    0|  1010|   16|     1|        16160|
     +----------------------+---------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |Total                 |                           |        7|  0|   0|    0|  2360|   96|     3|        75520|
+    |Total                 |                           |        4|  0|   0|    0|  2360|   48|     3|        37760|
     +----------------------+---------------------------+---------+---+----+-----+------+-----+------+-------------+
 
     * FIFO: 
@@ -113,12 +113,12 @@
     +----------------------+----------+-------+---+----+------------+------------+
     |     Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------+----------+-------+---+----+------------+------------+
-    |add_ln58_fu_223_p2    |     +    |      0|  0|  14|          10|           7|
-    |add_ln61_1_fu_262_p2  |     +    |      0|  0|  14|          10|          10|
+    |add_ln57_fu_223_p2    |     +    |      0|  0|  14|          10|           7|
+    |add_ln60_1_fu_262_p2  |     +    |      0|  0|  14|          10|          10|
     |i_fu_235_p2           |     +    |      0|  0|  13|           4|           1|
     |j_fu_252_p2           |     +    |      0|  0|  15|           7|           1|
-    |icmp_ln58_fu_229_p2   |   icmp   |      0|  0|   9|           4|           4|
-    |icmp_ln60_fu_246_p2   |   icmp   |      0|  0|  11|           7|           6|
+    |icmp_ln57_fu_229_p2   |   icmp   |      0|  0|   9|           4|           4|
+    |icmp_ln59_fu_246_p2   |   icmp   |      0|  0|  11|           7|           6|
     +----------------------+----------+-------+---+----+------------+------------+
     |Total                 |          |      0|  0|  76|          42|          29|
     +----------------------+----------+-------+---+----+------------+------------+
@@ -135,23 +135,23 @@
     |Layer4_Neurons_CPU_we0       |    9|          2|    1|          2|
     |Layer4_Weights_CPU_address0  |   15|          3|   10|         30|
     |ap_NS_fsm                    |  153|         34|    1|         34|
-    |grp_fu_211_p0                |   15|          3|   64|        192|
-    |grp_fu_211_p1                |   15|          3|   64|        192|
+    |grp_fu_198_p0                |   15|          3|   64|        192|
+    |grp_fu_198_p1                |   15|          3|   64|        192|
     |i_0_i_reg_112                |    9|          2|    4|          8|
     |j_0_i_reg_146                |    9|          2|    7|         14|
     |phi_mul_reg_124              |    9|          2|   10|         20|
-    |somme_0_i_reg_136            |    9|          2|   32|         64|
+    |somme_0_i_reg_136            |    9|          2|   16|         32|
     +-----------------------------+-----+-----------+-----+-----------+
-    |Total                        |  312|         67|  214|        618|
+    |Total                        |  312|         67|  198|        586|
     +-----------------------------+-----+-----------+-----+-----------+
 
     * Register: 
     +-----------------------------------------------+----+----+-----+-----------+
     |                      Name                     | FF | LUT| Bits| Const Bits|
     +-----------------------------------------------+----+----+-----+-----------+
-    |Layer4_Neurons_CPU_l_reg_329                   |  32|   0|   32|          0|
-    |Layer4_Weights_CPU_l_reg_324                   |  32|   0|   32|          0|
-    |add_ln58_reg_283                               |  10|   0|   10|          0|
+    |Layer4_Neurons_CPU_l_reg_329                   |  16|   0|   16|          0|
+    |Layer4_Weights_CPU_l_reg_324                   |  16|   0|   16|          0|
+    |add_ln57_reg_283                               |  10|   0|   10|          0|
     |ap_CS_fsm                                      |  33|   0|   33|          0|
     |grp_calculateLayer3_fu_157_ap_start_reg        |   1|   0|    1|          0|
     |grp_calculateLayer4_fu_173_ap_start_reg        |   1|   0|    1|          0|
@@ -162,12 +162,12 @@
     |j_reg_309                                      |   7|   0|    7|          0|
     |phi_mul_reg_124                                |  10|   0|   10|          0|
     |reg_217                                        |  64|   0|   64|          0|
-    |somme_0_i_reg_136                              |  32|   0|   32|          0|
-    |tmp_3_i_reg_334                                |  32|   0|   32|          0|
+    |somme_0_i_reg_136                              |  16|   0|   16|          0|
+    |tmp_3_i_reg_334                                |  16|   0|   16|          0|
     |tmp_i_i_reg_349                                |  64|   0|   64|          0|
     |tmp_i_reg_344                                  |  64|   0|   64|          0|
     +-----------------------------------------------+----+----+-----+-----------+
-    |Total                                          | 398|   0|  398|          0|
+    |Total                                          | 334|   0|  334|          0|
     +-----------------------------------------------+----+----+-----+-----------+
 
 
@@ -187,10 +187,10 @@
 |ap_ready                     | out |    1| ap_ctrl_hs |       nerons       | return value |
 |Layer2_Neurons_CPU_address0  | out |   10|  ap_memory | Layer2_Neurons_CPU |     array    |
 |Layer2_Neurons_CPU_ce0       | out |    1|  ap_memory | Layer2_Neurons_CPU |     array    |
-|Layer2_Neurons_CPU_q0        |  in |   32|  ap_memory | Layer2_Neurons_CPU |     array    |
+|Layer2_Neurons_CPU_q0        |  in |   16|  ap_memory | Layer2_Neurons_CPU |     array    |
 |Layer2_Neurons_CPU_address1  | out |   10|  ap_memory | Layer2_Neurons_CPU |     array    |
 |Layer2_Neurons_CPU_ce1       | out |    1|  ap_memory | Layer2_Neurons_CPU |     array    |
-|Layer2_Neurons_CPU_q1        |  in |   32|  ap_memory | Layer2_Neurons_CPU |     array    |
+|Layer2_Neurons_CPU_q1        |  in |   16|  ap_memory | Layer2_Neurons_CPU |     array    |
 |Layer5_Neurons_CPU_address0  | out |    4|  ap_memory | Layer5_Neurons_CPU |     array    |
 |Layer5_Neurons_CPU_ce0       | out |    1|  ap_memory | Layer5_Neurons_CPU |     array    |
 |Layer5_Neurons_CPU_we0       | out |    1|  ap_memory | Layer5_Neurons_CPU |     array    |
@@ -265,139 +265,139 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 3.25>
-ST_1 : Operation 34 [1/1] (3.25ns)   --->   "%Layer3_Neurons_CPU = alloca [1250 x float], align 16" [hlsed_neurons/solution1/.tcls/345.c:7]   --->   Operation 34 'alloca' 'Layer3_Neurons_CPU' <Predicate = true> <Delay = 3.25>
-ST_1 : Operation 35 [1/1] (3.25ns)   --->   "%Layer4_Neurons_CPU = alloca [100 x float], align 16"   --->   Operation 35 'alloca' 'Layer4_Neurons_CPU' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 100> <RAM>
-ST_1 : Operation 36 [2/2] (0.00ns)   --->   "call fastcc void @calculateLayer3([1014 x float]* %Layer2_Neurons_CPU, [1250 x float]* %Layer3_Neurons_CPU) nounwind" [hlsed_neurons/solution1/.tcls/345.c:10]   --->   Operation 36 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 34 [1/1] (3.25ns)   --->   "%Layer3_Neurons_CPU = alloca [1250 x half], align 16" [hlsed_neurons/solution1/.tcls/345.c:7]   --->   Operation 34 'alloca' 'Layer3_Neurons_CPU' <Predicate = true> <Delay = 3.25>
+ST_1 : Operation 35 [1/1] (3.25ns)   --->   "%Layer4_Neurons_CPU = alloca [100 x half], align 16"   --->   Operation 35 'alloca' 'Layer4_Neurons_CPU' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_1 : Operation 36 [2/2] (0.00ns)   --->   "call fastcc void @calculateLayer3([1014 x half]* %Layer2_Neurons_CPU, [1250 x half]* %Layer3_Neurons_CPU) nounwind" [hlsed_neurons/solution1/.tcls/345.c:10]   --->   Operation 36 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 37 [1/2] (0.00ns)   --->   "call fastcc void @calculateLayer3([1014 x float]* %Layer2_Neurons_CPU, [1250 x float]* %Layer3_Neurons_CPU) nounwind" [hlsed_neurons/solution1/.tcls/345.c:10]   --->   Operation 37 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 37 [1/2] (0.00ns)   --->   "call fastcc void @calculateLayer3([1014 x half]* %Layer2_Neurons_CPU, [1250 x half]* %Layer3_Neurons_CPU) nounwind" [hlsed_neurons/solution1/.tcls/345.c:10]   --->   Operation 37 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 38 [2/2] (0.00ns)   --->   "call fastcc void @calculateLayer4([1250 x float]* %Layer3_Neurons_CPU, [100 x float]* %Layer4_Neurons_CPU) nounwind" [hlsed_neurons/solution1/.tcls/345.c:11]   --->   Operation 38 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 38 [2/2] (0.00ns)   --->   "call fastcc void @calculateLayer4([1250 x half]* %Layer3_Neurons_CPU, [100 x half]* %Layer4_Neurons_CPU) nounwind" [hlsed_neurons/solution1/.tcls/345.c:11]   --->   Operation 38 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 1.76>
-ST_4 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([1014 x float]* %Layer2_Neurons_CPU) nounwind, !map !33"   --->   Operation 39 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([1014 x half]* %Layer2_Neurons_CPU) nounwind, !map !33"   --->   Operation 39 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x double]* %Layer5_Neurons_CPU) nounwind, !map !26"   --->   Operation 40 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 41 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([7 x i8]* @nerons_str) nounwind"   --->   Operation 41 'spectopmodule' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 42 [1/2] (0.00ns)   --->   "call fastcc void @calculateLayer4([1250 x float]* %Layer3_Neurons_CPU, [100 x float]* %Layer4_Neurons_CPU) nounwind" [hlsed_neurons/solution1/.tcls/345.c:11]   --->   Operation 42 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_4 : Operation 43 [1/1] (1.76ns)   --->   "br label %1" [hlsed_neurons/solution1/.tcls/345.c:58->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 43 'br' <Predicate = true> <Delay = 1.76>
+ST_4 : Operation 42 [1/2] (0.00ns)   --->   "call fastcc void @calculateLayer4([1250 x half]* %Layer3_Neurons_CPU, [100 x half]* %Layer4_Neurons_CPU) nounwind" [hlsed_neurons/solution1/.tcls/345.c:11]   --->   Operation 42 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 43 [1/1] (1.76ns)   --->   "br label %1" [hlsed_neurons/solution1/.tcls/345.c:57->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 43 'br' <Predicate = true> <Delay = 1.76>
 
 State 5 <SV = 4> <Delay = 3.25>
 ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%i_0_i = phi i4 [ 0, %0 ], [ %i, %5 ]"   --->   Operation 44 'phi' 'i_0_i' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%phi_mul = phi i10 [ 0, %0 ], [ %add_ln58, %5 ]" [hlsed_neurons/solution1/.tcls/345.c:58->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 45 'phi' 'phi_mul' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 46 [1/1] (1.73ns)   --->   "%add_ln58 = add i10 %phi_mul, 101" [hlsed_neurons/solution1/.tcls/345.c:58->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 46 'add' 'add_ln58' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 47 [1/1] (1.30ns)   --->   "%icmp_ln58 = icmp eq i4 %i_0_i, -6" [hlsed_neurons/solution1/.tcls/345.c:58->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 47 'icmp' 'icmp_ln58' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%phi_mul = phi i10 [ 0, %0 ], [ %add_ln57, %5 ]" [hlsed_neurons/solution1/.tcls/345.c:57->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 45 'phi' 'phi_mul' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 46 [1/1] (1.73ns)   --->   "%add_ln57 = add i10 %phi_mul, 101" [hlsed_neurons/solution1/.tcls/345.c:57->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 46 'add' 'add_ln57' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 47 [1/1] (1.30ns)   --->   "%icmp_ln57 = icmp eq i4 %i_0_i, -6" [hlsed_neurons/solution1/.tcls/345.c:57->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 47 'icmp' 'icmp_ln57' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 10, i64 10, i64 10) nounwind"   --->   Operation 48 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 49 [1/1] (1.73ns)   --->   "%i = add i4 %i_0_i, 1" [hlsed_neurons/solution1/.tcls/345.c:58->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 49 'add' 'i' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 50 [1/1] (0.00ns)   --->   "br i1 %icmp_ln58, label %calculateLayer5.exit, label %2" [hlsed_neurons/solution1/.tcls/345.c:58->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 50 'br' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 51 [1/1] (0.00ns)   --->   "%zext_ln59 = zext i10 %phi_mul to i64" [hlsed_neurons/solution1/.tcls/345.c:59->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 51 'zext' 'zext_ln59' <Predicate = (!icmp_ln58)> <Delay = 0.00>
-ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%Layer4_Weights_CPU_a = getelementptr inbounds [1010 x float]* @Layer4_Weights_CPU, i64 0, i64 %zext_ln59" [hlsed_neurons/solution1/.tcls/345.c:59->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 52 'getelementptr' 'Layer4_Weights_CPU_a' <Predicate = (!icmp_ln58)> <Delay = 0.00>
-ST_5 : Operation 53 [2/2] (3.25ns)   --->   "%somme = load float* %Layer4_Weights_CPU_a, align 4" [hlsed_neurons/solution1/.tcls/345.c:59->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 53 'load' 'somme' <Predicate = (!icmp_ln58)> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 1010> <ROM>
-ST_5 : Operation 54 [1/1] (0.00ns)   --->   "ret void" [hlsed_neurons/solution1/.tcls/345.c:14]   --->   Operation 54 'ret' <Predicate = (icmp_ln58)> <Delay = 0.00>
+ST_5 : Operation 49 [1/1] (1.73ns)   --->   "%i = add i4 %i_0_i, 1" [hlsed_neurons/solution1/.tcls/345.c:57->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 49 'add' 'i' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 50 [1/1] (0.00ns)   --->   "br i1 %icmp_ln57, label %calculateLayer5.exit, label %2" [hlsed_neurons/solution1/.tcls/345.c:57->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 50 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 51 [1/1] (0.00ns)   --->   "%zext_ln58 = zext i10 %phi_mul to i64" [hlsed_neurons/solution1/.tcls/345.c:58->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 51 'zext' 'zext_ln58' <Predicate = (!icmp_ln57)> <Delay = 0.00>
+ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%Layer4_Weights_CPU_a = getelementptr inbounds [1010 x half]* @Layer4_Weights_CPU, i64 0, i64 %zext_ln58" [hlsed_neurons/solution1/.tcls/345.c:58->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 52 'getelementptr' 'Layer4_Weights_CPU_a' <Predicate = (!icmp_ln57)> <Delay = 0.00>
+ST_5 : Operation 53 [2/2] (3.25ns)   --->   "%somme = load half* %Layer4_Weights_CPU_a, align 2" [hlsed_neurons/solution1/.tcls/345.c:58->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 53 'load' 'somme' <Predicate = (!icmp_ln57)> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 16> <Depth = 1010> <ROM>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "ret void" [hlsed_neurons/solution1/.tcls/345.c:14]   --->   Operation 54 'ret' <Predicate = (icmp_ln57)> <Delay = 0.00>
 
 State 6 <SV = 5> <Delay = 3.25>
-ST_6 : Operation 55 [1/2] (3.25ns)   --->   "%somme = load float* %Layer4_Weights_CPU_a, align 4" [hlsed_neurons/solution1/.tcls/345.c:59->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 55 'load' 'somme' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 1010> <ROM>
-ST_6 : Operation 56 [1/1] (1.76ns)   --->   "br label %3" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 56 'br' <Predicate = true> <Delay = 1.76>
+ST_6 : Operation 55 [1/2] (3.25ns)   --->   "%somme = load half* %Layer4_Weights_CPU_a, align 2" [hlsed_neurons/solution1/.tcls/345.c:58->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 55 'load' 'somme' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 16> <Depth = 1010> <ROM>
+ST_6 : Operation 56 [1/1] (1.76ns)   --->   "br label %3" [hlsed_neurons/solution1/.tcls/345.c:59->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 56 'br' <Predicate = true> <Delay = 1.76>
 
 State 7 <SV = 6> <Delay = 6.85>
-ST_7 : Operation 57 [1/1] (0.00ns)   --->   "%somme_0_i = phi float [ %somme, %2 ], [ %somme_1, %4 ]"   --->   Operation 57 'phi' 'somme_0_i' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 57 [1/1] (0.00ns)   --->   "%somme_0_i = phi half [ %somme, %2 ], [ %somme_1, %4 ]"   --->   Operation 57 'phi' 'somme_0_i' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 58 [1/1] (0.00ns)   --->   "%j_0_i = phi i7 [ 0, %2 ], [ %j, %4 ]"   --->   Operation 58 'phi' 'j_0_i' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 59 [1/1] (1.48ns)   --->   "%icmp_ln60 = icmp eq i7 %j_0_i, -28" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 59 'icmp' 'icmp_ln60' <Predicate = true> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 59 [1/1] (1.48ns)   --->   "%icmp_ln59 = icmp eq i7 %j_0_i, -28" [hlsed_neurons/solution1/.tcls/345.c:59->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 59 'icmp' 'icmp_ln59' <Predicate = true> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_7 : Operation 60 [1/1] (0.00ns)   --->   "%empty_29 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 100, i64 100, i64 100) nounwind"   --->   Operation 60 'speclooptripcount' 'empty_29' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 61 [1/1] (1.87ns)   --->   "%j = add i7 %j_0_i, 1" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 61 'add' 'j' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 62 [1/1] (0.00ns)   --->   "br i1 %icmp_ln60, label %5, label %4" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 62 'br' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln61_2 = zext i7 %j to i10" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 63 'zext' 'zext_ln61_2' <Predicate = (!icmp_ln60)> <Delay = 0.00>
-ST_7 : Operation 64 [1/1] (1.73ns)   --->   "%add_ln61_1 = add i10 %zext_ln61_2, %phi_mul" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 64 'add' 'add_ln61_1' <Predicate = (!icmp_ln60)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 65 [1/1] (0.00ns)   --->   "%zext_ln61 = zext i10 %add_ln61_1 to i64" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 65 'zext' 'zext_ln61' <Predicate = (!icmp_ln60)> <Delay = 0.00>
-ST_7 : Operation 66 [1/1] (0.00ns)   --->   "%Layer4_Weights_CPU_a_1 = getelementptr inbounds [1010 x float]* @Layer4_Weights_CPU, i64 0, i64 %zext_ln61" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 66 'getelementptr' 'Layer4_Weights_CPU_a_1' <Predicate = (!icmp_ln60)> <Delay = 0.00>
-ST_7 : Operation 67 [2/2] (3.25ns)   --->   "%Layer4_Weights_CPU_l = load float* %Layer4_Weights_CPU_a_1, align 4" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 67 'load' 'Layer4_Weights_CPU_l' <Predicate = (!icmp_ln60)> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 1010> <ROM>
-ST_7 : Operation 68 [1/1] (0.00ns)   --->   "%zext_ln61_1 = zext i7 %j_0_i to i64" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 68 'zext' 'zext_ln61_1' <Predicate = (!icmp_ln60)> <Delay = 0.00>
-ST_7 : Operation 69 [1/1] (0.00ns)   --->   "%Layer4_Neurons_CPU_a = getelementptr [100 x float]* %Layer4_Neurons_CPU, i64 0, i64 %zext_ln61_1" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 69 'getelementptr' 'Layer4_Neurons_CPU_a' <Predicate = (!icmp_ln60)> <Delay = 0.00>
-ST_7 : Operation 70 [2/2] (3.25ns)   --->   "%Layer4_Neurons_CPU_l = load float* %Layer4_Neurons_CPU_a, align 4" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 70 'load' 'Layer4_Neurons_CPU_l' <Predicate = (!icmp_ln60)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 100> <RAM>
-ST_7 : Operation 71 [2/2] (4.43ns)   --->   "%tmp_i = fpext float %somme_0_i to double" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 71 'fpext' 'tmp_i' <Predicate = (icmp_ln60)> <Delay = 4.43> <Core = "Float2Double">   --->   Core 114 'Float2Double' <Latency = 1> <II = 1> <Delay = 4.43> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 61 [1/1] (1.87ns)   --->   "%j = add i7 %j_0_i, 1" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 61 'add' 'j' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 62 [1/1] (0.00ns)   --->   "br i1 %icmp_ln59, label %5, label %4" [hlsed_neurons/solution1/.tcls/345.c:59->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 62 'br' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln60_2 = zext i7 %j to i10" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 63 'zext' 'zext_ln60_2' <Predicate = (!icmp_ln59)> <Delay = 0.00>
+ST_7 : Operation 64 [1/1] (1.73ns)   --->   "%add_ln60_1 = add i10 %zext_ln60_2, %phi_mul" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 64 'add' 'add_ln60_1' <Predicate = (!icmp_ln59)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 65 [1/1] (0.00ns)   --->   "%zext_ln60 = zext i10 %add_ln60_1 to i64" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 65 'zext' 'zext_ln60' <Predicate = (!icmp_ln59)> <Delay = 0.00>
+ST_7 : Operation 66 [1/1] (0.00ns)   --->   "%Layer4_Weights_CPU_a_1 = getelementptr inbounds [1010 x half]* @Layer4_Weights_CPU, i64 0, i64 %zext_ln60" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 66 'getelementptr' 'Layer4_Weights_CPU_a_1' <Predicate = (!icmp_ln59)> <Delay = 0.00>
+ST_7 : Operation 67 [2/2] (3.25ns)   --->   "%Layer4_Weights_CPU_l = load half* %Layer4_Weights_CPU_a_1, align 2" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 67 'load' 'Layer4_Weights_CPU_l' <Predicate = (!icmp_ln59)> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 16> <Depth = 1010> <ROM>
+ST_7 : Operation 68 [1/1] (0.00ns)   --->   "%zext_ln60_1 = zext i7 %j_0_i to i64" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 68 'zext' 'zext_ln60_1' <Predicate = (!icmp_ln59)> <Delay = 0.00>
+ST_7 : Operation 69 [1/1] (0.00ns)   --->   "%Layer4_Neurons_CPU_a = getelementptr [100 x half]* %Layer4_Neurons_CPU, i64 0, i64 %zext_ln60_1" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 69 'getelementptr' 'Layer4_Neurons_CPU_a' <Predicate = (!icmp_ln59)> <Delay = 0.00>
+ST_7 : Operation 70 [2/2] (3.25ns)   --->   "%Layer4_Neurons_CPU_l = load half* %Layer4_Neurons_CPU_a, align 2" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 70 'load' 'Layer4_Neurons_CPU_l' <Predicate = (!icmp_ln59)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_7 : Operation 71 [2/2] (3.43ns)   --->   "%tmp_i = fpext half %somme_0_i to double" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 71 'hptodp' 'tmp_i' <Predicate = (icmp_ln59)> <Delay = 3.43> <Core = "Half2Double">   --->   Core 96 'Half2Double' <Latency = 1> <II = 1> <Delay = 3.43> <FuncUnit> <Opcode : 'hptodp'> <InPorts = 1> <OutPorts = 1>
 
 State 8 <SV = 7> <Delay = 3.25>
-ST_8 : Operation 72 [1/2] (3.25ns)   --->   "%Layer4_Weights_CPU_l = load float* %Layer4_Weights_CPU_a_1, align 4" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 72 'load' 'Layer4_Weights_CPU_l' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 1010> <ROM>
-ST_8 : Operation 73 [1/2] (3.25ns)   --->   "%Layer4_Neurons_CPU_l = load float* %Layer4_Neurons_CPU_a, align 4" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 73 'load' 'Layer4_Neurons_CPU_l' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 100> <RAM>
+ST_8 : Operation 72 [1/2] (3.25ns)   --->   "%Layer4_Weights_CPU_l = load half* %Layer4_Weights_CPU_a_1, align 2" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 72 'load' 'Layer4_Weights_CPU_l' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 16> <Depth = 1010> <ROM>
+ST_8 : Operation 73 [1/2] (3.25ns)   --->   "%Layer4_Neurons_CPU_l = load half* %Layer4_Neurons_CPU_a, align 2" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 73 'load' 'Layer4_Neurons_CPU_l' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
 
-State 9 <SV = 8> <Delay = 5.70>
-ST_9 : Operation 74 [4/4] (5.70ns)   --->   "%tmp_3_i = fmul float %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 74 'fmul' 'tmp_3_i' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+State 9 <SV = 8> <Delay = 6.86>
+ST_9 : Operation 74 [4/4] (6.86ns)   --->   "%tmp_3_i = fmul half %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 74 'hmul' 'tmp_3_i' <Predicate = true> <Delay = 6.86> <Core = "HMul">   --->   Core 91 'HMul' <Latency = 3> <II = 1> <Delay = 6.86> <FuncUnit> <Opcode : 'hmul'> <InPorts = 2> <OutPorts = 1>
 
-State 10 <SV = 9> <Delay = 5.70>
-ST_10 : Operation 75 [3/4] (5.70ns)   --->   "%tmp_3_i = fmul float %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 75 'fmul' 'tmp_3_i' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+State 10 <SV = 9> <Delay = 6.86>
+ST_10 : Operation 75 [3/4] (6.86ns)   --->   "%tmp_3_i = fmul half %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 75 'hmul' 'tmp_3_i' <Predicate = true> <Delay = 6.86> <Core = "HMul">   --->   Core 91 'HMul' <Latency = 3> <II = 1> <Delay = 6.86> <FuncUnit> <Opcode : 'hmul'> <InPorts = 2> <OutPorts = 1>
 
-State 11 <SV = 10> <Delay = 5.70>
-ST_11 : Operation 76 [2/4] (5.70ns)   --->   "%tmp_3_i = fmul float %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 76 'fmul' 'tmp_3_i' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+State 11 <SV = 10> <Delay = 6.86>
+ST_11 : Operation 76 [2/4] (6.86ns)   --->   "%tmp_3_i = fmul half %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 76 'hmul' 'tmp_3_i' <Predicate = true> <Delay = 6.86> <Core = "HMul">   --->   Core 91 'HMul' <Latency = 3> <II = 1> <Delay = 6.86> <FuncUnit> <Opcode : 'hmul'> <InPorts = 2> <OutPorts = 1>
 
-State 12 <SV = 11> <Delay = 5.70>
-ST_12 : Operation 77 [1/4] (5.70ns)   --->   "%tmp_3_i = fmul float %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 77 'fmul' 'tmp_3_i' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+State 12 <SV = 11> <Delay = 6.86>
+ST_12 : Operation 77 [1/4] (6.86ns)   --->   "%tmp_3_i = fmul half %Layer4_Weights_CPU_l, %Layer4_Neurons_CPU_l" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 77 'hmul' 'tmp_3_i' <Predicate = true> <Delay = 6.86> <Core = "HMul">   --->   Core 91 'HMul' <Latency = 3> <II = 1> <Delay = 6.86> <FuncUnit> <Opcode : 'hmul'> <InPorts = 2> <OutPorts = 1>
 
-State 13 <SV = 12> <Delay = 7.25>
-ST_13 : Operation 78 [5/5] (7.25ns)   --->   "%somme_1 = fadd float %somme_0_i, %tmp_3_i" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 78 'fadd' 'somme_1' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+State 13 <SV = 12> <Delay = 7.61>
+ST_13 : Operation 78 [5/5] (7.61ns)   --->   "%somme_1 = fadd half %somme_0_i, %tmp_3_i" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 78 'hadd' 'somme_1' <Predicate = true> <Delay = 7.61> <Core = "HAddSub">   --->   Core 90 'HAddSub' <Latency = 4> <II = 1> <Delay = 7.61> <FuncUnit> <Opcode : 'hadd' 'hsub'> <InPorts = 2> <OutPorts = 1>
 
-State 14 <SV = 13> <Delay = 7.25>
-ST_14 : Operation 79 [4/5] (7.25ns)   --->   "%somme_1 = fadd float %somme_0_i, %tmp_3_i" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 79 'fadd' 'somme_1' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+State 14 <SV = 13> <Delay = 7.61>
+ST_14 : Operation 79 [4/5] (7.61ns)   --->   "%somme_1 = fadd half %somme_0_i, %tmp_3_i" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 79 'hadd' 'somme_1' <Predicate = true> <Delay = 7.61> <Core = "HAddSub">   --->   Core 90 'HAddSub' <Latency = 4> <II = 1> <Delay = 7.61> <FuncUnit> <Opcode : 'hadd' 'hsub'> <InPorts = 2> <OutPorts = 1>
 
-State 15 <SV = 14> <Delay = 7.25>
-ST_15 : Operation 80 [3/5] (7.25ns)   --->   "%somme_1 = fadd float %somme_0_i, %tmp_3_i" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 80 'fadd' 'somme_1' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+State 15 <SV = 14> <Delay = 7.61>
+ST_15 : Operation 80 [3/5] (7.61ns)   --->   "%somme_1 = fadd half %somme_0_i, %tmp_3_i" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 80 'hadd' 'somme_1' <Predicate = true> <Delay = 7.61> <Core = "HAddSub">   --->   Core 90 'HAddSub' <Latency = 4> <II = 1> <Delay = 7.61> <FuncUnit> <Opcode : 'hadd' 'hsub'> <InPorts = 2> <OutPorts = 1>
 
-State 16 <SV = 15> <Delay = 7.25>
-ST_16 : Operation 81 [2/5] (7.25ns)   --->   "%somme_1 = fadd float %somme_0_i, %tmp_3_i" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 81 'fadd' 'somme_1' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+State 16 <SV = 15> <Delay = 7.61>
+ST_16 : Operation 81 [2/5] (7.61ns)   --->   "%somme_1 = fadd half %somme_0_i, %tmp_3_i" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 81 'hadd' 'somme_1' <Predicate = true> <Delay = 7.61> <Core = "HAddSub">   --->   Core 90 'HAddSub' <Latency = 4> <II = 1> <Delay = 7.61> <FuncUnit> <Opcode : 'hadd' 'hsub'> <InPorts = 2> <OutPorts = 1>
 
-State 17 <SV = 16> <Delay = 7.25>
-ST_17 : Operation 82 [1/5] (7.25ns)   --->   "%somme_1 = fadd float %somme_0_i, %tmp_3_i" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 82 'fadd' 'somme_1' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_17 : Operation 83 [1/1] (0.00ns)   --->   "br label %3" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 83 'br' <Predicate = true> <Delay = 0.00>
+State 17 <SV = 16> <Delay = 7.61>
+ST_17 : Operation 82 [1/5] (7.61ns)   --->   "%somme_1 = fadd half %somme_0_i, %tmp_3_i" [hlsed_neurons/solution1/.tcls/345.c:60->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 82 'hadd' 'somme_1' <Predicate = true> <Delay = 7.61> <Core = "HAddSub">   --->   Core 90 'HAddSub' <Latency = 4> <II = 1> <Delay = 7.61> <FuncUnit> <Opcode : 'hadd' 'hsub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 83 [1/1] (0.00ns)   --->   "br label %3" [hlsed_neurons/solution1/.tcls/345.c:59->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 83 'br' <Predicate = true> <Delay = 0.00>
 
-State 18 <SV = 7> <Delay = 4.43>
-ST_18 : Operation 84 [1/2] (4.43ns)   --->   "%tmp_i = fpext float %somme_0_i to double" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 84 'fpext' 'tmp_i' <Predicate = true> <Delay = 4.43> <Core = "Float2Double">   --->   Core 114 'Float2Double' <Latency = 1> <II = 1> <Delay = 4.43> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+State 18 <SV = 7> <Delay = 3.43>
+ST_18 : Operation 84 [1/2] (3.43ns)   --->   "%tmp_i = fpext half %somme_0_i to double" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 84 'hptodp' 'tmp_i' <Predicate = true> <Delay = 3.43> <Core = "Half2Double">   --->   Core 96 'Half2Double' <Latency = 1> <II = 1> <Delay = 3.43> <FuncUnit> <Opcode : 'hptodp'> <InPorts = 1> <OutPorts = 1>
 
 State 19 <SV = 8> <Delay = 7.78>
-ST_19 : Operation 85 [6/6] (7.78ns)   --->   "%x_assign = fmul double %tmp_i, 0x3FE55555571F7693" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 85 'dmul' 'x_assign' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 85 [6/6] (7.78ns)   --->   "%x_assign = fmul double %tmp_i, 0x3FE55555571F7693" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 85 'dmul' 'x_assign' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 20 <SV = 9> <Delay = 7.78>
-ST_20 : Operation 86 [5/6] (7.78ns)   --->   "%x_assign = fmul double %tmp_i, 0x3FE55555571F7693" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 86 'dmul' 'x_assign' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 86 [5/6] (7.78ns)   --->   "%x_assign = fmul double %tmp_i, 0x3FE55555571F7693" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 86 'dmul' 'x_assign' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 21 <SV = 10> <Delay = 7.78>
-ST_21 : Operation 87 [4/6] (7.78ns)   --->   "%x_assign = fmul double %tmp_i, 0x3FE55555571F7693" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 87 'dmul' 'x_assign' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 87 [4/6] (7.78ns)   --->   "%x_assign = fmul double %tmp_i, 0x3FE55555571F7693" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 87 'dmul' 'x_assign' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 22 <SV = 11> <Delay = 7.78>
-ST_22 : Operation 88 [3/6] (7.78ns)   --->   "%x_assign = fmul double %tmp_i, 0x3FE55555571F7693" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 88 'dmul' 'x_assign' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 88 [3/6] (7.78ns)   --->   "%x_assign = fmul double %tmp_i, 0x3FE55555571F7693" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 88 'dmul' 'x_assign' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 23 <SV = 12> <Delay = 7.78>
-ST_23 : Operation 89 [2/6] (7.78ns)   --->   "%x_assign = fmul double %tmp_i, 0x3FE55555571F7693" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 89 'dmul' 'x_assign' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 89 [2/6] (7.78ns)   --->   "%x_assign = fmul double %tmp_i, 0x3FE55555571F7693" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 89 'dmul' 'x_assign' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 24 <SV = 13> <Delay = 7.78>
-ST_24 : Operation 90 [1/6] (7.78ns)   --->   "%x_assign = fmul double %tmp_i, 0x3FE55555571F7693" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 90 'dmul' 'x_assign' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 90 [1/6] (7.78ns)   --->   "%x_assign = fmul double %tmp_i, 0x3FE55555571F7693" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 90 'dmul' 'x_assign' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 25 <SV = 14> <Delay = 8.23>
-ST_25 : Operation 91 [2/2] (8.23ns)   --->   "%tmp_i_i = call fastcc double @"generic_tanh<double>"(double %x_assign) nounwind" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/tanhdouble.cpp:7->hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 91 'call' 'tmp_i_i' <Predicate = true> <Delay = 8.23> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_25 : Operation 91 [2/2] (8.23ns)   --->   "%tmp_i_i = call fastcc double @"generic_tanh<double>"(double %x_assign) nounwind" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/tanhdouble.cpp:7->hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 91 'call' 'tmp_i_i' <Predicate = true> <Delay = 8.23> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 26 <SV = 15> <Delay = 3.38>
-ST_26 : Operation 92 [1/2] (3.38ns)   --->   "%tmp_i_i = call fastcc double @"generic_tanh<double>"(double %x_assign) nounwind" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/tanhdouble.cpp:7->hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 92 'call' 'tmp_i_i' <Predicate = true> <Delay = 3.38> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_26 : Operation 92 [1/2] (3.38ns)   --->   "%tmp_i_i = call fastcc double @"generic_tanh<double>"(double %x_assign) nounwind" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/tanhdouble.cpp:7->hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 92 'call' 'tmp_i_i' <Predicate = true> <Delay = 3.38> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 27 <SV = 16> <Delay = 7.78>
-ST_27 : Operation 93 [6/6] (7.78ns)   --->   "%tmp_2_i = fmul double %tmp_i_i, 1.715900e+00" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 93 'dmul' 'tmp_2_i' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 93 [6/6] (7.78ns)   --->   "%tmp_2_i = fmul double %tmp_i_i, 1.715900e+00" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 93 'dmul' 'tmp_2_i' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 28 <SV = 17> <Delay = 7.78>
-ST_28 : Operation 94 [5/6] (7.78ns)   --->   "%tmp_2_i = fmul double %tmp_i_i, 1.715900e+00" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 94 'dmul' 'tmp_2_i' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 94 [5/6] (7.78ns)   --->   "%tmp_2_i = fmul double %tmp_i_i, 1.715900e+00" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 94 'dmul' 'tmp_2_i' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 29 <SV = 18> <Delay = 7.78>
-ST_29 : Operation 95 [4/6] (7.78ns)   --->   "%tmp_2_i = fmul double %tmp_i_i, 1.715900e+00" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 95 'dmul' 'tmp_2_i' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 95 [4/6] (7.78ns)   --->   "%tmp_2_i = fmul double %tmp_i_i, 1.715900e+00" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 95 'dmul' 'tmp_2_i' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 30 <SV = 19> <Delay = 7.78>
-ST_30 : Operation 96 [3/6] (7.78ns)   --->   "%tmp_2_i = fmul double %tmp_i_i, 1.715900e+00" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 96 'dmul' 'tmp_2_i' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 96 [3/6] (7.78ns)   --->   "%tmp_2_i = fmul double %tmp_i_i, 1.715900e+00" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 96 'dmul' 'tmp_2_i' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 31 <SV = 20> <Delay = 7.78>
-ST_31 : Operation 97 [2/6] (7.78ns)   --->   "%tmp_2_i = fmul double %tmp_i_i, 1.715900e+00" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 97 'dmul' 'tmp_2_i' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 97 [2/6] (7.78ns)   --->   "%tmp_2_i = fmul double %tmp_i_i, 1.715900e+00" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 97 'dmul' 'tmp_2_i' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 32 <SV = 21> <Delay = 7.78>
-ST_32 : Operation 98 [1/6] (7.78ns)   --->   "%tmp_2_i = fmul double %tmp_i_i, 1.715900e+00" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 98 'dmul' 'tmp_2_i' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 98 [1/6] (7.78ns)   --->   "%tmp_2_i = fmul double %tmp_i_i, 1.715900e+00" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 98 'dmul' 'tmp_2_i' <Predicate = true> <Delay = 7.78> <Core = "DMul">   --->   Core 116 'DMul' <Latency = 5> <II = 1> <Delay = 7.78> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 33 <SV = 22> <Delay = 2.32>
-ST_33 : Operation 99 [1/1] (0.00ns)   --->   "%zext_ln62 = zext i4 %i_0_i to i64" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 99 'zext' 'zext_ln62' <Predicate = true> <Delay = 0.00>
-ST_33 : Operation 100 [1/1] (0.00ns)   --->   "%Layer5_Neurons_CPU_a = getelementptr [10 x double]* %Layer5_Neurons_CPU, i64 0, i64 %zext_ln62" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 100 'getelementptr' 'Layer5_Neurons_CPU_a' <Predicate = true> <Delay = 0.00>
-ST_33 : Operation 101 [1/1] (2.32ns)   --->   "store double %tmp_2_i, double* %Layer5_Neurons_CPU_a, align 8" [hlsed_neurons/solution1/.tcls/345.c:62->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 101 'store' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 100> <RAM>
-ST_33 : Operation 102 [1/1] (0.00ns)   --->   "br label %1" [hlsed_neurons/solution1/.tcls/345.c:58->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 102 'br' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 99 [1/1] (0.00ns)   --->   "%zext_ln61 = zext i4 %i_0_i to i64" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 99 'zext' 'zext_ln61' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 100 [1/1] (0.00ns)   --->   "%Layer5_Neurons_CPU_a = getelementptr [10 x double]* %Layer5_Neurons_CPU, i64 0, i64 %zext_ln61" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 100 'getelementptr' 'Layer5_Neurons_CPU_a' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 101 [1/1] (2.32ns)   --->   "store double %tmp_2_i, double* %Layer5_Neurons_CPU_a, align 8" [hlsed_neurons/solution1/.tcls/345.c:61->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 101 'store' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 100> <RAM>
+ST_33 : Operation 102 [1/1] (0.00ns)   --->   "br label %1" [hlsed_neurons/solution1/.tcls/345.c:57->hlsed_neurons/solution1/.tcls/345.c:12]   --->   Operation 102 'br' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -413,7 +413,7 @@ STG Binding:
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
 Port [ Layer2_Neurons_CPU]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
 Port [ Layer5_Neurons_CPU]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
-Port [ Layer2_Weights_CPU]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ Layer2_Weights_CPU]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[111]; IO mode=ap_memory:ce=0
 Port [ table_exp_Z1_array_s]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
 Port [ table_f_Z3_array_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[11]; IO mode=ap_memory:ce=0
 Port [ table_f_Z2_array_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
@@ -432,44 +432,44 @@ specbitsmap_ln0        (specbitsmap      ) [ 0000000000000000000000000000000000]
 specbitsmap_ln0        (specbitsmap      ) [ 0000000000000000000000000000000000]
 spectopmodule_ln0      (spectopmodule    ) [ 0000000000000000000000000000000000]
 call_ln11              (call             ) [ 0000000000000000000000000000000000]
-br_ln58                (br               ) [ 0000111111111111111111111111111111]
+br_ln57                (br               ) [ 0000111111111111111111111111111111]
 i_0_i                  (phi              ) [ 0000011111111111111111111111111111]
 phi_mul                (phi              ) [ 0000011111111111110000000000000000]
-add_ln58               (add              ) [ 0000111111111111111111111111111111]
-icmp_ln58              (icmp             ) [ 0000011111111111111111111111111111]
+add_ln57               (add              ) [ 0000111111111111111111111111111111]
+icmp_ln57              (icmp             ) [ 0000011111111111111111111111111111]
 empty                  (speclooptripcount) [ 0000000000000000000000000000000000]
 i                      (add              ) [ 0000111111111111111111111111111111]
-br_ln58                (br               ) [ 0000000000000000000000000000000000]
-zext_ln59              (zext             ) [ 0000000000000000000000000000000000]
+br_ln57                (br               ) [ 0000000000000000000000000000000000]
+zext_ln58              (zext             ) [ 0000000000000000000000000000000000]
 Layer4_Weights_CPU_a   (getelementptr    ) [ 0000001000000000000000000000000000]
 ret_ln14               (ret              ) [ 0000000000000000000000000000000000]
 somme                  (load             ) [ 0000011111111111111111111111111111]
-br_ln60                (br               ) [ 0000011111111111111111111111111111]
+br_ln59                (br               ) [ 0000011111111111111111111111111111]
 somme_0_i              (phi              ) [ 0000000111111111111000000000000000]
 j_0_i                  (phi              ) [ 0000000100000000000000000000000000]
-icmp_ln60              (icmp             ) [ 0000011111111111111111111111111111]
+icmp_ln59              (icmp             ) [ 0000011111111111111111111111111111]
 empty_29               (speclooptripcount) [ 0000000000000000000000000000000000]
 j                      (add              ) [ 0000011111111111111111111111111111]
-br_ln60                (br               ) [ 0000000000000000000000000000000000]
-zext_ln61_2            (zext             ) [ 0000000000000000000000000000000000]
-add_ln61_1             (add              ) [ 0000000000000000000000000000000000]
-zext_ln61              (zext             ) [ 0000000000000000000000000000000000]
+br_ln59                (br               ) [ 0000000000000000000000000000000000]
+zext_ln60_2            (zext             ) [ 0000000000000000000000000000000000]
+add_ln60_1             (add              ) [ 0000000000000000000000000000000000]
+zext_ln60              (zext             ) [ 0000000000000000000000000000000000]
 Layer4_Weights_CPU_a_1 (getelementptr    ) [ 0000000010000000000000000000000000]
-zext_ln61_1            (zext             ) [ 0000000000000000000000000000000000]
+zext_ln60_1            (zext             ) [ 0000000000000000000000000000000000]
 Layer4_Neurons_CPU_a   (getelementptr    ) [ 0000000010000000000000000000000000]
 Layer4_Weights_CPU_l   (load             ) [ 0000000001111000000000000000000000]
 Layer4_Neurons_CPU_l   (load             ) [ 0000000001111000000000000000000000]
-tmp_3_i                (fmul             ) [ 0000000000000111110000000000000000]
-somme_1                (fadd             ) [ 0000011111111111111111111111111111]
-br_ln60                (br               ) [ 0000011111111111111111111111111111]
-tmp_i                  (fpext            ) [ 0000000000000000000111111000000000]
+tmp_3_i                (hmul             ) [ 0000000000000111110000000000000000]
+somme_1                (hadd             ) [ 0000011111111111111111111111111111]
+br_ln59                (br               ) [ 0000011111111111111111111111111111]
+tmp_i                  (hptodp           ) [ 0000000000000000000111111000000000]
 x_assign               (dmul             ) [ 0000000000000000000000000110000000]
 tmp_i_i                (call             ) [ 0000000000000000000000000001111110]
 tmp_2_i                (dmul             ) [ 0000000000000000000000000000000001]
-zext_ln62              (zext             ) [ 0000000000000000000000000000000000]
+zext_ln61              (zext             ) [ 0000000000000000000000000000000000]
 Layer5_Neurons_CPU_a   (getelementptr    ) [ 0000000000000000000000000000000000]
-store_ln62             (store            ) [ 0000000000000000000000000000000000]
-br_ln58                (br               ) [ 0000111111111111111111111111111111]
+store_ln61             (store            ) [ 0000000000000000000000000000000000]
+br_ln57                (br               ) [ 0000111111111111111111111111111111]
 </LifeTime>
 
 <model>
@@ -500,7 +500,7 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 <pin id="5" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="Layer2_Weights_CPU"/><MemPortTyVec>1 1 </MemPortTyVec>
+<StgValue><ssdm name="Layer2_Weights_CPU"/><MemPortTyVec>1 1 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -747,7 +747,7 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 <comp id="58" class="1004" name="Layer3_Neurons_CPU_alloca_fu_58">
 <pin_list>
 <pin id="59" dir="0" index="0" bw="1" slack="0"/>
-<pin id="60" dir="1" index="1" bw="32" slack="0"/>
+<pin id="60" dir="1" index="1" bw="16" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -758,7 +758,7 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 <comp id="62" class="1004" name="Layer4_Neurons_CPU_alloca_fu_62">
 <pin_list>
 <pin id="63" dir="0" index="0" bw="1" slack="0"/>
-<pin id="64" dir="1" index="1" bw="32" slack="2147483647"/>
+<pin id="64" dir="1" index="1" bw="16" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -768,7 +768,7 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 
 <comp id="66" class="1004" name="Layer4_Weights_CPU_a_gep_fu_66">
 <pin_list>
-<pin id="67" dir="0" index="0" bw="32" slack="0"/>
+<pin id="67" dir="0" index="0" bw="16" slack="0"/>
 <pin id="68" dir="0" index="1" bw="1" slack="0"/>
 <pin id="69" dir="0" index="2" bw="10" slack="0"/>
 <pin id="70" dir="1" index="3" bw="10" slack="0"/>
@@ -782,9 +782,9 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 <comp id="73" class="1004" name="grp_access_fu_73">
 <pin_list>
 <pin id="74" dir="0" index="0" bw="10" slack="0"/>
-<pin id="75" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="75" dir="0" index="1" bw="16" slack="2147483647"/>
 <pin id="76" dir="0" index="2" bw="0" slack="2147483647"/>
-<pin id="77" dir="1" index="3" bw="32" slack="1"/>
+<pin id="77" dir="1" index="3" bw="16" slack="1"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -794,7 +794,7 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 
 <comp id="79" class="1004" name="Layer4_Weights_CPU_a_1_gep_fu_79">
 <pin_list>
-<pin id="80" dir="0" index="0" bw="32" slack="0"/>
+<pin id="80" dir="0" index="0" bw="16" slack="0"/>
 <pin id="81" dir="0" index="1" bw="1" slack="0"/>
 <pin id="82" dir="0" index="2" bw="10" slack="0"/>
 <pin id="83" dir="1" index="3" bw="10" slack="0"/>
@@ -807,7 +807,7 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 
 <comp id="87" class="1004" name="Layer4_Neurons_CPU_a_gep_fu_87">
 <pin_list>
-<pin id="88" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="88" dir="0" index="0" bw="16" slack="2147483647"/>
 <pin id="89" dir="0" index="1" bw="1" slack="0"/>
 <pin id="90" dir="0" index="2" bw="7" slack="0"/>
 <pin id="91" dir="1" index="3" bw="7" slack="0"/>
@@ -821,9 +821,9 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 <comp id="93" class="1004" name="grp_access_fu_93">
 <pin_list>
 <pin id="94" dir="0" index="0" bw="7" slack="0"/>
-<pin id="95" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="95" dir="0" index="1" bw="16" slack="2147483647"/>
 <pin id="96" dir="0" index="2" bw="0" slack="2147483647"/>
-<pin id="97" dir="1" index="3" bw="32" slack="1"/>
+<pin id="97" dir="1" index="3" bw="16" slack="1"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -844,7 +844,7 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 </bind>
 </comp>
 
-<comp id="106" class="1004" name="store_ln62_access_fu_106">
+<comp id="106" class="1004" name="store_ln61_access_fu_106">
 <pin_list>
 <pin id="107" dir="0" index="0" bw="4" slack="0"/>
 <pin id="108" dir="0" index="1" bw="64" slack="1"/>
@@ -853,7 +853,7 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln62/33 "/>
+<opset="store_ln61/33 "/>
 </bind>
 </comp>
 
@@ -907,8 +907,8 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 
 <comp id="136" class="1005" name="somme_0_i_reg_136">
 <pin_list>
-<pin id="137" dir="0" index="0" bw="32" slack="1"/>
-<pin id="138" dir="1" index="1" bw="32" slack="6"/>
+<pin id="137" dir="0" index="0" bw="16" slack="1"/>
+<pin id="138" dir="1" index="1" bw="16" slack="6"/>
 </pin_list>
 <bind>
 <opset="somme_0_i (phireg) "/>
@@ -917,11 +917,11 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 
 <comp id="139" class="1004" name="somme_0_i_phi_fu_139">
 <pin_list>
-<pin id="140" dir="0" index="0" bw="32" slack="1"/>
+<pin id="140" dir="0" index="0" bw="16" slack="1"/>
 <pin id="141" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="142" dir="0" index="2" bw="32" slack="1"/>
+<pin id="142" dir="0" index="2" bw="16" slack="1"/>
 <pin id="143" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="144" dir="1" index="4" bw="32" slack="0"/>
+<pin id="144" dir="1" index="4" bw="16" slack="0"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
@@ -956,9 +956,9 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 <comp id="157" class="1004" name="grp_calculateLayer3_fu_157">
 <pin_list>
 <pin id="158" dir="0" index="0" bw="0" slack="0"/>
-<pin id="159" dir="0" index="1" bw="32" slack="0"/>
-<pin id="160" dir="0" index="2" bw="32" slack="0"/>
-<pin id="161" dir="0" index="3" bw="32" slack="0"/>
+<pin id="159" dir="0" index="1" bw="16" slack="0"/>
+<pin id="160" dir="0" index="2" bw="16" slack="0"/>
+<pin id="161" dir="0" index="3" bw="16" slack="0"/>
 <pin id="162" dir="0" index="4" bw="58" slack="0"/>
 <pin id="163" dir="0" index="5" bw="26" slack="0"/>
 <pin id="164" dir="0" index="6" bw="42" slack="0"/>
@@ -973,9 +973,9 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 <comp id="173" class="1004" name="grp_calculateLayer4_fu_173">
 <pin_list>
 <pin id="174" dir="0" index="0" bw="0" slack="0"/>
-<pin id="175" dir="0" index="1" bw="32" slack="2147483647"/>
-<pin id="176" dir="0" index="2" bw="32" slack="2147483647"/>
-<pin id="177" dir="0" index="3" bw="32" slack="0"/>
+<pin id="175" dir="0" index="1" bw="16" slack="2147483647"/>
+<pin id="176" dir="0" index="2" bw="16" slack="2147483647"/>
+<pin id="177" dir="0" index="3" bw="16" slack="0"/>
 <pin id="178" dir="0" index="4" bw="58" slack="0"/>
 <pin id="179" dir="0" index="5" bw="26" slack="0"/>
 <pin id="180" dir="0" index="6" bw="42" slack="0"/>
@@ -1004,48 +1004,48 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 
 <comp id="198" class="1004" name="grp_fu_198">
 <pin_list>
-<pin id="199" dir="0" index="0" bw="32" slack="6"/>
-<pin id="200" dir="0" index="1" bw="32" slack="1"/>
-<pin id="201" dir="1" index="2" bw="32" slack="1"/>
-</pin_list>
-<bind>
-<opcode="fadd(9) " fcode="fadd"/>
-<opset="somme_1/13 "/>
-</bind>
-</comp>
-
-<comp id="203" class="1004" name="grp_fu_203">
-<pin_list>
-<pin id="204" dir="0" index="0" bw="32" slack="1"/>
-<pin id="205" dir="0" index="1" bw="32" slack="1"/>
-<pin id="206" dir="1" index="2" bw="32" slack="1"/>
-</pin_list>
-<bind>
-<opcode="fmul(13) " fcode="fmul"/>
-<opset="tmp_3_i/9 "/>
-</bind>
-</comp>
-
-<comp id="207" class="1004" name="grp_fu_207">
-<pin_list>
-<pin id="208" dir="0" index="0" bw="32" slack="0"/>
-<pin id="209" dir="1" index="1" bw="64" slack="1"/>
-</pin_list>
-<bind>
-<opcode="fpext(41) " fcode="fpext"/>
-<opset="tmp_i/7 "/>
-</bind>
-</comp>
-
-<comp id="211" class="1004" name="grp_fu_211">
-<pin_list>
-<pin id="212" dir="0" index="0" bw="64" slack="1"/>
-<pin id="213" dir="0" index="1" bw="64" slack="0"/>
-<pin id="214" dir="1" index="2" bw="64" slack="1"/>
+<pin id="199" dir="0" index="0" bw="64" slack="1"/>
+<pin id="200" dir="0" index="1" bw="64" slack="0"/>
+<pin id="201" dir="1" index="2" bw="64" slack="1"/>
 </pin_list>
 <bind>
 <opcode="dmul(510) " fcode="dmul"/>
 <opset="x_assign/19 tmp_2_i/27 "/>
+</bind>
+</comp>
+
+<comp id="204" class="1004" name="grp_fu_204">
+<pin_list>
+<pin id="205" dir="0" index="0" bw="16" slack="6"/>
+<pin id="206" dir="0" index="1" bw="16" slack="1"/>
+<pin id="207" dir="1" index="2" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opcode="hadd(534) " fcode="hadd"/>
+<opset="somme_1/13 "/>
+</bind>
+</comp>
+
+<comp id="209" class="1004" name="grp_fu_209">
+<pin_list>
+<pin id="210" dir="0" index="0" bw="16" slack="1"/>
+<pin id="211" dir="0" index="1" bw="16" slack="1"/>
+<pin id="212" dir="1" index="2" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opcode="hmul(536) " fcode="hmul"/>
+<opset="tmp_3_i/9 "/>
+</bind>
+</comp>
+
+<comp id="213" class="1004" name="grp_fu_213">
+<pin_list>
+<pin id="214" dir="0" index="0" bw="16" slack="0"/>
+<pin id="215" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="hptodp(540) " fcode="hptodp"/>
+<opset="tmp_i/7 "/>
 </bind>
 </comp>
 
@@ -1059,7 +1059,7 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 </bind>
 </comp>
 
-<comp id="223" class="1004" name="add_ln58_fu_223">
+<comp id="223" class="1004" name="add_ln57_fu_223">
 <pin_list>
 <pin id="224" dir="0" index="0" bw="10" slack="0"/>
 <pin id="225" dir="0" index="1" bw="8" slack="0"/>
@@ -1067,11 +1067,11 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln58/5 "/>
+<opset="add_ln57/5 "/>
 </bind>
 </comp>
 
-<comp id="229" class="1004" name="icmp_ln58_fu_229">
+<comp id="229" class="1004" name="icmp_ln57_fu_229">
 <pin_list>
 <pin id="230" dir="0" index="0" bw="4" slack="0"/>
 <pin id="231" dir="0" index="1" bw="4" slack="0"/>
@@ -1079,7 +1079,7 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln58/5 "/>
+<opset="icmp_ln57/5 "/>
 </bind>
 </comp>
 
@@ -1095,18 +1095,18 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 </bind>
 </comp>
 
-<comp id="241" class="1004" name="zext_ln59_fu_241">
+<comp id="241" class="1004" name="zext_ln58_fu_241">
 <pin_list>
 <pin id="242" dir="0" index="0" bw="10" slack="0"/>
 <pin id="243" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln59/5 "/>
+<opset="zext_ln58/5 "/>
 </bind>
 </comp>
 
-<comp id="246" class="1004" name="icmp_ln60_fu_246">
+<comp id="246" class="1004" name="icmp_ln59_fu_246">
 <pin_list>
 <pin id="247" dir="0" index="0" bw="7" slack="0"/>
 <pin id="248" dir="0" index="1" bw="7" slack="0"/>
@@ -1114,7 +1114,7 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln60/7 "/>
+<opset="icmp_ln59/7 "/>
 </bind>
 </comp>
 
@@ -1130,18 +1130,18 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 </bind>
 </comp>
 
-<comp id="258" class="1004" name="zext_ln61_2_fu_258">
+<comp id="258" class="1004" name="zext_ln60_2_fu_258">
 <pin_list>
 <pin id="259" dir="0" index="0" bw="7" slack="0"/>
 <pin id="260" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln61_2/7 "/>
+<opset="zext_ln60_2/7 "/>
 </bind>
 </comp>
 
-<comp id="262" class="1004" name="add_ln61_1_fu_262">
+<comp id="262" class="1004" name="add_ln60_1_fu_262">
 <pin_list>
 <pin id="263" dir="0" index="0" bw="7" slack="0"/>
 <pin id="264" dir="0" index="1" bw="10" slack="2"/>
@@ -1149,50 +1149,50 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln61_1/7 "/>
+<opset="add_ln60_1/7 "/>
 </bind>
 </comp>
 
-<comp id="268" class="1004" name="zext_ln61_fu_268">
+<comp id="268" class="1004" name="zext_ln60_fu_268">
 <pin_list>
 <pin id="269" dir="0" index="0" bw="10" slack="0"/>
 <pin id="270" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln61/7 "/>
+<opset="zext_ln60/7 "/>
 </bind>
 </comp>
 
-<comp id="273" class="1004" name="zext_ln61_1_fu_273">
+<comp id="273" class="1004" name="zext_ln60_1_fu_273">
 <pin_list>
 <pin id="274" dir="0" index="0" bw="7" slack="0"/>
 <pin id="275" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln61_1/7 "/>
+<opset="zext_ln60_1/7 "/>
 </bind>
 </comp>
 
-<comp id="278" class="1004" name="zext_ln62_fu_278">
+<comp id="278" class="1004" name="zext_ln61_fu_278">
 <pin_list>
 <pin id="279" dir="0" index="0" bw="4" slack="18"/>
 <pin id="280" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln62/33 "/>
+<opset="zext_ln61/33 "/>
 </bind>
 </comp>
 
-<comp id="283" class="1005" name="add_ln58_reg_283">
+<comp id="283" class="1005" name="add_ln57_reg_283">
 <pin_list>
 <pin id="284" dir="0" index="0" bw="10" slack="0"/>
 <pin id="285" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln58 "/>
+<opset="add_ln57 "/>
 </bind>
 </comp>
 
@@ -1218,8 +1218,8 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 
 <comp id="301" class="1005" name="somme_reg_301">
 <pin_list>
-<pin id="302" dir="0" index="0" bw="32" slack="1"/>
-<pin id="303" dir="1" index="1" bw="32" slack="1"/>
+<pin id="302" dir="0" index="0" bw="16" slack="1"/>
+<pin id="303" dir="1" index="1" bw="16" slack="1"/>
 </pin_list>
 <bind>
 <opset="somme "/>
@@ -1258,8 +1258,8 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 
 <comp id="324" class="1005" name="Layer4_Weights_CPU_l_reg_324">
 <pin_list>
-<pin id="325" dir="0" index="0" bw="32" slack="1"/>
-<pin id="326" dir="1" index="1" bw="32" slack="1"/>
+<pin id="325" dir="0" index="0" bw="16" slack="1"/>
+<pin id="326" dir="1" index="1" bw="16" slack="1"/>
 </pin_list>
 <bind>
 <opset="Layer4_Weights_CPU_l "/>
@@ -1268,8 +1268,8 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 
 <comp id="329" class="1005" name="Layer4_Neurons_CPU_l_reg_329">
 <pin_list>
-<pin id="330" dir="0" index="0" bw="32" slack="1"/>
-<pin id="331" dir="1" index="1" bw="32" slack="1"/>
+<pin id="330" dir="0" index="0" bw="16" slack="1"/>
+<pin id="331" dir="1" index="1" bw="16" slack="1"/>
 </pin_list>
 <bind>
 <opset="Layer4_Neurons_CPU_l "/>
@@ -1278,8 +1278,8 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 
 <comp id="334" class="1005" name="tmp_3_i_reg_334">
 <pin_list>
-<pin id="335" dir="0" index="0" bw="32" slack="1"/>
-<pin id="336" dir="1" index="1" bw="32" slack="1"/>
+<pin id="335" dir="0" index="0" bw="16" slack="1"/>
+<pin id="336" dir="1" index="1" bw="16" slack="1"/>
 </pin_list>
 <bind>
 <opset="tmp_3_i "/>
@@ -1288,8 +1288,8 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 
 <comp id="339" class="1005" name="somme_1_reg_339">
 <pin_list>
-<pin id="340" dir="0" index="0" bw="32" slack="1"/>
-<pin id="341" dir="1" index="1" bw="32" slack="1"/>
+<pin id="340" dir="0" index="0" bw="16" slack="1"/>
+<pin id="341" dir="1" index="1" bw="16" slack="1"/>
 </pin_list>
 <bind>
 <opset="somme_1 "/>
@@ -1395,15 +1395,15 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 
 <net id="197"><net_src comp="10" pin="0"/><net_sink comp="187" pin=4"/></net>
 
-<net id="202"><net_src comp="136" pin="1"/><net_sink comp="198" pin=0"/></net>
+<net id="202"><net_src comp="52" pin="0"/><net_sink comp="198" pin=1"/></net>
 
-<net id="210"><net_src comp="139" pin="4"/><net_sink comp="207" pin=0"/></net>
+<net id="203"><net_src comp="56" pin="0"/><net_sink comp="198" pin=1"/></net>
 
-<net id="215"><net_src comp="52" pin="0"/><net_sink comp="211" pin=1"/></net>
+<net id="208"><net_src comp="136" pin="1"/><net_sink comp="204" pin=0"/></net>
 
-<net id="216"><net_src comp="56" pin="0"/><net_sink comp="211" pin=1"/></net>
+<net id="216"><net_src comp="139" pin="4"/><net_sink comp="213" pin=0"/></net>
 
-<net id="220"><net_src comp="211" pin="2"/><net_sink comp="217" pin=0"/></net>
+<net id="220"><net_src comp="198" pin="2"/><net_sink comp="217" pin=0"/></net>
 
 <net id="221"><net_src comp="217" pin="1"/><net_sink comp="187" pin=1"/></net>
 
@@ -1481,27 +1481,27 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 
 <net id="327"><net_src comp="73" pin="3"/><net_sink comp="324" pin=0"/></net>
 
-<net id="328"><net_src comp="324" pin="1"/><net_sink comp="203" pin=0"/></net>
+<net id="328"><net_src comp="324" pin="1"/><net_sink comp="209" pin=0"/></net>
 
 <net id="332"><net_src comp="93" pin="3"/><net_sink comp="329" pin=0"/></net>
 
-<net id="333"><net_src comp="329" pin="1"/><net_sink comp="203" pin=1"/></net>
+<net id="333"><net_src comp="329" pin="1"/><net_sink comp="209" pin=1"/></net>
 
-<net id="337"><net_src comp="203" pin="2"/><net_sink comp="334" pin=0"/></net>
+<net id="337"><net_src comp="209" pin="2"/><net_sink comp="334" pin=0"/></net>
 
-<net id="338"><net_src comp="334" pin="1"/><net_sink comp="198" pin=1"/></net>
+<net id="338"><net_src comp="334" pin="1"/><net_sink comp="204" pin=1"/></net>
 
-<net id="342"><net_src comp="198" pin="2"/><net_sink comp="339" pin=0"/></net>
+<net id="342"><net_src comp="204" pin="2"/><net_sink comp="339" pin=0"/></net>
 
 <net id="343"><net_src comp="339" pin="1"/><net_sink comp="139" pin=2"/></net>
 
-<net id="347"><net_src comp="207" pin="1"/><net_sink comp="344" pin=0"/></net>
+<net id="347"><net_src comp="213" pin="1"/><net_sink comp="344" pin=0"/></net>
 
-<net id="348"><net_src comp="344" pin="1"/><net_sink comp="211" pin=0"/></net>
+<net id="348"><net_src comp="344" pin="1"/><net_sink comp="198" pin=0"/></net>
 
 <net id="352"><net_src comp="187" pin="5"/><net_sink comp="349" pin=0"/></net>
 
-<net id="353"><net_src comp="349" pin="1"/><net_sink comp="211" pin=0"/></net>
+<net id="353"><net_src comp="349" pin="1"/><net_sink comp="198" pin=0"/></net>
 
 </net_list>
 
@@ -1526,24 +1526,24 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 	State 3
 	State 4
 	State 5
-		add_ln58 : 1
-		icmp_ln58 : 1
+		add_ln57 : 1
+		icmp_ln57 : 1
 		i : 1
-		br_ln58 : 2
-		zext_ln59 : 1
+		br_ln57 : 2
+		zext_ln58 : 1
 		Layer4_Weights_CPU_a : 2
 		somme : 3
 	State 6
 	State 7
-		icmp_ln60 : 1
+		icmp_ln59 : 1
 		j : 1
-		br_ln60 : 2
-		zext_ln61_2 : 2
-		add_ln61_1 : 3
-		zext_ln61 : 4
+		br_ln59 : 2
+		zext_ln60_2 : 2
+		add_ln60_1 : 3
+		zext_ln60 : 4
 		Layer4_Weights_CPU_a_1 : 5
 		Layer4_Weights_CPU_l : 6
-		zext_ln61_1 : 1
+		zext_ln60_1 : 1
 		Layer4_Neurons_CPU_a : 2
 		Layer4_Neurons_CPU_l : 3
 		tmp_i : 1
@@ -1574,7 +1574,7 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 	State 32
 	State 33
 		Layer5_Neurons_CPU_a : 1
-		store_ln62 : 2
+		store_ln61 : 2
 
 
 ============================================================
@@ -1585,33 +1585,33 @@ br_ln58                (br               ) [ 0000111111111111111111111111111111]
 |----------|----------------------------------|---------|---------|---------|---------|
 | Operation|          Functional Unit         |  DSP48E |  Delay  |    FF   |   LUT   |
 |----------|----------------------------------|---------|---------|---------|---------|
-|          |    grp_calculateLayer3_fu_157    |    38   | 47.0819 |   9960  |  12320  |
-|   call   |    grp_calculateLayer4_fu_173    |    35   | 37.6312 |   9368  |  11555  |
+|          |    grp_calculateLayer3_fu_157    |    38   | 54.4251 |   9791  |  11148  |
+|   call   |    grp_calculateLayer4_fu_173    |    34   | 39.4002 |   9097  |  10546  |
 |          | grp_generic_tanh_double_s_fu_187 |    19   | 26.9257 |   7904  |   9474  |
 |----------|----------------------------------|---------|---------|---------|---------|
-|   dmul   |            grp_fu_211            |    11   |    0    |   317   |   578   |
+|   dmul   |            grp_fu_198            |    11   |    0    |   317   |   578   |
 |----------|----------------------------------|---------|---------|---------|---------|
-|   fadd   |            grp_fu_198            |    2    |    0    |   205   |   390   |
+|   hadd   |            grp_fu_204            |    2    |    0    |   109   |   116   |
 |----------|----------------------------------|---------|---------|---------|---------|
-|   fmul   |            grp_fu_203            |    3    |    0    |   143   |   321   |
+|   hmul   |            grp_fu_209            |    2    |    0    |    91   |    36   |
 |----------|----------------------------------|---------|---------|---------|---------|
-|   fpext  |            grp_fu_207            |    0    |    0    |   100   |   138   |
+|  hptodp  |            grp_fu_213            |    0    |    0    |    55   |    9    |
 |----------|----------------------------------|---------|---------|---------|---------|
-|          |          add_ln58_fu_223         |    0    |    0    |    0    |    14   |
+|          |          add_ln57_fu_223         |    0    |    0    |    0    |    14   |
 |    add   |             i_fu_235             |    0    |    0    |    0    |    13   |
 |          |             j_fu_252             |    0    |    0    |    0    |    15   |
-|          |         add_ln61_1_fu_262        |    0    |    0    |    0    |    14   |
+|          |         add_ln60_1_fu_262        |    0    |    0    |    0    |    14   |
 |----------|----------------------------------|---------|---------|---------|---------|
-|   icmp   |         icmp_ln58_fu_229         |    0    |    0    |    0    |    9    |
-|          |         icmp_ln60_fu_246         |    0    |    0    |    0    |    11   |
+|   icmp   |         icmp_ln57_fu_229         |    0    |    0    |    0    |    9    |
+|          |         icmp_ln59_fu_246         |    0    |    0    |    0    |    11   |
 |----------|----------------------------------|---------|---------|---------|---------|
-|          |         zext_ln59_fu_241         |    0    |    0    |    0    |    0    |
-|          |        zext_ln61_2_fu_258        |    0    |    0    |    0    |    0    |
-|   zext   |         zext_ln61_fu_268         |    0    |    0    |    0    |    0    |
-|          |        zext_ln61_1_fu_273        |    0    |    0    |    0    |    0    |
-|          |         zext_ln62_fu_278         |    0    |    0    |    0    |    0    |
+|          |         zext_ln58_fu_241         |    0    |    0    |    0    |    0    |
+|          |        zext_ln60_2_fu_258        |    0    |    0    |    0    |    0    |
+|   zext   |         zext_ln60_fu_268         |    0    |    0    |    0    |    0    |
+|          |        zext_ln60_1_fu_273        |    0    |    0    |    0    |    0    |
+|          |         zext_ln61_fu_278         |    0    |    0    |    0    |    0    |
 |----------|----------------------------------|---------|---------|---------|---------|
-|   Total  |                                  |   108   | 111.639 |  27997  |  34852  |
+|   Total  |                                  |   106   | 120.751 |  27364  |  31983  |
 |----------|----------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -1619,15 +1619,15 @@ Memories:
 |                    |  BRAM  |   FF   |   LUT  |  URAM  |
 +--------------------+--------+--------+--------+--------+
 | Layer2_Weights_CPU |   16   |    0   |    0   |    -   |
-| Layer3_Neurons_CPU |    4   |    0   |    0   |    0   |
-| Layer3_Weights_CPU |   256  |    0   |    0   |    -   |
+| Layer3_Neurons_CPU |    2   |    0   |    0   |    0   |
+| Layer3_Weights_CPU |   128  |    0   |    0   |    -   |
 | Layer4_Neurons_CPU |    1   |    0   |    0   |    0   |
-| Layer4_Weights_CPU |    2   |    0   |    0   |    -   |
+| Layer4_Weights_CPU |    1   |    0   |    0   |    -   |
 |table_exp_Z1_array_s|    2   |    0   |    0   |    -   |
 | table_f_Z2_array_V |    2   |    0   |    0   |    -   |
 | table_f_Z3_array_V |    1   |    0   |    0   |    -   |
 +--------------------+--------+--------+--------+--------+
-|        Total       |   284  |    0   |    0   |    0   |
+|        Total       |   153  |    0   |    0   |    0   |
 +--------------------+--------+--------+--------+--------+
 
 * Register list:
@@ -1635,25 +1635,25 @@ Memories:
 |                              |   FF   |
 +------------------------------+--------+
 | Layer4_Neurons_CPU_a_reg_319 |    7   |
-| Layer4_Neurons_CPU_l_reg_329 |   32   |
+| Layer4_Neurons_CPU_l_reg_329 |   16   |
 |Layer4_Weights_CPU_a_1_reg_314|   10   |
 | Layer4_Weights_CPU_a_reg_296 |   10   |
-| Layer4_Weights_CPU_l_reg_324 |   32   |
-|       add_ln58_reg_283       |   10   |
+| Layer4_Weights_CPU_l_reg_324 |   16   |
+|       add_ln57_reg_283       |   10   |
 |         i_0_i_reg_112        |    4   |
 |           i_reg_291          |    4   |
 |         j_0_i_reg_146        |    7   |
 |           j_reg_309          |    7   |
 |        phi_mul_reg_124       |   10   |
 |            reg_217           |   64   |
-|       somme_0_i_reg_136      |   32   |
-|        somme_1_reg_339       |   32   |
-|         somme_reg_301        |   32   |
-|        tmp_3_i_reg_334       |   32   |
+|       somme_0_i_reg_136      |   16   |
+|        somme_1_reg_339       |   16   |
+|         somme_reg_301        |   16   |
+|        tmp_3_i_reg_334       |   16   |
 |        tmp_i_i_reg_349       |   64   |
 |         tmp_i_reg_344        |   64   |
 +------------------------------+--------+
-|             Total            |   453  |
+|             Total            |   357  |
 +------------------------------+--------+
 
 * Multiplexer (MUX) list: 
@@ -1664,8 +1664,8 @@ Memories:
 | grp_access_fu_93 |  p0  |   2  |   7  |   14   ||    9    |
 |   i_0_i_reg_112  |  p0  |   2  |   4  |    8   ||    9    |
 |  phi_mul_reg_124 |  p0  |   2  |  10  |   20   ||    9    |
-|    grp_fu_211    |  p0  |   2  |  64  |   128  ||    9    |
-|    grp_fu_211    |  p1  |   2  |  64  |   128  |
+|    grp_fu_198    |  p0  |   2  |  64  |   128  ||    9    |
+|    grp_fu_198    |  p1  |   2  |  64  |   128  |
 |------------------|------|------|------|--------||---------||---------|
 |       Total      |      |      |      |   338  || 10.7055 ||    57   |
 |------------------|------|------|------|--------||---------||---------|
@@ -1676,10 +1676,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    -   |   108  |   111  |  27997 |  34852 |    -   |
-|   Memory  |   284  |    -   |    -   |    0   |    0   |    0   |
+|  Function |    -   |   106  |   120  |  27364 |  31983 |    -   |
+|   Memory  |   153  |    -   |    -   |    0   |    0   |    0   |
 |Multiplexer|    -   |    -   |   10   |    -   |   57   |    -   |
-|  Register |    -   |    -   |    -   |   453  |    -   |    -   |
+|  Register |    -   |    -   |    -   |   357  |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |   284  |   108  |   122  |  28450 |  34909 |    0   |
+|   Total   |   153  |   106  |   131  |  27721 |  32040 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

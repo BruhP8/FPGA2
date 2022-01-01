@@ -24,6 +24,7 @@ modifications :
     doit devenir :
         void nerons (float Layer2_Neurons_CPU[6*13*13], double Layer5_Neurons_CPU[10]){
 
+--------------------------------------------------------------------------------------------------------------
     
 Résultats de synthèse brute (sans pragmas et sans optimisation) :
     -> Timing trop juste pour 10ns : latence estimée à 9.514ns +/- 1.25ns -> dépassement possible
@@ -38,3 +39,24 @@ Résultats de synthèse brute (sans pragmas et sans optimisation) :
 
     ---------> amélioration : types de données plus économes, approximate computing, array optimisation
         #pragma HLS ARRAY_MAP horizontal -> effet inverse : passage a 206% de bram en combinant les poids 3 et 4
+
+--------------------------------------------------------------------------------------------------------------
+
+Une seconde sythèse est effectuée en utilisant le type Half au lieu de float. En effet, en consultant le détail de l'utilisation
+des ressources dans le rapport de sythèse, on constate que ce sont les poids qui occupent le plus de mémoire. Il serait donc 
+intéressant d'en diminuer l'emprumte. Ce type est fourni par la librairie hls_half.h. L'idée est de diminuer la précision des nombres
+ utilisés afin d'économiser de la mémoire sans compromettre la performance. 
+Le half est composé de 16 bits contre 32 pour les floats :
+    - 1 bit de signe            (idem en float)
+    - 5 bits d'exposant         (8 en float)
+    - 10 bits de mantisse       (23 en float)
+Un flottant 16 bits conserve une précision suffisament importante pour notre réseau tout en ayant le bénéfice d'utiliser
+moitié moins d'espace comme on peut le constater en regardant les résultats post sythèse :
+
+    -> timing inchangé (9.514ns +/- 1.25 avec dépassement de la contrainte possible)
+
+    -> utilisation des ressources grandement améliorée, notament en BRAM :
+        -> 68% de la bram alouée (193)    -> gain de 47% (résultat attendu : on divise par deux la taille des variables, on gagne 50% d'espace)
+        -> 66% des luts          (35.468) -> gain de 5%
+        -> 48 % des blocs DPS    (106)    -> gain de 1%
+        -> 26% des FF            (27.687) -> léger gain

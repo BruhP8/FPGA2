@@ -1,11 +1,12 @@
 #include <math.h>
+#include "hls_half.h"
 
 #define SIGMOID(x) (1.7159*tanh(0.66666667*x))
 #define DSIGMOID(S) (0.66666667/1.7159*(1.7159+(S))*(1.7159-(S)))
 #define IMGWIDTH 29
 #define IMGHEIGHT 29
 
-float
+half
 		Layer2_Neurons_CPU[6*13*13];
 		//Layer3_Neurons_CPU[50*5*5],
 		//Layer4_Neurons_CPU[100];
@@ -13,14 +14,14 @@ float
 double
 		Layer5_Neurons_CPU[10];
 
-void calculateLayer3(float* Layer2_Neurons_CPU, float* Layer2_Weights_CPU, float* Layer3_Neurons_CPU);
-void calculateLayer4(float* Layer3_Neurons_CPU, float* Layer3_Weights_CPU, float* Layer4_Neurons_CPU);
-void calculateLayer5(float* Layer4_Neurons_CPU, float* Layer4_Weights_CPU, double Layer5_Neurons_CPU[10]);
+void calculateLayer3(half* Layer2_Neurons_CPU, half* Layer2_Weights_CPU, half* Layer3_Neurons_CPU);
+void calculateLayer4(half* Layer3_Neurons_CPU, half* Layer3_Weights_CPU, half* Layer4_Neurons_CPU);
+void calculateLayer5(half* Layer4_Neurons_CPU, half* Layer4_Weights_CPU, double Layer5_Neurons_CPU[10]);
 
 
 
 
-float Layer1_Weights_CPU[(5*5+1)*6] = {-0.128699,
+half Layer1_Weights_CPU[(5*5+1)*6] = {-0.128699,
 -0.294234,
 -0.572720,
 -0.477717,
@@ -176,7 +177,7 @@ float Layer1_Weights_CPU[(5*5+1)*6] = {-0.128699,
 -0.024800,
 -0.484093,
 -0.392891};
-float Layer2_Weights_CPU[(5*5+1)*6*50] = {0.054904,
+half Layer2_Weights_CPU[(5*5+1)*6*50] = {0.054904,
 -0.073097, 
 0.000577, 
 0.298383, 
@@ -7976,7 +7977,7 @@ float Layer2_Weights_CPU[(5*5+1)*6*50] = {0.054904,
 0.043820, 
 -0.046625, 
 -0.015947};
-float Layer3_Weights_CPU[(5*5*50+1)*100]= {0.124767, 
+half Layer3_Weights_CPU[(5*5*50+1)*100]= {0.124767, 
 -0.050343, 
 -0.005037, 
 0.059311, 
@@ -133076,7 +133077,7 @@ float Layer3_Weights_CPU[(5*5*50+1)*100]= {0.124767,
 0.084261, 
 0.013128, 
 -0.079569};
-float Layer4_Weights_CPU[(100+1)*10] = {0.001533, 
+half Layer4_Weights_CPU[(100+1)*10] = {0.001533, 
 -0.012417, 
 -0.010436, 
 0.055284, 

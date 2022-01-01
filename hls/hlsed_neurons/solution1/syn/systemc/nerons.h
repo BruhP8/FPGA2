@@ -14,10 +14,10 @@
 #include "calculateLayer3.h"
 #include "calculateLayer4.h"
 #include "generic_tanh_double_s.h"
-#include "nerons_fadd_32ns_32ns_32_5_full_dsp_1.h"
-#include "nerons_fmul_32ns_32ns_32_4_max_dsp_1.h"
-#include "nerons_fpext_32ns_64_2_1.h"
 #include "nerons_dmul_64ns_64ns_64_6_max_dsp_1.h"
+#include "nerons_hadd_16ns_16ns_16_5_full_dsp_1.h"
+#include "nerons_hmul_16ns_16ns_16_4_max_dsp_1.h"
+#include "nerons_hptodp_16ns_64_2_1.h"
 #include "nerons_Layer4_Weights_CPU.h"
 #include "nerons_Layer3_Neurons_CPU.h"
 #include "nerons_Layer4_Neurons_CPU.h"
@@ -34,10 +34,10 @@ struct nerons : public sc_module {
     sc_out< sc_logic > ap_ready;
     sc_out< sc_lv<10> > Layer2_Neurons_CPU_address0;
     sc_out< sc_logic > Layer2_Neurons_CPU_ce0;
-    sc_in< sc_lv<32> > Layer2_Neurons_CPU_q0;
+    sc_in< sc_lv<16> > Layer2_Neurons_CPU_q0;
     sc_out< sc_lv<10> > Layer2_Neurons_CPU_address1;
     sc_out< sc_logic > Layer2_Neurons_CPU_ce1;
-    sc_in< sc_lv<32> > Layer2_Neurons_CPU_q1;
+    sc_in< sc_lv<16> > Layer2_Neurons_CPU_q1;
     sc_out< sc_lv<4> > Layer5_Neurons_CPU_address0;
     sc_out< sc_logic > Layer5_Neurons_CPU_ce0;
     sc_out< sc_logic > Layer5_Neurons_CPU_we0;
@@ -61,40 +61,40 @@ struct nerons : public sc_module {
     calculateLayer3* grp_calculateLayer3_fu_157;
     calculateLayer4* grp_calculateLayer4_fu_173;
     generic_tanh_double_s* grp_generic_tanh_double_s_fu_187;
-    nerons_fadd_32ns_32ns_32_5_full_dsp_1<1,5,32,32,32>* nerons_fadd_32ns_32ns_32_5_full_dsp_1_U45;
-    nerons_fmul_32ns_32ns_32_4_max_dsp_1<1,4,32,32,32>* nerons_fmul_32ns_32ns_32_4_max_dsp_1_U46;
-    nerons_fpext_32ns_64_2_1<1,2,32,64>* nerons_fpext_32ns_64_2_1_U47;
-    nerons_dmul_64ns_64ns_64_6_max_dsp_1<1,6,64,64,64>* nerons_dmul_64ns_64ns_64_6_max_dsp_1_U48;
+    nerons_dmul_64ns_64ns_64_6_max_dsp_1<1,6,64,64,64>* nerons_dmul_64ns_64ns_64_6_max_dsp_1_U46;
+    nerons_hadd_16ns_16ns_16_5_full_dsp_1<1,5,16,16,16>* nerons_hadd_16ns_16ns_16_5_full_dsp_1_U47;
+    nerons_hmul_16ns_16ns_16_4_max_dsp_1<1,4,16,16,16>* nerons_hmul_16ns_16ns_16_4_max_dsp_1_U48;
+    nerons_hptodp_16ns_64_2_1<1,2,16,64>* nerons_hptodp_16ns_64_2_1_U49;
     sc_signal< sc_lv<33> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<10> > Layer4_Weights_CPU_address0;
     sc_signal< sc_logic > Layer4_Weights_CPU_ce0;
-    sc_signal< sc_lv<32> > Layer4_Weights_CPU_q0;
-    sc_signal< sc_lv<64> > grp_fu_211_p2;
+    sc_signal< sc_lv<16> > Layer4_Weights_CPU_q0;
+    sc_signal< sc_lv<64> > grp_fu_198_p2;
     sc_signal< sc_lv<64> > reg_217;
     sc_signal< sc_logic > ap_CS_fsm_state24;
     sc_signal< sc_logic > ap_CS_fsm_state32;
-    sc_signal< sc_lv<10> > add_ln58_fu_223_p2;
-    sc_signal< sc_lv<10> > add_ln58_reg_283;
+    sc_signal< sc_lv<10> > add_ln57_fu_223_p2;
+    sc_signal< sc_lv<10> > add_ln57_reg_283;
     sc_signal< sc_logic > ap_CS_fsm_state5;
     sc_signal< sc_lv<4> > i_fu_235_p2;
     sc_signal< sc_lv<4> > i_reg_291;
-    sc_signal< sc_lv<1> > icmp_ln58_fu_229_p2;
+    sc_signal< sc_lv<1> > icmp_ln57_fu_229_p2;
     sc_signal< sc_logic > ap_CS_fsm_state6;
     sc_signal< sc_lv<7> > j_fu_252_p2;
     sc_signal< sc_lv<7> > j_reg_309;
     sc_signal< sc_logic > ap_CS_fsm_state7;
-    sc_signal< sc_lv<1> > icmp_ln60_fu_246_p2;
-    sc_signal< sc_lv<32> > Layer4_Weights_CPU_l_reg_324;
+    sc_signal< sc_lv<1> > icmp_ln59_fu_246_p2;
+    sc_signal< sc_lv<16> > Layer4_Weights_CPU_l_reg_324;
     sc_signal< sc_logic > ap_CS_fsm_state8;
-    sc_signal< sc_lv<32> > Layer4_Neurons_CPU_q0;
-    sc_signal< sc_lv<32> > Layer4_Neurons_CPU_l_reg_329;
-    sc_signal< sc_lv<32> > grp_fu_203_p2;
-    sc_signal< sc_lv<32> > tmp_3_i_reg_334;
+    sc_signal< sc_lv<16> > Layer4_Neurons_CPU_q0;
+    sc_signal< sc_lv<16> > Layer4_Neurons_CPU_l_reg_329;
+    sc_signal< sc_lv<16> > grp_fu_209_p2;
+    sc_signal< sc_lv<16> > tmp_3_i_reg_334;
     sc_signal< sc_logic > ap_CS_fsm_state12;
-    sc_signal< sc_lv<32> > grp_fu_198_p2;
+    sc_signal< sc_lv<16> > grp_fu_204_p2;
     sc_signal< sc_logic > ap_CS_fsm_state17;
-    sc_signal< sc_lv<64> > grp_fu_207_p1;
+    sc_signal< sc_lv<64> > grp_fu_213_p1;
     sc_signal< sc_lv<64> > tmp_i_reg_344;
     sc_signal< sc_logic > ap_CS_fsm_state18;
     sc_signal< sc_lv<64> > grp_generic_tanh_double_s_fu_187_ap_return;
@@ -105,7 +105,7 @@ struct nerons : public sc_module {
     sc_signal< sc_lv<11> > Layer3_Neurons_CPU_address0;
     sc_signal< sc_logic > Layer3_Neurons_CPU_ce0;
     sc_signal< sc_logic > Layer3_Neurons_CPU_we0;
-    sc_signal< sc_lv<32> > Layer3_Neurons_CPU_q0;
+    sc_signal< sc_lv<16> > Layer3_Neurons_CPU_q0;
     sc_signal< sc_lv<7> > Layer4_Neurons_CPU_address0;
     sc_signal< sc_logic > Layer4_Neurons_CPU_ce0;
     sc_signal< sc_logic > Layer4_Neurons_CPU_we0;
@@ -120,7 +120,7 @@ struct nerons : public sc_module {
     sc_signal< sc_lv<11> > grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_address0;
     sc_signal< sc_logic > grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_ce0;
     sc_signal< sc_logic > grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_we0;
-    sc_signal< sc_lv<32> > grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_d0;
+    sc_signal< sc_lv<16> > grp_calculateLayer3_fu_157_Layer3_Neurons_CPU_d0;
     sc_signal< sc_logic > grp_calculateLayer4_fu_173_ap_start;
     sc_signal< sc_logic > grp_calculateLayer4_fu_173_ap_done;
     sc_signal< sc_logic > grp_calculateLayer4_fu_173_ap_idle;
@@ -130,14 +130,14 @@ struct nerons : public sc_module {
     sc_signal< sc_lv<7> > grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_address0;
     sc_signal< sc_logic > grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_ce0;
     sc_signal< sc_logic > grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_we0;
-    sc_signal< sc_lv<32> > grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_d0;
+    sc_signal< sc_lv<16> > grp_calculateLayer4_fu_173_Layer4_Neurons_CPU_d0;
     sc_signal< sc_logic > grp_generic_tanh_double_s_fu_187_ap_start;
     sc_signal< sc_logic > grp_generic_tanh_double_s_fu_187_ap_idle;
     sc_signal< sc_lv<4> > i_0_i_reg_112;
     sc_signal< sc_logic > ap_CS_fsm_state4;
     sc_signal< sc_logic > ap_CS_fsm_state33;
     sc_signal< sc_lv<10> > phi_mul_reg_124;
-    sc_signal< sc_lv<32> > somme_0_i_reg_136;
+    sc_signal< sc_lv<16> > somme_0_i_reg_136;
     sc_signal< sc_lv<7> > j_0_i_reg_146;
     sc_signal< sc_logic > grp_calculateLayer3_fu_157_ap_start_reg;
     sc_signal< sc_logic > ap_CS_fsm_state2;
@@ -145,18 +145,18 @@ struct nerons : public sc_module {
     sc_signal< sc_logic > ap_CS_fsm_state3;
     sc_signal< sc_logic > grp_generic_tanh_double_s_fu_187_ap_start_reg;
     sc_signal< sc_logic > ap_CS_fsm_state25;
-    sc_signal< sc_lv<64> > zext_ln59_fu_241_p1;
-    sc_signal< sc_lv<64> > zext_ln61_fu_268_p1;
-    sc_signal< sc_lv<64> > zext_ln61_1_fu_273_p1;
-    sc_signal< sc_lv<64> > zext_ln62_fu_278_p1;
-    sc_signal< sc_logic > ap_CS_fsm_state13;
-    sc_signal< sc_logic > ap_CS_fsm_state9;
-    sc_signal< sc_lv<64> > grp_fu_211_p0;
-    sc_signal< sc_lv<64> > grp_fu_211_p1;
+    sc_signal< sc_lv<64> > zext_ln58_fu_241_p1;
+    sc_signal< sc_lv<64> > zext_ln60_fu_268_p1;
+    sc_signal< sc_lv<64> > zext_ln60_1_fu_273_p1;
+    sc_signal< sc_lv<64> > zext_ln61_fu_278_p1;
+    sc_signal< sc_lv<64> > grp_fu_198_p0;
+    sc_signal< sc_lv<64> > grp_fu_198_p1;
     sc_signal< sc_logic > ap_CS_fsm_state19;
     sc_signal< sc_logic > ap_CS_fsm_state27;
-    sc_signal< sc_lv<10> > zext_ln61_2_fu_258_p1;
-    sc_signal< sc_lv<10> > add_ln61_1_fu_262_p2;
+    sc_signal< sc_logic > ap_CS_fsm_state13;
+    sc_signal< sc_logic > ap_CS_fsm_state9;
+    sc_signal< sc_lv<10> > zext_ln60_2_fu_258_p1;
+    sc_signal< sc_lv<10> > add_ln60_1_fu_262_p2;
     sc_signal< sc_lv<33> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
@@ -212,12 +212,12 @@ struct nerons : public sc_module {
     static const sc_lv<32> ap_const_lv32_1;
     static const sc_lv<32> ap_const_lv32_2;
     static const sc_lv<32> ap_const_lv32_18;
-    static const sc_lv<32> ap_const_lv32_C;
-    static const sc_lv<32> ap_const_lv32_8;
     static const sc_lv<64> ap_const_lv64_3FE55555571F7693;
     static const sc_lv<64> ap_const_lv64_3FFB74538EF34D6A;
     static const sc_lv<32> ap_const_lv32_12;
     static const sc_lv<32> ap_const_lv32_1A;
+    static const sc_lv<32> ap_const_lv32_C;
+    static const sc_lv<32> ap_const_lv32_8;
     static const sc_lv<10> ap_const_lv10_65;
     static const sc_lv<4> ap_const_lv4_A;
     static const sc_lv<4> ap_const_lv4_1;
@@ -244,8 +244,8 @@ struct nerons : public sc_module {
     void thread_Layer5_Neurons_CPU_ce0();
     void thread_Layer5_Neurons_CPU_d0();
     void thread_Layer5_Neurons_CPU_we0();
-    void thread_add_ln58_fu_223_p2();
-    void thread_add_ln61_1_fu_262_p2();
+    void thread_add_ln57_fu_223_p2();
+    void thread_add_ln60_1_fu_262_p2();
     void thread_ap_CS_fsm_state1();
     void thread_ap_CS_fsm_state12();
     void thread_ap_CS_fsm_state13();
@@ -271,18 +271,18 @@ struct nerons : public sc_module {
     void thread_ap_ready();
     void thread_grp_calculateLayer3_fu_157_ap_start();
     void thread_grp_calculateLayer4_fu_173_ap_start();
-    void thread_grp_fu_211_p0();
-    void thread_grp_fu_211_p1();
+    void thread_grp_fu_198_p0();
+    void thread_grp_fu_198_p1();
     void thread_grp_generic_tanh_double_s_fu_187_ap_start();
     void thread_i_fu_235_p2();
-    void thread_icmp_ln58_fu_229_p2();
-    void thread_icmp_ln60_fu_246_p2();
+    void thread_icmp_ln57_fu_229_p2();
+    void thread_icmp_ln59_fu_246_p2();
     void thread_j_fu_252_p2();
-    void thread_zext_ln59_fu_241_p1();
-    void thread_zext_ln61_1_fu_273_p1();
-    void thread_zext_ln61_2_fu_258_p1();
-    void thread_zext_ln61_fu_268_p1();
-    void thread_zext_ln62_fu_278_p1();
+    void thread_zext_ln58_fu_241_p1();
+    void thread_zext_ln60_1_fu_273_p1();
+    void thread_zext_ln60_2_fu_258_p1();
+    void thread_zext_ln60_fu_268_p1();
+    void thread_zext_ln61_fu_278_p1();
     void thread_ap_NS_fsm();
     void thread_hdltv_gen();
 };

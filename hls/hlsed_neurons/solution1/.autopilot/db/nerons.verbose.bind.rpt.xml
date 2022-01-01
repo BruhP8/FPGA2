@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'nerons'" level="0">
-<item name = "Date">Thu Dec 16 18:07:23 2021
+<item name = "Date">Sat Jan  1 17:20:20 2022
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">hlsed_neurons</item>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">2832706, 2933346, 2832706, 2933346, none</column>
+<column name="">2769056, 2869696, 2769056, 2869696, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_calculateLayer3_fu_157">calculateLayer3, 1194401, 1286901, 1194401, 1286901, none</column>
-<column name="grp_calculateLayer4_fu_173">calculateLayer4, 1627101, 1634501, 1627101, 1634501, none</column>
+<column name="grp_calculateLayer3_fu_157">calculateLayer3, 1195651, 1288151, 1195651, 1288151, none</column>
+<column name="grp_calculateLayer4_fu_173">calculateLayer4, 1562201, 1569601, 1562201, 1569601, none</column>
 <column name="grp_generic_tanh_double_s_fu_187">generic_tanh_double_s, 1, 75, 1, 75, none</column>
 </table>
 </item>

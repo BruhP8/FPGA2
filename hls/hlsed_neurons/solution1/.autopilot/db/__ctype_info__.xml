@@ -2,11 +2,11 @@
 <RtlPorts>
 <name>Layer2_Neurons_CPU</name>
 <CType>
-<TypeName>float</TypeName>
-<TypeWidth>32</TypeWidth>
-<PhysicalWidth>32</PhysicalWidth>
+<TypeName>half</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
 </CType>
-<CFractionWidth>24</CFractionWidth>
+<CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>

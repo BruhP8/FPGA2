@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'calculateLayer3'" level="0">
-<item name = "Date">Thu Dec 16 18:07:25 2021
+<item name = "Date">Sat Jan  1 17:20:24 2022
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">hlsed_neurons</item>
@@ -24,21 +24,21 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">1194401, 1286901, 1194401, 1286901, none</column>
+<column name="">1195651, 1288151, 1195651, 1288151, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_generic_tanh_double_s_fu_318">generic_tanh_double_s, 1, 75, 1, 75, none</column>
+<column name="grp_generic_tanh_double_s_fu_322">generic_tanh_double_s, 1, 75, 1, 75, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">1194400, 1286900, 23888 ~ 25738, -, -, 50, no</column>
-<column name=" + Loop 1.1">23885, 25735, 4777 ~ 5147, -, -, 5, no</column>
-<column name="  ++ Loop 1.1.1">4775, 5145, 955 ~ 1029, -, -, 5, no</column>
+<column name="- Loop 1">1195650, 1288150, 23913 ~ 25763, -, -, 50, no</column>
+<column name=" + Loop 1.1">23910, 25760, 4782 ~ 5152, -, -, 5, no</column>
+<column name="  ++ Loop 1.1.1">4780, 5150, 956 ~ 1030, -, -, 5, no</column>
 <column name="   +++ Loop 1.1.1.1">935, 935, 187, -, -, 5, no</column>
 <column name="    ++++ Loop 1.1.1.1.1">185, 185, 37, -, -, 5, no</column>
 </table>
@@ -53,27 +53,28 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, 0, 0, 713, -</column>
+<column name="Expression">-, 0, 0, 653, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">15, 38, 9007, 12348, -</column>
+<column name="Instance">15, 38, 8821, 11164, -</column>
 <column name="Memory">16, -, 0, 0, -</column>
-<column name="Multiplexer">-, -, -, 491, -</column>
-<column name="Register">-, -, 831, -, -</column>
+<column name="Multiplexer">-, -, -, 585, -</column>
+<column name="Register">-, -, 866, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">11, 17, 9, 25, 0</specialColumn>
+<specialColumn name="Utilization (%)">11, 17, 9, 23, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="grp_generic_tanh_double_s_fu_318">generic_tanh_double_s, 15, 19, 7971, 10323, 0</column>
-<column name="nerons_dmul_64ns_64ns_64_6_max_dsp_1_U29">nerons_dmul_64ns_64ns_64_6_max_dsp_1, 0, 11, 317, 578, 0</column>
-<column name="nerons_fadd_32ns_32ns_32_5_full_dsp_1_U24">nerons_fadd_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 390, 0</column>
-<column name="nerons_fmul_32ns_32ns_32_4_max_dsp_1_U25">nerons_fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 321, 0</column>
-<column name="nerons_fmul_32ns_32ns_32_4_max_dsp_1_U26">nerons_fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 321, 0</column>
-<column name="nerons_fpext_32ns_64_2_1_U28">nerons_fpext_32ns_64_2_1, 0, 0, 100, 138, 0</column>
-<column name="nerons_fptrunc_64ns_32_2_1_U27">nerons_fptrunc_64ns_32_2_1, 0, 0, 128, 277, 0</column>
+<column name="grp_generic_tanh_double_s_fu_322">generic_tanh_double_s, 15, 19, 7971, 10323, 0</column>
+<column name="nerons_dmul_64ns_64ns_64_6_max_dsp_1_U24">nerons_dmul_64ns_64ns_64_6_max_dsp_1, 0, 11, 317, 578, 0</column>
+<column name="nerons_dptohp_64ns_16_2_1_U30">nerons_dptohp_64ns_16_2_1, 0, 0, 96, 30, 0</column>
+<column name="nerons_hadd_16ns_16ns_16_5_full_dsp_1_U25">nerons_hadd_16ns_16ns_16_5_full_dsp_1, 0, 2, 109, 116, 0</column>
+<column name="nerons_hmul_16ns_16ns_16_4_max_dsp_1_U26">nerons_hmul_16ns_16ns_16_4_max_dsp_1, 0, 2, 91, 36, 0</column>
+<column name="nerons_hmul_16ns_16ns_16_4_max_dsp_1_U27">nerons_hmul_16ns_16ns_16_4_max_dsp_1, 0, 2, 91, 36, 0</column>
+<column name="nerons_hmul_16ns_16ns_16_4_max_dsp_1_U28">nerons_hmul_16ns_16ns_16_4_max_dsp_1, 0, 2, 91, 36, 0</column>
+<column name="nerons_hptodp_16ns_64_2_1_U29">nerons_hptodp_16ns_64_2_1, 0, 0, 55, 9, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -82,7 +83,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="Layer2_Weights_CPU_U">calculateLayer3_Layer2_Weights_CPU, 16, 0, 0, 0, 7800, 32, 1, 249600</column>
+<column name="Layer2_Weights_CPU_U">calculateLayer3_Layer2_Weights_CPU, 16, 0, 0, 0, 7800, 16, 1, 124800</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -91,129 +92,145 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="mul_ln28_fu_539_p2">*, 0, 0, 13, 4, 4</column>
-<column name="add_ln28_1_fu_605_p2">+, 0, 0, 15, 5, 5</column>
-<column name="add_ln28_2_fu_686_p2">+, 0, 0, 21, 15, 15</column>
-<column name="add_ln28_3_fu_596_p2">+, 0, 0, 13, 4, 4</column>
-<column name="add_ln28_4_fu_615_p2">+, 0, 0, 17, 8, 8</column>
-<column name="add_ln28_5_fu_610_p2">+, 0, 0, 17, 8, 8</column>
-<column name="add_ln28_fu_530_p2">+, 0, 0, 13, 4, 4</column>
-<column name="add_ln29_1_fu_545_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln29_2_fu_720_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln29_3_fu_729_p2">+, 0, 0, 15, 9, 9</column>
-<column name="add_ln29_fu_710_p2">+, 0, 0, 39, 32, 32</column>
-<column name="add_ln30_1_fu_752_p2">+, 0, 0, 17, 9, 9</column>
-<column name="add_ln30_2_fu_757_p2">+, 0, 0, 17, 9, 9</column>
-<column name="add_ln30_fu_739_p2">+, 0, 0, 21, 15, 15</column>
-<column name="add_ln31_1_fu_786_p2">+, 0, 0, 21, 15, 15</column>
-<column name="add_ln31_2_fu_620_p2">+, 0, 0, 13, 4, 4</column>
-<column name="add_ln31_3_fu_634_p2">+, 0, 0, 14, 10, 10</column>
-<column name="add_ln31_fu_777_p2">+, 0, 0, 15, 9, 2</column>
-<column name="add_ln32_1_fu_813_p2">+, 0, 0, 21, 15, 15</column>
-<column name="add_ln32_2_fu_639_p2">+, 0, 0, 17, 10, 10</column>
-<column name="add_ln32_3_fu_645_p2">+, 0, 0, 17, 10, 10</column>
-<column name="add_ln32_fu_804_p2">+, 0, 0, 15, 9, 3</column>
-<column name="add_ln33_1_fu_840_p2">+, 0, 0, 21, 15, 15</column>
-<column name="add_ln33_2_fu_767_p2">+, 0, 0, 17, 9, 9</column>
-<column name="add_ln33_3_fu_772_p2">+, 0, 0, 17, 9, 9</column>
-<column name="add_ln33_fu_831_p2">+, 0, 0, 15, 9, 3</column>
-<column name="add_ln35_1_fu_563_p2">+, 0, 0, 17, 11, 11</column>
-<column name="add_ln35_2_fu_558_p2">+, 0, 0, 17, 11, 11</column>
-<column name="add_ln35_3_fu_383_p2">+, 0, 0, 13, 11, 5</column>
-<column name="add_ln35_4_fu_389_p2">+, 0, 0, 17, 13, 8</column>
-<column name="add_ln35_fu_468_p2">+, 0, 0, 15, 5, 5</column>
-<column name="i_fu_401_p2">+, 0, 0, 15, 6, 1</column>
-<column name="j_fu_446_p2">+, 0, 0, 12, 3, 1</column>
-<column name="k_fu_488_p2">+, 0, 0, 12, 3, 1</column>
-<column name="m_fu_516_p2">+, 0, 0, 12, 3, 1</column>
-<column name="n_fu_590_p2">+, 0, 0, 12, 3, 1</column>
-<column name="sub_ln28_fu_672_p2">-, 0, 0, 15, 9, 9</column>
-<column name="icmp_ln20_fu_395_p2">icmp, 0, 0, 11, 6, 5</column>
-<column name="icmp_ln21_fu_440_p2">icmp, 0, 0, 9, 3, 3</column>
-<column name="icmp_ln22_fu_482_p2">icmp, 0, 0, 9, 3, 3</column>
-<column name="icmp_ln25_fu_510_p2">icmp, 0, 0, 9, 3, 3</column>
-<column name="icmp_ln26_fu_584_p2">icmp, 0, 0, 9, 3, 3</column>
-<column name="or_ln28_fu_412_p2">or, 0, 0, 13, 13, 1</column>
-<column name="or_ln29_fu_704_p2">or, 0, 0, 32, 32, 1</column>
-<column name="or_ln30_fu_426_p2">or, 0, 0, 13, 13, 2</column>
+<column name="mul_ln28_fu_530_p2">*, 0, 0, 13, 4, 4</column>
+<column name="add_ln28_1_fu_596_p2">+, 0, 0, 15, 5, 5</column>
+<column name="add_ln28_2_fu_677_p2">+, 0, 0, 21, 15, 15</column>
+<column name="add_ln28_3_fu_587_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln28_4_fu_606_p2">+, 0, 0, 11, 8, 8</column>
+<column name="add_ln28_5_fu_601_p2">+, 0, 0, 11, 8, 8</column>
+<column name="add_ln28_fu_521_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln29_1_fu_536_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln29_2_fu_711_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln29_3_fu_720_p2">+, 0, 0, 15, 9, 9</column>
+<column name="add_ln29_fu_701_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln30_1_fu_743_p2">+, 0, 0, 11, 9, 9</column>
+<column name="add_ln30_2_fu_748_p2">+, 0, 0, 11, 9, 9</column>
+<column name="add_ln30_fu_730_p2">+, 0, 0, 21, 15, 15</column>
+<column name="add_ln31_1_fu_781_p2">+, 0, 0, 21, 15, 15</column>
+<column name="add_ln31_2_fu_611_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln31_3_fu_625_p2">+, 0, 0, 14, 10, 10</column>
+<column name="add_ln31_fu_772_p2">+, 0, 0, 15, 9, 2</column>
+<column name="add_ln32_1_fu_804_p2">+, 0, 0, 21, 15, 15</column>
+<column name="add_ln32_2_fu_630_p2">+, 0, 0, 11, 10, 10</column>
+<column name="add_ln32_3_fu_636_p2">+, 0, 0, 11, 10, 10</column>
+<column name="add_ln32_fu_795_p2">+, 0, 0, 15, 9, 3</column>
+<column name="add_ln33_1_fu_831_p2">+, 0, 0, 21, 15, 15</column>
+<column name="add_ln33_2_fu_762_p2">+, 0, 0, 11, 9, 9</column>
+<column name="add_ln33_3_fu_767_p2">+, 0, 0, 11, 9, 9</column>
+<column name="add_ln33_fu_822_p2">+, 0, 0, 15, 9, 3</column>
+<column name="add_ln35_1_fu_554_p2">+, 0, 0, 11, 11, 11</column>
+<column name="add_ln35_2_fu_549_p2">+, 0, 0, 11, 11, 11</column>
+<column name="add_ln35_3_fu_374_p2">+, 0, 0, 13, 11, 5</column>
+<column name="add_ln35_4_fu_380_p2">+, 0, 0, 17, 13, 8</column>
+<column name="add_ln35_fu_459_p2">+, 0, 0, 15, 5, 5</column>
+<column name="i_fu_392_p2">+, 0, 0, 15, 6, 1</column>
+<column name="j_fu_437_p2">+, 0, 0, 12, 3, 1</column>
+<column name="k_fu_479_p2">+, 0, 0, 12, 3, 1</column>
+<column name="m_fu_507_p2">+, 0, 0, 12, 3, 1</column>
+<column name="n_fu_581_p2">+, 0, 0, 12, 3, 1</column>
+<column name="sub_ln28_fu_663_p2">-, 0, 0, 15, 9, 9</column>
+<column name="icmp_ln20_fu_386_p2">icmp, 0, 0, 11, 6, 5</column>
+<column name="icmp_ln21_fu_431_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="icmp_ln22_fu_473_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="icmp_ln25_fu_501_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="icmp_ln26_fu_575_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="or_ln28_fu_403_p2">or, 0, 0, 13, 13, 1</column>
+<column name="or_ln29_fu_695_p2">or, 0, 0, 32, 32, 1</column>
+<column name="or_ln30_fu_417_p2">or, 0, 0, 13, 13, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="Layer2_Neurons_CPU_address0">21, 4, 10, 40</column>
 <column name="Layer2_Neurons_CPU_address1">21, 4, 10, 40</column>
-<column name="Layer2_Weights_CPU_address0">38, 7, 13, 91</column>
-<column name="ap_NS_fsm">261, 61, 1, 61</column>
-<column name="grp_fu_329_p0">15, 3, 32, 96</column>
-<column name="grp_fu_329_p1">15, 3, 32, 96</column>
-<column name="grp_fu_350_p0">15, 3, 64, 192</column>
-<column name="grp_fu_350_p1">15, 3, 64, 192</column>
-<column name="i_0_reg_217">9, 2, 6, 12</column>
-<column name="j_0_reg_252">9, 2, 3, 6</column>
-<column name="k_0_reg_263">9, 2, 3, 6</column>
-<column name="m_0_reg_284">9, 2, 3, 6</column>
-<column name="n_0_reg_307">9, 2, 3, 6</column>
-<column name="phi_mul1_reg_240">9, 2, 11, 22</column>
-<column name="phi_mul_reg_228">9, 2, 13, 26</column>
-<column name="reg_361">9, 2, 32, 64</column>
-<column name="somme_0_reg_274">9, 2, 32, 64</column>
-<column name="somme_1_reg_295">9, 2, 32, 64</column>
+<column name="Layer2_Weights_CPU_address0">27, 5, 13, 65</column>
+<column name="Layer2_Weights_CPU_address1">15, 3, 13, 39</column>
+<column name="ap_NS_fsm">265, 62, 1, 62</column>
+<column name="grp_fu_333_p0">15, 3, 64, 192</column>
+<column name="grp_fu_333_p1">15, 3, 64, 192</column>
+<column name="grp_fu_339_p0">15, 3, 16, 48</column>
+<column name="grp_fu_339_p1">38, 7, 16, 112</column>
+<column name="grp_fu_344_p0">21, 4, 16, 64</column>
+<column name="grp_fu_344_p1">21, 4, 16, 64</column>
+<column name="grp_fu_348_p0">15, 3, 16, 48</column>
+<column name="grp_fu_348_p1">15, 3, 16, 48</column>
+<column name="i_0_reg_221">9, 2, 6, 12</column>
+<column name="j_0_reg_256">9, 2, 3, 6</column>
+<column name="k_0_reg_267">9, 2, 3, 6</column>
+<column name="m_0_reg_288">9, 2, 3, 6</column>
+<column name="n_0_reg_311">9, 2, 3, 6</column>
+<column name="phi_mul1_reg_244">9, 2, 11, 22</column>
+<column name="phi_mul_reg_232">9, 2, 13, 26</column>
+<column name="somme_0_reg_278">9, 2, 16, 32</column>
+<column name="somme_1_reg_299">9, 2, 16, 32</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="Layer2_Neurons_CPU_l_1_reg_1066">32, 0, 32, 0</column>
-<column name="Layer2_Weights_CPU_l_1_reg_1061">32, 0, 32, 0</column>
-<column name="add_ln28_1_reg_1008">5, 0, 5, 0</column>
-<column name="add_ln28_4_reg_1014">8, 0, 8, 0</column>
-<column name="add_ln30_reg_1056">14, 0, 15, 1</column>
-<column name="add_ln31_3_reg_1019">10, 0, 10, 0</column>
-<column name="add_ln32_3_reg_1024">10, 0, 10, 0</column>
-<column name="add_ln33_1_reg_1111">14, 0, 15, 1</column>
-<column name="add_ln33_3_reg_1086">9, 0, 9, 0</column>
-<column name="add_ln35_1_reg_984">11, 0, 11, 0</column>
-<column name="add_ln35_3_reg_865">11, 0, 11, 0</column>
-<column name="add_ln35_4_reg_870">13, 0, 13, 0</column>
-<column name="ap_CS_fsm">60, 0, 60, 0</column>
-<column name="grp_generic_tanh_double_s_fu_318_ap_start_reg">1, 0, 1, 0</column>
-<column name="i_0_reg_217">6, 0, 6, 0</column>
-<column name="i_reg_878">6, 0, 6, 0</column>
-<column name="j_0_reg_252">3, 0, 3, 0</column>
-<column name="j_reg_914">3, 0, 3, 0</column>
-<column name="k_0_reg_263">3, 0, 3, 0</column>
-<column name="k_reg_937">3, 0, 3, 0</column>
-<column name="m_0_reg_284">3, 0, 3, 0</column>
-<column name="m_reg_956">3, 0, 3, 0</column>
-<column name="mul_ln28_reg_966">8, 0, 8, 0</column>
-<column name="n_0_reg_307">3, 0, 3, 0</column>
-<column name="n_reg_1003">3, 0, 3, 0</column>
-<column name="phi_mul1_reg_240">11, 0, 11, 0</column>
-<column name="phi_mul_reg_228">13, 0, 13, 0</column>
-<column name="reg_356">32, 0, 32, 0</column>
-<column name="reg_361">32, 0, 32, 0</column>
-<column name="reg_367">32, 0, 32, 0</column>
-<column name="reg_372">32, 0, 32, 0</column>
-<column name="reg_377">64, 0, 64, 0</column>
-<column name="shl_ln28_1_reg_919">3, 0, 4, 1</column>
-<column name="shl_ln28_2_reg_961">3, 0, 5, 2</column>
-<column name="somme_0_reg_274">32, 0, 32, 0</column>
-<column name="somme_1_reg_295">32, 0, 32, 0</column>
-<column name="somme_reg_906">32, 0, 32, 0</column>
-<column name="sub_ln28_reg_1029">8, 0, 9, 1</column>
-<column name="tmp_2_reg_1071">32, 0, 32, 0</column>
-<column name="tmp_i_reg_1136">64, 0, 64, 0</column>
-<column name="tmp_reg_1131">64, 0, 64, 0</column>
-<column name="zext_ln22_reg_929">3, 0, 11, 8</column>
-<column name="zext_ln25_reg_948">3, 0, 4, 1</column>
-<column name="zext_ln26_1_reg_989">3, 0, 9, 6</column>
-<column name="zext_ln26_3_reg_995">3, 0, 8, 5</column>
-<column name="zext_ln28_2_reg_888">12, 0, 32, 20</column>
-<column name="zext_ln28_3_reg_893">12, 0, 15, 3</column>
-<column name="zext_ln28_4_reg_942">3, 0, 8, 5</column>
-<column name="zext_ln29_2_reg_971">8, 0, 9, 1</column>
-<column name="zext_ln30_2_reg_901">11, 0, 15, 4</column>
-<column name="zext_ln31_2_reg_978">8, 0, 10, 2</column>
-<column name="zext_ln35_1_reg_924">5, 0, 11, 6</column>
+<column name="Layer2_Neurons_CPU_l_1_reg_1068">16, 0, 16, 0</column>
+<column name="Layer2_Neurons_CPU_l_2_reg_1098">16, 0, 16, 0</column>
+<column name="Layer2_Neurons_CPU_l_3_reg_1108">16, 0, 16, 0</column>
+<column name="Layer2_Neurons_CPU_l_4_reg_1143">16, 0, 16, 0</column>
+<column name="Layer2_Neurons_CPU_l_5_reg_1153">16, 0, 16, 0</column>
+<column name="Layer2_Neurons_CPU_l_reg_1058">16, 0, 16, 0</column>
+<column name="Layer2_Weights_CPU_l_1_reg_1063">16, 0, 16, 0</column>
+<column name="Layer2_Weights_CPU_l_2_reg_1093">16, 0, 16, 0</column>
+<column name="Layer2_Weights_CPU_l_3_reg_1133">16, 0, 16, 0</column>
+<column name="Layer2_Weights_CPU_l_4_reg_1138">16, 0, 16, 0</column>
+<column name="Layer2_Weights_CPU_l_5_reg_1148">16, 0, 16, 0</column>
+<column name="Layer2_Weights_CPU_l_reg_1053">16, 0, 16, 0</column>
+<column name="add_ln28_1_reg_1000">5, 0, 5, 0</column>
+<column name="add_ln28_4_reg_1006">8, 0, 8, 0</column>
+<column name="add_ln30_reg_1048">14, 0, 15, 1</column>
+<column name="add_ln31_3_reg_1011">10, 0, 10, 0</column>
+<column name="add_ln32_3_reg_1016">10, 0, 10, 0</column>
+<column name="add_ln33_3_reg_1088">9, 0, 9, 0</column>
+<column name="add_ln35_1_reg_976">11, 0, 11, 0</column>
+<column name="add_ln35_3_reg_857">11, 0, 11, 0</column>
+<column name="add_ln35_4_reg_862">13, 0, 13, 0</column>
+<column name="ap_CS_fsm">61, 0, 61, 0</column>
+<column name="grp_generic_tanh_double_s_fu_322_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_0_reg_221">6, 0, 6, 0</column>
+<column name="i_reg_870">6, 0, 6, 0</column>
+<column name="j_0_reg_256">3, 0, 3, 0</column>
+<column name="j_reg_906">3, 0, 3, 0</column>
+<column name="k_0_reg_267">3, 0, 3, 0</column>
+<column name="k_reg_929">3, 0, 3, 0</column>
+<column name="m_0_reg_288">3, 0, 3, 0</column>
+<column name="m_reg_948">3, 0, 3, 0</column>
+<column name="mul_ln28_reg_958">8, 0, 8, 0</column>
+<column name="n_0_reg_311">3, 0, 3, 0</column>
+<column name="n_reg_995">3, 0, 3, 0</column>
+<column name="phi_mul1_reg_244">11, 0, 11, 0</column>
+<column name="phi_mul_reg_232">13, 0, 13, 0</column>
+<column name="reg_363">16, 0, 16, 0</column>
+<column name="reg_368">64, 0, 64, 0</column>
+<column name="shl_ln28_1_reg_911">3, 0, 4, 1</column>
+<column name="shl_ln28_2_reg_953">3, 0, 5, 2</column>
+<column name="somme_0_reg_278">16, 0, 16, 0</column>
+<column name="somme_1_reg_299">16, 0, 16, 0</column>
+<column name="somme_reg_898">16, 0, 16, 0</column>
+<column name="sub_ln28_reg_1021">8, 0, 9, 1</column>
+<column name="tmp_1_reg_1158">16, 0, 16, 0</column>
+<column name="tmp_2_reg_1163">16, 0, 16, 0</column>
+<column name="tmp_3_reg_1168">16, 0, 16, 0</column>
+<column name="tmp_4_reg_1173">16, 0, 16, 0</column>
+<column name="tmp_5_reg_1178">16, 0, 16, 0</column>
+<column name="tmp_6_reg_1183">16, 0, 16, 0</column>
+<column name="tmp_i_reg_1198">64, 0, 64, 0</column>
+<column name="tmp_reg_1193">64, 0, 64, 0</column>
+<column name="tmp_s_reg_1203">16, 0, 16, 0</column>
+<column name="zext_ln22_reg_921">3, 0, 11, 8</column>
+<column name="zext_ln25_reg_940">3, 0, 4, 1</column>
+<column name="zext_ln26_1_reg_981">3, 0, 9, 6</column>
+<column name="zext_ln26_3_reg_987">3, 0, 8, 5</column>
+<column name="zext_ln28_2_reg_880">12, 0, 32, 20</column>
+<column name="zext_ln28_3_reg_885">12, 0, 15, 3</column>
+<column name="zext_ln28_4_reg_934">3, 0, 8, 5</column>
+<column name="zext_ln29_2_reg_963">8, 0, 9, 1</column>
+<column name="zext_ln30_2_reg_893">11, 0, 15, 4</column>
+<column name="zext_ln31_2_reg_970">8, 0, 10, 2</column>
+<column name="zext_ln35_1_reg_916">5, 0, 11, 6</column>
 </table>
 </item>
 </section>
@@ -231,14 +248,14 @@
 <column name="ap_ready">out, 1, ap_ctrl_hs, calculateLayer3, return value</column>
 <column name="Layer2_Neurons_CPU_address0">out, 10, ap_memory, Layer2_Neurons_CPU, array</column>
 <column name="Layer2_Neurons_CPU_ce0">out, 1, ap_memory, Layer2_Neurons_CPU, array</column>
-<column name="Layer2_Neurons_CPU_q0">in, 32, ap_memory, Layer2_Neurons_CPU, array</column>
+<column name="Layer2_Neurons_CPU_q0">in, 16, ap_memory, Layer2_Neurons_CPU, array</column>
 <column name="Layer2_Neurons_CPU_address1">out, 10, ap_memory, Layer2_Neurons_CPU, array</column>
 <column name="Layer2_Neurons_CPU_ce1">out, 1, ap_memory, Layer2_Neurons_CPU, array</column>
-<column name="Layer2_Neurons_CPU_q1">in, 32, ap_memory, Layer2_Neurons_CPU, array</column>
+<column name="Layer2_Neurons_CPU_q1">in, 16, ap_memory, Layer2_Neurons_CPU, array</column>
 <column name="Layer3_Neurons_CPU_address0">out, 11, ap_memory, Layer3_Neurons_CPU, array</column>
 <column name="Layer3_Neurons_CPU_ce0">out, 1, ap_memory, Layer3_Neurons_CPU, array</column>
 <column name="Layer3_Neurons_CPU_we0">out, 1, ap_memory, Layer3_Neurons_CPU, array</column>
-<column name="Layer3_Neurons_CPU_d0">out, 32, ap_memory, Layer3_Neurons_CPU, array</column>
+<column name="Layer3_Neurons_CPU_d0">out, 16, ap_memory, Layer3_Neurons_CPU, array</column>
 </table>
 </item>
 </section>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'calculateLayer4'" level="0">
-<item name = "Date">Thu Dec 16 18:07:23 2021
+<item name = "Date">Sat Jan  1 17:20:19 2022
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">hlsed_neurons</item>
@@ -24,20 +24,22 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">1627101, 1634501, 1627101, 1634501, none</column>
+<column name="">1562201, 1569601, 1562201, 1569601, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_generic_tanh_double_s_fu_200">generic_tanh_double_s, 1, 75, 1, 75, none</column>
+<column name="grp_generic_tanh_double_s_fu_208">generic_tanh_double_s, 1, 75, 1, 75, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">1627100, 1634500, 16271 ~ 16345, -, -, 100, no</column>
-<column name=" + Loop 1.1">16250, 16250, 13, -, -, 1250, no</column>
+<column name="- Loop 1">1562200, 1569600, 15622 ~ 15696, -, -, 100, no</column>
+<column name=" + Loop 1.1">15600, 15600, 312, -, -, 50, no</column>
+<column name="  ++ Loop 1.1.1">310, 310, 62, -, -, 5, no</column>
+<column name="   +++ Loop 1.1.1.1">60, 60, 12, -, -, 5, no</column>
 </table>
 </item>
 </section>

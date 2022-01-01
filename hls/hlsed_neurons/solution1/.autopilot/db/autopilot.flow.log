@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1 opened at Thu Dec 16 18:06:54 CET 2021
+INFO-FLOW: Workspace /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1 opened at Sat Jan 01 17:19:43 CET 2022
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -43,8 +43,8 @@ Execute         source /opt/xilinx/Vivado/2019.1/common/technology/xilinx/ip/xff
 Command         ap_source done; 0.11 sec.
 Execute         source /opt/xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source /opt/xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.15 sec.
-Command     ap_source done; 0.15 sec.
+Command       ap_source done; 0.16 sec.
+Command     ap_source done; 0.16 sec.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib /opt/xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
 Execute       source /opt/xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
@@ -59,7 +59,7 @@ Execute     source /opt/xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_
 Execute       source /opt/xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 Execute     set_part xc7z020-clg484-1 
 Execute       ap_part_info -name xc7z020-clg484-1 -data single -quiet 
-Command       ap_part_info done; 0.77 sec.
+Command       ap_part_info done; 0.79 sec.
 Execute       ap_part_info -name xc7z020-clg484-1 -data info 
 Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
 Execute         get_default_platform 
@@ -77,7 +77,7 @@ Execute         get_default_platform
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
 Execute       ap_part_info -name xc7z020-clg484-1 -data info 
 Execute       get_default_platform 
-Command     set_part done; 0.88 sec.
+Command     set_part done; 0.91 sec.
 Execute     ap_part_info -data single -name xc7z020-clg484-1 
 Execute     ap_part_info -name xc7z020-clg484-1 -data resources 
 Execute     ap_part_info -name xc7z020-clg484-1 -data info 
@@ -85,7 +85,7 @@ Execute     ap_part_info -name xc7z020-clg484-1 -data info
 Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
 Execute     ap_part_info -name xc7z020-clg484-1 -data info 
 Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 1.08 sec.
+Command   open_solution done; 1.16 sec.
 Execute   set_part xc7z020-clg484-1 -tool vivado 
 Execute     ap_part_info -name xc7z020-clg484-1 -data single -quiet 
 Execute     ap_part_info -name xc7z020-clg484-1 -data info 
@@ -131,64 +131,64 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/xilinx/Vivado/2019.1/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "hlsed_neurons/solution1/.tcls/345.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/Vivado/2019.1/common/technology/autopilot" -I "/opt/xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c" 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E hlsed_neurons/solution1/.tcls/345.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/Vivado/2019.1/common/technology/autopilot -I /opt/xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c
-Command       clang done; 2.16 sec.
+Command       clang done; 1.79 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c std=gnu89 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.6 sec.
+Command       tidy_31 done; 0.46 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c  -fno-limit-debug-info -gcc-toolchain "/opt/xilinx/Vivado/2019.1/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/Vivado/2019.1/common/technology/autopilot" -I "/opt/xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c"  -o "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/Vivado/2019.1/common/technology/autopilot -I /opt/xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/useless.bc
-Command       clang done; 2.02 sec.
-INFO-FLOW: Done: GCC PP time: 4.8 seconds per iteration
+Command       clang done; 6.31 sec.
+INFO-FLOW: Done: GCC PP time: 8.6 seconds per iteration
 Execute       source /opt/xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute       source /opt/xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
 Execute         source /opt/xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
 Execute       list_core -type functional_unit 
 Execute       tidy_31 xilinx-systemc-detector /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c std=gnu89 -directive=/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.35 sec.
+Command       tidy_31 done; 0.39 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute       tidy_31 xilinx-directive2pragma /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c std=gnu89 -directive=/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.39 sec.
+Command       tidy_31 done; 0.4 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr /opt/xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/xilinx-dataflow-lawyer.345.pp.0.c.diag.yml /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/xilinx-dataflow-lawyer.345.pp.0.c.out.log 2> /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/xilinx-dataflow-lawyer.345.pp.0.c.err.log 
-Command       ap_eval done; 0.36 sec.
+Command       ap_eval done; 0.38 sec.
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c std=gnu89 
 Execute         ap_eval exec -ignorestderr /opt/xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/tidy-3.1.345.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/tidy-3.1.345.pp.0.c.out.log 2> /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/tidy-3.1.345.pp.0.c.err.log 
-Command         ap_eval done; 0.79 sec.
+Command         ap_eval done; 0.78 sec.
 Execute         source /opt/xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
 Execute           source /opt/xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
 Execute         ap_eval exec -ignorestderr /opt/xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/xilinx-legacy-rewriter.345.pp.0.c.out.log 2> /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/xilinx-legacy-rewriter.345.pp.0.c.err.log 
-Command         ap_eval done; 0.37 sec.
-Command       tidy_31 done; 1.17 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1.9 seconds per iteration
+Command         ap_eval done; 0.39 sec.
+Command       tidy_31 done; 1.19 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 2 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pragma.1.c std=gnu89 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.22 sec.
+Command       tidy_31 done; 1.24 sec.
 Execute       ap_part_info -name xc7z020-clg484-1 -data info 
 INFO-FLOW: Processing labels
 Execute       clang -src /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pragma.2.c  -fno-limit-debug-info -gcc-toolchain /opt/xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/Vivado/2019.1/common/technology/autopilot" -I "/opt/xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.bc" 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/Vivado/2019.1/common/technology/autopilot -I /opt/xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.bc
-Command       clang done; 1.81 sec.
+Command       clang done; 1.8 sec.
 INFO-FLOW: Linking Debug ...
 Execute       llvm-ld /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/345.g.bc -hls-opt -except-internalize nerons -L/opt/xilinx/Vivado/2019.1/lnx64/lib -lhlsm -lhlsmc++ -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.g 
-Command       llvm-ld done; 1.6 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 817.113 ; gain = 128.000 ; free physical = 307 ; free virtual = 9276
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 817.113 ; gain = 128.000 ; free physical = 306 ; free virtual = 9276
+Command       llvm-ld done; 1.86 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 817.113 ; gain = 128.000 ; free physical = 840 ; free virtual = 10568
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 817.113 ; gain = 128.000 ; free physical = 840 ; free virtual = 10568
 Execute       get_config_sdx -target 
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 Execute         transform -promote-dbg-pointer /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.pp.bc -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.pp.0.bc -f 
-Command         transform done; 0.36 sec.
+Command         transform done; 0.49 sec.
 Execute         llvm-ld /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/opt/xilinx/Vivado/2019.1/lnx64/lib -lfloatconversion -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.g.0 
-Command         llvm-ld done; 1.53 sec.
+Command         llvm-ld done; 1.76 sec.
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top nerons -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.g.0.bc -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-Command         transform done; 1.05 sec.
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 887.512 ; gain = 198.398 ; free physical = 276 ; free virtual = 9157
+Command         transform done; 1.19 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 887.215 ; gain = 198.102 ; free physical = 697 ; free virtual = 10450
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.g.1.bc -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.g.2.prechk.bc -f 
@@ -206,14 +206,14 @@ INFO: [XFORM 203-602] Inlining function 'generic_fabs<double>' into 'explog_base
 INFO: [XFORM 203-602] Inlining function 'generic_nan<double>' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:68) automatically.
 INFO: [XFORM 203-602] Inlining function 'exp_reduce_::expm1' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90) automatically.
 INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer3' (hlsed_neurons/solution1/.tcls/345.c:35) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer4' (hlsed_neurons/solution1/.tcls/345.c:50) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer5' (hlsed_neurons/solution1/.tcls/345.c:62) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer4' (hlsed_neurons/solution1/.tcls/345.c:49) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer5' (hlsed_neurons/solution1/.tcls/345.c:61) automatically.
 INFO: [XFORM 203-602] Inlining function 'calculateLayer5' into 'nerons' (hlsed_neurons/solution1/.tcls/345.c:12) automatically.
-Command         transform done; 3.64 sec.
+Command         transform done; 2.13 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-Command         transform done; 0.3 sec.
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1009.113 ; gain = 320.000 ; free physical = 147 ; free virtual = 9066
+Command         transform done; 0.33 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1016.164 ; gain = 327.051 ; free physical = 606 ; free virtual = 10368
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.g.1.bc to /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -232,10 +232,10 @@ INFO: [XFORM 203-602] Inlining function 'generic_fabs<double>' into 'explog_base
 INFO: [XFORM 203-602] Inlining function 'generic_nan<double>' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:68) automatically.
 INFO: [XFORM 203-602] Inlining function 'exp_reduce_::expm1' into 'explog_based::generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:90) automatically.
 INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer3' (hlsed_neurons/solution1/.tcls/345.c:35) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer4' (hlsed_neurons/solution1/.tcls/345.c:50) automatically.
-INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer5' (hlsed_neurons/solution1/.tcls/345.c:62) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer4' (hlsed_neurons/solution1/.tcls/345.c:49) automatically.
+INFO: [XFORM 203-602] Inlining function 'tanh' into 'calculateLayer5' (hlsed_neurons/solution1/.tcls/345.c:61) automatically.
 INFO: [XFORM 203-602] Inlining function 'calculateLayer5' into 'nerons' (hlsed_neurons/solution1/.tcls/345.c:12) automatically.
-Command         transform done; 4 sec.
+Command         transform done; 2.5 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:108:8) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:114:3) in function 'explog_based::generic_tanh<double>'... converting 3 basic blocks.
@@ -243,22 +243,17 @@ INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/c
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:185:19) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:368:3) in function 'exp_reduce_::exp_generic<double>'... converting 12 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'calculateLayer4' (hlsed_neurons/solution1/.tcls/345.c:39)...4 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'calculateLayer3' (hlsed_neurons/solution1/.tcls/345.c:17)...18 expression(s) balanced.
-Command         transform done; 0.4 sec.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1077.102 ; gain = 387.988 ; free physical = 154 ; free virtual = 8983
+Command         transform done; 0.45 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1031.914 ; gain = 342.801 ; free physical = 526 ; free virtual = 10301
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.o.2.bc -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1.1' (hlsed_neurons/solution1/.tcls/345.c:45:9) in function 'calculateLayer4'.
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (hlsed_neurons/solution1/.tcls/345.c:44:8) in function 'calculateLayer4'.
-WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (hlsed_neurons/solution1/.tcls/345.c:42:7) in function 'calculateLayer4' : 
-
-the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
 WARNING: [XFORM 203-631] Renaming function 'explog_based::generic_tanh<double>' to 'generic_tanh<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_tanh.h:57)
 WARNING: [XFORM 203-631] Renaming function 'exp_reduce_::exp_generic<double>' to 'exp_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:185)
-Command         transform done; 1.59 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1089.117 ; gain = 400.004 ; free physical = 157 ; free virtual = 8941
+Command         transform done; 1.73 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1155.980 ; gain = 466.867 ; free physical = 479 ; free virtual = 10259
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 12.9 sec.
-Command     elaborate done; 25.47 sec.
+Command       opt_and_import_c done; 10.58 sec.
+Command     elaborate done; 27.34 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -327,10 +322,12 @@ WARNING: [SCHED 204-21] The critical path in module 'exp_generic_double_s' consi
 	'select' operation ('select_ln805', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [56]  (0 ns)
 	'select' operation ('r_exp.V', /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:272) [57]  (0.7 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.19 sec.
-INFO: [HLS 200-111]  Elapsed time: 27.18 seconds; current allocated memory: 387.323 MB.
+Command       schedule done; 0.2 sec.
+INFO: [HLS 200-111]  Elapsed time: 29.2 seconds; current allocated memory: 381.947 MB.
 Execute       syn_report -verbosereport -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/exp_generic_double_s.verbose.sched.rpt 
+Command       syn_report done; 0.46 sec.
 Execute       db_write -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/exp_generic_double_s.sched.adb -f 
+Command       db_write done; 0.4 sec.
 INFO-FLOW: Finish scheduling exp_generic<double>.
 Execute       set_default_model exp_generic<double> 
 Execute       bind -model exp_generic<double> 
@@ -340,9 +337,11 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 388.078 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.91 seconds; current allocated memory: 382.649 MB.
 Execute       syn_report -verbosereport -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/exp_generic_double_s.verbose.bind.rpt 
+Command       syn_report done; 0.5 sec.
 Execute       db_write -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/exp_generic_double_s.bind.adb -f 
+Command       db_write done; 0.38 sec.
 INFO-FLOW: Finish binding exp_generic<double>.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'generic_tanh_double_s' 
@@ -351,9 +350,11 @@ Execute       set_default_model generic_tanh<double>
 Execute       schedule -model generic_tanh<double> 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 388.654 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.93 seconds; current allocated memory: 383.259 MB.
 Execute       syn_report -verbosereport -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/generic_tanh_double_s.verbose.sched.rpt 
+Command       syn_report done; 0.49 sec.
 Execute       db_write -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/generic_tanh_double_s.sched.adb -f 
+Command       db_write done; 0.43 sec.
 INFO-FLOW: Finish scheduling generic_tanh<double>.
 Execute       set_default_model generic_tanh<double> 
 Execute       bind -model generic_tanh<double> 
@@ -363,10 +364,11 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 389.251 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.99 seconds; current allocated memory: 383.809 MB.
 Execute       syn_report -verbosereport -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/generic_tanh_double_s.verbose.bind.rpt 
-Command       syn_report done; 0.16 sec.
+Command       syn_report done; 0.59 sec.
 Execute       db_write -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/generic_tanh_double_s.bind.adb -f 
+Command       db_write done; 0.43 sec.
 INFO-FLOW: Finish binding generic_tanh<double>.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'calculateLayer3' 
@@ -375,11 +377,13 @@ Execute       set_default_model calculateLayer3
 Execute       schedule -model calculateLayer3 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.13 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 389.928 MB.
+Command       schedule done; 0.12 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.15 seconds; current allocated memory: 384.512 MB.
 Execute       syn_report -verbosereport -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer3.verbose.sched.rpt 
 INFO: [HLS 200-434] Only 0 loops out of a total 5 loops have been pipelined in this design.
+Command       syn_report done; 0.66 sec.
 Execute       db_write -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer3.sched.adb -f 
+Command       db_write done; 0.55 sec.
 INFO-FLOW: Finish scheduling calculateLayer3.
 Execute       set_default_model calculateLayer3 
 Execute       bind -model calculateLayer3 
@@ -389,10 +393,11 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 390.848 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.3 seconds; current allocated memory: 385.484 MB.
 Execute       syn_report -verbosereport -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer3.verbose.bind.rpt 
-Command       syn_report done; 0.21 sec.
+Command       syn_report done; 0.82 sec.
 Execute       db_write -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer3.bind.adb -f 
+Command       db_write done; 0.56 sec.
 INFO-FLOW: Finish binding calculateLayer3.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'calculateLayer4' 
@@ -401,9 +406,11 @@ Execute       set_default_model calculateLayer4
 Execute       schedule -model calculateLayer4 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 391.304 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.45 seconds; current allocated memory: 385.914 MB.
 Execute       syn_report -verbosereport -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer4.verbose.sched.rpt 
+Command       syn_report done; 0.24 sec.
 Execute       db_write -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer4.sched.adb -f 
+Command       db_write done; 0.22 sec.
 INFO-FLOW: Finish scheduling calculateLayer4.
 Execute       set_default_model calculateLayer4 
 Execute       bind -model calculateLayer4 
@@ -413,10 +420,11 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 391.710 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.53 seconds; current allocated memory: 386.248 MB.
 Execute       syn_report -verbosereport -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer4.verbose.bind.rpt 
-Command       syn_report done; 0.16 sec.
+Command       syn_report done; 0.38 sec.
 Execute       db_write -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer4.bind.adb -f 
+Command       db_write done; 0.22 sec.
 INFO-FLOW: Finish binding calculateLayer4.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'nerons' 
@@ -425,9 +433,11 @@ Execute       set_default_model nerons
 Execute       schedule -model nerons 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 392.025 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.66 seconds; current allocated memory: 386.563 MB.
 Execute       syn_report -verbosereport -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.verbose.sched.rpt 
+Command       syn_report done; 0.18 sec.
 Execute       db_write -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.sched.adb -f 
+Command       db_write done; 0.17 sec.
 INFO-FLOW: Finish scheduling nerons.
 Execute       set_default_model nerons 
 Execute       bind -model nerons 
@@ -437,11 +447,12 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.42 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.45 seconds; current allocated memory: 392.594 MB.
+Command       bind done; 0.45 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.8 seconds; current allocated memory: 387.100 MB.
 Execute       syn_report -verbosereport -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.verbose.bind.rpt 
-Command       syn_report done; 0.41 sec.
+Command       syn_report done; 0.64 sec.
 Execute       db_write -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.bind.adb -f 
+Command       db_write done; 0.18 sec.
 INFO-FLOW: Finish binding nerons.
 Execute       get_model_list nerons -filter all-wo-channel 
 INFO-FLOW: Preprocessing for RTLGen ...
@@ -463,7 +474,7 @@ INFO: [RTGEN 206-100] Generating core module 'nerons_mul_44ns_49ns_93_2_1': 1 in
 INFO: [RTGEN 206-100] Generating core module 'nerons_mul_50ns_50ns_100_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'nerons_mul_72ns_13s_84_5_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_generic_double_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 394.576 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.88 seconds; current allocated memory: 389.078 MB.
 Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.rtl_wrap.cfg.tcl 
 Execute       gen_rtl exp_generic<double> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/systemc/exp_generic_double_s -synmodules exp_generic<double> generic_tanh<double> calculateLayer3 calculateLayer4 nerons 
 Execute       gen_rtl exp_generic<double> -style xilinx -f -lang vhdl -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/vhdl/exp_generic_double_s 
@@ -471,8 +482,9 @@ Execute       gen_rtl exp_generic<double> -style xilinx -f -lang vlog -o /home/i
 Execute       syn_report -csynth -model exp_generic<double> -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/report/exp_generic_double_s_csynth.rpt 
 Execute       syn_report -rtlxml -model exp_generic<double> -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/report/exp_generic_double_s_csynth.xml 
 Execute       syn_report -verbosereport -model exp_generic<double> -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/exp_generic_double_s.verbose.rpt 
-Command       syn_report done; 0.13 sec.
+Command       syn_report done; 0.57 sec.
 Execute       db_write -model exp_generic<double> -f -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/exp_generic_double_s.adb 
+Command       db_write done; 0.46 sec.
 Execute       gen_tb_info exp_generic<double> -p /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/exp_generic_double_s 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'generic_tanh_double_s' 
@@ -485,7 +497,7 @@ INFO: [RTGEN 206-100] Generating core module 'nerons_dcmp_64ns_64ns_1_2_1': 1 in
 INFO: [RTGEN 206-100] Generating core module 'nerons_ddiv_64ns_64ns_64_31_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'nerons_dmul_64ns_64ns_64_6_max_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_tanh_double_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 398.905 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.24 seconds; current allocated memory: 393.408 MB.
 Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.rtl_wrap.cfg.tcl 
 Execute       gen_rtl generic_tanh<double> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/systemc/generic_tanh_double_s -synmodules exp_generic<double> generic_tanh<double> calculateLayer3 calculateLayer4 nerons 
 Execute       gen_rtl generic_tanh<double> -style xilinx -f -lang vhdl -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/vhdl/generic_tanh_double_s 
@@ -493,8 +505,9 @@ Execute       gen_rtl generic_tanh<double> -style xilinx -f -lang vlog -o /home/
 Execute       syn_report -csynth -model generic_tanh<double> -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/report/generic_tanh_double_s_csynth.rpt 
 Execute       syn_report -rtlxml -model generic_tanh<double> -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/report/generic_tanh_double_s_csynth.xml 
 Execute       syn_report -verbosereport -model generic_tanh<double> -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/generic_tanh_double_s.verbose.rpt 
-Command       syn_report done; 0.17 sec.
+Command       syn_report done; 0.66 sec.
 Execute       db_write -model generic_tanh<double> -f -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/generic_tanh_double_s.adb 
+Command       db_write done; 0.48 sec.
 Execute       gen_tb_info generic_tanh<double> -p /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/generic_tanh_double_s 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer3' 
@@ -503,12 +516,12 @@ Execute       get_config_rtl -module_prefix
 Execute       get_config_rtl -module_auto_prefix 
 Execute       create_rtl_model calculateLayer3 -vendor xilinx -mg_file /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer3.compgen.tcl 
 INFO: [RTGEN 206-100] Generating core module 'nerons_dmul_64ns_64ns_64_6_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_fpext_32ns_64_2_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_fptrunc_64ns_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_dptohp_64ns_16_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_hmul_16ns_16ns_16_4_max_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_hptodp_16ns_64_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer3'.
-INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 401.949 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.26 seconds; current allocated memory: 396.503 MB.
 Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.rtl_wrap.cfg.tcl 
 Execute       gen_rtl calculateLayer3 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/systemc/calculateLayer3 -synmodules exp_generic<double> generic_tanh<double> calculateLayer3 calculateLayer4 nerons 
 Execute       gen_rtl calculateLayer3 -style xilinx -f -lang vhdl -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/vhdl/calculateLayer3 
@@ -516,8 +529,9 @@ Execute       gen_rtl calculateLayer3 -style xilinx -f -lang vlog -o /home/iamgr
 Execute       syn_report -csynth -model calculateLayer3 -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/report/calculateLayer3_csynth.rpt 
 Execute       syn_report -rtlxml -model calculateLayer3 -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/report/calculateLayer3_csynth.xml 
 Execute       syn_report -verbosereport -model calculateLayer3 -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer3.verbose.rpt 
-Command       syn_report done; 0.23 sec.
+Command       syn_report done; 0.89 sec.
 Execute       db_write -model calculateLayer3 -f -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer3.adb 
+Command       db_write done; 0.68 sec.
 Execute       gen_tb_info calculateLayer3 -p /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer3 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'calculateLayer4' 
@@ -526,13 +540,12 @@ Execute       get_config_rtl -module_prefix
 Execute       get_config_rtl -module_auto_prefix 
 Execute       create_rtl_model calculateLayer4 -vendor xilinx -mg_file /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer4.compgen.tcl 
 INFO: [RTGEN 206-100] Generating core module 'nerons_dmul_64ns_64ns_64_6_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_fpext_32ns_64_2_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_fptrunc_64ns_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_dptohp_64ns_16_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_hptodp_16ns_64_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'calculateLayer4'.
-Command       create_rtl_model done; 0.13 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 407.692 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.77 seconds; current allocated memory: 400.244 MB.
 Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.rtl_wrap.cfg.tcl 
 Execute       gen_rtl calculateLayer4 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/systemc/calculateLayer4 -synmodules exp_generic<double> generic_tanh<double> calculateLayer3 calculateLayer4 nerons 
 Execute       gen_rtl calculateLayer4 -style xilinx -f -lang vhdl -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/vhdl/calculateLayer4 
@@ -540,8 +553,9 @@ Execute       gen_rtl calculateLayer4 -style xilinx -f -lang vlog -o /home/iamgr
 Execute       syn_report -csynth -model calculateLayer4 -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/report/calculateLayer4_csynth.rpt 
 Execute       syn_report -rtlxml -model calculateLayer4 -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/report/calculateLayer4_csynth.xml 
 Execute       syn_report -verbosereport -model calculateLayer4 -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer4.verbose.rpt 
-Command       syn_report done; 0.17 sec.
+Command       syn_report done; 0.41 sec.
 Execute       db_write -model calculateLayer4 -f -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer4.adb 
+Command       db_write done; 0.3 sec.
 Execute       gen_tb_info calculateLayer4 -p /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer4 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'nerons' 
@@ -553,11 +567,11 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'nerons/Layer2_Neurons_CPU'
 INFO: [RTGEN 206-500] Setting interface mode on port 'nerons/Layer5_Neurons_CPU' to 'ap_memory'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'nerons' to 'ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Generating core module 'nerons_dmul_64ns_64ns_64_6_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'nerons_fpext_32ns_64_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_hadd_16ns_16ns_16_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_hmul_16ns_16ns_16_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'nerons_hptodp_16ns_64_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'nerons'.
-INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 410.066 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.81 seconds; current allocated memory: 402.496 MB.
 Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.rtl_wrap.cfg.tcl 
 Execute       gen_rtl nerons -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/systemc/nerons -synmodules exp_generic<double> generic_tanh<double> calculateLayer3 calculateLayer4 nerons 
 Execute       gen_rtl nerons -istop -style xilinx -f -lang vhdl -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/vhdl/nerons 
@@ -565,12 +579,13 @@ Execute       gen_rtl nerons -istop -style xilinx -f -lang vlog -o /home/iamgron
 Execute       syn_report -csynth -model nerons -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/report/nerons_csynth.rpt 
 Execute       syn_report -rtlxml -model nerons -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/syn/report/nerons_csynth.xml 
 Execute       syn_report -verbosereport -model nerons -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.verbose.rpt 
-Command       syn_report done; 0.43 sec.
+Command       syn_report done; 0.65 sec.
 Execute       db_write -model nerons -f -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.adb 
+Command       db_write done; 0.24 sec.
 Execute       gen_tb_info nerons -p /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons 
 Execute       export_constraint_db -f -tool general -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.constraint.tcl 
 Execute       syn_report -designview -model nerons -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.design.xml 
-Command       syn_report done; 0.18 sec.
+Command       syn_report done; 0.2 sec.
 Execute       get_config_rtl -disable_wave_debug 
 Execute       syn_report -wcfg -model nerons -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons_dataflow_ana.wcfg 
 Execute       syn_report -protoinst -model nerons -o /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.protoinst 
@@ -609,14 +624,14 @@ INFO-FLOW: Found component nerons_dcmp_64ns_64ns_1_2_1.
 INFO-FLOW: Append model nerons_dcmp_64ns_64ns_1_2_1
 INFO-FLOW: Handling components in module [calculateLayer3] ... 
 Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer3.compgen.tcl 
-INFO-FLOW: Found component nerons_fadd_32ns_32ns_32_5_full_dsp_1.
-INFO-FLOW: Append model nerons_fadd_32ns_32ns_32_5_full_dsp_1
-INFO-FLOW: Found component nerons_fmul_32ns_32ns_32_4_max_dsp_1.
-INFO-FLOW: Append model nerons_fmul_32ns_32ns_32_4_max_dsp_1
-INFO-FLOW: Found component nerons_fptrunc_64ns_32_2_1.
-INFO-FLOW: Append model nerons_fptrunc_64ns_32_2_1
-INFO-FLOW: Found component nerons_fpext_32ns_64_2_1.
-INFO-FLOW: Append model nerons_fpext_32ns_64_2_1
+INFO-FLOW: Found component nerons_hadd_16ns_16ns_16_5_full_dsp_1.
+INFO-FLOW: Append model nerons_hadd_16ns_16ns_16_5_full_dsp_1
+INFO-FLOW: Found component nerons_hmul_16ns_16ns_16_4_max_dsp_1.
+INFO-FLOW: Append model nerons_hmul_16ns_16ns_16_4_max_dsp_1
+INFO-FLOW: Found component nerons_hptodp_16ns_64_2_1.
+INFO-FLOW: Append model nerons_hptodp_16ns_64_2_1
+INFO-FLOW: Found component nerons_dptohp_64ns_16_2_1.
+INFO-FLOW: Append model nerons_dptohp_64ns_16_2_1
 INFO-FLOW: Found component calculateLayer3_Layer2_Weights_CPU.
 INFO-FLOW: Append model calculateLayer3_Layer2_Weights_CPU
 INFO-FLOW: Handling components in module [calculateLayer4] ... 
@@ -637,7 +652,7 @@ INFO-FLOW: Append model calculateLayer3
 INFO-FLOW: Append model calculateLayer4
 INFO-FLOW: Append model nerons
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: nerons_mul_72ns_13s_84_5_1 nerons_mul_36ns_43ns_79_2_1 nerons_mul_44ns_49ns_93_2_1 nerons_mul_50ns_50ns_100_2_1 nerons_mac_muladd_16ns_16s_19s_31_1_1 exp_generic_double_s_table_exp_Z1_array_s exp_generic_double_s_table_f_Z3_array_V exp_generic_double_s_table_f_Z2_array_V nerons_dadddsub_64ns_64ns_64_5_full_dsp_1 nerons_dmul_64ns_64ns_64_6_max_dsp_1 nerons_ddiv_64ns_64ns_64_31_1 nerons_dcmp_64ns_64ns_1_2_1 nerons_fadd_32ns_32ns_32_5_full_dsp_1 nerons_fmul_32ns_32ns_32_4_max_dsp_1 nerons_fptrunc_64ns_32_2_1 nerons_fpext_32ns_64_2_1 calculateLayer3_Layer2_Weights_CPU calculateLayer4_Layer3_Weights_CPU nerons_Layer4_Weights_CPU nerons_Layer3_Neurons_CPU nerons_Layer4_Neurons_CPU exp_generic_double_s generic_tanh_double_s calculateLayer3 calculateLayer4 nerons
+INFO-FLOW: All models in this session: nerons_mul_72ns_13s_84_5_1 nerons_mul_36ns_43ns_79_2_1 nerons_mul_44ns_49ns_93_2_1 nerons_mul_50ns_50ns_100_2_1 nerons_mac_muladd_16ns_16s_19s_31_1_1 exp_generic_double_s_table_exp_Z1_array_s exp_generic_double_s_table_f_Z3_array_V exp_generic_double_s_table_f_Z2_array_V nerons_dadddsub_64ns_64ns_64_5_full_dsp_1 nerons_dmul_64ns_64ns_64_6_max_dsp_1 nerons_ddiv_64ns_64ns_64_31_1 nerons_dcmp_64ns_64ns_1_2_1 nerons_hadd_16ns_16ns_16_5_full_dsp_1 nerons_hmul_16ns_16ns_16_4_max_dsp_1 nerons_hptodp_16ns_64_2_1 nerons_dptohp_64ns_16_2_1 calculateLayer3_Layer2_Weights_CPU calculateLayer4_Layer3_Weights_CPU nerons_Layer4_Weights_CPU nerons_Layer3_Neurons_CPU nerons_Layer4_Neurons_CPU exp_generic_double_s generic_tanh_double_s calculateLayer3 calculateLayer4 nerons
 INFO-FLOW: To file: write model nerons_mul_72ns_13s_84_5_1
 INFO-FLOW: To file: write model nerons_mul_36ns_43ns_79_2_1
 INFO-FLOW: To file: write model nerons_mul_44ns_49ns_93_2_1
@@ -650,10 +665,10 @@ INFO-FLOW: To file: write model nerons_dadddsub_64ns_64ns_64_5_full_dsp_1
 INFO-FLOW: To file: write model nerons_dmul_64ns_64ns_64_6_max_dsp_1
 INFO-FLOW: To file: write model nerons_ddiv_64ns_64ns_64_31_1
 INFO-FLOW: To file: write model nerons_dcmp_64ns_64ns_1_2_1
-INFO-FLOW: To file: write model nerons_fadd_32ns_32ns_32_5_full_dsp_1
-INFO-FLOW: To file: write model nerons_fmul_32ns_32ns_32_4_max_dsp_1
-INFO-FLOW: To file: write model nerons_fptrunc_64ns_32_2_1
-INFO-FLOW: To file: write model nerons_fpext_32ns_64_2_1
+INFO-FLOW: To file: write model nerons_hadd_16ns_16ns_16_5_full_dsp_1
+INFO-FLOW: To file: write model nerons_hmul_16ns_16ns_16_4_max_dsp_1
+INFO-FLOW: To file: write model nerons_hptodp_16ns_64_2_1
+INFO-FLOW: To file: write model nerons_dptohp_64ns_16_2_1
 INFO-FLOW: To file: write model calculateLayer3_Layer2_Weights_CPU
 INFO-FLOW: To file: write model calculateLayer4_Layer3_Weights_CPU
 INFO-FLOW: To file: write model nerons_Layer4_Weights_CPU
@@ -772,14 +787,16 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_Layer2_Weights_CPU_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'calculateLayer3_Layer2_Weights_CPU_rom' using block ROMs.
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command       ap_source done; 0.52 sec.
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Command       ap_source done; 0.57 sec.
 Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer4.compgen.tcl 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -788,7 +805,7 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command       ap_source done; 6.56 sec.
+Command       ap_source done; 5.19 sec.
 Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/nerons.compgen.tcl 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -927,10 +944,10 @@ Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed
 Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/impl/misc/nerons_ap_dcmp_0_no_dsp_64_ip.tcl 
 Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/impl/misc/nerons_ap_ddiv_29_no_dsp_64_ip.tcl 
 Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/impl/misc/nerons_ap_dmul_4_max_dsp_64_ip.tcl 
-Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/impl/misc/nerons_ap_fadd_3_full_dsp_32_ip.tcl 
-Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/impl/misc/nerons_ap_fmul_2_max_dsp_32_ip.tcl 
-Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/impl/misc/nerons_ap_fpext_0_no_dsp_32_ip.tcl 
-Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/impl/misc/nerons_ap_fptrunc_0_no_dsp_64_ip.tcl 
+Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/impl/misc/nerons_ap_dptohp_0_no_dsp_64_ip.tcl 
+Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/impl/misc/nerons_ap_hadd_3_full_dsp_16_ip.tcl 
+Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/impl/misc/nerons_ap_hmul_2_max_dsp_16_ip.tcl 
+Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/impl/misc/nerons_ap_hptodp_0_no_dsp_16_ip.tcl 
 Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/exp_generic_double_s.tbgen.tcl 
 Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/generic_tanh_double_s.tbgen.tcl 
 Execute       source /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/calculateLayer3.tbgen.tcl 
@@ -943,10 +960,10 @@ Execute       get_config_rtl -stall_sig_gen
 Execute       get_config_rtl -profile 
 INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.autopilot/db/kernel.internal.xml
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1217.117 ; gain = 528.004 ; free physical = 181 ; free virtual = 8881
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1155.980 ; gain = 466.867 ; free physical = 308 ; free virtual = 10124
 INFO: [VHDL 208-304] Generating VHDL RTL for nerons.
 INFO: [VLOG 209-307] Generating Verilog RTL for nerons.
-Command     autosyn done; 13.62 sec.
-Command   csynth_design done; 39.09 sec.
-Command ap_source done; 40.3 sec.
+Command     autosyn done; 23.3 sec.
+Command   csynth_design done; 50.64 sec.
+Command ap_source done; 51.94 sec.
 Execute cleanup_all 

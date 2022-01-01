@@ -28,7 +28,7 @@
               <rtlName/>
               <coreName>RAM</coreName>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>16</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>1</if_type>
@@ -102,7 +102,7 @@
               <rtlName>Layer3_Neurons_CPU_U</rtlName>
               <coreName>RAM</coreName>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>16</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -136,7 +136,7 @@
               <rtlName>Layer4_Neurons_CPU_U</rtlName>
               <coreName>RAM</coreName>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>16</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -267,10 +267,10 @@
             <Obj>
               <type>0</type>
               <id>16</id>
-              <name>_ln58</name>
+              <name>_ln57</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>58</lineNumber>
+              <lineNumber>57</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -285,7 +285,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>58</second>
+                      <second>57</second>
                     </item>
                     <item>
                       <first>
@@ -362,7 +362,7 @@
               <name>phi_mul</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>58</lineNumber>
+              <lineNumber>57</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -377,7 +377,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>58</second>
+                      <second>57</second>
                     </item>
                     <item>
                       <first>
@@ -417,10 +417,10 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>add_ln58</name>
+              <name>add_ln57</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>58</lineNumber>
+              <lineNumber>57</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -435,7 +435,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>58</second>
+                      <second>57</second>
                     </item>
                     <item>
                       <first>
@@ -448,7 +448,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln58_fu_223_p2</rtlName>
+              <rtlName>add_ln57_fu_223_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -473,10 +473,10 @@
             <Obj>
               <type>0</type>
               <id>21</id>
-              <name>icmp_ln58</name>
+              <name>icmp_ln57</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>58</lineNumber>
+              <lineNumber>57</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -491,7 +491,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>58</second>
+                      <second>57</second>
                     </item>
                     <item>
                       <first>
@@ -504,7 +504,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln58_fu_229_p2</rtlName>
+              <rtlName>icmp_ln57_fu_229_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -532,7 +532,7 @@
               <name>i</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>58</lineNumber>
+              <lineNumber>57</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -547,7 +547,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>58</second>
+                      <second>57</second>
                     </item>
                     <item>
                       <first>
@@ -585,10 +585,10 @@
             <Obj>
               <type>0</type>
               <id>24</id>
-              <name>_ln58</name>
+              <name>_ln57</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>58</lineNumber>
+              <lineNumber>57</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -603,7 +603,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>58</second>
+                      <second>57</second>
                     </item>
                     <item>
                       <first>
@@ -642,10 +642,10 @@
             <Obj>
               <type>0</type>
               <id>26</id>
-              <name>zext_ln59</name>
+              <name>zext_ln58</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>59</lineNumber>
+              <lineNumber>58</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -660,7 +660,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>59</second>
+                      <second>58</second>
                     </item>
                     <item>
                       <first>
@@ -673,7 +673,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln59_fu_241_p1</rtlName>
+              <rtlName>zext_ln58_fu_241_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -700,7 +700,7 @@
               <name>Layer4_Weights_CPU_a</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>59</lineNumber>
+              <lineNumber>58</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -715,7 +715,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>59</second>
+                      <second>58</second>
                     </item>
                     <item>
                       <first>
@@ -757,7 +757,7 @@
               <name>somme</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>59</lineNumber>
+              <lineNumber>58</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -772,7 +772,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>59</second>
+                      <second>58</second>
                     </item>
                     <item>
                       <first>
@@ -788,7 +788,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>16</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -809,10 +809,10 @@
             <Obj>
               <type>0</type>
               <id>29</id>
-              <name>_ln60</name>
+              <name>_ln59</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>60</lineNumber>
+              <lineNumber>59</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -827,7 +827,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>60</second>
+                      <second>59</second>
                     </item>
                     <item>
                       <first>
@@ -877,7 +877,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>16</bitwidth>
           </Value>
           <oprand_edges>
             <count>4</count>
@@ -938,10 +938,10 @@
             <Obj>
               <type>0</type>
               <id>33</id>
-              <name>icmp_ln60</name>
+              <name>icmp_ln59</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>60</lineNumber>
+              <lineNumber>59</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -956,7 +956,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>60</second>
+                      <second>59</second>
                     </item>
                     <item>
                       <first>
@@ -969,7 +969,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln60_fu_246_p2</rtlName>
+              <rtlName>icmp_ln59_fu_246_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -997,7 +997,7 @@
               <name>j</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>61</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1012,7 +1012,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>61</second>
+                      <second>60</second>
                     </item>
                     <item>
                       <first>
@@ -1050,10 +1050,10 @@
             <Obj>
               <type>0</type>
               <id>36</id>
-              <name>_ln60</name>
+              <name>_ln59</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>60</lineNumber>
+              <lineNumber>59</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1068,7 +1068,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>60</second>
+                      <second>59</second>
                     </item>
                     <item>
                       <first>
@@ -1107,10 +1107,10 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>zext_ln61_2</name>
+              <name>zext_ln60_2</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>61</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1125,7 +1125,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>61</second>
+                      <second>60</second>
                     </item>
                     <item>
                       <first>
@@ -1138,7 +1138,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln61_2_fu_258_p1</rtlName>
+              <rtlName>zext_ln60_2_fu_258_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -1162,10 +1162,10 @@
             <Obj>
               <type>0</type>
               <id>39</id>
-              <name>add_ln61_1</name>
+              <name>add_ln60_1</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>61</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1180,7 +1180,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>61</second>
+                      <second>60</second>
                     </item>
                     <item>
                       <first>
@@ -1193,7 +1193,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln61_1_fu_262_p2</rtlName>
+              <rtlName>add_ln60_1_fu_262_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -1218,10 +1218,10 @@
             <Obj>
               <type>0</type>
               <id>40</id>
-              <name>zext_ln61</name>
+              <name>zext_ln60</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>61</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1236,7 +1236,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>61</second>
+                      <second>60</second>
                     </item>
                     <item>
                       <first>
@@ -1249,7 +1249,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln61_fu_268_p1</rtlName>
+              <rtlName>zext_ln60_fu_268_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1276,7 +1276,7 @@
               <name>Layer4_Weights_CPU_a_1</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>61</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1291,7 +1291,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>61</second>
+                      <second>60</second>
                     </item>
                     <item>
                       <first>
@@ -1333,7 +1333,7 @@
               <name>Layer4_Weights_CPU_l</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>61</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1348,7 +1348,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>61</second>
+                      <second>60</second>
                     </item>
                     <item>
                       <first>
@@ -1364,7 +1364,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>16</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -1385,10 +1385,10 @@
             <Obj>
               <type>0</type>
               <id>43</id>
-              <name>zext_ln61_1</name>
+              <name>zext_ln60_1</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>61</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1403,7 +1403,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>61</second>
+                      <second>60</second>
                     </item>
                     <item>
                       <first>
@@ -1416,7 +1416,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln61_1_fu_273_p1</rtlName>
+              <rtlName>zext_ln60_1_fu_273_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1443,7 +1443,7 @@
               <name>Layer4_Neurons_CPU_a</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>61</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1458,7 +1458,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>61</second>
+                      <second>60</second>
                     </item>
                     <item>
                       <first>
@@ -1500,7 +1500,7 @@
               <name>Layer4_Neurons_CPU_l</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>61</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1515,7 +1515,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>61</second>
+                      <second>60</second>
                     </item>
                     <item>
                       <first>
@@ -1531,7 +1531,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>16</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -1555,7 +1555,7 @@
               <name>tmp_3_i</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>61</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1570,7 +1570,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>61</second>
+                      <second>60</second>
                     </item>
                     <item>
                       <first>
@@ -1583,10 +1583,10 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>nerons_fmul_32ns_32ns_32_4_max_dsp_1_U46</rtlName>
+              <rtlName>nerons_hmul_16ns_16ns_16_4_max_dsp_1_U48</rtlName>
               <coreName/>
             </Obj>
-            <bitwidth>32</bitwidth>
+            <bitwidth>16</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -1594,12 +1594,12 @@
             <item>133</item>
             <item>134</item>
           </oprand_edges>
-          <opcode>fmul</opcode>
+          <opcode>hmul</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>5.70</m_delay>
+          <m_delay>6.86</m_delay>
           <m_topoIndex>31</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1609,62 +1609,6 @@
               <type>0</type>
               <id>47</id>
               <name>somme_1</name>
-              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
-              <fileDirectory>..</fileDirectory>
-              <lineNumber>61</lineNumber>
-              <contextFuncName>calculateLayer5</contextFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</first>
-                  <second>
-                    <count>2</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
-                        <second>calculateLayer5</second>
-                      </first>
-                      <second>61</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
-                        <second>nerons</second>
-                      </first>
-                      <second>12</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName>somme</originalName>
-              <rtlName>nerons_fadd_32ns_32ns_32_5_full_dsp_1_U45</rtlName>
-              <coreName/>
-            </Obj>
-            <bitwidth>32</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>135</item>
-            <item>136</item>
-          </oprand_edges>
-          <opcode>fadd</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>7.25</m_delay>
-          <m_topoIndex>32</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_33">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>48</id>
-              <name>_ln60</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>60</lineNumber>
@@ -1683,6 +1627,62 @@
                         <second>calculateLayer5</second>
                       </first>
                       <second>60</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <second>nerons</second>
+                      </first>
+                      <second>12</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName>somme</originalName>
+              <rtlName>nerons_hadd_16ns_16ns_16_5_full_dsp_1_U47</rtlName>
+              <coreName/>
+            </Obj>
+            <bitwidth>16</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>135</item>
+            <item>136</item>
+          </oprand_edges>
+          <opcode>hadd</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>7.61</m_delay>
+          <m_topoIndex>32</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_33">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>48</id>
+              <name>_ln59</name>
+              <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>59</lineNumber>
+              <contextFuncName>calculateLayer5</contextFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</first>
+                  <second>
+                    <count>2</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>hlsed_neurons/solution1/.tcls/345.c</first>
+                        <second>calculateLayer5</second>
+                      </first>
+                      <second>59</second>
                     </item>
                     <item>
                       <first>
@@ -1722,7 +1722,7 @@
               <name>tmp_i</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>62</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1737,7 +1737,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>62</second>
+                      <second>61</second>
                     </item>
                     <item>
                       <first>
@@ -1750,7 +1750,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>nerons_fpext_32ns_64_2_1_U47</rtlName>
+              <rtlName>nerons_hptodp_16ns_64_2_1_U49</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1760,12 +1760,12 @@
             <item_version>0</item_version>
             <item>138</item>
           </oprand_edges>
-          <opcode>fpext</opcode>
+          <opcode>hptodp</opcode>
           <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>4.43</m_delay>
+          <m_delay>3.43</m_delay>
           <m_topoIndex>30</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1777,7 +1777,7 @@
               <name>x_assign</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>62</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1792,7 +1792,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>62</second>
+                      <second>61</second>
                     </item>
                     <item>
                       <first>
@@ -1805,7 +1805,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>x</originalName>
-              <rtlName>nerons_dmul_64ns_64ns_64_6_max_dsp_1_U48</rtlName>
+              <rtlName>nerons_dmul_64ns_64ns_64_6_max_dsp_1_U46</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1848,7 +1848,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>62</second>
+                      <second>61</second>
                     </item>
                     <item>
                       <first>
@@ -1906,7 +1906,7 @@
               <name>tmp_2_i</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>62</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1921,7 +1921,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>62</second>
+                      <second>61</second>
                     </item>
                     <item>
                       <first>
@@ -1934,7 +1934,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>nerons_dmul_64ns_64ns_64_6_max_dsp_1_U48</rtlName>
+              <rtlName>nerons_dmul_64ns_64ns_64_6_max_dsp_1_U46</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1959,10 +1959,10 @@
             <Obj>
               <type>0</type>
               <id>54</id>
-              <name>zext_ln62</name>
+              <name>zext_ln61</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>62</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1977,7 +1977,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>62</second>
+                      <second>61</second>
                     </item>
                     <item>
                       <first>
@@ -1990,7 +1990,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln62_fu_278_p1</rtlName>
+              <rtlName>zext_ln61_fu_278_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -2017,7 +2017,7 @@
               <name>Layer5_Neurons_CPU_a</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>62</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2032,7 +2032,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>62</second>
+                      <second>61</second>
                     </item>
                     <item>
                       <first>
@@ -2071,10 +2071,10 @@
             <Obj>
               <type>0</type>
               <id>56</id>
-              <name>Layer5_Neurons_CPU_a_write_ln62</name>
+              <name>Layer5_Neurons_CPU_a_write_ln61</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>62</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2089,7 +2089,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>62</second>
+                      <second>61</second>
                     </item>
                     <item>
                       <first>
@@ -2127,10 +2127,10 @@
             <Obj>
               <type>0</type>
               <id>57</id>
-              <name>_ln58</name>
+              <name>_ln57</name>
               <fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>58</lineNumber>
+              <lineNumber>57</lineNumber>
               <contextFuncName>calculateLayer5</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2145,7 +2145,7 @@
                         <first>hlsed_neurons/solution1/.tcls/345.c</first>
                         <second>calculateLayer5</second>
                       </first>
-                      <second>58</second>
+                      <second>57</second>
                     </item>
                     <item>
                       <first>
@@ -3499,8 +3499,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>2832706</mMinLatency>
-        <mMaxLatency>2933346</mMaxLatency>
+        <mMinLatency>2769056</mMinLatency>
+        <mMaxLatency>2869696</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -3521,8 +3521,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>2821505</mMinLatency>
-        <mMaxLatency>2921405</mMaxLatency>
+        <mMinLatency>2757855</mMinLatency>
+        <mMaxLatency>2857755</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -4777,11 +4777,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>9838</second>
+              <second>9687</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>13552</second>
+              <second>12402</second>
             </item>
           </second>
         </item>
@@ -4792,19 +4792,19 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>271</second>
+              <second>143</second>
             </item>
             <item>
               <first>DSP48E</first>
-              <second>35</second>
+              <second>34</second>
             </item>
             <item>
               <first>FF</first>
-              <second>9360</second>
+              <second>9123</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>12617</second>
+              <second>11616</second>
             </item>
           </second>
         </item>
@@ -4832,7 +4832,7 @@
           </second>
         </item>
         <item>
-          <first>nerons_dmul_64ns_64ns_64_6_max_dsp_1_U48 (nerons_dmul_64ns_64ns_64_6_max_dsp_1)</first>
+          <first>nerons_dmul_64ns_64ns_64_6_max_dsp_1_U46 (nerons_dmul_64ns_64ns_64_6_max_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4851,7 +4851,7 @@
           </second>
         </item>
         <item>
-          <first>nerons_fadd_32ns_32ns_32_5_full_dsp_1_U45 (nerons_fadd_32ns_32ns_32_5_full_dsp_1)</first>
+          <first>nerons_hadd_16ns_16ns_16_5_full_dsp_1_U47 (nerons_hadd_16ns_16ns_16_5_full_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4861,35 +4861,35 @@
             </item>
             <item>
               <first>FF</first>
-              <second>205</second>
+              <second>109</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>390</second>
+              <second>116</second>
             </item>
           </second>
         </item>
         <item>
-          <first>nerons_fmul_32ns_32ns_32_4_max_dsp_1_U46 (nerons_fmul_32ns_32ns_32_4_max_dsp_1)</first>
+          <first>nerons_hmul_16ns_16ns_16_4_max_dsp_1_U48 (nerons_hmul_16ns_16ns_16_4_max_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
             <item>
               <first>DSP48E</first>
-              <second>3</second>
+              <second>2</second>
             </item>
             <item>
               <first>FF</first>
-              <second>143</second>
+              <second>91</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>321</second>
+              <second>36</second>
             </item>
           </second>
         </item>
         <item>
-          <first>nerons_fpext_32ns_64_2_1_U47 (nerons_fpext_32ns_64_2_1)</first>
+          <first>nerons_hptodp_16ns_64_2_1_U49 (nerons_hptodp_16ns_64_2_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -4899,11 +4899,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>100</second>
+              <second>55</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>138</second>
+              <second>9</second>
             </item>
           </second>
         </item>
@@ -4912,7 +4912,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln58_fu_223_p2 ( + ) </first>
+          <first>add_ln57_fu_223_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4935,7 +4935,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln61_1_fu_262_p2 ( + ) </first>
+          <first>add_ln60_1_fu_262_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4981,7 +4981,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln58_fu_229_p2 ( icmp ) </first>
+          <first>icmp_ln57_fu_229_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -5004,7 +5004,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln60_fu_246_p2 ( icmp ) </first>
+          <first>icmp_ln59_fu_246_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -5068,7 +5068,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>32</second>
+              <second>16</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -5076,11 +5076,11 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>40000</second>
+              <second>20000</second>
             </item>
             <item>
               <first>BRAM</first>
-              <second>4</second>
+              <second>2</second>
             </item>
             <item>
               <first>FF</first>
@@ -5107,7 +5107,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>32</second>
+              <second>16</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -5115,7 +5115,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>3200</second>
+              <second>1600</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -5146,7 +5146,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>32</second>
+              <second>16</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -5154,11 +5154,11 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>32320</second>
+              <second>16160</second>
             </item>
             <item>
               <first>BRAM</first>
-              <second>2</second>
+              <second>1</second>
             </item>
             <item>
               <first>FF</first>
@@ -5359,7 +5359,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fu_211_p0</first>
+          <first>grp_fu_198_p0</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -5382,7 +5382,7 @@
           </second>
         </item>
         <item>
-          <first>grp_fu_211_p1</first>
+          <first>grp_fu_198_p1</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -5484,11 +5484,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>32</second>
+              <second>16</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>64</second>
+              <second>32</second>
             </item>
             <item>
               <first>LUT</first>
@@ -5507,7 +5507,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>32</second>
+              <second>16</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -5515,7 +5515,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>32</second>
+              <second>16</second>
             </item>
           </second>
         </item>
@@ -5526,7 +5526,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>32</second>
+              <second>16</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -5534,12 +5534,12 @@
             </item>
             <item>
               <first>FF</first>
-              <second>32</second>
+              <second>16</second>
             </item>
           </second>
         </item>
         <item>
-          <first>add_ln58_reg_283</first>
+          <first>add_ln57_reg_283</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5754,7 +5754,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>32</second>
+              <second>16</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -5762,7 +5762,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>32</second>
+              <second>16</second>
             </item>
           </second>
         </item>
@@ -5773,7 +5773,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>32</second>
+              <second>16</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -5781,7 +5781,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>32</second>
+              <second>16</second>
             </item>
           </second>
         </item>
@@ -5849,28 +5849,28 @@
           </second>
         </item>
         <item>
-          <first>nerons_dmul_64ns_64ns_64_6_max_dsp_1_U48</first>
+          <first>nerons_dmul_64ns_64ns_64_6_max_dsp_1_U46</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>nerons_fadd_32ns_32ns_32_5_full_dsp_1_U45</first>
+          <first>nerons_hadd_16ns_16ns_16_5_full_dsp_1_U47</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>nerons_fmul_32ns_32ns_32_4_max_dsp_1_U46</first>
+          <first>nerons_hmul_16ns_16ns_16_4_max_dsp_1_U48</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>nerons_fpext_32ns_64_2_1_U47</first>
+          <first>nerons_hptodp_16ns_64_2_1_U49</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -5905,7 +5905,7 @@
           </second>
         </item>
         <item>
-          <first>nerons_dmul_64ns_64ns_64_6_max_dsp_1_U48 (nerons_dmul_64ns_64ns_64_6_max_dsp_1)</first>
+          <first>nerons_dmul_64ns_64ns_64_6_max_dsp_1_U46 (nerons_dmul_64ns_64ns_64_6_max_dsp_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -5914,7 +5914,7 @@
           </second>
         </item>
         <item>
-          <first>nerons_fadd_32ns_32ns_32_5_full_dsp_1_U45 (nerons_fadd_32ns_32ns_32_5_full_dsp_1)</first>
+          <first>nerons_hadd_16ns_16ns_16_5_full_dsp_1_U47 (nerons_hadd_16ns_16ns_16_5_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5922,7 +5922,7 @@
           </second>
         </item>
         <item>
-          <first>nerons_fmul_32ns_32ns_32_4_max_dsp_1_U46 (nerons_fmul_32ns_32ns_32_4_max_dsp_1)</first>
+          <first>nerons_hmul_16ns_16ns_16_4_max_dsp_1_U48 (nerons_hmul_16ns_16ns_16_4_max_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5930,7 +5930,7 @@
           </second>
         </item>
         <item>
-          <first>nerons_fpext_32ns_64_2_1_U47 (nerons_fpext_32ns_64_2_1)</first>
+          <first>nerons_hptodp_16ns_64_2_1_U49 (nerons_hptodp_16ns_64_2_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5942,7 +5942,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln58_fu_223_p2 ( + ) </first>
+          <first>add_ln57_fu_223_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5950,7 +5950,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln61_1_fu_262_p2 ( + ) </first>
+          <first>add_ln60_1_fu_262_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5966,7 +5966,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln58_fu_229_p2 ( icmp ) </first>
+          <first>icmp_ln57_fu_229_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5974,7 +5974,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln60_fu_246_p2 ( icmp ) </first>
+          <first>icmp_ln59_fu_246_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6505,38 +6505,6 @@
       <item>
         <first>198</first>
         <second>
-          <count>5</count>
-          <item_version>0</item_version>
-          <item>47</item>
-          <item>47</item>
-          <item>47</item>
-          <item>47</item>
-          <item>47</item>
-        </second>
-      </item>
-      <item>
-        <first>203</first>
-        <second>
-          <count>4</count>
-          <item_version>0</item_version>
-          <item>46</item>
-          <item>46</item>
-          <item>46</item>
-          <item>46</item>
-        </second>
-      </item>
-      <item>
-        <first>207</first>
-        <second>
-          <count>2</count>
-          <item_version>0</item_version>
-          <item>50</item>
-          <item>50</item>
-        </second>
-      </item>
-      <item>
-        <first>211</first>
-        <second>
           <count>12</count>
           <item_version>0</item_version>
           <item>51</item>
@@ -6551,6 +6519,38 @@
           <item>53</item>
           <item>53</item>
           <item>53</item>
+        </second>
+      </item>
+      <item>
+        <first>204</first>
+        <second>
+          <count>5</count>
+          <item_version>0</item_version>
+          <item>47</item>
+          <item>47</item>
+          <item>47</item>
+          <item>47</item>
+          <item>47</item>
+        </second>
+      </item>
+      <item>
+        <first>209</first>
+        <second>
+          <count>4</count>
+          <item_version>0</item_version>
+          <item>46</item>
+          <item>46</item>
+          <item>46</item>
+          <item>46</item>
+        </second>
+      </item>
+      <item>
+        <first>213</first>
+        <second>
+          <count>2</count>
+          <item_version>0</item_version>
+          <item>50</item>
+          <item>50</item>
         </second>
       </item>
       <item>
@@ -6694,7 +6694,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln58_fu_223</first>
+        <first>add_ln57_fu_223</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6702,7 +6702,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln61_1_fu_262</first>
+        <first>add_ln60_1_fu_262</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6726,7 +6726,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln58_fu_229</first>
+        <first>icmp_ln57_fu_229</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6734,7 +6734,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln60_fu_246</first>
+        <first>icmp_ln59_fu_246</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6774,7 +6774,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln59_fu_241</first>
+        <first>zext_ln58_fu_241</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6782,7 +6782,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln61_1_fu_273</first>
+        <first>zext_ln60_1_fu_273</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6790,7 +6790,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln61_2_fu_258</first>
+        <first>zext_ln60_2_fu_258</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6798,7 +6798,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln61_fu_268</first>
+        <first>zext_ln60_fu_268</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6806,7 +6806,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln62_fu_278</first>
+        <first>zext_ln61_fu_278</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6838,38 +6838,6 @@
       <item>
         <first>grp_fu_198</first>
         <second>
-          <count>5</count>
-          <item_version>0</item_version>
-          <item>47</item>
-          <item>47</item>
-          <item>47</item>
-          <item>47</item>
-          <item>47</item>
-        </second>
-      </item>
-      <item>
-        <first>grp_fu_203</first>
-        <second>
-          <count>4</count>
-          <item_version>0</item_version>
-          <item>46</item>
-          <item>46</item>
-          <item>46</item>
-          <item>46</item>
-        </second>
-      </item>
-      <item>
-        <first>grp_fu_207</first>
-        <second>
-          <count>2</count>
-          <item_version>0</item_version>
-          <item>50</item>
-          <item>50</item>
-        </second>
-      </item>
-      <item>
-        <first>grp_fu_211</first>
-        <second>
           <count>12</count>
           <item_version>0</item_version>
           <item>51</item>
@@ -6884,6 +6852,38 @@
           <item>53</item>
           <item>53</item>
           <item>53</item>
+        </second>
+      </item>
+      <item>
+        <first>grp_fu_204</first>
+        <second>
+          <count>5</count>
+          <item_version>0</item_version>
+          <item>47</item>
+          <item>47</item>
+          <item>47</item>
+          <item>47</item>
+          <item>47</item>
+        </second>
+      </item>
+      <item>
+        <first>grp_fu_209</first>
+        <second>
+          <count>4</count>
+          <item_version>0</item_version>
+          <item>46</item>
+          <item>46</item>
+          <item>46</item>
+          <item>46</item>
+        </second>
+      </item>
+      <item>
+        <first>grp_fu_213</first>
+        <second>
+          <count>2</count>
+          <item_version>0</item_version>
+          <item>50</item>
+          <item>50</item>
         </second>
       </item>
       <item>
@@ -7210,7 +7210,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln58_reg_283</first>
+        <first>add_ln57_reg_283</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

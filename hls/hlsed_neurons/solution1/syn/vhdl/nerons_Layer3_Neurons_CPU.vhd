@@ -10,7 +10,7 @@ use ieee.std_logic_unsigned.all;
 entity nerons_Layer3_Neurons_CPU_ram is 
     generic(
             MEM_TYPE    : string := "block"; 
-            DWIDTH     : integer := 32; 
+            DWIDTH     : integer := 16; 
             AWIDTH     : integer := 11; 
             MEM_SIZE    : integer := 1250
     ); 
@@ -71,7 +71,7 @@ use IEEE.std_logic_1164.all;
 
 entity nerons_Layer3_Neurons_CPU is
     generic (
-        DataWidth : INTEGER := 32;
+        DataWidth : INTEGER := 16;
         AddressRange : INTEGER := 1250;
         AddressWidth : INTEGER := 11);
     port (

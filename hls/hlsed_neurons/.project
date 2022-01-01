@@ -37,6 +37,11 @@
 			<location>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/.apc/.tb</location>
 		</link>
 		<link>
+			<name>.reference/hls_half.h</name>
+			<type>1</type>
+			<location>/opt/xilinx/Vivado/2019.1/include/hls_half.h</location>
+		</link>
+		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls/hlsed_neurons/solution1/.tcls</location>

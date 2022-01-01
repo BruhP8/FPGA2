@@ -16,8 +16,9 @@
 
 // img size was here
 
-void calculateLayer1(float* input, float* Layer1_Neurons_CPU);
-void calculateLayer2(float* Layer1_Neurons_CPU, float* Layer1_Weights_CPU, float* Layer2_Neurons_CPU);
+
+void calculateLayer1(half* input, half* Layer1_Neurons_CPU);
+void calculateLayer2(half* Layer1_Neurons_CPU, half* Layer1_Weights_CPU, half* Layer2_Neurons_CPU);
 
 
 int main(int argc, char** argv){
@@ -26,7 +27,7 @@ int main(int argc, char** argv){
 	//for(int i=0;i<DELAY;i++);
 
 	// neurons array were here
-	float
+	half
 	  Layer1_Neurons_CPU[IMGWIDTH*IMGHEIGHT];
 
 	int i;
@@ -34,7 +35,7 @@ int main(int argc, char** argv){
 	double scoremax;
 
 
-	float Input[29*29] = {
+	half Input[29*29] = {
 
 	// caractère "2"
 
@@ -154,12 +155,12 @@ int main(int argc, char** argv){
     	printf("Le resultat est : %d \n\r",indexmax);
 }
 
-void calculateLayer1(float* input, float* Layer1_Neurons_CPU){
-	memcpy(Layer1_Neurons_CPU, input, IMGWIDTH*IMGHEIGHT*sizeof(float));
+void calculateLayer1(half* input, half* Layer1_Neurons_CPU){
+	memcpy(Layer1_Neurons_CPU, input, IMGWIDTH*IMGHEIGHT*sizeof(half));
 }
 
-void calculateLayer2(float* Layer1_Neurons_CPU, float* Layer1_Weights_CPU, float* Layer2_Neurons_CPU){
-		float somme;
+void calculateLayer2(half* Layer1_Neurons_CPU, half* Layer1_Weights_CPU, half* Layer2_Neurons_CPU){
+		half somme;
 	int i,j,k,m,n;
 	for(i=0;i<6;i++)
 		for(j=0;j<13;j++)
@@ -168,6 +169,6 @@ void calculateLayer2(float* Layer1_Neurons_CPU, float* Layer1_Weights_CPU, float
 				for(m=0;m<5;m++)
 					for(n=0;n<5;n++)
 						somme += Layer1_Weights_CPU[26*i+5*m+n+1] * Layer1_Neurons_CPU[29*(m+2*j)+n+2*k];
-				Layer2_Neurons_CPU[13*13*i+13*j+k] = (float) SIGMOID(somme);
+				Layer2_Neurons_CPU[13*13*i+13*j+k] = (half) SIGMOID(somme);
 			}
 }

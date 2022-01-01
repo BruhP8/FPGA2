@@ -28,7 +28,7 @@
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>16</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -102,7 +102,7 @@
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>16</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -136,7 +136,7 @@
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>16</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -267,10 +267,10 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>_ln58</name>
+						<name>_ln57</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>58</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -285,7 +285,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>58</second>
+										<second>57</second>
 									</item>
 									<item>
 										<first>
@@ -362,7 +362,7 @@
 						<name>phi_mul</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>58</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -377,7 +377,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>58</second>
+										<second>57</second>
 									</item>
 									<item>
 										<first>
@@ -417,10 +417,10 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>add_ln58</name>
+						<name>add_ln57</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>58</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -435,7 +435,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>58</second>
+										<second>57</second>
 									</item>
 									<item>
 										<first>
@@ -473,10 +473,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>icmp_ln58</name>
+						<name>icmp_ln57</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>58</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -491,7 +491,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>58</second>
+										<second>57</second>
 									</item>
 									<item>
 										<first>
@@ -532,7 +532,7 @@
 						<name>i</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>58</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -547,7 +547,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>58</second>
+										<second>57</second>
 									</item>
 									<item>
 										<first>
@@ -585,10 +585,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>_ln58</name>
+						<name>_ln57</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>58</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -603,7 +603,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>58</second>
+										<second>57</second>
 									</item>
 									<item>
 										<first>
@@ -642,10 +642,10 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>zext_ln59</name>
+						<name>zext_ln58</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>59</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -660,7 +660,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>59</second>
+										<second>58</second>
 									</item>
 									<item>
 										<first>
@@ -700,7 +700,7 @@
 						<name>Layer4_Weights_CPU_a</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>59</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -715,7 +715,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>59</second>
+										<second>58</second>
 									</item>
 									<item>
 										<first>
@@ -757,7 +757,7 @@
 						<name>somme</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>59</lineNumber>
+						<lineNumber>58</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -772,7 +772,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>59</second>
+										<second>58</second>
 									</item>
 									<item>
 										<first>
@@ -788,7 +788,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>16</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -809,10 +809,10 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>_ln60</name>
+						<name>_ln59</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -827,7 +827,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>60</second>
+										<second>59</second>
 									</item>
 									<item>
 										<first>
@@ -877,7 +877,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>16</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -938,10 +938,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>icmp_ln60</name>
+						<name>icmp_ln59</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -956,7 +956,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>60</second>
+										<second>59</second>
 									</item>
 									<item>
 										<first>
@@ -997,7 +997,7 @@
 						<name>j</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>60</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1012,7 +1012,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>61</second>
+										<second>60</second>
 									</item>
 									<item>
 										<first>
@@ -1050,10 +1050,10 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>_ln60</name>
+						<name>_ln59</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>60</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1068,7 +1068,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>60</second>
+										<second>59</second>
 									</item>
 									<item>
 										<first>
@@ -1107,10 +1107,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>zext_ln61_2</name>
+						<name>zext_ln60_2</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>60</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1125,7 +1125,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>61</second>
+										<second>60</second>
 									</item>
 									<item>
 										<first>
@@ -1162,10 +1162,10 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>add_ln61_1</name>
+						<name>add_ln60_1</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>60</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1180,7 +1180,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>61</second>
+										<second>60</second>
 									</item>
 									<item>
 										<first>
@@ -1218,10 +1218,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>zext_ln61</name>
+						<name>zext_ln60</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>60</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1236,7 +1236,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>61</second>
+										<second>60</second>
 									</item>
 									<item>
 										<first>
@@ -1276,7 +1276,7 @@
 						<name>Layer4_Weights_CPU_a_1</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>60</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1291,7 +1291,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>61</second>
+										<second>60</second>
 									</item>
 									<item>
 										<first>
@@ -1333,7 +1333,7 @@
 						<name>Layer4_Weights_CPU_l</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>60</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1348,7 +1348,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>61</second>
+										<second>60</second>
 									</item>
 									<item>
 										<first>
@@ -1364,7 +1364,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>16</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1385,10 +1385,10 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>zext_ln61_1</name>
+						<name>zext_ln60_1</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>60</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1403,7 +1403,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>61</second>
+										<second>60</second>
 									</item>
 									<item>
 										<first>
@@ -1443,7 +1443,7 @@
 						<name>Layer4_Neurons_CPU_a</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>60</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1458,7 +1458,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>61</second>
+										<second>60</second>
 									</item>
 									<item>
 										<first>
@@ -1500,7 +1500,7 @@
 						<name>Layer4_Neurons_CPU_l</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>60</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1515,7 +1515,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>61</second>
+										<second>60</second>
 									</item>
 									<item>
 										<first>
@@ -1531,7 +1531,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>16</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1555,7 +1555,7 @@
 						<name>tmp_3_i</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>61</lineNumber>
+						<lineNumber>60</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1570,7 +1570,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>61</second>
+										<second>60</second>
 									</item>
 									<item>
 										<first>
@@ -1586,7 +1586,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>16</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1594,12 +1594,12 @@
 					<item>133</item>
 					<item>134</item>
 				</oprand_edges>
-				<opcode>fmul</opcode>
+				<opcode>hmul</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>5.70</m_delay>
+				<m_delay>6.86</m_delay>
 				<m_topoIndex>31</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1609,62 +1609,6 @@
 						<type>0</type>
 						<id>47</id>
 						<name>somme_1</name>
-						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
-						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>61</lineNumber>
-						<contextFuncName>calculateLayer5</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>hlsed_neurons/solution1/.tcls/345.c</first>
-											<second>calculateLayer5</second>
-										</first>
-										<second>61</second>
-									</item>
-									<item>
-										<first>
-											<first>hlsed_neurons/solution1/.tcls/345.c</first>
-											<second>nerons</second>
-										</first>
-										<second>12</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>somme</originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>135</item>
-					<item>136</item>
-				</oprand_edges>
-				<opcode>fadd</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>7.25</m_delay>
-				<m_topoIndex>32</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_33">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>48</id>
-						<name>_ln60</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
 						<lineNumber>60</lineNumber>
@@ -1683,6 +1627,62 @@
 											<second>calculateLayer5</second>
 										</first>
 										<second>60</second>
+									</item>
+									<item>
+										<first>
+											<first>hlsed_neurons/solution1/.tcls/345.c</first>
+											<second>nerons</second>
+										</first>
+										<second>12</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>somme</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>16</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>135</item>
+					<item>136</item>
+				</oprand_edges>
+				<opcode>hadd</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>7.61</m_delay>
+				<m_topoIndex>32</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_33">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>48</id>
+						<name>_ln59</name>
+						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
+						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>calculateLayer5</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</first>
+								<second>
+									<count>2</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>hlsed_neurons/solution1/.tcls/345.c</first>
+											<second>calculateLayer5</second>
+										</first>
+										<second>59</second>
 									</item>
 									<item>
 										<first>
@@ -1722,7 +1722,7 @@
 						<name>tmp_i</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1737,7 +1737,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>62</second>
+										<second>61</second>
 									</item>
 									<item>
 										<first>
@@ -1760,12 +1760,12 @@
 					<item_version>0</item_version>
 					<item>138</item>
 				</oprand_edges>
-				<opcode>fpext</opcode>
+				<opcode>hptodp</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>4.43</m_delay>
+				<m_delay>3.43</m_delay>
 				<m_topoIndex>30</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1777,7 +1777,7 @@
 						<name>x_assign</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1792,7 +1792,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>62</second>
+										<second>61</second>
 									</item>
 									<item>
 										<first>
@@ -1848,7 +1848,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>62</second>
+										<second>61</second>
 									</item>
 									<item>
 										<first>
@@ -1906,7 +1906,7 @@
 						<name>tmp_2_i</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1921,7 +1921,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>62</second>
+										<second>61</second>
 									</item>
 									<item>
 										<first>
@@ -1959,10 +1959,10 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>zext_ln62</name>
+						<name>zext_ln61</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1977,7 +1977,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>62</second>
+										<second>61</second>
 									</item>
 									<item>
 										<first>
@@ -2017,7 +2017,7 @@
 						<name>Layer5_Neurons_CPU_a</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2032,7 +2032,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>62</second>
+										<second>61</second>
 									</item>
 									<item>
 										<first>
@@ -2071,10 +2071,10 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>Layer5_Neurons_CPU_a_write_ln62</name>
+						<name>Layer5_Neurons_CPU_a_write_ln61</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>62</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2089,7 +2089,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>62</second>
+										<second>61</second>
 									</item>
 									<item>
 										<first>
@@ -2127,10 +2127,10 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>_ln58</name>
+						<name>_ln57</name>
 						<fileName>hlsed_neurons/solution1/.tcls/345.c</fileName>
 						<fileDirectory>/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls</fileDirectory>
-						<lineNumber>58</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>calculateLayer5</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2145,7 +2145,7 @@
 											<first>hlsed_neurons/solution1/.tcls/345.c</first>
 											<second>calculateLayer5</second>
 										</first>
-										<second>58</second>
+										<second>57</second>
 									</item>
 									<item>
 										<first>
@@ -3499,8 +3499,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>2832706</mMinLatency>
-			<mMaxLatency>2933346</mMaxLatency>
+			<mMinLatency>2769056</mMinLatency>
+			<mMaxLatency>2869696</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -3521,8 +3521,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>2821505</mMinLatency>
-			<mMaxLatency>2921405</mMaxLatency>
+			<mMinLatency>2757855</mMinLatency>
+			<mMaxLatency>2857755</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5241,38 +5241,6 @@
 		<item>
 			<first>198</first>
 			<second>
-				<count>5</count>
-				<item_version>0</item_version>
-				<item>47</item>
-				<item>47</item>
-				<item>47</item>
-				<item>47</item>
-				<item>47</item>
-			</second>
-		</item>
-		<item>
-			<first>203</first>
-			<second>
-				<count>4</count>
-				<item_version>0</item_version>
-				<item>46</item>
-				<item>46</item>
-				<item>46</item>
-				<item>46</item>
-			</second>
-		</item>
-		<item>
-			<first>207</first>
-			<second>
-				<count>2</count>
-				<item_version>0</item_version>
-				<item>50</item>
-				<item>50</item>
-			</second>
-		</item>
-		<item>
-			<first>211</first>
-			<second>
 				<count>12</count>
 				<item_version>0</item_version>
 				<item>51</item>
@@ -5287,6 +5255,38 @@
 				<item>53</item>
 				<item>53</item>
 				<item>53</item>
+			</second>
+		</item>
+		<item>
+			<first>204</first>
+			<second>
+				<count>5</count>
+				<item_version>0</item_version>
+				<item>47</item>
+				<item>47</item>
+				<item>47</item>
+				<item>47</item>
+				<item>47</item>
+			</second>
+		</item>
+		<item>
+			<first>209</first>
+			<second>
+				<count>4</count>
+				<item_version>0</item_version>
+				<item>46</item>
+				<item>46</item>
+				<item>46</item>
+				<item>46</item>
+			</second>
+		</item>
+		<item>
+			<first>213</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>50</item>
+				<item>50</item>
 			</second>
 		</item>
 		<item>
@@ -5430,7 +5430,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln58_fu_223</first>
+			<first>add_ln57_fu_223</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5438,7 +5438,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln61_1_fu_262</first>
+			<first>add_ln60_1_fu_262</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5462,7 +5462,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln58_fu_229</first>
+			<first>icmp_ln57_fu_229</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5470,7 +5470,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln60_fu_246</first>
+			<first>icmp_ln59_fu_246</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5510,7 +5510,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln59_fu_241</first>
+			<first>zext_ln58_fu_241</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5518,7 +5518,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln61_1_fu_273</first>
+			<first>zext_ln60_1_fu_273</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5526,7 +5526,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln61_2_fu_258</first>
+			<first>zext_ln60_2_fu_258</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5534,7 +5534,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln61_fu_268</first>
+			<first>zext_ln60_fu_268</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5542,7 +5542,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln62_fu_278</first>
+			<first>zext_ln61_fu_278</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5574,38 +5574,6 @@
 		<item>
 			<first>grp_fu_198</first>
 			<second>
-				<count>5</count>
-				<item_version>0</item_version>
-				<item>47</item>
-				<item>47</item>
-				<item>47</item>
-				<item>47</item>
-				<item>47</item>
-			</second>
-		</item>
-		<item>
-			<first>grp_fu_203</first>
-			<second>
-				<count>4</count>
-				<item_version>0</item_version>
-				<item>46</item>
-				<item>46</item>
-				<item>46</item>
-				<item>46</item>
-			</second>
-		</item>
-		<item>
-			<first>grp_fu_207</first>
-			<second>
-				<count>2</count>
-				<item_version>0</item_version>
-				<item>50</item>
-				<item>50</item>
-			</second>
-		</item>
-		<item>
-			<first>grp_fu_211</first>
-			<second>
 				<count>12</count>
 				<item_version>0</item_version>
 				<item>51</item>
@@ -5620,6 +5588,38 @@
 				<item>53</item>
 				<item>53</item>
 				<item>53</item>
+			</second>
+		</item>
+		<item>
+			<first>grp_fu_204</first>
+			<second>
+				<count>5</count>
+				<item_version>0</item_version>
+				<item>47</item>
+				<item>47</item>
+				<item>47</item>
+				<item>47</item>
+				<item>47</item>
+			</second>
+		</item>
+		<item>
+			<first>grp_fu_209</first>
+			<second>
+				<count>4</count>
+				<item_version>0</item_version>
+				<item>46</item>
+				<item>46</item>
+				<item>46</item>
+				<item>46</item>
+			</second>
+		</item>
+		<item>
+			<first>grp_fu_213</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>50</item>
+				<item>50</item>
 			</second>
 		</item>
 		<item>
@@ -5946,7 +5946,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln58_reg_283</first>
+			<first>add_ln57_reg_283</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

@@ -1181,13 +1181,89 @@ enum
       4
   };
 # 2 "hlsed_neurons/solution1/.tcls/345.h" 2
+# 1 "/opt/xilinx/Vivado/2019.1/common/technology/autopilot/hls_half.h" 1
+# 37 "/opt/xilinx/Vivado/2019.1/common/technology/autopilot/hls_half.h"
+typedef __fp16 half;
+# 3274 "/opt/xilinx/Vivado/2019.1/common/technology/autopilot/hls_half.h"
+extern half half_nan(const char *tagp);
+
+
+
+
+
+extern half half_atan(half t);
+extern half half_atan2(half y, half x);
+extern half half_copysign(half x, half y);
+
+extern half half_fabs(half x);
+
+extern half half_abs(half x);
+extern half half_fma(half x, half y, half z);
+extern half half_mad(half x, half y, half z);
+extern half half_frexp (half x, int* exp);
+extern half half_ldexp (half x, int exp);
+extern half half_fmax(half x, half y);
+
+extern half half_fmin(half x, half y);
+
+extern half half_asin(half t_in);
+extern half half_acos(half t_in);
+extern half half_sin(half t_in);
+extern half half_cos(half t_in);
+extern void half_sincos(half x, half *sin, half *cos);
+extern half half_sinh(half t_in);
+extern half half_cosh(half t_in);
+extern half half_sinpi(half t_in);
+extern half half_cospi(half t_in);
+extern half half_recip(half x);
+extern half half_sqrt(half x);
+extern half half_rsqrt(half x);
+extern half half_cbrt(half x);
+extern half half_hypot(half x, half y);
+extern half half_log(half x);
+extern half half_log10(half x);
+extern half half_log2(half x);
+extern half half_logb(half x);
+extern half half_log1p(half x);
+extern int half_ilogb(half x);
+extern half half_exp(half x);
+extern half half_exp10(half x);
+extern half half_exp2(half x);
+extern half half_expm1(half x);
+extern half half_pow(half x, half y);
+extern half half_powr(half x, half y);
+extern half half_pown(half x, int y);
+extern half half_rootn(half x, int y);
+extern half half_floor(half x);
+
+extern half half_ceil(half x);
+
+extern half half_trunc(half x);
+
+extern half half_round(half x);
+
+extern half half_nearbyint(half x);
+extern half half_rint(half x);
+extern long int half_lrint(half x);
+extern long long int half_llrint(half x);
+extern long int half_lround(half x);
+extern long long int half_llround(half x);
+extern half half_modf(half x, half *intpart);
+
+extern half half_fract(half x, half *intpart);
+extern half half_nextafter(half x, half y);
+extern half half_fmod(half x, half y);
+extern half half_remainder(half x, half y);
+extern half half_remquo(half x, half y, int* quo);
+extern half half_divide(half x, half y);
+# 3 "hlsed_neurons/solution1/.tcls/345.h" 2
 
 
 
 
 
 
-float
+half
   Layer2_Neurons_CPU[6*13*13];
 
 
@@ -1195,14 +1271,14 @@ float
 double
   Layer5_Neurons_CPU[10];
 
-void calculateLayer3(float* Layer2_Neurons_CPU, float* Layer2_Weights_CPU, float* Layer3_Neurons_CPU);
-void calculateLayer4(float* Layer3_Neurons_CPU, float* Layer3_Weights_CPU, float* Layer4_Neurons_CPU);
-void calculateLayer5(float* Layer4_Neurons_CPU, float* Layer4_Weights_CPU, double Layer5_Neurons_CPU[10]);
+void calculateLayer3(half* Layer2_Neurons_CPU, half* Layer2_Weights_CPU, half* Layer3_Neurons_CPU);
+void calculateLayer4(half* Layer3_Neurons_CPU, half* Layer3_Weights_CPU, half* Layer4_Neurons_CPU);
+void calculateLayer5(half* Layer4_Neurons_CPU, half* Layer4_Weights_CPU, double Layer5_Neurons_CPU[10]);
 
 
 
 
-float Layer1_Weights_CPU[(5*5+1)*6] = {-0.128699,
+half Layer1_Weights_CPU[(5*5+1)*6] = {-0.128699,
 -0.294234,
 -0.572720,
 -0.477717,
@@ -1358,7 +1434,7 @@ float Layer1_Weights_CPU[(5*5+1)*6] = {-0.128699,
 -0.024800,
 -0.484093,
 -0.392891};
-float Layer2_Weights_CPU[(5*5+1)*6*50] = {0.054904,
+half Layer2_Weights_CPU[(5*5+1)*6*50] = {0.054904,
 -0.073097,
 0.000577,
 0.298383,
@@ -9158,7 +9234,7 @@ float Layer2_Weights_CPU[(5*5+1)*6*50] = {0.054904,
 0.043820,
 -0.046625,
 -0.015947};
-float Layer3_Weights_CPU[(5*5*50+1)*100]= {0.124767,
+half Layer3_Weights_CPU[(5*5*50+1)*100]= {0.124767,
 -0.050343,
 -0.005037,
 0.059311,
@@ -134258,7 +134334,7 @@ float Layer3_Weights_CPU[(5*5*50+1)*100]= {0.124767,
 0.084261,
 0.013128,
 -0.079569};
-float Layer4_Weights_CPU[(100+1)*10] = {0.001533,
+half Layer4_Weights_CPU[(100+1)*10] = {0.001533,
 -0.012417,
 -0.010436,
 0.055284,
@@ -135272,10 +135348,10 @@ float Layer4_Weights_CPU[(100+1)*10] = {0.001533,
 
 
 
-void nerons (float Layer2_Neurons_CPU[6*13*13], double Layer5_Neurons_CPU[10]){_ssdm_SpecArrayDimSize(Layer2_Neurons_CPU, 1014);_ssdm_SpecArrayDimSize(Layer5_Neurons_CPU, 10);
+void nerons (half Layer2_Neurons_CPU[6*13*13], double Layer5_Neurons_CPU[10]){_ssdm_SpecArrayDimSize(Layer2_Neurons_CPU, 1014);_ssdm_SpecArrayDimSize(Layer5_Neurons_CPU, 10);
 
-  float Layer3_Neurons_CPU[50*5*5];
-  float Layer4_Neurons_CPU[100];
+  half Layer3_Neurons_CPU[50*5*5];
+  half Layer4_Neurons_CPU[100];
 
   calculateLayer3(Layer2_Neurons_CPU, Layer2_Weights_CPU, Layer3_Neurons_CPU);
   calculateLayer4(Layer3_Neurons_CPU, Layer3_Weights_CPU, Layer4_Neurons_CPU);
@@ -135284,8 +135360,8 @@ void nerons (float Layer2_Neurons_CPU[6*13*13], double Layer5_Neurons_CPU[10]){_
 }
 
 
-void calculateLayer3(float* Layer2_Neurons_CPU, float* Layer2_Weights_CPU, float* Layer3_Neurons_CPU){
- float somme;
+void calculateLayer3(half* Layer2_Neurons_CPU, half* Layer2_Weights_CPU, half* Layer3_Neurons_CPU){
+ half somme;
  int i,j,k,m,n;
  for( i=0;i<50;i++)
   for(j=0;j<5;j++)
@@ -135302,28 +135378,27 @@ void calculateLayer3(float* Layer2_Neurons_CPU, float* Layer2_Weights_CPU, float
       somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+4] * Layer2_Neurons_CPU[13*13*4+13*(2*j+m)+(2*k+n)];
       somme += Layer2_Weights_CPU[26*6*i+1+6*(n+5*m)+5] * Layer2_Neurons_CPU[13*13*5+13*(2*j+m)+(2*k+n)];
      }
-    Layer3_Neurons_CPU[5*5*i+5*j+k] = (float) (1.7159*tanh(0.66666667*somme));
+    Layer3_Neurons_CPU[5*5*i+5*j+k] = (half) (1.7159*tanh(0.66666667*somme));
    }
 }
 
-void calculateLayer4(float* Layer3_Neurons_CPU, float* Layer3_Weights_CPU, float* Layer4_Neurons_CPU){
- float somme;
+void calculateLayer4(half* Layer3_Neurons_CPU, half* Layer3_Weights_CPU, half* Layer4_Neurons_CPU){
+ half somme;
  int i, j, k, m;
  for( i=0;i<100;i++){
   somme = Layer3_Weights_CPU[i*(1+50*25)];
   for( j=0;j<50;j++)
    for( k=0;k<5;k++)
     for ( m=0;m<5;m++)
-#pragma HLS loop_flatten
- somme += Layer3_Weights_CPU[i*(1+50*25)+1 + m + k*5 + j*25] * Layer3_Neurons_CPU[m+5*k+25*j];
+     somme += Layer3_Weights_CPU[i*(1+50*25)+1 + m + k*5 + j*25] * Layer3_Neurons_CPU[m+5*k+25*j];
 
-  Layer4_Neurons_CPU[i] = (float) (1.7159*tanh(0.66666667*somme));
+  Layer4_Neurons_CPU[i] = (half) (1.7159*tanh(0.66666667*somme));
  }
 
 }
 
-void calculateLayer5(float* Layer4_Neurons_CPU, float* Layer4_Weights_CPU, double* Layer5_Neurons_CPU){
- float somme;
+void calculateLayer5(half* Layer4_Neurons_CPU, half* Layer4_Weights_CPU, double* Layer5_Neurons_CPU){
+ half somme;
  int i, j;
  for( i=0;i<10;i++){
   somme = Layer4_Weights_CPU[101*i];

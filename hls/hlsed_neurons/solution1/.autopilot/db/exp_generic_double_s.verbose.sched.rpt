@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'exp_generic_double_s'
 ================================================================
-* Date:           Thu Dec 16 18:07:21 2021
+* Date:           Sat Jan  1 17:20:12 2022
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        hlsed_neurons
@@ -259,7 +259,7 @@ ST_19 : Operation 142 [1/1] (4.75ns)   --->   "%add_ln1146_1 = add i107 %trunc_l
 ST_19 : Operation 143 [1/1] (0.00ns)   --->   "%tmp_11 = call i1 @_ssdm_op_BitSelect.i1.i107.i32(i107 %add_ln1146_1, i32 106)" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:332]   --->   Operation 143 'bitselect' 'tmp_11' <Predicate = true> <Delay = 0.00>
 
 State 20 <SV = 19> <Delay = 8.42>
-ST_20 : Operation 144 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str5) nounwind" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:187]   --->   Operation 144 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 144 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str3) nounwind" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:187]   --->   Operation 144 'specpipeline' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 145 [1/1] (0.00ns) (grouped into LUT with out node select_ln214_1)   --->   "%xor_ln936 = xor i1 %p_Result_22, true" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:211]   --->   Operation 145 'xor' 'xor_ln936' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_20 : Operation 146 [1/1] (0.00ns) (grouped into LUT with out node select_ln214_1)   --->   "%x_is_pinf = and i1 %and_ln18, %xor_ln936" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:211]   --->   Operation 146 'and' 'x_is_pinf' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_20 : Operation 147 [1/1] (0.00ns) (grouped into LUT with out node select_ln214_1)   --->   "%or_ln214 = or i1 %and_ln209, %x_is_pinf" [/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_exp_.h:214]   --->   Operation 147 'or' 'or_ln214' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
