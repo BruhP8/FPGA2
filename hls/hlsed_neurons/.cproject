@@ -57,19 +57,21 @@
                                     									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src/"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/projet.sdk/cpu_prof/src/"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/ap_sysc"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/projet.sdk/cpu_prof/src/"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
                                     								
                                 </option>
                                 								
@@ -101,19 +103,21 @@
                                     									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src/"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/projet.sdk/cpu_prof/src/"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/ap_sysc"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/projet.sdk/cpu_prof/src/"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
                                     								
                                 </option>
                                 								
@@ -279,19 +283,21 @@
                                     									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src/"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/projet.sdk/cpu_prof/src/"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/ap_sysc"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/projet.sdk/cpu_prof/src/"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
                                     								
                                 </option>
                                 								
@@ -313,19 +319,21 @@
                                     									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/lnx64/tools/systemc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/hls"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/FPGA2/projet/projet.sdk/cpu_prof"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src/"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/FPGA2/projet/projet.sdk/cpu_prof/src/"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.1/include/ap_sysc"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/M2/projet.sdk/cpu_prof/src/"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/iamgron/Documents/Fac/projet/projet.sdk/cpu_prof/src"/>
                                     								
                                 </option>
                                 								

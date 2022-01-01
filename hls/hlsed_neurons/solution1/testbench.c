@@ -16,7 +16,6 @@
 
 // img size was here
 
-
 void calculateLayer1(float* input, float* Layer1_Neurons_CPU);
 void calculateLayer2(float* Layer1_Neurons_CPU, float* Layer1_Weights_CPU, float* Layer2_Neurons_CPU);
 

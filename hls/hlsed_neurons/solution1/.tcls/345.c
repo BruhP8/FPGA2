@@ -44,7 +44,6 @@ void calculateLayer4(float* Layer3_Neurons_CPU, float* Layer3_Weights_CPU, float
 		for( j=0;j<50;j++)
 			for( k=0;k<5;k++)
 				for ( m=0;m<5;m++)
-					#pragma HLS loop_flatten  // TODO useless
 					somme += Layer3_Weights_CPU[i*(1+50*25)+1 + m + k*5 + j*25] * Layer3_Neurons_CPU[m+5*k+25*j];
 
 		Layer4_Neurons_CPU[i] = (float) SIGMOID(somme);
